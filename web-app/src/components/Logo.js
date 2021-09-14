@@ -21,12 +21,12 @@ export default Logo;
 function LogoLink() {
     return(
         <ul className="logo_list">
-            <a href="https://www.borovaya.by/#model">Автомобили</a>
-            <a href="https://www.borovaya.by/service/">Сервис</a>
-            <a href="https://www.borovaya.by/#spare">Запчасти и аксессуары</a>
-            <a href="https://www.borovaya.by/#repair">Кузовной ремонт</a>
-            <a href="https://www.borovaya.by/finance/lizing-dlya-yuridicheskikh-lits/">Финансовые услуги</a>
-            <a href="https://www.borovaya.by/#online">Клиентам</a>
+            <a className="logo_link" href="https://www.borovaya.by/#model">Автомобили</a>
+            <a className="logo_link" href="https://www.borovaya.by/service/">Сервис</a>
+            <a className="logo_link" href="https://www.borovaya.by/#spare">Запчасти и аксессуары</a>
+            <a className="logo_link" href="https://www.borovaya.by/#repair">Кузовной ремонт</a>
+            <a className="logo_link" href="https://www.borovaya.by/finance/lizing-dlya-yuridicheskikh-lits/">Финансовые услуги</a>
+            <a className="logo_link" href="https://www.borovaya.by/#online">Клиентам</a>
         
         </ul>
 

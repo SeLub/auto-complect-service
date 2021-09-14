@@ -1,7 +1,25 @@
 .logo {
   display: flex;
   flex-direction: row;
-  width: 100px;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+}
+.logo_link {
+  padding: 0px;
+  margin: 0px 8px;
+  color: #333333;
+  text-decoration: none;
+
+}
+.logo_link:hover {
+  color: #337ab7;
+}
+.logo_link:focus {
+  color: #337ab7;
+}
+.logo_link:active {
+  color: #337ab7;
 }
 
 .logo_img {
@@ -23,7 +41,7 @@
 
 .logo_ford {
   padding: 0px;
-  margin: 31px 151px 31px 16px;
+  margin: 31px 143px 31px 16px;
 }
 
 .logo_list {

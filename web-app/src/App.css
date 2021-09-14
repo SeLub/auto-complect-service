@@ -1,3 +1,26 @@
-.App {
-  text-align: center;
+
+
+.logo_img {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  /* flex-direction: column; */
+  /*margin: 30px 151px 30px 120px;*/
+  margin-right: 151px;
+
+}
+
+.logo_atlant {
+  padding: 0px;
+  margin: 30px 16px 30px 76px;
+}
+
+.logo_line {
+  padding: 0px;
+  margin: 32px 0px 35px 0px;
+}
+
+.logo_ford {
+  padding: 0px;
+  margin: 31px 151px 31px 16px;
 }

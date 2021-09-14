@@ -35,7 +35,7 @@ export default function Hull_specs_display() {
                     <ul><p className = "hull_spec_type">Мощность двигателя</p> <p className = "hull_spec_content">{hull_types.engine_power}</p></ul> 
                 </ol>
                 <div className = "hull_specs_display_buttons">
-                {/* кнопка для прйс-листа. Пока бесполезна */}
+                {/* кнопка для прайс-листа. Пока бесполезна */}
                     <Price_list_btn />
                     {/* передает текущий объект в кнопку для конфигуратора (при нажатии на кнопку
                         в консоль выведет текущий объект) */}

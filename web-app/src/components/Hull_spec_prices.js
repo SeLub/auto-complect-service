@@ -1,12 +1,20 @@
 import React from "react";
 
+// компонент для отображения цен в российских и белорусских рублях
+// пока что подразумевается отображение базовой цены из "БД" с конвертацией в российские рубли
+
 export default function Hull_spec_prices(props) {
+
+    // конвертация из числа в строку с пробелом каждые 3 символа для отображения на фронте
+    // курсы все временные и переменная base_price пока что предполагает, что базовая цена указана в белорусских рублях
+
+    let base_price = props.base_price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+    let base_price_rub = (props.base_price*100000).toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+
     return(
         <div>
-            {/* тут добавить логику для трансфера валюь, если базовая цена не в рублях */}
-            <p className = "hull_spec_prices_byn">Цена от {props.base_price} {props.base_price_currency}</p>
-            {/* курс временный, пока API не подтянул */}
-            <p className = "hull_spec_prices_rub">от {props.base_price*10} RUB</p>
+            <p className = "hull_spec_prices_byn">Цена от {base_price} {props.base_price_currency}</p>
+            <p className = "hull_spec_prices_rub">от {base_price_rub} RUB</p>
         </div>
     )
 }

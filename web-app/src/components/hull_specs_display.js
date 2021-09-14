@@ -1,6 +1,8 @@
 import react from 'react';
 import Price_list_btn from './Price_list_btn';
-import hull_types from './hull_types_specs.json'
+
+// hull_types - массив из объектов с характеристиками кузова
+import hull_types from './hull_types_specs.json';
 import Configurator_btn from './Configurator_btn';
 import Hull_spec_prices from './Hull_spec_prices';
 

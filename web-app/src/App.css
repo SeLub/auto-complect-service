@@ -1,12 +1,13 @@
-
+.logo {
+  display: flex;
+  flex-direction: row;
+  width: 100px;
+}
 
 .logo_img {
   display: flex;
   justify-content: start;
   align-items: center;
-  /* flex-direction: column; */
-  /*margin: 30px 151px 30px 120px;*/
-  margin-right: 151px;
 
 }
 
@@ -23,4 +24,13 @@
 .logo_ford {
   padding: 0px;
   margin: 31px 151px 31px 16px;
+}
+
+.logo_list {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  padding: 0px;
+  margin: 42px 83px 42px 0px;
+  
 }

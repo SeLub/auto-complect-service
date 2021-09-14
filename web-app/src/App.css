@@ -11,6 +11,12 @@
   justify-content: space-between;
 }
 
+.hull_specs_display_details_wrapper p {
+  margin: 1px;
+  max-height: 20px;
+  padding: 1px;
+}
+
 .hull_specs_display_details {
   /* position: absolute; */
   /* width: 75px;
@@ -93,10 +99,10 @@
   align-items: center;
   padding: 12px 16px;
 
-  /* position: absolute;
+  /* position: absolute; */
   width: 213px;
   height: 46px;
-  left: 748px;
+  /* left: 748px;
   top: 588px; */
 
   border: 1px solid #2D96CD;
@@ -131,10 +137,10 @@
 }
 
 .configurator_btn{
-  /* position: absolute;
+  /* position: absolute; */
   width: 213px;
   height: 43px;
-  left: 991px;
+  /* left: 991px;
   top: 588px; */
   display: flex;
   flex-direction: row;
@@ -185,6 +191,11 @@
   grid-template-columns: repeat(auto-fill, minmax(22ch, 1fr));
   grid-gap: 1rem;
   text-align: left;
+  padding-left: 5px;
+}
+
+.specs_display_list ul {
+  padding-inline-start: 0px;
 }
 
 .hull_spec_type {

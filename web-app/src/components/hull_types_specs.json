@@ -10,28 +10,6 @@
         "engine_power": "92 кВт/125л.с.",
         "base_price": 100950,
         "base_price_currency": "BYN"
-    },
-    {
-        "name": "FORD TRANSIT L2H2 310/350",
-        "engine": "2,2 TDCI",
-        "fuel_type": "Бензин",
-        "transmission": "M6",
-        "interior": "2+1",
-        "drive_type": "RWD",
-        "engine_power": "92 кВт/125л.с.",
-        "base_price": 100950,
-        "base_price_currency": "BYN"
-    },
-    {
-        "name": "FORD TRANSIT L2H2 310/350",
-        "engine": "2,2 TDCI",
-        "fuel_type": "Бензин",
-        "transmission": "M6",
-        "interior": "2+1",
-        "drive_type": "RWD",
-        "engine_power": "92 кВт/125л.с.",
-        "base_price": 100950,
-        "base_price_currency": "BYN"
     }
 ]
     

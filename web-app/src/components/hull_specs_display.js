@@ -6,6 +6,30 @@ import hull_types from './hull_types_specs.json';
 import Configurator_btn from './Configurator_btn';
 import Hull_spec_prices from './Hull_spec_prices';
 
+// Пояснения к свойствам hull_types:
+// 
+// name - название кузова, String
+// engine - объем, компоновка двигателя, String
+// fuel_type - тип топлива, String
+// transmission - вид трансмиссии, String
+// interior - салон, String
+// drive_type - вид привода, String
+// engine_power - мощность двигателя, String. Пока просто одной строкой, но вероятно может потребоваться разделение части в л.с. и кВт
+// base_price - базовая цена, Number. пока что подразумевается указание цены в белорусских рублях
+// base_price_currency - указание на валюту базовой цены, String.
+// 
+// Далее идут пока неиспользуемые свойства hull_types, которые могут быть использованы на следующих страницах конфигуратора
+// pictures - массив с изображениями кузова, Array. Предполагается, что дефолтное изображение идет с индексом 0
+// base_options - Оборудование, в составе базовой комплектации кузова, Array.
+// additional_options - Дополнительные опции, Array из Object'ов
+// 
+// У каждого объекта в составе additional_options есть следующие свойства:
+// option_index - ID опции, Number.
+// option_name - наименование опции для отображения на фронте, String
+// option_cost - Стоимость опции, Number
+// option_cost_currency - Валюта, в которой указана стоимость в option_cost, Sring
+
+
 // todo: получше продумать наименования классов
 
 
@@ -21,7 +45,7 @@ export default function Hull_specs_display() {
                     <p className = "hull_specs_display_details">
                         Детали
                     </p>
-                    {/* передает переменные для расчета цены */}
+                    {/* передает переменные из свойств hull_types для расчета цены */}
                     <Hull_spec_prices base_price = {hull_types.base_price} base_price_currency = {hull_types.base_price_currency}/>
                     
                 </div>

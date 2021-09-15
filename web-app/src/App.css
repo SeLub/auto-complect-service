@@ -1,3 +1,7 @@
+.App {
+  text-align: center;
+}
+
 .logo {
   position: relative;
   display: flex;
@@ -7,15 +11,25 @@
   padding: 0px;
   background-color: white;
   height: 100px;
+}
 
+.logo_list {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  padding: 0px;
+  margin: 42px 83px 42px 0px;
+  box-sizing: border-box;
+  
 }
 .logo_link {
+  display: flex;
+  justify-content: flex-end;
   padding: 0px;
   margin: 0px 8px;
   color: #333333;
   text-decoration: none;
   align-items: center;
-
 }
 .logo_link:hover {
   color: #337ab7;
@@ -49,13 +63,4 @@
 .logo_ford {
   padding: 0px;
   margin: 31px 143px 31px 16px;
-}
-
-.logo_list {
-  display: flex;
-  flex-direction: row;
-  justify-content: end;
-  padding: 0px;
-  margin: 42px 83px 42px 0px;
-  
 }

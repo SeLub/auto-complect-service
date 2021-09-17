@@ -34,7 +34,7 @@ import Hull_spec_prices from './Hull_spec_prices';
 
 
 export default function Hull_specs_display() {
-   return(
+     return(
         <div className = "hull_specs_display_wrapper">
              {/* тут код проходит по json'у и подтягивает все хранящиеся там объекты 
              при это не важно сколько корпусов внесено в базу*/}

@@ -2,6 +2,7 @@
 /* eslint-disable react/react-in-jsx-scope */
 import "./App.css";
 import AppHeader from "./components/app-header";
+import BreadCrumbs from "./components/breadcrumb";
 // Это корневой компонент
 // Сохраняйте компоненты в папке components
 // Если создаёте универсальный компонет (например кнопка) сохраняйте в папку components/generic
@@ -12,6 +13,9 @@ function App() {
     <div className="App">
       <div>
         <AppHeader />
+      </div>
+      <div>
+        <BreadCrumbs />
       </div>
     </div>
   );

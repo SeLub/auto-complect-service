@@ -6,7 +6,7 @@
 import React from "react";
 
 // component app-header for displaying the contact number of the phone,
-// company name, callback buttons, and appointment appointment
+// company name, callback buttons, and appointment
 
 export default class AppHeader extends React.Component {
   render() {

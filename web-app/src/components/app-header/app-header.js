@@ -13,21 +13,22 @@ export default class AppHeader extends React.Component {
     const { onRequestCall, signService } = this.props;
     return (
       <div className="app-header">
-        <h2>Атлант-М Боровая</h2>
-        <h2>Минский р-н, р-н д.Боровая, 2</h2>
-        <h2>+375 44 550 93 37</h2>
-        <button
-          type="button"
-          className="request-call"
-          value="Заказать звонок"
-          onClick={onRequestCall}
-        />
-        <button
-          type="button"
-          className="sign-service"
-          value="Записаться на сервис"
-          onClick={signService}
-        />
+        <div className="company-name">Атлант-М Боровая</div>
+        <div className="address-main">Минский р-н, р-н д.Боровая, 2</div>
+        <div className="telephone-number">
+          {" "}
+          <a href="tel:+375445509337">+375 44 550 93 37</a>
+        </div>
+        <div className="request-call">
+          <button type="button" value="Заказать звонок" onClick={onRequestCall}>
+            Заказать звонок
+          </button>
+        </div>
+        <div className="sign-service">
+          <button type="button" onClick={signService}>
+            Записаться на сервис
+          </button>
+        </div>
       </div>
     );
   }

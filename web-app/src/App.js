@@ -8,7 +8,13 @@ import AppHeader from "./components/app-header";
 // Для своих корневых компонентов можно создавать свои подпапки. Например components/products для компонета автомобиля
 
 function App() {
-  return <div className="App"></div>;
+  return (
+    <div className="App">
+      <div>
+        <AppHeader />
+      </div>
+    </div>
+  );
 }
 
 export default App;

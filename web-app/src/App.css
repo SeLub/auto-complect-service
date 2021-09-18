@@ -1,3 +1,70 @@
 .App {
   text-align: center;
 }
+.app-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 64px;
+  width: 1280px;
+  background: #f3f3f3;
+  position: relative;
+  justify-content: initial;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  font-size: 14px;
+  box-sizing: border-box;
+  font-family: Ford Antenna;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 16px;
+  color: #717171;
+}
+
+.app-header .company-name {
+  padding-right: 35px;
+  padding-left: 35px;
+}
+
+.app-header address-main {
+  padding-right: 35px;
+  padding-left: 35px;
+}
+
+.app-header .telephone-number a {
+  font-size: 16px;
+  line-height: 20px;
+  white-space: nowrap;
+  color: #717171;
+  text-decoration: none;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 35px;
+  padding-right: 31px;
+}
+
+.app-header .request-call button {
+  font-family: Ford Antenna;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.1px;
+  color: #ffff;
+  background-color: #2d96cd;
+  border: 1px solid #2d96cd;
+  padding: 12px 34px 12px 34px;
+  margin-right: 8px;
+}
+
+.app-header .sign-service button {
+  color: #2d96cd;
+  border: 1px solid #2d96cd;
+  padding: 11px 34px 11px 34px;
+  font-family: Ford Antenna;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  margin-right: 172px;
+}

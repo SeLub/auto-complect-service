@@ -10,8 +10,8 @@ import React from "react";
 export default class BreadCrumbs extends React.Component {
   render() {
     return (
-      <div>
-        <nav className="breadcrumb">
+      <div className="breadcrumb">
+        <nav>
           <ul>
             <li>
               <a href="">Хлебные крошки</a>

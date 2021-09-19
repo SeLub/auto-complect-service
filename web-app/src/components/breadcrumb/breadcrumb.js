@@ -11,19 +11,19 @@ export default class BreadCrumbs extends React.Component {
   render() {
     return (
       <div className="breadcrumb">
-        <nav>
-          <ul>
-            <li>
-              <a href="">Хлебные крошки</a>
-            </li>
-            <li>
-              <a href="">Хлебные крошки</a>
-            </li>
-          </ul>
-        </nav>
-        <div className="label-breadcrumb">
-          <h1>Модификация кузова</h1>
+        <div>
+          <nav>
+            <ul>
+              <li>
+                <a href="">Хлебные крошки</a>
+              </li>
+              <li>
+                <a href="">Хлебные крошки</a>
+              </li>
+            </ul>
+          </nav>
         </div>
+        <div className="label-breadcrumb">Модификация кузова</div>
       </div>
     );
   }

@@ -20,7 +20,7 @@ export default class AppHeader extends React.Component {
           <a href="tel:+375445509337">+375 44 550 93 37</a>
         </div>
         <div className="request-call">
-          <button type="button" value="Заказать звонок" onClick={onRequestCall}>
+          <button type="button" onClick={onRequestCall}>
             Заказать звонок
           </button>
         </div>

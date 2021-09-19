@@ -68,3 +68,40 @@
   line-height: 20px;
   margin-right: 172px;
 }
+
+.breadcrumb {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 1px;
+  margin-top: 190px;
+
+  font-family: Ford Antenna;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  padding-right: 35px;
+
+  text-decoration-line: underline;
+
+  color: #717171;
+}
+
+.breadcrumb ul {
+  list-style: none;
+  margin: 0;
+
+  display: flex;
+}
+.breadcrumb a {
+  padding: 0.5em 1em;
+}
+
+.breadcrumb li::before {
+  content: ">";
+}
+
+.breadcrumb li:first-child::before {
+  content: "";
+}

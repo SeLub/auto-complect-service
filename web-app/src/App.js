@@ -1,4 +1,6 @@
 import './App.css';
+import Logo from './components/Logo';
+
 // Это корневой компонент
 // Сохраняйте компоненты в папке components
 // Если создаёте универсальный компонет (например кнопка) сохраняйте в папку components/generic
@@ -8,7 +10,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-
+      <Logo />
     </div>
   );
 }

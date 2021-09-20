@@ -1,3 +1,66 @@
 .App {
   text-align: center;
 }
+
+.logo {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  background-color: white;
+  height: 100px;
+}
+
+.logo_list {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  padding: 0px;
+  margin: 42px 83px 42px 0px;
+  box-sizing: border-box;
+  
+}
+.logo_link {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0px;
+  margin: 0px 8px;
+  color: #333333;
+  text-decoration: none;
+  align-items: center;
+}
+.logo_link:hover {
+  color: #337ab7;
+}
+.logo_link:focus {
+  color: #337ab7;
+}
+.logo_link:active {
+  color: #337ab7;
+}
+
+.logo_img {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+.logo_atlant {
+  padding: 0px;
+  margin: 30px 16px 30px 76px;
+}
+
+.logo_line {
+  padding: 0px;
+  margin: 32px 0px 35px 0px;
+}
+
+.logo_ford {
+  padding: 0px;
+  margin: 31px 143px 31px 16px;
+}

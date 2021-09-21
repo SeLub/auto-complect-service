@@ -1,3 +1,3 @@
-import BreadCrumbs from "./breadcrumb";
+import BreadCrumbs from "./Breadcrumb";
 
 export default BreadCrumbs;

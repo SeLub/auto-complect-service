@@ -1,8 +1,11 @@
+
 /* eslint-disable react/self-closing-comp */
 /* eslint-disable react/react-in-jsx-scope */
-import "./App.css";
 import AppHeader from "./components/app-header";
 import BreadCrumbs from "./components/breadcrumb";
+import './App.css';
+import Logo from './components/Logo';
+
 // Это корневой компонент
 // Сохраняйте компоненты в папке components
 // Если создаёте универсальный компонет (например кнопка) сохраняйте в папку components/generic
@@ -11,12 +14,14 @@ import BreadCrumbs from "./components/breadcrumb";
 function App() {
   return (
     <div className="App">
+
       <div>
         <AppHeader />
       </div>
       <div>
         <BreadCrumbs />
       </div>
+      <Logo />
     </div>
   );
 }

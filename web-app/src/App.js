@@ -1,3 +1,8 @@
+
+/* eslint-disable react/self-closing-comp */
+/* eslint-disable react/react-in-jsx-scope */
+import AppHeader from "./components/app-header";
+import BreadCrumbs from "./components/breadcrumb";
 import './App.css';
 import Logo from './components/Logo';
 
@@ -6,10 +11,16 @@ import Logo from './components/Logo';
 // Если создаёте универсальный компонет (например кнопка) сохраняйте в папку components/generic
 // Для своих корневых компонентов можно создавать свои подпапки. Например components/products для компонета автомобиля
 
-
 function App() {
   return (
     <div className="App">
+
+      <div>
+        <AppHeader />
+      </div>
+      <div>
+        <BreadCrumbs />
+      </div>
       <Logo />
     </div>
   );

@@ -1,5 +1,5 @@
 import './App.css';
-import Hull_specs_display from './components/Hull_specs_display';
+import Hull_specs_display from './components/Hull_specs_display'
 // Это корневой компонент
 // Сохраняйте компоненты в папке components
 // Если создаёте универсальный компонет (например кнопка) сохраняйте в папку components/generic
@@ -9,7 +9,9 @@ import Hull_specs_display from './components/Hull_specs_display';
 function App() {
   return (
     <div className="App">
-      <Hull_specs_display />
+      <div>
+        <Hull_specs_display />
+      </div>
     </div>
   );
 }

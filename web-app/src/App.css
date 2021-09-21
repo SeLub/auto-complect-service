@@ -111,6 +111,7 @@
   line-height: 50px;
 
   color: #333333;
+}
 
 .logo {
   position: relative;
@@ -130,7 +131,6 @@
   padding: 0px;
   margin: 42px 83px 42px 0px;
   box-sizing: border-box;
-  
 }
 .logo_link {
   display: flex;

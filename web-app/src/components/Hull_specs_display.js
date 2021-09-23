@@ -1,10 +1,14 @@
-import react from "react";
+/* eslint-disable no-shadow */
+/* eslint-disable import/no-duplicates */
+/* eslint-disable react/jsx-pascal-case */
+/* eslint-disable camelcase */
+import React from "react";
 import Price_list_btn from "./generic/Price_list_btn";
 
 // hull_types - массив из объектов с характеристиками кузова
 import hull_types from "./hull_static/hull_types_specs.json";
 import Configurator_btn from "./generic/Configurator_btn";
-// import Hull_spec_prices from "./generic/Price_list_btn";
+import Hull_spec_prices from "./generic/Price_list_btn";
 
 // Пояснения к свойствам hull_types:
 //
@@ -35,7 +39,7 @@ export default function Hull_specs_display() {
   return (
     <div className="hull_specs_display_wrapper">
       {/* тут код проходит по json'у и подтягивает все хранящиеся там объекты 
-             при это не важно сколько корпусов внесено в базу*/}
+             при это не важно сколько корпусов внесено в базу */}
       {hull_types.map((hull_types, index) => {
         return (
           <div>
@@ -47,9 +51,9 @@ export default function Hull_specs_display() {
                 base_price_currency={hull_types.base_price_currency}
               />
             </div>
-            <div className="hull_specs_display_details_separator"></div>
+            <div className="hull_specs_display_details_separator" />
             {/* перечисление всех характеристик из json'a
-                на будущее добавить ошибку или скрытие строк при отсутствии каких либо характеристик*/}
+                на будущее добавить ошибку или скрытие строк при отсутствии каких либо характеристик */}
             <ol key={index} className="specs_display_list">
               <ul>
                 <p className="hull_spec_type">Тип Двигателя</p>{" "}

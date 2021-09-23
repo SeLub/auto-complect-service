@@ -115,7 +115,14 @@
 
 .logo {
   position: relative;
-
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  background-color: white;
+  height: 100px;
+}
 
 /* стили для task-1-anton */
 
@@ -148,8 +155,7 @@
 
   letter-spacing: 0.1px;
 
-  color: #2D96CD;
-
+  color: #2d96cd;
 }
 
 /* класс под разделитель между ценами и характеристиками */
@@ -183,7 +189,7 @@
   text-align: right;
   letter-spacing: 0.1px;
 
-  color: #2D96CD;
+  color: #2d96cd;
 }
 
 .hull_spec_prices_rub {
@@ -204,11 +210,9 @@
   letter-spacing: 0.1px;
 
   color: #717171;
-
 }
 
 .price_list_btn {
-
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -217,7 +221,7 @@
   padding: 0px;
   background-color: white;
   height: 100px;
-   padding: 12px 16px;
+  padding: 12px 16px;
 
   /* position: absolute; */
   width: 213px;
@@ -225,7 +229,7 @@
   /* left: 748px;
   top: 588px; */
 
-  border: 1px solid #2D96CD;
+  border: 1px solid #2d96cd;
   box-sizing: border-box;
 
   background-color: white;
@@ -296,8 +300,7 @@
   line-height: 22px;
   letter-spacing: 0.1px;
 
-  color: #2D96CD;
-
+  color: #2d96cd;
 
   /* Inside Auto Layout */
 
@@ -307,7 +310,7 @@
   margin: 0px 10px;
 }
 
-.configurator_btn{
+.configurator_btn {
   /* position: absolute; */
   width: 213px;
   height: 43px;
@@ -326,7 +329,7 @@
   top: 0%;
   bottom: 0%; */
 
-  background: #2D96CD;
+  background: #2d96cd;
 }
 
 .configurator_btn p {
@@ -343,8 +346,7 @@
   line-height: 19px;
   letter-spacing: 0.1px;
 
-  color: #FFFFFF;
-
+  color: #ffffff;
 
   /* Inside Auto Layout */
 
@@ -354,11 +356,11 @@
   margin: 0px 10px;
 }
 
-.hull_specs_display_wrapper{
+.hull_specs_display_wrapper {
   max-width: 600px;
 }
 
-.specs_display_list{
+.specs_display_list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(22ch, 1fr));
   grid-gap: 1rem;
@@ -373,7 +375,7 @@
 .hull_spec_type {
   position: static;
   width: 158px;
-  left: calc(50% - 158px/2);
+  left: calc(50% - 158px / 2);
   top: 0%;
   bottom: 60.47%;
 
@@ -384,9 +386,7 @@
   line-height: 17px;
   /* identical to box height, or 121% */
 
-
   color: #717171;
-
 
   /* Inside Auto Layout */
 
@@ -422,6 +422,4 @@
   justify-content: space-evenly;
 }
 
-
 /* конец стилей для task-1-anton */
-

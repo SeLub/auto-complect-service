@@ -8,6 +8,7 @@ import BreadCrumbs from "./components/breadcrumb";
 import "./App.css";
 import Logo from "./components/Logo";
 import Hull_specs_display from "./components/Hull_specs_display";
+import Block_ford_cards from "./components/Block_ford_cards";
 // Это корневой компонент
 // Сохраняйте компоненты в папке components
 // Если создаёте универсальный компонет (например кнопка) сохраняйте в папку components/generic
@@ -24,6 +25,7 @@ function App() {
       </div>
       <Logo />
       <div>
+        <Block_ford_cards />
         <Hull_specs_display />
       </div>
     </div>

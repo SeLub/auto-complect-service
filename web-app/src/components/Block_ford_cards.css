@@ -1,0 +1,70 @@
+.minor_ford_pic{
+  display: flex;
+  flex-direction: column;
+  height: 260px;
+  width: 136px;
+  position: relative;
+  margin-top: auto;
+  margin-left: 480px;
+  
+}
+.rectangle{
+  height: 4px;
+  width: 28px; 
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 22px;
+}
+.main_ford_pic{
+  height: 260px;
+  width: 456px;
+  position: absolute;
+}
+.block_ford_card1{
+  display: flex;
+  flex-direction: row;
+  margin-top: 371px;
+}
+
+.block_ford_cards{
+  margin-left: 76px;
+}
+
+
+
+.block_ford_card2{
+  margin-top: 205px;
+  display: flex;
+  flex-direction: row;
+}
+
+
+.block_ford_card3{
+  margin-top: 205px;
+  display: flex;
+  flex-direction: row;
+}
+
+
+.block_ford_card4{
+  margin-top: 205px;
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+
+.block_ford_card5{
+  margin-top: 205px;
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+.clarity{
+  opacity: 0.33;
+
+}
+

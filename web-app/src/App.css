@@ -423,3 +423,8 @@
 }
 
 /* конец стилей для task-1-anton */
+
+.cars_display{
+  display: flex;
+  flex: 50%;
+}

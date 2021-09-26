@@ -24,7 +24,7 @@ function App() {
         <BreadCrumbs />
       </div>
       <Logo />
-      <div>
+      <div className="cars_display">
         <Block_ford_cards />
         <Hull_specs_display />
       </div>

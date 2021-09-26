@@ -110,10 +110,13 @@ export default function Hull_specs_display() {
             </div>
           </div>
           </div>
+          
           </>
         );
       })}
+      
     </div>
+    
     
   );
 }

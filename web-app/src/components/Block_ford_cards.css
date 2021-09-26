@@ -1,7 +1,7 @@
-.block_ford_cards{
+/* .block_ford_cards{
   display: flex;
   flex: 50%;
-}
+} */
 
 .minor_ford_pic{
   display: flex;
@@ -16,9 +16,10 @@
 .rectangle{
   height: 4px;
   width: 28px; 
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
   margin-top: 22px;
+  align-self: center;
 }
 .main_ford_pic{
   max-height: 260px;

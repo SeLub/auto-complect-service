@@ -30,4 +30,4 @@ module.exports = {
       version: "latest", // instead of 'detect'
     },
   },
-};          
+};

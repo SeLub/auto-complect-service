@@ -9,7 +9,7 @@ import Price_list_btn from "./generic/Price_list_btn";
 // hull_types - массив из объектов с характеристиками кузова
 import hull_types from "./hull_static/hull_types_specs.json";
 import Configurator_btn from "./generic/Configurator_btn";
-import Hull_spec_prices from "./generic/Price_list_btn";
+import Hull_spec_prices from "./Hull_spec_prices";
 
 // Пояснения к свойствам hull_types:
 //

@@ -1,16 +1,19 @@
+/* eslint-disable */
 /* eslint-disable camelcase */
 /* eslint-disable react/prefer-stateless-function */
 import "./Block_ford_cards.css";
 
 import React, { Component } from "react";
 
-class Block_ford_cards extends Component {
-  render() {
+export default function Block_ford_cards(props) {
+
+  
     return (
       <body className="main-page-body">
         <div className="block_ford_cards">
           <div className="block_ford_card1">
             <img src="/img/main_pic1.jpg" className="main_ford_pic" alt="" />
+          </div>            
             <div className="minor_ford_pic">
               <img
                 src="/img/main_pic101.jpg"
@@ -31,7 +34,7 @@ class Block_ford_cards extends Component {
             </div>
           </div>
 
-          <div className="block_ford_card2">
+          {/* <div className="block_ford_card2">
             <img src="/img/main_pic2.jpg" className="main_ford_pic" alt="" />
             <div className="minor_ford_pic">
               <img
@@ -117,11 +120,11 @@ class Block_ford_cards extends Component {
               />
               <img src="/img/rectangle.jpg" className="rectangle" alt="" />
             </div>
-          </div>
-        </div>
+          </div> */}
+        {/* </div> */}
       </body>
     );
   }
-}
 
-export default Block_ford_cards;
+
+// export default Block_ford_cards;

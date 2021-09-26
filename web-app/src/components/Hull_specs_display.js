@@ -1,3 +1,4 @@
+/* eslint-disable */
 /* eslint-disable react/no-array-index-key */
 /* eslint-disable no-shadow */
 /* eslint-disable import/no-duplicates */
@@ -10,6 +11,7 @@ import Price_list_btn from "./generic/Price_list_btn";
 import hull_types from "./hull_static/hull_types_specs.json";
 import Configurator_btn from "./generic/Configurator_btn";
 import Hull_spec_prices from "./Hull_spec_prices";
+import Block_ford_cards from "./Block_ford_cards";
 
 // Пояснения к свойствам hull_types:
 //
@@ -43,7 +45,9 @@ export default function Hull_specs_display() {
              при это не важно сколько корпусов внесено в базу */}
       {hull_types.map((hull_types, index) => {
         return (
-          <div>
+          
+          <div className="cars_display">
+            <Block_ford_cards />
             <div className="hull_specs_display_details_wrapper">
               <p className="hull_specs_display_details">Детали</p>
               {/* передает переменные из свойств hull_types для расчета цены */}

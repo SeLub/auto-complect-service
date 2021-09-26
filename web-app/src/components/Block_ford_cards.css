@@ -1,3 +1,8 @@
+.block_ford_cards{
+  display: flex;
+  flex: 50%;
+}
+
 .minor_ford_pic{
   display: flex;
   flex-direction: column;
@@ -16,8 +21,8 @@
   margin-top: 22px;
 }
 .main_ford_pic{
-  height: 260px;
-  width: 456px;
+  max-height: 260px;
+  max-width: 456px;
   position: absolute;
 }
 .block_ford_card1{

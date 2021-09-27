@@ -40,83 +40,88 @@ import Block_ford_cards from "./Block_ford_cards";
 
 export default function Hull_specs_display() {
   return (
-    <div className="hull_specs_display_wrapper">
-      {/* тут код проходит по json'у и подтягивает все хранящиеся там объекты 
+    <div className="App">
+      <div className="hull_specs_display_wrapper">
+        {/* тут код проходит по json'у и подтягивает все хранящиеся там объекты 
              при это не важно сколько корпусов внесено в базу */}
-      {hull_types.map((hull_types, index) => {
-        return (
-          <>
-          <div className ="hull_desc">
-            <p className = "hull_name">{hull_types.name}</p>
-            <p className = "hull_type">Цельнометаллический фургон</p>
-          </div>
-          <div className="cars_display">
-            <Block_ford_cards hull_types={hull_types}/>
-            <div className = "hull_wrapper">
-            
-            <div className="hull_specs_display_details_wrapper">
-              <div>
-                <p className="hull_specs_display_details">Детали</p>
+        {hull_types.map((hull_types, index) => {
+          return (
+            <>
+              <div className="hull_desc">
+                <p className="hull_name">{hull_types.name}</p>
+                <p className="hull_type">Цельнометаллический фургон</p>
               </div>
-              
-              {/* передает переменные из свойств hull_types для расчета цены */}
-              <Hull_spec_prices
-                base_price={hull_types.base_price}
-                base_price_currency={hull_types.base_price_currency}
-              />
-              
-              
-            </div>
-            
-            <div className="hull_specs_display_details_separator" />
-            
-            {/* перечисление всех характеристик из json'a
+              <div className="cars_display">
+                <Block_ford_cards hull_types={hull_types} />
+                <div className="hull_wrapper">
+                  <div className="hull_specs_display_details_wrapper">
+                    <div>
+                      <p className="hull_specs_display_details">Детали</p>
+                    </div>
+
+                    {/* передает переменные из свойств hull_types для расчета цены */}
+                    <Hull_spec_prices
+                      base_price={hull_types.base_price}
+                      base_price_currency={hull_types.base_price_currency}
+                    />
+                  </div>
+
+                  <div className="hull_specs_display_details_separator" />
+
+                  {/* перечисление всех характеристик из json'a
                 на будущее добавить ошибку или скрытие строк при отсутствии каких либо характеристик */}
-            <div className="specs_display_list_wrapper">
-            <ol key={index} className="specs_display_list">
-              <ul>
-                <p className="hull_spec_type">Тип Двигателя</p>{" "}
-                <p className="hull_spec_content">{hull_types.engine}</p>
-              </ul>
-              <ul>
-                <p className="hull_spec_type">Тип топлива</p>{" "}
-                <p className="hull_spec_content">{hull_types.fuel_type}</p>
-              </ul>
-              <ul>
-                <p className="hull_spec_type">Трансмиссия</p>{" "}
-                <p className="hull_spec_content">{hull_types.transmission}</p>
-              </ul>
-              <ul>
-                <p className="hull_spec_type">Салон</p>{" "}
-                <p className="hull_spec_content">{hull_types.interior}</p>
-              </ul>
-              <ul>
-                <p className="hull_spec_type">Тип привода</p>{" "}
-                <p className="hull_spec_content">{hull_types.drive_type}</p>
-              </ul>
-              <ul>
-                <p className="hull_spec_type">Мощность двигателя</p>{" "}
-                <p className="hull_spec_content">{hull_types.engine_power}</p>
-              </ul>
-            </ol>
-            </div>
-            
-            <div className="hull_specs_display_buttons">
-              {/* кнопка для прайс-листа. Пока бесполезна */}
-              <Price_list_btn />
-              {/* передает текущий объект в кнопку для конфигуратора (при нажатии на кнопку
+                  <div className="specs_display_list_wrapper">
+                    <ol key={index} className="specs_display_list">
+                      <ul>
+                        <p className="hull_spec_type">Тип Двигателя</p>{" "}
+                        <p className="hull_spec_content">{hull_types.engine}</p>
+                      </ul>
+                      <ul>
+                        <p className="hull_spec_type">Тип топлива</p>{" "}
+                        <p className="hull_spec_content">
+                          {hull_types.fuel_type}
+                        </p>
+                      </ul>
+                      <ul>
+                        <p className="hull_spec_type">Трансмиссия</p>{" "}
+                        <p className="hull_spec_content">
+                          {hull_types.transmission}
+                        </p>
+                      </ul>
+                      <ul>
+                        <p className="hull_spec_type">Салон</p>{" "}
+                        <p className="hull_spec_content">
+                          {hull_types.interior}
+                        </p>
+                      </ul>
+                      <ul>
+                        <p className="hull_spec_type">Тип привода</p>{" "}
+                        <p className="hull_spec_content">
+                          {hull_types.drive_type}
+                        </p>
+                      </ul>
+                      <ul>
+                        <p className="hull_spec_type">Мощность двигателя</p>{" "}
+                        <p className="hull_spec_content">
+                          {hull_types.engine_power}
+                        </p>
+                      </ul>
+                    </ol>
+                  </div>
+
+                  <div className="hull_specs_display_buttons">
+                    {/* кнопка для прайс-листа. Пока бесполезна */}
+                    <Price_list_btn />
+                    {/* передает текущий объект в кнопку для конфигуратора (при нажатии на кнопку
                         в консоль выведет текущий объект) */}
-              <Configurator_btn hull_types={hull_types} />
-            </div>
-          </div>
-          </div>
-          
-          </>
-        );
-      })}
-      
+                    <Configurator_btn hull_types={hull_types} />
+                  </div>
+                </div>
+              </div>
+            </>
+          );
+        })}
+      </div>
     </div>
-    
-    
   );
 }

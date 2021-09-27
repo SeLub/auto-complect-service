@@ -88,7 +88,7 @@
 .breadcrumb ul {
   list-style: none;
   margin: 0;
-  margin-top: 190px;
+  margin-top: 20px;
 
   display: flex;
 }
@@ -130,8 +130,22 @@
 
 .hull_specs_display_details_wrapper {
   display: flex;
+  /* align-items: center; */
   justify-content: space-between;
+  /* flex: 50%;
+  flex-direction: row; */
 }
+
+.hull_wrapper{
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+/* .break{
+  flex-basis: 100%;
+  height: 0px;
+} */
 
 .hull_specs_display_details_wrapper p {
   margin: 1px;
@@ -145,14 +159,16 @@
   height: 22px;
   left: 748px;
   top: 315px; */
-
+  display: flex;
+  flex-grow: 1;
   font-family: Ford Antenna;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
+  /* width: 456px; */
   /* identical to box height */
-
+ 
   letter-spacing: 0.1px;
 
   color: #2d96cd;
@@ -167,7 +183,6 @@
   bottom: -100%; */
   width: 100%;
   height: 2px;
-
   background: rgba(51, 51, 51, 0.12);
   /* transform: matrix(1, 0, 0, -1, 0, 0); */
 }
@@ -352,20 +367,29 @@
 
   flex: none;
   order: 0;
-  flex-grow: 0;
+  flex-grow: 1;
   margin: 0px 10px;
 }
 
 .hull_specs_display_wrapper {
   max-width: 600px;
+  max-height: 456px;
+}
+
+.specs_display_list_wrapper {
+  display: flex;
+  flex-grow: 1;
+  width: 100%;
+  
 }
 
 .specs_display_list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(22ch, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(16ch, 1fr));
   grid-gap: 1rem;
   text-align: left;
   padding-left: 5px;
+  flex-grow: 1;
 }
 
 .specs_display_list ul {
@@ -420,11 +444,46 @@
 .hull_specs_display_buttons {
   display: flex;
   justify-content: space-evenly;
+  flex-grow: 1;
 }
 
 /* конец стилей для task-1-anton */
 
 .cars_display{
-  display: flex;
-  flex: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 20px;
+}
+
+.hull_desc p {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  margin-left: 76px;
+  width: fit-content;
+}
+
+.hull_name {
+  font-family: Ford Antenna;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 22px;
+  /* identical to box height, or 92% */
+
+
+  color: #2D96CD;
+
+}
+
+.hull_type {
+  font-family: Ford Antenna;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  letter-spacing: 0.1px;
+
+  color: #2D96CD;
 }

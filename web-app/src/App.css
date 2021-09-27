@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  width: 1121px;
+  width: 1128px;
   margin: 0 auto;
   padding: 0 76px;
 }
@@ -136,7 +136,7 @@
   flex-direction: row;
   justify-content: end;
   padding: 0px;
-  margin: 42px 83px 42px 0px;
+  margin: 42px 0px 42px 0px;
   box-sizing: border-box;
 }
 .logo_link {
@@ -147,7 +147,7 @@
   margin: 0px 16px;
   color: #333333;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 16px;
@@ -202,7 +202,7 @@
 .hull_wrapper {
   display: flex;
   flex-direction: column;
-  width: 500px;
+  width: 456px;
 }
 
 /* .break{
@@ -391,7 +391,7 @@
 .specs_display_list_wrapper {
   display: flex;
   flex-grow: 1;
-  width: 100%;
+  width: 456px;
 }
 
 .specs_display_list {
@@ -454,7 +454,7 @@
 
 .hull_specs_display_buttons {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-grow: 1;
 }
 

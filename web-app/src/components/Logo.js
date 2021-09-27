@@ -3,20 +3,23 @@ import React from "react";
 
 function Logo() {
   return (
-    <div className="App">
-      <logo className="logo">
-        <ul className="logo_img">
-          <a href="https://www.borovaya.by/">
-            <img src="/logo-atlant.png" className="logo_atlant" />
-          </a>
-          <img src="/logo-line.png" className="logo_line" />
-          <a href="https://www.borovaya.by/">
-            <img src="/logo-ford.png" className="logo_ford" />
-          </a>
-        </ul>
-        <LogoLink />
-      </logo>
-    </div>
+    <logo>
+      <div className="App">
+        <div className="logo">
+          <ul className="logo_img">
+            <a href="https://www.borovaya.by/">
+              <img src="/logo-atlant.png" className="logo_atlant" />
+            </a>
+            <img src="/logo-line.png" className="logo_line" />
+            <a href="https://www.borovaya.by/">
+              <img src="/logo-ford.png" className="logo_ford" />
+            </a>
+          </ul>
+          <LogoLink />
+        </div>
+      </div>
+      <img src="/img/underline_the_logo.png" className="underline_the_logo" />
+    </logo>
   );
 }
 

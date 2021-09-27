@@ -32,7 +32,10 @@ const MainPanel = () => {return (
 
 const BreadCrumbs  = () => {return ( <div>BreadCrumbs </div> )}
 const PageTitle = () => {return ( <div>PageTitle</div> )}
-const Component = () => {return ( <div>Component</div> )}
+const Component = () => {return ( <div><Slideshow /><Specification /></div> )}
+
+const Slideshow = () => {return ( <div>Slideshow</div> )}
+const Specification = () => {return ( <div>Specification <Button /><Button /></div> )}
 
 function App() {
   return (

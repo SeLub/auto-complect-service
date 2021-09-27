@@ -6,7 +6,7 @@
 }
 .app-header-wrapper {
   height: 64px;
-  max-width: 1280px;
+  width: 1280px;
   background: #f3f3f3;
   position: relative;
 }
@@ -117,7 +117,6 @@
   margin-left: 50px;
   font-size: 42px;
   line-height: 50px;
-
   color: #333333;
 }
 /* start Logo */

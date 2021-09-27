@@ -16,14 +16,14 @@ import Hull_specs_display from "./components/Hull_specs_display";
 
 function App() {
   return (
-    <div className="App">
+    <div className="">
       <div>
         <AppHeader />
       </div>
+      <Logo />
       <div>
         <BreadCrumbs />
       </div>
-      <Logo />
       <div>
         <Hull_specs_display />
       </div>

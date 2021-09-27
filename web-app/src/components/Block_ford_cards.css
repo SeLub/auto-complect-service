@@ -3,7 +3,7 @@
   flex: 50%;
 } */
 
-.minor_ford_pic{
+.minor_ford_pic {
   display: flex;
   flex-direction: column;
   height: 260px;
@@ -11,66 +11,55 @@
   position: relative;
   margin-top: auto;
   margin-left: 480px;
-  
 }
-.rectangle{
+.rectangle {
   height: 4px;
-  width: 28px; 
+  width: 28px;
   /* margin-left: auto;
   margin-right: auto; */
   margin-top: 22px;
   align-self: center;
 }
-.main_ford_pic{
+.main_ford_pic {
   max-height: 260px;
   max-width: 456px;
   position: absolute;
 }
-.block_ford_card1{
+.block_ford_card1 {
   display: flex;
   flex-direction: row;
   /* margin-top: 371px; */
 }
 
-.block_ford_cards{
-  margin-left: 76px;
+.block_ford_cards {
+  margin-left: 0px;
+  margin-right: 56px;
 }
 
-
-
-.block_ford_card2{
+.block_ford_card2 {
   /* margin-top: 205px; */
   display: flex;
   flex-direction: row;
 }
 
-
-.block_ford_card3{
+.block_ford_card3 {
   /* margin-top: 205px; */
   display: flex;
   flex-direction: row;
 }
 
-
-.block_ford_card4{
+.block_ford_card4 {
   /* margin-top: 205px; */
   display: flex;
   flex-direction: row;
 }
 
-
-
-
-.block_ford_card5{
+.block_ford_card5 {
   /* margin-top: 205px; */
   display: flex;
   flex-direction: row;
 }
 
-
-
-.clarity{
+.clarity {
   opacity: 0.33;
-
 }
-

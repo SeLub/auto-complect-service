@@ -25,8 +25,7 @@ async function getExRate() {
     .then((resp) => resp.json())
     .then(function (data) {
       const officialExRate = data.Cur_OfficialRate;
-      return alert(
-        `100 RUB на дату ${year}-${month}-${day} = ${officialExRate}`
+      return officialExRate;
       );
     })
     .catch(function (error) {

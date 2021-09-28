@@ -11,3 +11,11 @@ TODOs
   !note: пример url 
   https://www.nbrb.by/api/exrates/rates/643?ondate=2019-04-05&parammode=1
 */
+
+
+async function getExRate() {
+    let date = new Date();
+    let year = date.getFullYear().toString();
+    let month = (date.getMonth() + 1).toString();
+    let day = date.getDate().toString();
+    let urlFinal = `https://www.nbrb.by/api/exrates/rates/643?ondate=${year}-${month}-${day}&parammode=1`;

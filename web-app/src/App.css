@@ -5,12 +5,15 @@
   padding: 0 76px;
 }
 .app-header-wrapper {
+  margin-left: auto;
+  margin-right: auto;
   height: 64px;
   width: 1280px;
   background: #f3f3f3;
   position: relative;
 }
 .app-header {
+  text-align: center;
   display: flex;
   flex-direction: row;
   box-sizing: border-box;
@@ -186,6 +189,11 @@
 .logo_ford {
   padding: 0px;
   margin: 31px 143px 31px 16px;
+}
+.underline_the_logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 /* finish Logo */
 /* стили для task-1-anton */

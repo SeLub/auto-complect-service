@@ -18,7 +18,7 @@ function Logo() {
           <LogoLink />
         </div>
       </div>
-      <img src="/img/underline_the_logo.png" className="underline_the_logo" />
+      <img className="underline_the_logo" src="/img/underline_the_logo.png" />
     </logo>
   );
 }

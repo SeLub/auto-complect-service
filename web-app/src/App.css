@@ -1,3 +1,4 @@
+@import url("http://fonts.cdnfonts.com/css/ford-antenna");
 .App {
   text-align: center;
   width: 1128px;
@@ -52,7 +53,7 @@
 }
 
 .app-header .request-call button {
-  font-family: Ford Antenna;
+  font-family: "Ford Antenna";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -69,7 +70,7 @@
   color: #2d96cd;
   border: 1px solid #2d96cd;
   padding: 11px 34px 11px 34px;
-  font-family: Ford Antenna;
+  font-family: "Ford Antenna";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -83,7 +84,7 @@
   align-items: flex-start;
   margin-left: 1px;
 
-  font-family: Ford Antenna;
+  font-family: "Ford Antenna";
   font-style: normal;
   font-weight: 300;
   font-size: 13px;
@@ -150,9 +151,10 @@
   margin: 0px 16px;
   color: #333333;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
+  font-family: "Ford Antenna";
   line-height: 16px;
   letter-spacing: 0px;
   text-align: left;
@@ -232,7 +234,7 @@
   top: 315px; */
   display: flex;
   flex-grow: 1;
-  font-family: Ford Antenna;
+  font-family: "Ford Antenna";
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -265,7 +267,7 @@
   left: 997px;
   top: 315px; */
 
-  font-family: Ford Antenna;
+  font-family: "Ford Antenna";
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -285,7 +287,7 @@
   left: 1077px;
   top: 339px; */
 
-  font-family: Ford Antenna;
+  font-family: "Ford Antenna";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -328,7 +330,7 @@
   top: 26.09%;
   bottom: 26.09%;
 
-  font-family: Ford Antenna;
+  font-family: "Ford Antenna";
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -374,7 +376,7 @@
   top: 27.91%;
   bottom: 27.91%;
 
-  font-family: Ford Antenna;
+  font-family: "Ford Antenna";
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -422,7 +424,7 @@
   top: 0%;
   bottom: 60.47%;
 
-  font-family: Ford Antenna;
+  font-family: "Ford Antenna";
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
@@ -446,7 +448,7 @@
   top: 48.84%;
   bottom: 0%;
 
-  font-family: Ford Antenna;
+  font-family: "Ford Antenna";
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -482,7 +484,7 @@
 }
 
 .hull_name {
-  font-family: Ford Antenna;
+  font-family: "Ford Antenna";
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -494,7 +496,7 @@
 }
 
 .hull_type {
-  font-family: Ford Antenna;
+  font-family: "Ford Antenna";
   font-style: normal;
   font-weight: 300;
   font-size: 14px;

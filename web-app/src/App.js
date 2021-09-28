@@ -17,6 +17,13 @@ import Picking_switch from "./components/picking_switch/Picking_switch";
 // Сохраняйте компоненты в папке components
 // Если создаёте универсальный компонет (например кнопка) сохраняйте в папку components/generic
 // Для своих корневых компонентов можно создавать свои подпапки. Например components/products для компонета автомобиля
+export default App;
+ReactDOM.render(
+  <StyledEngineProvider injectFirst>
+    <Picking_switch />
+  </StyledEngineProvider>,
+  document.querySelector("#root")
+);
 
 function App() {
   return (
@@ -34,11 +41,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
-ReactDOM.render(
-  <StyledEngineProvider injectFirst>
-    <Picking_switch />
-  </StyledEngineProvider>,
-  document.querySelector("#root")
-);

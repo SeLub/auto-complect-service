@@ -26,7 +26,6 @@ async function getExRate() {
     .then(function (data) {
       const officialExRate = data.Cur_OfficialRate;
       return officialExRate;
-      );
     })
     .catch(function (error) {
       console.error();

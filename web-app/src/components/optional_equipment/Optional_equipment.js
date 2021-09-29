@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable camelcase */
 /* eslint-disable prettier/prettier */
 import "./Optional_equipment.css";
@@ -14,7 +15,7 @@ function Optional_equipment() {
                     
        <ul>
           <p>При добавлении опционального оборудования, цена автомобиля изменится</p>
-          <div className="round">
+          
           <dd><input type="checkbox" id="checkbox"  />Кондиционер с ручным управлением</dd>
           <dd><input type="checkbox" id="checkbox"  />Пакет “Подготовка к эксплуатации”; пластиковые подкрылки (к-т 2 шт); подогреватель топливного</dd>
           <dd> фильтра; резиновые коврики в кабину; антигравийная пленка - угловая вкладка двери R,L, к-т 2 шт;</dd>
@@ -23,8 +24,6 @@ function Optional_equipment() {
           <dd><input type="checkbox" id="checkbox"  />Пакет улучшения обзорности (электрообогрев лобового стекла, датчик уровня омывающей жидкости</dd>
           <dd><input type="checkbox" id="checkbox"  />Магнитола с громкой связью и кнопками управления на руле</dd>
           <dd><input type="checkbox" id="checkbox"  />Круиз-контроль и кожаный руль</dd>
-          <label htmlFor="checkbox"></label>
-          </div>
       </ul>
   </div>
   </div>

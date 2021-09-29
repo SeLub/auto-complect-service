@@ -1,0 +1,64 @@
+.col_optional_equipment {
+  margin-top: 749px;
+  margin-left: 460px;
+  border-bottom: 2px solid #2D96CD;
+  height: 22px;
+  width: 296px;
+  color: #2D96CD;
+  font-family: Ford Antenna;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: left;
+}
+
+ul {
+  margin-top: 24px;
+  margin-left: 104px;
+}
+
+dd {
+  width: 808px;
+  font-family: Ford Antenna;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 17px;
+  color: #333333;
+  margin-left: 0px;
+
+}
+
+p {
+  font-family: Ford Antenna;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 24px;
+  Width:557px;
+  color: #2D96CD;
+  margin-left: 0px;
+
+}
+
+.checkbox1 {
+  width: 1.3em;
+  height: 1.3em;
+  background-color: white;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 1px solid #ddd;
+  appearance: none;
+}
+
+.checkbox1:checked {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}

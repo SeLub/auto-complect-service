@@ -4,7 +4,7 @@ import React from "react";
 
 // this component for going to next page
 
-export default class AppHeader extends React.Component {
+export default class NextButton extends React.Component {
   render() {
     return (
       <div className="nextBtn">

@@ -31,4 +31,4 @@ async function getExRate() {
       console.error();
     });
 }
-getExRate();
+export default getExRate;

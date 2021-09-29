@@ -31,17 +31,27 @@
 }
 
 .app-header .company-name {
+  text-align: left;
+  font-family: "Ford Antenna";
+  font-size: 12px;
+  line-height: 16px;
   padding-right: 35px;
   padding-left: 0px;
 }
 
 .app-header .address-main {
+  text-align: left;
+  font-family: "Ford Antenna";
+  font-size: 12px;
+  line-height: 16px;
   padding-right: 40px;
   padding-left: 0px;
 }
 
 .app-header .telephone-number a {
-  font-size: 16px;
+  text-align: left;
+  font-family: "Ford Antenna";
+  font-size: 14px;
   line-height: 20px;
   white-space: nowrap;
   color: #717171;

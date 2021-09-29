@@ -118,9 +118,9 @@ export default function FloatingActionButtonZoom() {
           variant="fullWidth"
           aria-label="action tabs example"
         >
-          <Tab label="Item One" {...a11yProps(0)} />
-          <Tab label="Item Two" {...a11yProps(1)} />
-          <Tab label="Item Three" {...a11yProps(2)} />
+          <Tab label="Базовая комплектация" {...a11yProps(0)} />
+          <Tab label="Опциональное оборудование" {...a11yProps(1)} />
+          <Tab label="Тип транспортного средства" {...a11yProps(2)} />
         </Tabs>
       </AppBar>
       <SwipeableViews
@@ -129,13 +129,13 @@ export default function FloatingActionButtonZoom() {
         onChangeIndex={handleChangeIndex}
       >
         <TabPanel value={value} index={0} dir={theme.direction}>
-          Item One
+          Базовая комплектация(текст)
         </TabPanel>
         <TabPanel value={value} index={1} dir={theme.direction}>
-          Item Two
+          Опциональное оборудование(текст)
         </TabPanel>
         <TabPanel value={value} index={2} dir={theme.direction}>
-          Item Three
+          Тип транспортного средства
         </TabPanel>
       </SwipeableViews>
       {fabs.map((fab, index) => (

@@ -1,3 +1,5 @@
+/* eslint-disable import/no-unresolved */
+/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-pascal-case */
 /* eslint-disable camelcase */
 /* eslint-disable no-unused-vars */

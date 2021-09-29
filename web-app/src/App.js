@@ -18,6 +18,7 @@ import Picking_switch from "./components/picking_switch/Picking_switch";
 function App() {
   return (
     <div className="">
+      <Picking_switch />
       <div>
         <AppHeader />
       </div>
@@ -28,7 +29,6 @@ function App() {
       <div>
         <Hull_specs_display />
       </div>
-      <Picking_switch />
     </div>
   );
 }

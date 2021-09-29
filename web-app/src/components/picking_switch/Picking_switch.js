@@ -2,27 +2,26 @@
 /* eslint-disable camelcase */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import "./Picking_switch.css";
 
 function Picking_switch() {
   return (
-    <div className="picking_switch_wrapper">
-      <ul className="nav justify-content-center">
-        <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#">
+    <div className="App">
+      <div className="picking_switch_wrapper">
+        <ul className="picking_switch_ul">
+          <a className="picking_switch_a" aria-current="page" href="#">
             Базовая комплектация
           </a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#">
+
+          <a className="picking_switch_a" href="#">
             Опциональное оборудование
           </a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#">
+
+          <a className="picking_switch_a" href="#">
             Тип транспортного средства
           </a>
-        </li>
-      </ul>
+        </ul>
+      </div>
     </div>
   );
 }

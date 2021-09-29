@@ -148,7 +148,7 @@
 .logo_list {
   display: flex;
   flex-direction: row;
-  justify-content: end;
+  justify-content: flex-end;
   padding: 0px;
   margin: 42px 0px 42px 0px;
   box-sizing: border-box;

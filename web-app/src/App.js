@@ -8,6 +8,7 @@ import BreadCrumbs from "./components/breadcrumb";
 import "./App.css";
 import Logo from "./components/Logo";
 import Hull_specs_display from "./components/Hull_specs_display";
+import Picking_switch from "./components/picking_switch/Picking_switch";
 // import Block_ford_cards from "./components/Block_ford_cards";
 // Это корневой компонент
 // Сохраняйте компоненты в папке components
@@ -27,6 +28,7 @@ function App() {
       <div>
         <Hull_specs_display />
       </div>
+      <Picking_switch />
     </div>
   );
 }

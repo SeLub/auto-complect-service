@@ -1,3 +1,4 @@
+/* eslint-disable */
 /* eslint-disable react/no-array-index-key */
 /* eslint-disable no-shadow */
 /* eslint-disable import/no-duplicates */

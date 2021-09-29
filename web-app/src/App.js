@@ -1,3 +1,4 @@
+/* eslint-disable */
 /* eslint-disable react/jsx-pascal-case */
 /* eslint-disable camelcase */
 
@@ -8,6 +9,9 @@ import BreadCrumbs from "./components/breadcrumb";
 import "./App.css";
 import Logo from "./components/Logo";
 import Hull_specs_display from "./components/Hull_specs_display";
+import Starting_Page from "./pages/starting_page/starting_page";
+import {BrowserRouter as Router, Route} from "react-router-dom"
+import configurator_p1 from "./pages/configurator_p1/configurator_p1";
 // import Block_ford_cards from "./components/Block_ford_cards";
 // Это корневой компонент
 // Сохраняйте компоненты в папке components
@@ -15,19 +19,15 @@ import Hull_specs_display from "./components/Hull_specs_display";
 // Для своих корневых компонентов можно создавать свои подпапки. Например components/products для компонета автомобиля
 
 function App() {
-  return (
-    <div className="">
-      <div>
-        <AppHeader />
-      </div>
-      <Logo />
-      <div>
-        <BreadCrumbs />
-      </div>
-      <div>
-        <Hull_specs_display />
-      </div>
-    </div>
+  return(
+  <div className="App">
+    <Router>
+        <Route path="/" exact>
+          <Starting_Page />
+        </Route>
+        <Route path="/configurator_p1" component={configurator_p1}></Route>
+    </Router>
+  </div>
   );
 }
 

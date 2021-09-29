@@ -1,21 +1,25 @@
 /* eslint-disable */
 
 import React from "react";
+import AppHeader from "../../components/app-header";
+import BreadCrumbs from "../../components/breadcrumb";
+import "../../App.css";
+import Logo from "../../components/Logo";
+import Hull_specs_display from "../../components/Hull_specs_display";
 
 export default function Starting_Page(){
     return (
-        <div className="App">
+        <div className="">
           <div>
             <AppHeader />
           </div>
+          <Logo />
           <div>
             <BreadCrumbs />
           </div>
-          <Logo />
-          <div className="cars_display">
-            <Block_ford_cards />
+          <div>
             <Hull_specs_display />
           </div>
         </div>
-      );
+    );
 }

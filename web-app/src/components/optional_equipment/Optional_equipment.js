@@ -13,9 +13,8 @@ function Optional_equipment() {
     <div className="App">
     <div className="box_specifications">
     <div className="col_optional_equipment">Опциональное оборудование</div>
-                    
+    <div className="opt_inf"> <img src="/img/vector.jpg" className="OptVector" alt="" />При добавлении опционального оборудования, цена автомобиля изменится </div>       
        <ul>
-           <p>При добавлении опционального оборудования, цена автомобиля изменится </p>
             <dd>
                 <label className="container">Кондиционер с ручным управлением
                    <input type="checkbox" />

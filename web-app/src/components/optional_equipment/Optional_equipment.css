@@ -1,6 +1,6 @@
 .col_optional_equipment {
   margin-top: 749px;
-  margin-left: 460px;
+  margin-left: 384px;
   border-bottom: 2px solid #2D96CD;
   height: 22px;
   width: 296px;
@@ -15,8 +15,8 @@
 }
 
 ul {
-  margin-top: 24px;
-  margin-left: 104px;
+  /* margin-top: 24px; */
+  margin-left: 2px;
 }
 
 dd {
@@ -34,7 +34,9 @@ dd {
   border-bottom: 1px solid #9e9e9e45;
 
 }
-p {
+.opt_inf {
+  margin-top: 29px;
+  margin-left: 40px;
   font-family: Ford Antenna;
   font-size: 14px;
   font-style: normal;
@@ -42,10 +44,17 @@ p {
   line-height: 20px;
   letter-spacing: 0em;
   text-align: left;
-  margin-top: 24px;
+  /* margin-top: 24px; */
   Width:557px;
   color: #2D96CD;
-  margin-left: 0px;
+  /* margin-left: 0px; */
+  border-bottom: 1px solid #9e9e9e45;
+
+}
+.OptVector{
+height: 20px;
+width: 20px;
+padding-right: 9px;
 
 }
 

@@ -1,8 +1,35 @@
 .picking_switch_ul {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-items: stretch;
+  justify-content: flex-start;
   padding: 0px;
-  margin: 42px 0px 42px 0px;
+  margin-left: 0px;
   box-sizing: border-box;
+}
+.picking_switch_a {
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  text-decoration: none;
+  font-family: "Ford Antenna";
+  margin-right: 89px;
+  margin-left: 0px;
+  color: #717171;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: left;
+}
+.picking_switch_a:active {
+  color: #2d96cd;
+}
+
+.picking_switch_a[tabindex]:focus {
+  color: #2d96cd;
+}
+.picking_switch_a:hover {
+  color: #2d96cd;
 }

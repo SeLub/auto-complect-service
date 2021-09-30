@@ -8,6 +8,7 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
+import "./Picking_switch.css";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -56,6 +57,7 @@ export default function FloatingActionButtonZoom() {
   return (
     <div className="App">
       <Box
+        className="box"
         sx={{
           bgcolor: "background.paper",
           width: 1128,
@@ -65,17 +67,29 @@ export default function FloatingActionButtonZoom() {
       >
         <AppBar position="static" color="default">
           <Tabs
+            className="tabs"
             value={value}
             onChange={handleChange}
             indicatorColor="primary"
             textColor="primary"
             variant="fullWidth"
             aria-label="action tabs example"
-            fontFamily="Ford Antenna"
           >
-            <Tab label="Базовая комплектация" {...a11yProps(0)} />
-            <Tab label="Опциональное оборудование" {...a11yProps(1)} />
-            <Tab label="Тип транспортного средства" {...a11yProps(2)} />
+            <Tab
+              className="tab"
+              label="Базовая комплектация"
+              {...a11yProps(0)}
+            />
+            <Tab
+              className="tab"
+              label="Опциональное оборудование"
+              {...a11yProps(1)}
+            />
+            <Tab
+              className="tab"
+              label="Тип транспортного средства"
+              {...a11yProps(2)}
+            />
           </Tabs>
         </AppBar>
         <SwipeableViews

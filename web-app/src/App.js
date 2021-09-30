@@ -4,8 +4,8 @@
 /* eslint-disable react/self-closing-comp */
 /* eslint-disable react/react-in-jsx-scope */
 import * as React from "react";
-import ReactDOM from "react-dom";
-import { StyledEngineProvider } from "@mui/material/styles";
+// import ReactDOM from "react-dom";
+// import { StyledEngineProvider } from "@mui/material/styles";
 import AppHeader from "./components/app-header";
 import BreadCrumbs from "./components/breadcrumb";
 import "./App.css";
@@ -18,16 +18,18 @@ import Picking_switch from "./components/picking_switch/Picking_switch";
 // Если создаёте универсальный компонет (например кнопка) сохраняйте в папку components/generic
 // Для своих корневых компонентов можно создавать свои подпапки. Например components/products для компонета автомобиля
 
-ReactDOM.render(
-  <StyledEngineProvider injectFirst>
-    <Picking_switch />
-  </StyledEngineProvider>,
-  document.querySelector("#root")
-);
+// ReactDOM.render(
+//   <StyledEngineProvider injectFirst>
+//     <Picking_switch />
+//   </StyledEngineProvider>,
+//   document.querySelector("#root")
+// );
 
 function App() {
   return (
     <div className="">
+      <Picking_switch />
+
       <div>
         <AppHeader />
       </div>

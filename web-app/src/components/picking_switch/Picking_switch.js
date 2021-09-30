@@ -7,12 +7,6 @@ import AppBar from "@mui/material/AppBar";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
-import Zoom from "@mui/material/Zoom";
-import Fab from "@mui/material/Fab";
-import AddIcon from "@material-ui/icons/Add";
-import EditIcon from "@material-ui/icons/Edit";
-import UpIcon from "@material-ui/icons/KeyboardArrowUp";
-import { green } from "@mui/material/colors";
 import Box from "@mui/material/Box";
 
 function TabPanel(props) {
@@ -48,20 +42,6 @@ function a11yProps(index) {
   };
 }
 
-const fabStyle = {
-  position: "absolute",
-  bottom: 16,
-  right: 16,
-};
-
-const fabGreenStyle = {
-  color: "common.white",
-  bgcolor: green[500],
-  "&:hover": {
-    bgcolor: green[600],
-  },
-};
-
 export default function FloatingActionButtonZoom() {
   const theme = useTheme();
   const [value, setValue] = React.useState(0);
@@ -73,88 +53,47 @@ export default function FloatingActionButtonZoom() {
   const handleChangeIndex = (index) => {
     setValue(index);
   };
-
-  const transitionDuration = {
-    enter: theme.transitions.duration.enteringScreen,
-    exit: theme.transitions.duration.leavingScreen,
-  };
-
-  const fabs = [
-    {
-      color: "primary",
-      sx: fabStyle,
-      icon: <AddIcon />,
-      label: "Add",
-    },
-    {
-      color: "secondary",
-      sx: fabStyle,
-      icon: <EditIcon />,
-      label: "Edit",
-    },
-    {
-      color: "inherit",
-      sx: { ...fabStyle, ...fabGreenStyle },
-      icon: <UpIcon />,
-      label: "Expand",
-    },
-  ];
-
   return (
-    <Box
-      sx={{
-        bgcolor: "background.paper",
-        width: 500,
-        position: "relative",
-        minHeight: 200,
-      }}
-    >
-      <AppBar position="static" color="default">
-        <Tabs
-          value={value}
-          onChange={handleChange}
-          indicatorColor="primary"
-          textColor="primary"
-          variant="fullWidth"
-          aria-label="action tabs example"
-        >
-          <Tab label="Базовая комплектация" {...a11yProps(0)} />
-          <Tab label="Опциональное оборудование" {...a11yProps(1)} />
-          <Tab label="Тип транспортного средства" {...a11yProps(2)} />
-        </Tabs>
-      </AppBar>
-      <SwipeableViews
-        axis={theme.direction === "rtl" ? "x-reverse" : "x"}
-        index={value}
-        onChangeIndex={handleChangeIndex}
+    <div className="App">
+      <Box
+        sx={{
+          bgcolor: "background.paper",
+          width: 1128,
+          position: "relative",
+          minHeight: 200,
+        }}
       >
-        <TabPanel value={value} index={0} dir={theme.direction}>
-          Базовая комплектация(текст)
-        </TabPanel>
-        <TabPanel value={value} index={1} dir={theme.direction}>
-          Опциональное оборудование(текст)
-        </TabPanel>
-        <TabPanel value={value} index={2} dir={theme.direction}>
-          Тип транспортного средства
-        </TabPanel>
-      </SwipeableViews>
-      {fabs.map((fab, index) => (
-        <Zoom
-          key={fab.color}
-          in={value === index}
-          timeout={transitionDuration}
-          style={{
-            transitionDelay: `${
-              value === index ? transitionDuration.exit : 0
-            }ms`,
-          }}
-          unmountOnExit
+        <AppBar position="static" color="default">
+          <Tabs
+            value={value}
+            onChange={handleChange}
+            indicatorColor="primary"
+            textColor="primary"
+            variant="fullWidth"
+            aria-label="action tabs example"
+            fontFamily="Ford Antenna"
+          >
+            <Tab label="Базовая комплектация" {...a11yProps(0)} />
+            <Tab label="Опциональное оборудование" {...a11yProps(1)} />
+            <Tab label="Тип транспортного средства" {...a11yProps(2)} />
+          </Tabs>
+        </AppBar>
+        <SwipeableViews
+          axis={theme.direction === "rtl" ? "x-reverse" : "x"}
+          index={value}
+          onChangeIndex={handleChangeIndex}
         >
-          <Fab sx={fab.sx} aria-label={fab.label} color={fab.color}>
-            {fab.icon}
-          </Fab>
-        </Zoom>
-      ))}
-    </Box>
+          <TabPanel value={value} index={0} dir={theme.direction}>
+            Базовая комплектация(текст)
+          </TabPanel>
+          <TabPanel value={value} index={1} dir={theme.direction}>
+            Опциональное оборудование(текст)
+          </TabPanel>
+          <TabPanel value={value} index={2} dir={theme.direction}>
+            Тип транспортного средства
+          </TabPanel>
+        </SwipeableViews>
+      </Box>
+    </div>
   );
 }

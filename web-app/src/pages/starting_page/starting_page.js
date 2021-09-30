@@ -7,7 +7,7 @@ import "../../App.css";
 import Logo from "../../components/Logo";
 import Hull_specs_display from "../../components/Hull_specs_display";
 
-export default function Starting_Page(){
+export default function starting_page(){
     return (
         <div className="">
           <div>

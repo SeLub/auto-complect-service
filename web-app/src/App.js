@@ -9,7 +9,7 @@ import BreadCrumbs from "./components/breadcrumb";
 import "./App.css";
 import Logo from "./components/Logo";
 import Hull_specs_display from "./components/Hull_specs_display";
-import Starting_Page from "./pages/starting_page/starting_page";
+import starting_page from "./pages/starting_page/starting_page";
 import {BrowserRouter as Router, Route} from "react-router-dom"
 import configurator_p1 from "./pages/configurator_p1/configurator_p1";
 // import Block_ford_cards from "./components/Block_ford_cards";
@@ -22,9 +22,7 @@ function App() {
   return(
   <div className="App">
     <Router>
-        <Route path="/" exact>
-          <Starting_Page />
-        </Route>
+        <Route path="/" component={starting_page}></Route>
         <Route path="/configurator_p1" component={configurator_p1}></Route>
     </Router>
   </div>

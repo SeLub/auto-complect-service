@@ -5,32 +5,19 @@ import React from "react";
 import "./Picking_switch.css";
 
 function Picking_switch() {
-  // const { basicConfiguration, optionalEquipment, vehicleType } = this.props;
   return (
     <div className="App">
-      <div className="picking_switch_wrapper">
-        <ul className="picking_switch_ul">
-          <a
-            className="picking_switch_a"
-            aria-current="page"
-            onСlick="{basicConfiguration}"
-            href="#"
-          >
-            Базовая комплектация
-          </a>
+      <div className="tabs">
+        <div id="content-1">Содержимое 1...</div>
+        <div id="content-2">Содержимое 2...</div>
+        <div id="content-3">Содержимое 3...</div>
 
-          <a
-            className="picking_switch_a"
-            onСlick="{optionalEquipment}"
-            href="#"
-          >
-            Опциональное оборудование
-          </a>
-
-          <a className="picking_switch_a" onСlick="{vehicleType}" href="#">
-            Тип транспортного средства
-          </a>
-        </ul>
+        <div className="tabs__links">
+          <a href="#content-1">Базовая комплектация</a>
+          <a href="#content-2">Опциональное оборудование</a>
+          <a href="#content-3">Тип транспортного средства</a>
+        </div>
+        <col className="tabs_line" />
       </div>
     </div>
   );

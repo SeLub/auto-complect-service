@@ -1,13 +1,117 @@
-.picking_switch_ul {
+/* .picking_switch_wrapper {
   display: flex;
+  flex-direction: column;
+} */
+/* .picking_switch_ul {
+  display: flex;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  order: 0;
+  white-space: nowrap;
+  background-color: #fff;
+  border: 1px solid #e3f2fd;
+  box-shadow: 0 2px 4px 0 #e3f2fd;
+} */
+
+/* .picking_switch_ul > a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 6px 10px;
+  text-align: center;
+  color: #1976d2;
+}
+
+/* .picking_switch_ul > a:hover {
+  background-color: rgba(227, 242, 253, 0.3);
+} */
+
+/* .picking_switch_wrapper
+  > #basicConfiguration:target
+  ~ .picking_switch_ul
+  > a[href="#basicConfiguration"],
+.picking_switch_wrapper
+  > #optionalEquipment:target
+  ~ .picking_switch_ul
+  > a[href="#optionalEquipment"],
+.picking_switch_wrapper
+  > #vehicleType:target
+  ~ .picking_switch_ul
+  > a[href="#vehicleType"] {
+  background-color: #bbdefb;
+  cursor: default;
+}
+
+.picking_switch_wrapper > div:not(.picking_switch_ul) {
+  display: none;
+  order: 1;
+}
+
+.picking_switch_wrapper > div:target {
+  display: block;
+}
+
+.picking_switch_ul {
+  display: inline-block;
+  text-decoration: none;
   flex-direction: row;
   justify-items: stretch;
   justify-content: flex-start;
   padding: 0px;
   margin-left: 0px;
   box-sizing: border-box;
+} */
+/* .picking_switch_a {
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  text-decoration: none;
+  font-family: "Ford Antenna";
+  margin-right: 89px;
+  margin-left: 0px;
+  color: #717171;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: left; */
+/* }
+a:active {
+  color: #2d96cd;
 }
-.picking_switch_a {
+
+a[tabindex]:focus {
+  color: #2d96cd;
+}
+a:hover {
+  color: #2d96cd;
+} */
+.tabs {
+  display: flex;
+  flex-direction: column;
+}
+
+.tabs__links {
+  display: flex;
+  justify-items: stretch;
+  justify-content: flex-start;
+  padding: 0px;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  order: 0;
+  white-space: nowrap;
+  background-color: #fff;
+}
+
+.tabs__links > a {
   display: flex;
   flex: none;
   flex-direction: row;
@@ -23,13 +127,50 @@
   letter-spacing: 0.10000000149011612px;
   text-align: left;
 }
-.picking_switch_a:active {
+
+.tabs__links > a:hover {
+  color: #2d96cd;
+}
+.tabs__links > a:focus {
+  color: #2d96cd;
+}
+.tabs__links > a:active {
   color: #2d96cd;
 }
 
-.picking_switch_a[tabindex]:focus {
+.tabs > #content-1:target ~ .tabs__links > a[href="#content-1"],
+.tabs > #content-2:target ~ .tabs__links > a[href="#content-2"],
+.tabs > #content-3:target ~ .tabs__links > a[href="#content-3"] {
   color: #2d96cd;
+  cursor: default;
 }
-.picking_switch_a:hover {
-  color: #2d96cd;
+
+.tabs > div:not(.tabs__links) {
+  display: none;
+  order: 1;
+}
+
+.tabs > div:target {
+  display: block;
+}
+
+.tabs_line {
+  width: 1128px;
+  border: none;
+  background-color: rgba(51, 51, 51, 0.12);
+  color: rgba(51, 51, 51, 0.12);
+  height: 2px;
+  margin: 16px 0px 24px 0px;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  top: 100%;
+  bottom: -100%;
+}
+.engine1 {
+  justify-content: flex-start;
+}
+.engine2 {
+  justify-content: center;
+}
+.engine3 {
+  justify-content: flex-end;
 }

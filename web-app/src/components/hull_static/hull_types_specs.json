@@ -1,0 +1,151 @@
+
+[
+    {
+        "name": "FORD TRANSIT L2H2 310/350",
+        "engine": "2,2 TDCI",
+        "fuel_type": "Дизель",
+        "transmission": "M6",
+        "interior": "2+1",
+        "drive_type": "RWD",
+        "engine_power": "92 кВт/125л.с.",
+        "base_price": 100950,
+        "base_price_currency": "BYN",
+        "pictures": [
+
+        ],
+        "base_options": [
+
+        ],
+        "additional_options": [
+            {
+                "option_index": 1,
+                "option_name": "Опция 1",
+                "option_cost": 20000,
+                "option_cost_currency": "USD" 
+            }
+        ],
+        "pic1": "/img/main_pic1.jpg",
+        "pic2": "/img/main_pic101.jpg",
+        "pic3": "/img/main_pic102.jpg",
+        "pic4": "/img/main_pic103.jpg"
+    },
+    {
+        "name": "FORD TRANSIT L2H2 310/350",
+        "engine": "2,2 TDCI",
+        "fuel_type": "Дизель",
+        "transmission": "M6",
+        "interior": "2+1",
+        "drive_type": "RWD",
+        "engine_power": "92 кВт/125л.с.",
+        "base_price": 100950,
+        "base_price_currency": "BYN",
+        "pictures": [
+
+        ],
+        "base_options": [
+
+        ],
+        "additional_options": [
+            {
+                "option_index": 1,
+                "option_name": "Опция 1",
+                "option_cost": 20000,
+                "option_cost_currency": "USD" 
+            }
+        ],
+        "pic1": "/img/main_pic2.jpg",
+        "pic2": "/img/main_pic201.jpg",
+        "pic3": "/img/main_pic202.jpg",
+        "pic4": "/img/main_pic203.jpg"
+    },
+    {
+        "name": "FORD TRANSIT L2H2 310/350",
+        "engine": "2,2 TDCI",
+        "fuel_type": "Дизель",
+        "transmission": "M6",
+        "interior": "2+1",
+        "drive_type": "RWD",
+        "engine_power": "92 кВт/125л.с.",
+        "base_price": 100950,
+        "base_price_currency": "BYN",
+        "pictures": [
+
+        ],
+        "base_options": [
+
+        ],
+        "additional_options": [
+            {
+                "option_index": 1,
+                "option_name": "Опция 1",
+                "option_cost": 20000,
+                "option_cost_currency": "USD" 
+            }
+        ],
+        "pic1": "/img/main_pic3.jpg",
+        "pic2": "/img/main_pic301.jpg",
+        "pic3": "/img/main_pic302.jpg",
+        "pic4": "/img/main_pic303.jpg"
+    },
+    {
+        "name": "FORD TRANSIT L2H2 310/350",
+        "engine": "2,2 TDCI",
+        "fuel_type": "Дизель",
+        "transmission": "M6",
+        "interior": "2+1",
+        "drive_type": "RWD",
+        "engine_power": "92 кВт/125л.с.",
+        "base_price": 100950,
+        "base_price_currency": "BYN",
+        "pictures": [
+
+        ],
+        "base_options": [
+
+        ],
+        "additional_options": [
+            {
+                "option_index": 1,
+                "option_name": "Опция 1",
+                "option_cost": 20000,
+                "option_cost_currency": "USD" 
+            }
+        ],
+        "pic1": "/img/main_pic4.jpg",
+        "pic2": "/img/main_pic401.jpg",
+        "pic3": "/img/main_pic402.jpg",
+        "pic4": "/img/main_pic403.jpg"
+    },
+    {
+        "name": "FORD TRANSIT L2H2 310/350",
+        "engine": "2,2 TDCI",
+        "fuel_type": "Дизель",
+        "transmission": "M6",
+        "interior": "2+1",
+        "drive_type": "RWD",
+        "engine_power": "92 кВт/125л.с.",
+        "base_price": 100950,
+        "base_price_currency": "BYN",
+        "pictures": [
+
+        ],
+        "base_options": [
+
+        ],
+        "additional_options": [
+            {
+                "option_index": 1,
+                "option_name": "Опция 1",
+                "option_cost": 20000,
+                "option_cost_currency": "USD" 
+            }
+        ],
+        "pic1": "/img/main_pic5.jpg",
+        "pic2": "/img/main_pic501.jpg",
+        "pic3": "/img/main_pic502.jpg",
+        "pic4": "/img/main_pic503.jpg"
+    }
+]
+    
+
+

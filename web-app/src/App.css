@@ -1,3 +1,519 @@
+@import url("http://fonts.cdnfonts.com/css/ford-antenna");
 .App {
   text-align: center;
+  width: 1128px;
+  margin: 0 auto;
+  padding: 0 76px;
+}
+.app-header-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  height: 64px;
+  width: 1280px;
+  background: #f3f3f3;
+  position: relative;
+}
+.app-header {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  position: absolute;
+  align-items: center;
+  justify-content: initial;
+  height: 64px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 16px;
+  color: #717171;
+}
+
+.app-header .company-name {
+  text-align: left;
+  font-family: "Ford Antenna";
+  font-size: 12px;
+  line-height: 16px;
+  padding-right: 35px;
+  padding-left: 0px;
+}
+
+.app-header .address-main {
+  text-align: left;
+  font-family: "Ford Antenna";
+  font-size: 12px;
+  line-height: 16px;
+  padding-right: 40px;
+  padding-left: 0px;
+}
+
+.app-header .telephone-number a {
+  text-align: left;
+  font-family: "Ford Antenna";
+  font-size: 14px;
+  line-height: 20px;
+  white-space: nowrap;
+  color: #717171;
+  text-decoration: none;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 0px;
+  padding-right: 31px;
+}
+
+.app-header .request-call button {
+  font-family: "Ford Antenna";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.1px;
+  color: #ffff;
+  background-color: #2d96cd;
+  border: 1px solid #2d96cd;
+  padding: 12px 34px 12px 34px;
+  margin-right: 8px;
+}
+
+.app-header .sign-service button {
+  color: #2d96cd;
+  border: 1px solid #2d96cd;
+  padding: 11px 34px 11px 34px;
+  font-family: "Ford Antenna";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  margin-right: 172px;
+}
+
+.breadcrumb {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 1px;
+
+  font-family: "Ford Antenna";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  padding-right: 35px;
+
+  color: #717171;
+}
+
+.breadcrumb ul {
+  list-style: none;
+  margin: 0;
+  margin-top: 20px;
+  padding-inline-start: 0px;
+  display: flex;
+}
+.breadcrumb1 {
+  padding: 0em 1em 0em 0em;
+}
+.breadcrumb2 {
+  padding: 0.1em 1em;
+}
+
+.breadcrumb li::before {
+  content: ">";
+}
+
+.breadcrumb li:first-child::before {
+  content: "";
+}
+
+.breadcrumb .label-breadcrumb {
+  margin-top: 8px;
+  margin-left: 0px;
+  font-size: 42px;
+  line-height: 50px;
+  color: #333333;
+}
+/* start Logo */
+.logo {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  background-color: white;
+  height: 100px;
+  max-width: auto;
+}
+.logo_list {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  padding: 0px;
+  margin: 42px 0px 42px 0px;
+  box-sizing: border-box;
+}
+.logo_link {
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-grow: 0;
+  margin: 0px 16px;
+  color: #333333;
+  text-decoration: none;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Ford Antenna";
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.logo_link:hover {
+  color: #337ab7;
+}
+.logo_link:focus {
+  color: #337ab7;
+}
+.logo_link:active {
+  color: #337ab7;
+}
+
+.logo_img {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+.logo_atlant {
+  padding: 0px;
+  margin: 30px 16px 30px 0px;
+}
+
+.logo_line {
+  padding: 0px;
+  margin: 32px 0px 35px 0px;
+}
+
+.logo_ford {
+  padding: 0px;
+  margin: 31px 143px 31px 16px;
+}
+.underline_the_logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* finish Logo */
+/* стили для task-1-anton */
+/* на 14.09.2021 стили по большей части взяты из макета */
+
+.hull_specs_display_details_wrapper {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  /* flex: 50%;
+  flex-direction: row; */
+}
+
+.hull_wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 456px;
+}
+
+/* .break{
+  flex-basis: 100%;
+  height: 0px;
+} */
+
+.hull_specs_display_details_wrapper p {
+  margin: 1px;
+  max-height: 20px;
+  padding: 1px;
+}
+
+.hull_specs_display_details {
+  /* position: absolute; */
+  /* width: 75px;
+  height: 22px;
+  left: 748px;
+  top: 315px; */
+  display: flex;
+  flex-grow: 1;
+  font-family: "Ford Antenna";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  /* width: 456px; */
+  /* identical to box height */
+
+  letter-spacing: 0.1px;
+
+  color: #2d96cd;
+}
+
+/* класс под разделитель между ценами и характеристиками */
+.hull_specs_display_details_separator {
+  /* position: absolute; */
+  left: 0%;
+  right: 0%;
+  /* top: 100%;
+  bottom: -100%; */
+  width: 100%;
+  height: 2px;
+  background: rgba(51, 51, 51, 0.12);
+  /* transform: matrix(1, 0, 0, -1, 0, 0); */
+}
+
+.hull_spec_prices_byn {
+  /* position: absolute;
+  width: 207px;
+  height: 22px;
+  left: 997px;
+  top: 315px; */
+
+  font-family: "Ford Antenna";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+
+  text-align: right;
+  letter-spacing: 0.1px;
+
+  color: #2d96cd;
+}
+
+.hull_spec_prices_rub {
+  /* position: absolute;
+  width: 127px;
+  height: 17px;
+  left: 1077px;
+  top: 339px; */
+
+  font-family: "Ford Antenna";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  text-align: right;
+  letter-spacing: 0.1px;
+
+  color: #717171;
+}
+
+.price_list_btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0px;
+  background-color: white;
+  height: 100px;
+  padding: 12px 16px;
+
+  /* position: absolute; */
+  width: 213px;
+  height: 46px;
+  /* left: 748px;
+  top: 588px; */
+
+  border: 1px solid #2d96cd;
+  box-sizing: border-box;
+
+  background-color: white;
+}
+
+.price_list_btn p {
+  position: static;
+  left: 26.53%;
+  right: 26.53%;
+  top: 26.09%;
+  bottom: 26.09%;
+
+  font-family: "Ford Antenna";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.1px;
+
+  color: #2d96cd;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 10px;
+}
+
+.configurator_btn {
+  /* position: absolute; */
+  width: 213px;
+  height: 43px;
+  /* left: 991px;
+  top: 588px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 16px;
+  border: none;
+
+  /* position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%; */
+
+  background: #2d96cd;
+}
+
+.configurator_btn p {
+  position: static;
+  left: 20.19%;
+  right: 20.19%;
+  top: 27.91%;
+  bottom: 27.91%;
+
+  font-family: "Ford Antenna";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.1px;
+
+  color: #ffffff;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+  margin: 0px 10px;
+}
+
+.hull_specs_display_wrapper {
+  max-width: 600px;
+  max-height: 456px;
+}
+
+.specs_display_list_wrapper {
+  display: flex;
+  flex-grow: 1;
+  width: 456px;
+}
+
+.specs_display_list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16ch, 1fr));
+  grid-gap: 1rem;
+  text-align: left;
+  padding-left: 5px;
+  flex-grow: 1;
+}
+
+.specs_display_list ul {
+  padding-inline-start: 0px;
+}
+
+.hull_spec_type {
+  position: static;
+  width: 158px;
+  left: calc(50% - 158px / 2);
+  top: 0%;
+  bottom: 60.47%;
+
+  font-family: "Ford Antenna";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height, or 121% */
+
+  color: #717171;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 4px 0px;
+}
+
+.hull_spec_content {
+  position: static;
+  left: 0%;
+  right: 0%;
+  top: 48.84%;
+  bottom: 0%;
+
+  font-family: "Ford Antenna";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+  color: #333333;
+  /* Inside Auto Layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 4px 0px;
+}
+
+.hull_specs_display_buttons {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+/* конец стилей для task-1-anton */
+
+.cars_display {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 20px;
+}
+
+.hull_desc p {
+  margin-bottom: 5px;
+  margin-top: 40px;
+  margin-left: 0px;
+  width: fit-content;
+}
+
+.hull_name {
+  font-family: "Ford Antenna";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 22px;
+
+  /* identical to box height, or 92% */
+
+  color: #2d96cd;
+}
+
+.hull_type {
+  font-family: "Ford Antenna";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  letter-spacing: 0.1px;
+
+  color: #2d96cd;
 }

@@ -93,6 +93,7 @@ a:hover {
 .tabs {
   display: flex;
   flex-direction: column;
+  margin: 52px 0px 0px 0px;
 }
 
 .tabs__links {

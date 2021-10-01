@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable no-console */
 /* eslint-disable no-alert */
 /* eslint-disable func-names */
@@ -31,4 +32,4 @@ async function getExRate() {
       console.error();
     });
 }
-getExRate();
+export default getExRate;

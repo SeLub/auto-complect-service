@@ -4,13 +4,10 @@
 
 /* eslint-disable react/self-closing-comp */
 /* eslint-disable react/react-in-jsx-scope */
-import AppHeader from "./components/app-header";
-import BreadCrumbs from "./components/breadcrumb";
+
 import "./App.css";
-import Logo from "./components/Logo";
-import Hull_specs_display from "./components/Hull_specs_display";
 import Starting_Page from "./pages/starting_page/starting_page";
-import {BrowserRouter as Router, Route} from "react-router-dom"
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import configurator_p1 from "./pages/configurator_p1/configurator_p1";
 // import Block_ford_cards from "./components/Block_ford_cards";
 // Это корневой компонент
@@ -19,15 +16,15 @@ import configurator_p1 from "./pages/configurator_p1/configurator_p1";
 // Для своих корневых компонентов можно создавать свои подпапки. Например components/products для компонета автомобиля
 
 function App() {
-  return(
-  <div className="App">
-    <Router>
+  return (
+    <div className="App">
+      <Router>
         <Route path="/" exact>
           <Starting_Page />
         </Route>
         <Route path="/configurator_p1" component={configurator_p1}></Route>
-    </Router>
-  </div>
+      </Router>
+    </div>
   );
 }
 

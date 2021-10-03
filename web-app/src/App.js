@@ -8,7 +8,6 @@ import BreadCrumbs from "./components/breadcrumb";
 import "./App.css";
 import Logo from "./components/Logo";
 import Hull_specs_display from "./components/Hull_specs_display";
-import Optional_equipment from "./components/optional_equipment/Optional_equipment";
 // import Block_ford_cards from "./components/Block_ford_cards";
 // Это корневой компонент
 // Сохраняйте компоненты в папке components
@@ -18,9 +17,6 @@ import Optional_equipment from "./components/optional_equipment/Optional_equipme
 function App() {
   return (
     <div className="">
-      <div>
-        <Optional_equipment />
-      </div>
       <div>
         <AppHeader />
       </div>

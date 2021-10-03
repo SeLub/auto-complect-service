@@ -29,8 +29,8 @@ function Optional_equipment() {
                 </label>
             </dd>
             <dd>
-                <label className="container">Комплект пневмоусиления подвески с компрессором
-                   <input type="checkbox" />
+                <label className="container">Комплект  пневмоусиления подвески с компрессором
+                   <input type="checkbox" /> 
                      <span class="checkmark"/>
                 </label>
             </dd>

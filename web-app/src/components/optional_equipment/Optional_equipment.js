@@ -12,7 +12,7 @@ function Optional_equipment() {
     // <body className="">
     <div className="App">
     <div className="box_specifications">
-    <div className="col_optional_equipment">Опциональное оборудование</div>
+    <div className="col_optional_equipment"/>
     <div className="opt_inf"> <img src="/img/vector.jpg" className="OptVector" alt="" />При добавлении опционального оборудования, цена автомобиля изменится </div>       
        <ul>
             <dd>

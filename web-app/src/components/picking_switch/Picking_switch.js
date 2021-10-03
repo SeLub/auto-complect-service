@@ -12,11 +12,7 @@ function Picking_switch() {
     <div className="App">
       <div className="tabs">
         <div id="content-1">Содержимое 1...</div>
-<<<<<<< HEAD
         <div id="content-2"><Optional_equipment /></div>
-=======
-        <div id="content-2"> <Optional_equipment /></div>
->>>>>>> 28225377ef62f557a4176cc5e2c6515f724668a5
         <div id="content-3">Содержимое 3...</div>
 
         <div className="tabs__links">

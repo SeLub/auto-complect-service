@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-pascal-case */
 /* eslint-disable prettier/prettier */
 // /* eslint-disable react/no-this-in-sfc */
-/* eslint-disable camelcase */
+/* eslint-disable camelcase */  
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import "./Picking_switch.css";

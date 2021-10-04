@@ -4,6 +4,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import Optional_equipment from "../optional_equipment/Optional_equipment";
+import TotalCarValue from "../total-car-value/Total-car-value";
 import "./Picking_switch.css";
 
 function Picking_switch() {

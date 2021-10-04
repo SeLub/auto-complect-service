@@ -10,7 +10,7 @@ import React from "react";
 function Optional_equipment() {
 	return (
     // <body className="">
-    <div className="App">
+
     <div className="box_specifications">
     <div className="col_optional_equipment"/>
     <div className="opt_inf"> <img src="/img/vector.jpg" className="OptVector" alt="" />При добавлении опционального оборудования, цена автомобиля изменится </div>       
@@ -60,7 +60,7 @@ function Optional_equipment() {
             </dd>
       </ul>
   </div>
-  </div>
+
        
 
       

@@ -94,10 +94,6 @@ function Optional_equipment() {
       <div className="width w6" />
       <div className="width w7" />
       <div className="width w8" />
-
-      <div className="TotalCarValue">Общая стоимость автомобиля</div>
-      <div className="TotalCarValueBYN">270 950 BYN</div>
-      <div className="TotalCarValueRUB">7 950 865 RUB</div>
     </div>
   );
 }

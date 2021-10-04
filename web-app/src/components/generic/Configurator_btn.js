@@ -15,11 +15,17 @@ import { useHistory } from 'react-router-dom';
 
 export default function Configurator_btn(props) {
   const history = useHistory();
+  function handleClick(hull_types){
+    history.push({
+      pathname: '/configurator_p1',
+      state: {hull_types: hull_types}
+    })
+  }
   return (
     // фукционала пока нет, при нажатии выводит данные по текщему кузову в консоль
     <button
       className="configurator_btn"
-      onClick={() => history.push('/configurator_p1')}
+      onClick={() => handleClick(props.hull_types)}
     >
       <p>Конфигуратор</p>
     </button>

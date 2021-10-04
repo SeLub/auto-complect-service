@@ -13,6 +13,7 @@ function Picking_switch() {
         <div id="content-1">Содержимое 1...</div>
         <div id="content-2">
           <Optional_equipment />
+          <TotalCarValue />
         </div>
         <div id="content-3">Содержимое 3...</div>
 

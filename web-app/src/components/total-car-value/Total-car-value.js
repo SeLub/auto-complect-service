@@ -6,6 +6,7 @@ import React from "react";
 import getExRate from "../../functions/currence-ex-rate";
 import NextButton from "../generic/Next-btn";
 import Price_list_btn from "../generic/Price_list_btn";
+import "./Total-car-value.css";
 
 // component for calculating the sum of every part of car's configuration;
 export default class TotalCarValue extends React.Component {
@@ -17,10 +18,10 @@ export default class TotalCarValue extends React.Component {
         {/* здесь  будет значение исходя из выбранных позиций и курса НБ */}
         <div className="label-car-sum-rub">7 950 865 RUB</div>{" "}
         {/* здесь  будет значение исходя из выбранных позиций в списке */}
-        <div>
+        <div className="priceBtnTotal">
           <Price_list_btn />
         </div>
-        <div>
+        <div className="NextBtnTotal">
           <NextButton />
         </div>
       </div>

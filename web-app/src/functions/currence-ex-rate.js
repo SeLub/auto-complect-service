@@ -22,7 +22,7 @@ async function getExRate() {
   const month = (date.getMonth() + 1).toString();
   const day = date.getDate().toString();
   const urlFinal = `https://www.nbrb.by/api/exrates/rates/643?ondate=${year}-${month}-${day}&parammode=1`;
-  fetch(urlFinal)
+  await fetch(urlFinal)
     .then((resp) => resp.json())
     .then(function (data) {
       const officialExRate = data.Cur_OfficialRate;

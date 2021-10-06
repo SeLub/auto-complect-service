@@ -517,3 +517,21 @@
 
   color: #2d96cd;
 }
+
+.nextBtn button {
+  font-family: Ford Antenna;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.1px;
+  color: #ffffff;
+  display: flex;
+  padding: 12px 44.5px 12px 44.5px;
+  background: #2d96cd;
+  height: 43px;
+  width: 160px;
+  left: 0px;
+  top: 0px;
+  border-radius: 0px;
+}

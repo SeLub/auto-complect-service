@@ -8,10 +8,9 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-// import "./Picking_switch.css";
 
 function RefitTabs(props) {
-  const { children, value, index, ...other } = props; // вкладки
+  const { children, value, index, ...other } = props;
 
   return (
     <Typography
@@ -42,12 +41,40 @@ function a11yProps(index) {
     "aria-controls": `action-tabpanel-${index}`,
   };
 }
+const css = `
+  .box {
+    background: white;
+    width: 1128px;
+    position: "relative";
+    min-height: 200px;
+    margin: 20px 0px 0px 0px;
+    
+  }
+  .appbar{
+    background: white;
+      color: white;
+  }
+  .tabs{
+    color: #2D96CD;
+  }
+  .MuiTabs-indicator{
+    color: #2D96CD; 
+  }
+  .tab1{
+    color: #717171;
+    padding: 12px 20px 12px 20px;
+    margin-right: 120px;
+  }
+  .tab2{
+    color: #717171;
+    padding: 12px 20px 12px 20px;
+  }`;
 
 export default function FloatingActionButtonZoom() {
   const theme = useTheme();
   const [value, setValue] = React.useState(0);
 
-  const handleChange = (newValue) => {
+  const handleChange = (event, newValue) => {
     setValue(newValue);
   };
 
@@ -56,32 +83,25 @@ export default function FloatingActionButtonZoom() {
   };
   return (
     <div className="App">
-      <Box
-        className="box"
-        sx={{
-          bgcolor: "background.paper",
-          width: 1128,
-          position: "relative",
-          minHeight: 200,
-        }}
-      >
-        <AppBar position="static" color="default">
+      <style type="text/css">{css}</style>
+      <Box className="box">
+        <AppBar className="appbar" position="static">
           <Tabs
             className="tabs"
             value={value}
             onChange={handleChange}
             indicatorColor="primary"
             textColor="primary"
-            variant="fullWidth"
+            variant="standard"
             aria-label="action tabs example"
           >
             <Tab
-              className="tab"
+              className="tab1"
               label="Базовая комплектация"
               {...a11yProps(0)}
             />
             <Tab
-              className="tab"
+              className="tab2"
               label="Опции переоборудования"
               {...a11yProps(1)}
             />

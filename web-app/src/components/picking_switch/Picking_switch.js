@@ -17,9 +17,15 @@ function Picking_switch() {
         <div id="content-3">Содержимое 3...</div>
 
         <div className="tabs__links">
-          <a href="#content-1">Базовая комплектация</a>
-          <a href="#content-2">Опциональное оборудование</a>
-          <a href="#content-3">Тип транспортного средства</a>
+          <a className="tabs__links_1" href="#content-1">
+            Базовая комплектация
+          </a>
+          <a className="tabs__links_2" href="#content-2">
+            Опциональное оборудование
+          </a>
+          <a className="tabs__links_3" href="#content-3">
+            Тип транспортного средства
+          </a>
         </div>
         <col className="tabs_line" />
       </div>

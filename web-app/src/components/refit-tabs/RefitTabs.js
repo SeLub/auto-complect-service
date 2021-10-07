@@ -42,13 +42,14 @@ function a11yProps(index) {
   };
 }
 const css = `
+@import url("http://fonts.cdnfonts.com/css/ford-antenna");
   .box {
     background: white;
     width: 1128px;
     position: "relative";
     min-height: 200px;
     margin: 20px 0px 0px 0px;
-    
+    border-color: transparent;
   }
   .appbar{
     background: white;
@@ -61,11 +62,13 @@ const css = `
     color: #2D96CD; 
   }
   .tab1{
+    font-family: "Ford Antenna";
     color: #717171;
     padding: 12px 20px 12px 20px;
     margin-right: 120px;
   }
   .tab2{
+    font-family: "Ford Antenna";
     color: #717171;
     padding: 12px 20px 12px 20px;
   }`;

@@ -4,6 +4,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import Optional_equipment from "../optional_equipment/Optional_equipment";
+import TotalCarValue from "../total-car-value/Total-car-value";
 import "./Picking_switch.css";
 
 function Picking_switch() {
@@ -13,6 +14,7 @@ function Picking_switch() {
         <div id="content-1">Содержимое 1...</div>
         <div id="content-2">
           <Optional_equipment />
+          <TotalCarValue />
         </div>
         <div id="content-3">Содержимое 3...</div>
 

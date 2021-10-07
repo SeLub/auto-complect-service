@@ -5,6 +5,8 @@
 import React from "react";
 import configurator_p1 from "../../pages/configurator_p1/configurator_p1";
 import { useHistory } from 'react-router-dom';
+import hull_types_store from "../../reducers/hull_types_reducer";
+import hull_types_reducer from "../../reducers/hull_types_reducer";
 
 // компонент для перехода на следующую страницу для оформления КП
 // Через пропсы в компонент передаётся объект hull_types, который хранит в себе данные о кузове
@@ -20,6 +22,8 @@ export default function Configurator_btn(props) {
       pathname: '/configurator_p1',
       state: {hull_types: hull_types}
     })
+    hull_types_reducer.dispatch(hull_types_reducer({type: 'hull_types/get'}))
+    // console.log(hull_types_store.getState())
   }
   return (
     // фукционала пока нет, при нажатии выводит данные по текщему кузову в консоль

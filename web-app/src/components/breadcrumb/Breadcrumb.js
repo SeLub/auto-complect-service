@@ -1,8 +1,10 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable react/prefer-stateless-function */
 /**
- * TODOs  добавить material-ui https://material-ui.com/ru/components/breadcrumbs/
- * ? нужна ли интеграция с react-router
+ *  
+ * Docs 1) https://material-ui.com/ru/components/breadcrumbs/#active-last-breadcrumb
+ * Docs 2) https://material-ui.com/ru/components/breadcrumbs/#integration-with-react-router
+ * Docs 3) https://material-ui.com/ru/components/breadcrumbs/#accessibility
 
  */
 import React from "react";

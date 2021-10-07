@@ -5,12 +5,13 @@
 import React from "react";
 import Optional_equipment from "../optional_equipment/Optional_equipment";
 import "./Picking_switch.css";
+import Basic_Options from "../basic_options/Basic_Options";
 
 function Picking_switch() {
   return (
     <div className="App">
       <div className="tabs">
-        <div id="content-1">Содержимое 1...</div>
+        <div id="content-1"><Basic_Options /></div>
         <div id="content-2">
           <Optional_equipment />
         </div>

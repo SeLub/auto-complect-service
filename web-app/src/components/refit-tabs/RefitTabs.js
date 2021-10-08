@@ -8,6 +8,7 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
+import BasicOptionsReEquipment from "../basic_options/BasicOptionsReEquipment";
 
 function RefitTabs(props) {
   const { children, value, index, ...other } = props;
@@ -55,23 +56,29 @@ const css = `
     background: white;
       color: white;
   }
-  .tabs{
-    color: #2D96CD;
-  }
   .MuiTabs-indicator{
     color: #2D96CD; 
   }
   .tab1{
     font-family: "Ford Antenna";
     color: #717171;
-    padding: 12px 20px 12px 20px;
+    padding: 12px 20px 12px 0px;
     margin-right: 120px;
   }
   .tab2{
     font-family: "Ford Antenna";
     color: #717171;
     padding: 12px 20px 12px 20px;
-  }`;
+  }
+  .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+    color: #2D96CD;
+  }
+  .css-1aquho2-MuiTabs-indicator {
+      background-color: #2D96CD;
+}
+.css-hip9hq-MuiPaper-root-MuiAppBar-root {
+  box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 0%), 0px 4px 5px 0px rgb(0 0 0 / 0%), 0px 1px 10px 0px rgb(0 0 0 / 0%);
+}`;
 
 export default function FloatingActionButtonZoom() {
   const theme = useTheme();
@@ -90,11 +97,8 @@ export default function FloatingActionButtonZoom() {
       <Box className="box">
         <AppBar className="appbar" position="static">
           <Tabs
-            className="tabs"
             value={value}
             onChange={handleChange}
-            indicatorColor="primary"
-            textColor="primary"
             variant="standard"
             aria-label="action tabs example"
           >
@@ -116,7 +120,7 @@ export default function FloatingActionButtonZoom() {
           onChangeIndex={handleChangeIndex}
         >
           <RefitTabs value={value} index={0} dir={theme.direction}>
-            Базовая комплектация(текст)
+            <BasicOptionsReEquipment />
           </RefitTabs>
           <RefitTabs value={value} index={1} dir={theme.direction}>
             Опциональное оборудование(текст)

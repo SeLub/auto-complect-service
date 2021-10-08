@@ -7,12 +7,10 @@ import React from "react";
 import AppHeader from "../../components/app-header";
 import BreadCrumbs from "../../components/breadcrumb/Breadcrumb";
 import Configurator from "../../components/Configurator";
-import RefitTabs from "../../components/refit-tabs/RefitTabs";
-import ReEquipmentText from "../../components/re-equipment-text/ReEquipmentText";
 // import Basic_Options from "../../components/Basic_Options";
 // import Block_ford_cards from "../../components/Block_ford_cards";
 
-// import Picking_switch from "../../components/picking_switch/Picking_switch";
+import Picking_switch from "../../components/picking_switch/Picking_switch";
 // import hull_types from "../../components/hull_static/hull_types_specs.json";
 
 export default function configurator_p1() {
@@ -24,9 +22,8 @@ export default function configurator_p1() {
       <AppHeader />
       <BreadCrumbs />
       <Configurator />
-      <ReEquipmentText />
       {/* <Block_ford_cards hull_types={hull_types} /> */}
-      <RefitTabs />
+      <Picking_switch />
       {/* <Basic_Options hull_types={hull_types.base_options} /> */}
     </>
   );

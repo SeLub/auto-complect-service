@@ -2,8 +2,15 @@
 
 import React from "react";
 import "./hull_card.css";
+import { useHistory } from "react-router";
 
 export default function Hull_card(props){
+    const history = useHistory();
+    function handleClick(hull_types){
+      history.push({
+        pathname: '/configurator_p2',
+      })
+    }
     <div className="car_card">
         <div className = "car_type">
             <p>
@@ -32,8 +39,9 @@ export default function Hull_card(props){
         </div>
         <div className = "car_cost">
         </div>
-        <button className="car_repurpose_btn">
+        <button className="car_repurpose_btn" onClick={handleClick}>
 
         </button>
     </div>
 };
+

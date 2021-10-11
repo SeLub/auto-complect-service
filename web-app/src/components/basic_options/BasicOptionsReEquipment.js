@@ -44,7 +44,7 @@ const css = `
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
-    padding: 6px 0px;
+    padding: 12px 0px;
     color: #333333;
 }
 .css-ahj2mt-MuiTypography-root {
@@ -56,6 +56,10 @@ export default function BasicOptionsReEquipment() {
     <div>
       <style type="text/css">{css}</style>
       <TableContainer component={Paper}>
+        <div className="basic_options_note">
+          <img src="/img/vector.jpg" className="info_icon" alt="img" />
+          <p>Данное оборудование является стандартным в вашей конфигурации</p>
+        </div>
         <Table sx={{ maxWidth: 1128 }} size="small" aria-label="a dense table">
           <TableBody>
             {rows.map((row) => (

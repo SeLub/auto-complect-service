@@ -7,6 +7,7 @@ import React from "react";
 import AppHeader from "../../components/app-header";
 import BreadCrumbs from "../../components/breadcrumb/Breadcrumb";
 import Configurator from "../../components/Configurator";
+import RefitTabs from "../../components/refit-tabs/RefitTabs";
 // import Basic_Options from "../../components/Basic_Options";
 // import Block_ford_cards from "../../components/Block_ford_cards";
 
@@ -22,6 +23,7 @@ export default function configurator_p1() {
       <AppHeader />
       <BreadCrumbs />
       <Configurator />
+      <RefitTabs />
       {/* <Block_ford_cards hull_types={hull_types} /> */}
       <Picking_switch />
       {/* <Basic_Options hull_types={hull_types.base_options} /> */}

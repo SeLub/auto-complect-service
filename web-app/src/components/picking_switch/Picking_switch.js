@@ -7,6 +7,7 @@ import Optional_equipment from "../optional_equipment/Optional_equipment";
 import TotalCarValue from "../total-car-value/Total-car-value";
 import "./Picking_switch.css";
 import Basic_Options from "../basic_options/Basic_Options";
+import Tmp_p3 from "../tmp_components/tmp_p3";
 
 function Picking_switch() {
   return (
@@ -17,7 +18,7 @@ function Picking_switch() {
           <Optional_equipment />
           <TotalCarValue />
         </div>
-        <div id="content-3">Содержимое 3...</div>
+        <div id="content-3"><Tmp_p3 /></div>
 
         <div className="tabs__links">
           <a className="tabs__links_1" href="#content-1">

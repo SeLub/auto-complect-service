@@ -1,0 +1,68 @@
+.boxElems {
+  position: absolute;
+  width: 1128px;
+  font-family: "Ford Antenna";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: right;
+  margin-top: 654px;
+  margin-right: 76px;
+  color: #717171;  
+
+}
+
+.width {
+  position: absolute;
+  margin-top: 654px;
+  padding-bottom: 40px;
+  width: 1128px;
+  border-bottom: 2px solid #9e9e9e45;
+
+}
+.p1  {
+  padding-bottom: 15px;
+
+}
+
+.elems_price_valueC {
+  padding-bottom: 37px;;
+  }
+  
+  .elem1_price_value0 {
+     /* position: absolute; */
+     font-size: 18px;
+     font-weight: 400;
+     line-height: 22px;
+     letter-spacing: 0.10000000149011612px;
+     
+   }
+
+
+   .elem1_price_valueC {
+    color: #2D96CD;
+  }
+
+  .elem3_price_valueC {
+    color: #2D96CD;
+  }
+
+  .elem4_price_valueC {
+    color: #2D96CD;
+  }
+
+
+  .elem7_price_valueC {
+    color: #2D96CD;
+  }
+
+
+  .elem10_price_valueC {
+    color: #2D96CD;
+  }
+
+  .elem11_price_valueC {
+    color: #2D96CD;
+  }

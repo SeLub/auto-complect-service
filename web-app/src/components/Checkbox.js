@@ -1,10 +1,12 @@
+/* eslint-disable import/no-unresolved */
 /* eslint-disable import/newline-after-import */
 /* eslint-disable prettier/prettier */
 import * as React from 'react';
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
-import { Container } from '@mui/material';
+import "./Checkbox.css";
+// import { Container } from '@mui/material';
 
 const css = `
 @import url("http://fonts.cdnfonts.com/css/ford-antenna");
@@ -29,6 +31,7 @@ const css = `
 .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked {
   color: grey !important;
 }
+// .Mui-disabled
 
 // //   // .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked {
 // //   //   color: #eee;
@@ -37,37 +40,16 @@ const css = `
 //   background-image: url(img/11.png);
 // }
 
-.width {
-  border-bottom: 1px solid #9e9e9e45;
-  padding-bottom: 40px;
-}
+// .width {
+//   border-bottom: 1px solid #9e9e9e45;
+//   padding-bottom: 40px;
+// }
 
-.css-1oqqzyl-MuiContainer-root {
-  margin-top: 654px;
-  position: absolute;
-  right: 76px;
-  font-family: "Ford Antenna";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600px;
-  line-height: 20px;
-  letter-spacing: 0.10000000149011612px;
-  text-align: right;
-  color: #717171;
-}
 
-.opt_eq_priceС {
-  // position: absolute;
-  color: #717171;
-  font-family: "Ford Antenna";
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 22px;
-  letter-spacing: 0.10000000149011612px;
-  text-align: right;
-  margin-right: 0px;
-  margin-top: -601px;
+//   .cheCKbox{
+// width: 600px ;
+// <Container className="cheCKbox">
+//      </Container>  
 
 }`;
 
@@ -75,7 +57,9 @@ export default function CheckboxLabels() {
 
   return ( 
     <FormGroup>
-      <style type="text/css">{css}</style>
+      <style type="text/css">{css}</style> 
+      
+
       <FormControlLabel control={<Checkbox defaultChecked />} label="Позиция 1" />
       <FormControlLabel control={<Checkbox defaultChecked />} label="Позиция 2" />
       <FormControlLabel control={<Checkbox defaultChecked />} label="Позиция 3" />
@@ -87,24 +71,27 @@ export default function CheckboxLabels() {
       <FormControlLabel control={<Checkbox defaultChecked />} label="Позиция 9" />
       <FormControlLabel control={<Checkbox defaultChecked />} label="Позиция 10" />
       <FormControlLabel control={<Checkbox defaultChecked />} label="Позиция 11" />
-      <FormControlLabel control={<Checkbox defaultChecked />} label="Позиция 12" />     
+      <FormControlLabel control={<Checkbox defaultChecked />} label="Позиция 12" />   
 
-          <Container className="opt_eq_price_valueC">
-        <div className="elems_price_valueC elem1_price_valueC">62 317 RUB</div>
+
+     <div className="boxElems"> 
+        <div className="elems_price_valueC elem1_price_value0 ">Цена</div> 
+        <div className="elems_price_valueC elem1_price_valueC">20 000 RUB</div>
         <div className="elems_price_valueC elem2_price_valueC">20 000 RUB</div>
-        <div className="elems_price_valueC elem3_price_valueC">45 100 RUB</div>
-        <div className="elems_price_valueC elem4_price_valueC">150 000 RUB</div>
-        <div className="elems_price_valueC elem5_price_valueC">70 800 RUB</div>
-        <div className="elems_price_valueC elem6_price_valueC">200 00 RUB</div>
-        <div className="elems_price_valueC elem7_price_valueC">200 00 RUB</div>
-        <div className="elems_price_valueC elem5_price_valueC">70 800 RUB</div>
-        <div className="elems_price_valueC elem6_price_valueC">200 00 RUB</div>
-        <div className="elems_price_valueC elem7_price_valueC">200 00 RUB</div>  
-        <div className="elems_price_valueC elem6_price_valueC">200 00 RUB</div>
-        <div className="elems_price_valueC elem7_price_valueC">200 00 RUB</div>
-      </Container>
+        <div className="elems_price_valueC elem3_price_valueC">20 000 RUB</div>
+        <div className="elems_price_valueC elem4_price_valueC">20 000 RUB</div>
+        <div className="elems_price_valueC elem5_price_valueC">20 000 RUB</div>
+        <div className="elems_price_valueC elem6_price_valueC">20 000 RUB</div>
+        <div className="elems_price_valueC elem7_price_valueC">20 000 RUB</div>
+        <div className="elems_price_valueC elem5_price_valueC">20 000 RUB</div>
+        <div className="elems_price_valueC elem6_price_valueC">20 000 RUB</div>
+        <div className="elems_price_valueC elem7_price_valueC">20 000 RUB</div>  
+        <div className="elems_price_valueC elem6_price_valueC">20 000 RUB</div>
+        <div className="elems_price_valueC elem7_price_valueC">20 000 RUB</div>
+          
+     </div>
 
-      <div className="opt_eq_priceС">Цена</div>    
+        
           <div className="width p1" />
           <div className="width p2" />
           <div className="width p3" />

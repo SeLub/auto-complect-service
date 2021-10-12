@@ -50,6 +50,10 @@ const Text = () => {
   }
   .p{
       margin: 0px;
+  }
+  .MuiContainer-root {
+    padding-left: 0px;
+    padding-right: 24px;
   }`;
   return (
     <div className="App">

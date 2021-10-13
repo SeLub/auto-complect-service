@@ -8,6 +8,7 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
+import Basic_Options from "../../components/basic_options/Basic_Options";
 
 function RefitTabs(props) {
   const { children, value, index, ...other } = props;
@@ -144,7 +145,7 @@ export default function FloatingActionButtonZoom() {
             детали (текст)
           </RefitTabs>
           <RefitTabs value={value} index={1} dir={theme.direction}>
-            базовая комплектация(текст)
+            <Basic_Options />
           </RefitTabs>
           <RefitTabs value={value} index={2} dir={theme.direction}>
             опциональное оборудование(текст)

@@ -18,7 +18,7 @@ import configurator_p2 from "./pages/configurator_p2/configurator_p2";
 
 function App() {
   return (
-  <div className="App">
+    <div>
       <Router>
         <Route path="/" exact>
           <Starting_Page />
@@ -26,7 +26,6 @@ function App() {
         <Route path="/configurator_p1" component={configurator_p1}></Route>
         <Route path="/configurator_p2" component={configurator_p2}></Route>
       </Router>
-
     </div>
   );
 }

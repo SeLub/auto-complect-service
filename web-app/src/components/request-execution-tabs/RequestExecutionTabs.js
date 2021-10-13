@@ -1,3 +1,6 @@
+/* eslint-disable */
+/* eslint-disable camelcase */
+/* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable react/jsx-props-no-spreading */
 import * as React from "react";
 import PropTypes from "prop-types";
@@ -63,19 +66,19 @@ const css = `
     font-family: "Ford Antenna";
     color: #717171;
     padding: 0px;
-    margin: 12px 113px 12px 0px;
+    margin: 12px 100px 12px 1px;
   }
   .tab2{
     font-family: "Ford Antenna";
     color: #717171;
     padding: 0px;
-    margin: 12px 113px 12px 0px;
+    margin: 12px 100px 12px 0px;
   }
   .tab3{
     font-family: "Ford Antenna";
     color: #717171;
     padding: 0px;
-    margin: 12px 114px 12px 00px;
+    margin: 12px 100px 12px 00px;
   }
   .tab4{
     font-family: "Ford Antenna";
@@ -94,7 +97,10 @@ const css = `
 }
 .css-1h9z7r5-MuiButtonBase-root-MuiTab-root{
     align-items: start;
-} `;
+} 
+.css-1wcaknn {
+    padding: 32px 0px;
+}`;
 
 export default function FloatingActionButtonZoom() {
   const theme = useTheme();

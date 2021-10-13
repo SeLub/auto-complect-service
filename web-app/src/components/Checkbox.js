@@ -92,7 +92,7 @@ export default function CheckboxLabels() {
      </div>
 
         
-          <div className="width p1" />
+          {/* <div className="width p1" />
           <div className="width p2" />
           <div className="width p3" />
           <div className="width p4" />
@@ -103,7 +103,7 @@ export default function CheckboxLabels() {
           <div className="width p9" />
           <div className="width p10" />
           <div className="width p11" />
-          <div className="width p12" />
+          <div className="width p12" /> */}
     </FormGroup>
  );
 }

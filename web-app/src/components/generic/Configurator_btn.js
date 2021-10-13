@@ -20,9 +20,9 @@ export default function Configurator_btn(props) {
       pathname: '/configurator_p1',
       state: {hull_types: hull_types}
     })
+    console.log(hull_types)
   }
   return (
-    // фукционала пока нет, при нажатии выводит данные по текщему кузову в консоль
     <button
       className="configurator_btn"
       onClick={() => handleClick(props.hull_types)}

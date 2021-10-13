@@ -1,7 +1,3 @@
-/* eslint-disable */
-/* eslint-disable react/no-this-in-sfc */
-/* eslint-disable camelcase */
-/* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable react/jsx-props-no-spreading */
 import * as React from "react";
 import PropTypes from "prop-types";
@@ -13,9 +9,6 @@ import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Basic_Options from "../../components/basic_options/Basic_Options";
-import Optional_equipment from "../../components/optional_equipment/Optional_equipment";
-import TotalCarValue from "../../components/total-car-value/Total-car-value";
-import Tmp_p3 from "../../components/tmp_components/tmp_p3";
 
 function RefitTabs(props) {
   const { children, value, index, ...other } = props;
@@ -29,7 +22,7 @@ function RefitTabs(props) {
       aria-labelledby={`action-tab-${index}`}
       {...other}
     >
-      {value === index && <Box sx={{ p: 3 }}>{children}</Box>}
+      {value === index && <Box sx={{ p: 4 }}>{children}</Box>}
     </Typography>
   );
 }
@@ -70,15 +63,21 @@ const css = `
     font-family: "Ford Antenna";
     color: #717171;
     padding: 0px;
-    margin: 12px 200px 12px 0px;
+    margin: 12px 113px 12px 0px;
   }
   .tab2{
     font-family: "Ford Antenna";
     color: #717171;
     padding: 0px;
-    margin: 12px 200px 12px 0px;
+    margin: 12px 113px 12px 0px;
   }
   .tab3{
+    font-family: "Ford Antenna";
+    color: #717171;
+    padding: 0px;
+    margin: 12px 114px 12px 00px;
+  }
+  .tab4{
     font-family: "Ford Antenna";
     color: #717171;
     padding: 0px;
@@ -95,10 +94,7 @@ const css = `
 }
 .css-1h9z7r5-MuiButtonBase-root-MuiTab-root{
     align-items: start;
-} 
-.css-19kzrtu {
-  padding: 24px 0px;
-}`;
+} `;
 
 export default function FloatingActionButtonZoom() {
   const theme = useTheme();
@@ -122,20 +118,21 @@ export default function FloatingActionButtonZoom() {
             variant="standard"
             aria-label="action tabs example"
           >
-            <Tab
-              className="tab1"
-              label="Базовая комплектация"
-              {...a11yProps(0)}
-            />
+            <Tab className="tab1" label="Детали" {...a11yProps(0)} />
             <Tab
               className="tab2"
-              label="Опциональное оборудование"
+              label="Базовая комплектация"
               {...a11yProps(1)}
             />
             <Tab
               className="tab3"
-              label="Тип транспортного средства"
+              label="Опциональное оборудование"
               {...a11yProps(2)}
+            />
+            <Tab
+              className="tab4"
+              label="Тип транспортного средства"
+              {...a11yProps(3)}
             />
           </Tabs>
         </AppBar>
@@ -145,14 +142,16 @@ export default function FloatingActionButtonZoom() {
           onChangeIndex={handleChangeIndex}
         >
           <RefitTabs value={value} index={0} dir={theme.direction}>
-            <Basic_Options />
+            детали (текст)
           </RefitTabs>
           <RefitTabs value={value} index={1} dir={theme.direction}>
-            <Optional_equipment />
-            <TotalCarValue />
+            <Basic_Options />
           </RefitTabs>
           <RefitTabs value={value} index={2} dir={theme.direction}>
-            <Tmp_p3 />
+            опциональное оборудование(текст)
+          </RefitTabs>
+          <RefitTabs value={value} index={3} dir={theme.direction}>
+            тип транспортного средства(текст)
           </RefitTabs>
         </SwipeableViews>
       </Box>

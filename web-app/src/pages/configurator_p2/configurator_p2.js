@@ -8,7 +8,7 @@ import ReEquipmentText from "../../components/re-equipment-text/ReEquipmentText"
 import BreadCrumbs from "../../components/breadcrumb/Breadcrumb";
 import RequestExecutionTabs from "../../components/request-execution-tabs/RequestExecutionTabs";
 
-export default function configurator_p2() {
+export default function Configurator_p2() {
   return (
     <>
       <AppHeader />

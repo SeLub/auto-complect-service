@@ -13,6 +13,7 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Basic_Options from "../../components/basic_options/Basic_Options";
 import Details from "../../components/details/Details";
+import TotalCarValue from "../../components/total-car-value/Total-car-value";
 
 function RefitTabs(props) {
   const { children, value, index, ...other } = props;
@@ -150,6 +151,7 @@ export default function RequestExecutionTabs() {
         >
           <RefitTabs value={value} index={0} dir={theme.direction}>
             <Details />
+            <TotalCarValue />
           </RefitTabs>
           <RefitTabs value={value} index={1} dir={theme.direction}>
             <Basic_Options />

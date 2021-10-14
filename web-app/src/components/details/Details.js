@@ -18,12 +18,15 @@ const css = `
   .css-rorn0c-MuiTableContainer-root {
     overflow-x: hidden;
   }
+  .css-ahj2mt-MuiTypography-root {
+   margin: 0px; 
+  }
   .css-1ygcj2i-MuiTableCell-root {
     text-align:start;
     width: 300px;
     display: table-cell;
     border-bottom: 0px solid rgba(255,255,255);
-    padding: 0px 40px 4px 0px;
+    padding: 0px 0px 4px 0px;
     font-family: Ford Antenna;
     font-style: normal;
     font-weight: 300;
@@ -36,7 +39,7 @@ const css = `
     width: 300px !important;
     display: table-cell;
     border-bottom: 0px solid rgba(255,255,255);
-    padding: 0px 40px 48px 0px;
+    padding: 0px 0px 48px 0px;
     font-family: Ford Antenna;
     font-style: normal;
     font-weight: 500;
@@ -74,26 +77,26 @@ export default function Details() {
     <div>
       <style type="text/css">{css}</style>
       <TableContainer className="table-container">
-        <Table sx={{ minWidth: "100%" }}>
+        <Table sx={{ p: 5, minWidth: "100%" }}>
           <TableHead>
             <TableRow>
-              <TableCell>Двигатель</TableCell>
-              <TableCell>Тип топлива</TableCell>
-              <TableCell>Транс-миссия</TableCell>
-              <TableCell>Цвет</TableCell>
-              <TableCell>Срок поставки</TableCell>
+              <TableCell index={0}>Двигатель</TableCell>
+              <TableCell index={1}>Тип топлива</TableCell>
+              <TableCell index={2}>Транс-миссия</TableCell>
+              <TableCell index={3}>Цвет</TableCell>
+              <TableCell index={4}>Срок поставки</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
             {rows1.map((row1) => (
               <TableRow key={row1.engine}>
-                <TableCell component="th" scope="row">
+                <TableCell index={0} component="th" scope="row">
                   {row1.engine}
                 </TableCell>
-                <TableCell>{row1.fueltype}</TableCell>
-                <TableCell>{row1.transmission}</TableCell>
-                <TableCell>{row1.colour}</TableCell>
-                <TableCell>{row1.deliverytime}</TableCell>
+                <TableCell index={1}>{row1.fueltype}</TableCell>
+                <TableCell index={2}>{row1.transmission}</TableCell>
+                <TableCell index={3}>{row1.colour}</TableCell>
+                <TableCell index={4}>{row1.deliverytime}</TableCell>
               </TableRow>
             ))}
           </TableBody>
@@ -125,6 +128,11 @@ export default function Details() {
           </TableBody>
         </Table>
       </TableContainer>
+      <img
+        src="/img/middle-line.jpg"
+        className="middle-line"
+        alt="middle-line"
+      />
     </div>
   );
 }

@@ -8,8 +8,8 @@
 import "./App.css";
 import Starting_Page from "./pages/starting_page/starting_page";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import configurator_p1 from "./pages/configurator_p1/configurator_p1";
-import configurator_p2 from "./pages/configurator_p2/configurator_p2";
+import Configurator_p1 from "./pages/configurator_p1/Configurator_p1";
+import Configurator_p2 from "./pages/configurator_p2/Configurator_p2";
 // import Block_ford_cards from "./components/Block_ford_cards";
 // Это корневой компонент
 // Сохраняйте компоненты в папке components
@@ -23,8 +23,8 @@ function App() {
         <Route path="/" exact>
           <Starting_Page />
         </Route>
-        <Route path="/configurator_p1" component={configurator_p1}></Route>
-        <Route path="/configurator_p2" component={configurator_p2}></Route>
+        <Route path="/Configurator_p1" component={Configurator_p1}></Route>
+        <Route path="/Configurator_p2" component={Configurator_p2}></Route>
       </Router>
     </div>
   );

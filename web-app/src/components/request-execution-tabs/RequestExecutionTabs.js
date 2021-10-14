@@ -13,7 +13,7 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Basic_Options from "../../components/basic_options/Basic_Options";
 import Details from "../../components/details/Details";
-import TotalCarValue from "../../components/total-car-value/Total-car-value";
+import CarCostIncludingOptions from "../../components/car-cost-including-options/CarCostIncludingOptions";
 
 function RefitTabs(props) {
   const { children, value, index, ...other } = props;
@@ -60,6 +60,10 @@ const css = `
   .appbar{
     background: white;
       color: white;
+  }
+  .tab11{
+    width: 1128px; 
+    overflow: hidden;
   }
   .MuiTabs-indicator{
     color: #2D96CD; 
@@ -145,21 +149,42 @@ export default function RequestExecutionTabs() {
           </Tabs>
         </AppBar>
         <SwipeableViews
+          className="tabs"
           axis={theme.direction === "rtl" ? "x-reverse" : "x"}
           index={value}
           onChangeIndex={handleChangeIndex}
         >
-          <RefitTabs value={value} index={0} dir={theme.direction}>
+          <RefitTabs
+            className="tab11"
+            value={value}
+            index={0}
+            dir={theme.direction}
+          >
             <Details />
-            <TotalCarValue />
+            <CarCostIncludingOptions />
           </RefitTabs>
-          <RefitTabs value={value} index={1} dir={theme.direction}>
+          <RefitTabs
+            className="tab11"
+            value={value}
+            index={1}
+            dir={theme.direction}
+          >
             <Basic_Options />
           </RefitTabs>
-          <RefitTabs value={value} index={2} dir={theme.direction}>
+          <RefitTabs
+            className="tab11"
+            value={value}
+            index={2}
+            dir={theme.direction}
+          >
             опциональное оборудование(текст)
           </RefitTabs>
-          <RefitTabs value={value} index={3} dir={theme.direction}>
+          <RefitTabs
+            className="tab11"
+            value={value}
+            index={3}
+            dir={theme.direction}
+          >
             тип транспортного средства(текст)
           </RefitTabs>
         </SwipeableViews>

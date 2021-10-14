@@ -3,7 +3,7 @@
 /* eslint-disable camelcase */
 /* eslint-disable react/button-has-type */
 import React from "react";
-import Configurator_p1 from "../../pages/configurator_p1/Configurator_p1";
+import configurator_p1 from "../../pages/configurator_p1/configurator_p1";
 import { useHistory } from "react-router-dom";
 
 // компонент для перехода на следующую страницу для оформления КП
@@ -15,7 +15,7 @@ export default function Configurator_btn(props) {
   const history = useHistory();
   function handleClick(hull_types) {
     history.push({
-      pathname: "/Configurator_p1",
+      pathname: "/configurator_p1",
       state: { hull_types: hull_types },
     });
     console.log(hull_types);

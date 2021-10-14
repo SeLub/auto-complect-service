@@ -3,7 +3,7 @@ import React from "react";
 import { useHistory } from "react-router-dom";
 
 const GotoCommercialProposalBtn = () => {
-  let history = useHistory();
+  const history = useHistory();
 
   function handleClick() {
     history.push("/web-app/src/pages/configurator_p3");

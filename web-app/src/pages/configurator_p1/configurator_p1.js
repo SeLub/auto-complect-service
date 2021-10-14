@@ -13,7 +13,7 @@ import Block_ford_cards from "../../components/Block_ford_cards";
 import Picking_switch from "../../components/picking_switch/Picking_switch";
 // import hull_types from "../../components/hull_static/hull_types_specs.json";
 
-export default function configurator_p1() {
+export default function Configurator_p1() {
   // const history = useHistory();
   const pictires = {
     pic1: "/img/main_pic5.jpg",
@@ -26,7 +26,9 @@ export default function configurator_p1() {
       <AppHeader />
       <BreadCrumbs />
       <Configurator />
-      <Block_ford_cards hull_types={pictires} />
+      <div className="App">
+        <Block_ford_cards hull_types={pictires} />
+      </div>
       <Picking_switch />
       {/* <Basic_Options hull_types={hull_types.base_options} /> */}
     </>

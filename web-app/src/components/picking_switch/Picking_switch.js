@@ -14,7 +14,6 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Basic_Options from "../../components/basic_options/Basic_Options";
 import Optional_equipment from "../../components/optional_equipment/Optional_equipment";
-import TotalCarValue from "../../components/total-car-value/Total-car-value";
 import Tmp_p3 from "../../components/tmp_components/tmp_p3";
 
 function RefitTabs(props) {
@@ -84,6 +83,9 @@ const css = `
     padding: 0px;
     margin: 12px 0px 12px 0px;
   }
+  .swipeableviews{
+    overflow: hidden
+  }
   .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
     color: #2D96CD;
   }
@@ -140,6 +142,7 @@ export default function FloatingActionButtonZoom() {
           </Tabs>
         </AppBar>
         <SwipeableViews
+          className="swipeableviews"
           axis={theme.direction === "rtl" ? "x-reverse" : "x"}
           index={value}
           onChangeIndex={handleChangeIndex}
@@ -149,7 +152,6 @@ export default function FloatingActionButtonZoom() {
           </RefitTabs>
           <RefitTabs value={value} index={1} dir={theme.direction}>
             <Optional_equipment />
-            <TotalCarValue />
           </RefitTabs>
           <RefitTabs value={value} index={2} dir={theme.direction}>
             <Tmp_p3 />

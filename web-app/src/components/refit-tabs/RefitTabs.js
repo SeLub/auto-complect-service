@@ -10,6 +10,7 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import BasicOptionsReEquipment from "../basic_options/BasicOptionsReEquipment";
 import TotalCarValue from "../total-car-value/Total-car-value";
+import GotoCommercialProposalBtn from "../generic/GotoCommercialProposal_btn";
 
 function RefitTabs(props) {
   const { children, value, index, ...other } = props;
@@ -128,6 +129,7 @@ export default function FloatingActionButtonZoom() {
           </RefitTabs>
         </SwipeableViews>
         <TotalCarValue />
+        <GotoCommercialProposalBtn />
       </Box>
     </div>
   );

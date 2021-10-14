@@ -12,6 +12,7 @@ import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Basic_Options from "../../components/basic_options/Basic_Options";
+import Details from "../../components/details/Details";
 
 function RefitTabs(props) {
   const { children, value, index, ...other } = props;
@@ -102,7 +103,7 @@ const css = `
     padding: 32px 0px;
 }`;
 
-export default function FloatingActionButtonZoom() {
+export default function RequestExecutionTabs() {
   const theme = useTheme();
   const [value, setValue] = React.useState(0);
 
@@ -148,7 +149,7 @@ export default function FloatingActionButtonZoom() {
           onChangeIndex={handleChangeIndex}
         >
           <RefitTabs value={value} index={0} dir={theme.direction}>
-            детали (текст)
+            <Details />
           </RefitTabs>
           <RefitTabs value={value} index={1} dir={theme.direction}>
             <Basic_Options />

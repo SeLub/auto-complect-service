@@ -1,12 +1,13 @@
+/* eslint-disable camelcase */
+/* eslint-disable no-unused-vars */
 import React from "react";
 import { useHistory } from "react-router-dom";
-import ConfiguratorP3 from "../../pages/configurator_p3/Configurator_p3";
 
 const GotoCommercialProposalBtn = () => {
   const history = useHistory();
 
   function handleClick() {
-    history.push(ConfiguratorP3);
+    history.push("/Configurator_p3");
   }
   return (
     <div className="gotoCom">

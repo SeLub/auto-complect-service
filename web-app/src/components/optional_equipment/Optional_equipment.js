@@ -6,6 +6,7 @@
 import "./Optional_equipment.css";
 
 import React from "react";
+import TotalCarValue from "../../components/total-car-value/Total-car-value";
 
 // eslint-disable-next-line camelcase
 function Optional_equipment() {
@@ -94,6 +95,7 @@ function Optional_equipment() {
       <div className="width w6" />
       <div className="width w7" />
       <div className="width w8" />
+      <TotalCarValue />
     </div>
   );
 }

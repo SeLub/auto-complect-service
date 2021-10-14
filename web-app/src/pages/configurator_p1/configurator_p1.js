@@ -26,7 +26,9 @@ export default function configurator_p1() {
       <AppHeader />
       <BreadCrumbs />
       <Configurator />
-      <Block_ford_cards hull_types={pictires} />
+      <div className="App">
+        <Block_ford_cards hull_types={pictires} />
+      </div>
       <Picking_switch />
       {/* <Basic_Options hull_types={hull_types.base_options} /> */}
     </>

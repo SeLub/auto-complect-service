@@ -127,8 +127,8 @@ export default function FloatingActionButtonZoom() {
             Опциональное оборудование(текст)
           </RefitTabs>
         </SwipeableViews>
+        <TotalCarValue />
       </Box>
-      <TotalCarValue />
     </div>
   );
 }

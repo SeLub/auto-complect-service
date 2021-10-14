@@ -14,7 +14,6 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Basic_Options from "../../components/basic_options/Basic_Options";
 import Optional_equipment from "../../components/optional_equipment/Optional_equipment";
-import TotalCarValue from "../../components/total-car-value/Total-car-value";
 import Tmp_p3 from "../../components/tmp_components/tmp_p3";
 
 function RefitTabs(props) {

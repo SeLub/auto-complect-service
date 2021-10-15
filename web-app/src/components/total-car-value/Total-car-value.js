@@ -18,12 +18,6 @@ export default class TotalCarValue extends React.Component {
         {/* здесь  будет значение исходя из выбранных позиций и курса НБ */}
         <div className="label-car-sum-rub">7 950 865 RUB</div>{" "}
         {/* здесь  будет значение исходя из выбранных позиций в списке */}
-        <div className="priceBtnTotal">
-          <Price_list_btn />
-        </div>
-        <div className="NextBtnTotal">
-          <NextButton />
-        </div>
       </div>
     );
   }

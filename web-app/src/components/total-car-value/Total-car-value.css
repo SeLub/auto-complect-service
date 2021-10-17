@@ -10,13 +10,14 @@
   text-align: right;
   color: #2d96cd;
   max-width: 100%;
+  position: relative;
 }
 
 .total-car-value .label-car-sum {
   position: absolute;
-  margin-right: 285px;
+  margin-right: 0px;
   margin-top: 24px;
-  right: 169px;
+  right: 150px;
   width: 192px;
   height: 44px;
 }
@@ -37,16 +38,5 @@
   color: #717171;
   margin-right: 0px;
   margin-top: 49px;
-  padding: 2px;
-}
-
-.total-car-value .priceBtnTotal {
-  margin-top: 110px;
-  padding-right: 0px;
-  margin-left: 760px;
-}
-
-.total-car-value .NextBtnTotal {
-  margin-top: 110px;
-  padding-left: 10px;
+  padding: 2px 0px;
 }

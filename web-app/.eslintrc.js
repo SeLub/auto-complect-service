@@ -25,6 +25,7 @@ module.exports = {
     "react/jsx-filename-extension": [1, { extensions: [".js", ".jsx"] }],
     "react/prop-types": "off",
     "prettier/prettier": ["error", { endOfLine: "auto" }],
+    "import/no-extraneous-dependencies": ["error", { devDependencies: true }],
   },
   settings: {
     react: {

@@ -31,8 +31,6 @@ export default function Block_ford_cards(props) {
           <img src="/img/rectangle.jpg" className="rectangle" alt="" />
         </div>
       </div>
-
-     
     </body>
   );
 }

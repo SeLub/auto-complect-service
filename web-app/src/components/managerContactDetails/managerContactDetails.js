@@ -5,6 +5,7 @@ import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
+import Typography from "@mui/material/Typography";
 import managerContactDetails from "./baseManagers.json";
 
 /* Компонент Box служит в качестве компонента-оболочки. */
@@ -27,6 +28,9 @@ export default function ManagerContactDetails() {
 
   return (
     <Box sx={{ width: "100%", maxWidth: 455 }}>
+      <Typography variant="h5" gutterBottom component="div">
+        Контактные данные менеджера
+      </Typography>
       <FormControl fullWidth>
         <InputLabel id="select-label-manager">Выберите менеджера</InputLabel>
         <Select

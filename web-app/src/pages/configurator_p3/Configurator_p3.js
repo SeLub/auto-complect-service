@@ -3,6 +3,7 @@
 import React from "react";
 import AppHeader from "../../components/app-header";
 import BreadCrumbs from "../../components/breadcrumb/Breadcrumb";
+import ManagerContactDetails from "../../components/managerContactDetails/managerContactDetails";
 
 /* cюда добавляйте imports  своих компонентов */
 
@@ -11,9 +12,7 @@ export default function Configurator_p3() {
     <>
       <AppHeader />
       <BreadCrumbs />
-      {/* <p> третья страница</p> это удплите как начнете вставлять компоненты */}
-      <p> третья страница</p>
-      {/* cюда добавляйте свои компоненты */}
+      <ManagerContactDetails />
     </>
   );
 }

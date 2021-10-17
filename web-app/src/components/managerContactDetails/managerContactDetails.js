@@ -26,7 +26,7 @@ export default function ManagerContactDetails() {
   };
 
   return (
-    <Box sx={{ height: 441, wight: 455 }}>
+    <Box sx={{ width: "100%", maxWidth: 455 }}>
       <FormControl fullWidth>
         <InputLabel id="select-label-manager">Выберите менеджера</InputLabel>
         <Select

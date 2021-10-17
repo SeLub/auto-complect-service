@@ -3,6 +3,7 @@
 import React from "react";
 import AppHeader from "../../components/app-header";
 import BreadCrumbs from "../../components/breadcrumb/Breadcrumb";
+import Checkbox from "../../components/Checkbox";
 
 /* cюда добавляйте imports  своих компонентов */
 
@@ -11,9 +12,7 @@ export default function Configurator_p3() {
     <>
       <AppHeader />
       <BreadCrumbs />
-      {/* <p> третья страница</p> это удплите как начнете вставлять компоненты */}
-      <p> третья страница</p>
-      {/* cюда добавляйте свои компоненты */}
+      <Checkbox />
     </>
   );
 }

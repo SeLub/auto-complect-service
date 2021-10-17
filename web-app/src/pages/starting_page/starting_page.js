@@ -7,14 +7,10 @@ import BodyModification from "../../components/BodyModification";
 import "../../App.css";
 import Logo from "../../components/Logo";
 import Hull_specs_display from "../../components/Hull_specs_display";
-import Checkbox from "../../components/Checkbox";
 
 export default function starting_page() {
   return (
     <div className="">
-      <div>
-       <Checkbox />
-      </div>
       <div>
         <AppHeader />
       </div>

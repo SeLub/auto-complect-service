@@ -32,10 +32,8 @@ export default function ManagerContactDetails() {
       <Typography variant="h6" gutterBottom component="div">
         Контактные данные менеджера
       </Typography>
-      <Divider orientation="horizontal" style={{ width: "100%" }}>
-        {" "}
-      </Divider>
-      <FormControl fullWidth>
+      <Divider orientation="horizontal" style={{ width: "100%" }} />
+      <FormControl fullWidth margin="dense">
         <InputLabel id="select-label-manager">Выберите менеджера</InputLabel>
         <Select
           labelId="select-label-manager"

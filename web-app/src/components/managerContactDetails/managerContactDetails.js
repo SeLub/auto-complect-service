@@ -6,6 +6,7 @@ import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import Typography from "@mui/material/Typography";
+import Divider from "@mui/material/Divider";
 import managerContactDetails from "./baseManagers.json";
 
 /* Компонент Box служит в качестве компонента-оболочки. */
@@ -28,9 +29,12 @@ export default function ManagerContactDetails() {
 
   return (
     <Box sx={{ width: "100%", maxWidth: 455 }}>
-      <Typography variant="h5" gutterBottom component="div">
+      <Typography variant="h6" gutterBottom component="div">
         Контактные данные менеджера
       </Typography>
+      <Divider orientation="horizontal" style={{ width: "100%" }}>
+        {" "}
+      </Divider>
       <FormControl fullWidth>
         <InputLabel id="select-label-manager">Выберите менеджера</InputLabel>
         <Select

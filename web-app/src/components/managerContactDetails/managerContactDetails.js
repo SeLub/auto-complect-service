@@ -7,6 +7,7 @@ import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
+import TextField from "@mui/material/TextField";
 import managerContactDetails from "./baseManagers.json";
 
 /* Компонент Box служит в качестве компонента-оболочки. */
@@ -38,6 +39,7 @@ export default function ManagerContactDetails() {
         <Select
           labelId="select-label-manager"
           id="select-manager"
+          label="Выберите менеджера"
           value={managerName}
           onChange={handleChange}
         >
@@ -46,6 +48,41 @@ export default function ManagerContactDetails() {
           })}
         </Select>
       </FormControl>
+      <div>
+        <TextField
+          fullWidth
+          margin="normal"
+          id="standard-read-only-input"
+          label="Адрес"
+          defaultValue="Выберите менеджера"
+          InputProps={{
+            readOnly: true,
+          }}
+          variant="standard"
+        />
+        <TextField
+          fullWidth
+          margin="normal"
+          id="standard-read-only-input"
+          label="Телефон"
+          defaultValue="Выберите менеджера"
+          InputProps={{
+            readOnly: true,
+          }}
+          variant="standard"
+        />
+        <TextField
+          fullWidth
+          margin="normal"
+          id="standard-read-only-input"
+          label="E-mail"
+          defaultValue="Выберите менеджера"
+          InputProps={{
+            readOnly: true,
+          }}
+          variant="standard"
+        />
+      </div>
     </Box>
   );
 }

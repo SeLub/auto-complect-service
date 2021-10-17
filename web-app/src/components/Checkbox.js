@@ -3,40 +3,34 @@ import { DataGrid } from "@mui/x-data-grid";
 
 const columns = [
   { field: "id", headerName: "ID", width: 70 },
-  { field: "firstName", headerName: "First name", width: 130 },
-  { field: "lastName", headerName: "Last name", width: 130 },
+  { field: "Позиция", headerName: "Позиция", width: 160 },
+
   {
-    field: "age",
-    headerName: "Age",
-    type: "number",
-    width: 90,
-  },
-  {
-    field: "fullName",
-    headerName: "Full name",
-    description: "This column has a value getter and is not sortable.",
+    field: "Цена",
+    headerName: "Цена",
+    description: "Цена",
     sortable: false,
     width: 160,
     valueGetter: (params) =>
-      `${params.getValue(params.id, "firstName") || ""} ${
+      `${params.getValue(params.id, "Позиция") || ""} ${
         params.getValue(params.id, "lastName") || ""
       }`,
   },
 ];
 
 const rows = [
-  { id: 1, lastName: "Позиция 1", firstName: "Jon", age: 35 },
-  { id: 2, lastName: "Позиция 2", firstName: "Cersei", age: 42 },
-  { id: 3, lastName: "Позиция 3", firstName: "Jaime", age: 45 },
-  { id: 4, lastName: "Позиция 4", firstName: "Arya", age: 16 },
-  { id: 5, lastName: "Позиция 5", firstName: "Daenerys", age: null },
-  { id: 6, lastName: "Позиция 6", firstName: null, age: 150 },
-  { id: 7, lastName: "Позиция 7", firstName: "Ferrara", age: 44 },
-  { id: 8, lastName: "Позиция 8", firstName: "Rossini", age: 36 },
-  { id: 9, lastName: "Позиция 9", firstName: "Harvey", age: 65 },
-  { id: 10, lastName: "Позиция 10", firstName: null, age: 150 },
-  { id: 11, lastName: "Позиция 11", firstName: "Ferrara", age: 44 },
-  { id: 12, lastName: "Позиция 12", firstName: "Rossini", age: 36 },
+  { id: 1, Позиция: "Позиция 1" },
+  { id: 2, Позиция: "Позиция 2" },
+  { id: 3, Позиция: "Позиция 3" },
+  { id: 4, Позиция: "Позиция 4" },
+  { id: 5, Позиция: "Позиция 5" },
+  { id: 6, Позиция: "Позиция 6" },
+  { id: 7, Позиция: "Позиция 7" },
+  { id: 8, Позиция: "Позиция 8" },
+  { id: 9, Позиция: "Позиция 9" },
+  { id: 10, Позиция: "Позиция 10" },
+  { id: 11, Позиция: "Позиция 11" },
+  { id: 12, Позиция: "Позиция 12" },
 ];
 
 export default function DataTable() {

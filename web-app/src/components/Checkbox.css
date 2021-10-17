@@ -13,6 +13,12 @@
   color: #717171;  
 
 }
+.row{
+
+  margin-top: 654px !important;
+  justify-items: start !important;
+
+}
 
 /* .width {
   position: absolute;

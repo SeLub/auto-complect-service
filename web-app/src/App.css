@@ -425,6 +425,8 @@
 
 .specs_display_list ul {
   padding-inline-start: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .hull_spec_type {

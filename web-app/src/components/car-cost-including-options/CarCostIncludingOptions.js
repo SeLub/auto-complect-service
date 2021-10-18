@@ -11,6 +11,8 @@ const CarCostIncludingOptions = () => {
     max-width: 100%;
     position: relative;
     margin: 24px 0px 26px 0px;
+    padding-left: 0px;
+    padding-right: 0px;
     text-align: right;
     overflow: hidden;
   }
@@ -18,7 +20,7 @@ const CarCostIncludingOptions = () => {
     width: 266px; 
     height: 50px;
     display: flex;
-    margin: 0px 0px 2px 0px;
+    margin: 0px 50px 0px 0px;
     font-family: "Ford Antenna";
     font-size: 18px;
     line-height: 25px;
@@ -40,7 +42,7 @@ const CarCostIncludingOptions = () => {
     width: 126px;
     height: 25px;
     font-family: Ford Antenna;
-    margin: 0px 0px 0px 65px;
+    margin: 0px 0px 0px 0px;
     font-size: 18px;
     line-height: 25px;
     text-align: right;
@@ -51,7 +53,7 @@ const CarCostIncludingOptions = () => {
     width: 108px;
     height: 17px;
     font-family: Ford Antenna;
-    margin: 0px 0px 0px 83px;
+    margin: 0px 0px 0px 18px;
     font-size: 14px;
     line-height: 17px;
     text-align: right;
@@ -61,9 +63,9 @@ const CarCostIncludingOptions = () => {
 // .MuiTypography-paragraph {
 //     margin-bottom: 0px;
 // }
-.MuiContainer-root {
-    padding-right: 0px;
-}
+// .MuiContainer-root {
+//     padding-right: 0px;
+// }
 `;
   return (
     <div>

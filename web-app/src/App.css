@@ -425,6 +425,8 @@
 
 .specs_display_list ul {
   padding-inline-start: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .hull_spec_type {
@@ -534,4 +536,26 @@
   left: 0px;
   top: 0px;
   border: 1px solid #2d96cd;
+}
+.gotoCom button {
+  font-family: Ford Antenna;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.1px;
+  color: #ffffff;
+  padding: 12px 18px 12px 18px;
+  background: #2d96cd;
+  position: absolute;
+  width: 269px;
+  height: 43px;
+  left: 1335px;
+  top: 1220px;
+  border: 1px solid #2d96cd;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }

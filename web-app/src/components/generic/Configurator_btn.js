@@ -13,11 +13,9 @@ import hull_types_reducer from "../../reducers/hull_types_reducer";
 // на 14.09.2021 в объекте хранятся только самые базовые характеристики кузова
 // потенциально можно в него можно включить базовые и доп. опции для оснащения
 
-
-
 export default function Configurator_btn(props) {
   const history = useHistory();
-  function handleClick(hull_types){
+  function handleClick(hull_types) {
     history.push({
       pathname: '/configurator_p1',
       state: {hull_types: hull_types}
@@ -26,7 +24,6 @@ export default function Configurator_btn(props) {
     // console.log(hull_types_store.getState())
   }
   return (
-    // фукционала пока нет, при нажатии выводит данные по текщему кузову в консоль
     <button
       className="configurator_btn"
       onClick={() => handleClick(props.hull_types)}
@@ -35,5 +32,3 @@ export default function Configurator_btn(props) {
     </button>
   );
 }
-
-

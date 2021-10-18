@@ -6,6 +6,9 @@
 import "./Optional_equipment.css";
 
 import React from "react";
+import TotalCarValue from "../../components/total-car-value/Total-car-value";
+import NextButton from "../generic/Next-btn";
+import Price_list_btn from "../generic/Price_list_btn";
 
 // eslint-disable-next-line camelcase
 function Optional_equipment() {
@@ -94,6 +97,13 @@ function Optional_equipment() {
       <div className="width w6" />
       <div className="width w7" />
       <div className="width w8" />
+      <TotalCarValue />
+      <div className="priceBtnTotal">
+        <Price_list_btn />
+      </div>
+      <div className="NextBtnTotal">
+        <NextButton />
+      </div>
     </div>
   );
 }

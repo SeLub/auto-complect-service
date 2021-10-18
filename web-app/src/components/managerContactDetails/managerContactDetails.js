@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable no-console */
 import * as React from "react";
 import Box from "@mui/material/Box";
@@ -18,6 +19,9 @@ import managerContactDetails from "./baseManagers.json";
 
 export default function ManagerContactDetails() {
   const [managerName, setManagerName] = React.useState(" ");
+  const [valueAddress, setValueAddress] = React.useState("");
+  const [valueEmail, setValueEmail] = React.useState("");
+  const [valuePhone, setValuePhone] = React.useState("");
 
   // функция которая считывает выбранное значение
 
@@ -52,9 +56,9 @@ export default function ManagerContactDetails() {
         <TextField
           fullWidth
           margin="normal"
+          value={valueAddress}
           id="standard-read-only-input"
           label="Адрес"
-          defaultValue="Выберите менеджера"
           InputProps={{
             readOnly: true,
           }}
@@ -62,10 +66,10 @@ export default function ManagerContactDetails() {
         />
         <TextField
           fullWidth
+          value={valuePhone}
           margin="normal"
           id="standard-read-only-input"
           label="Телефон"
-          defaultValue="Выберите менеджера"
           InputProps={{
             readOnly: true,
           }}
@@ -73,10 +77,10 @@ export default function ManagerContactDetails() {
         />
         <TextField
           fullWidth
+          value={valueEmail}
           margin="normal"
           id="standard-read-only-input"
           label="E-mail"
-          defaultValue="Выберите менеджера"
           InputProps={{
             readOnly: true,
           }}

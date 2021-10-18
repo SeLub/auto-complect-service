@@ -22,7 +22,7 @@ export default function Configurator_btn(props) {
       pathname: '/configurator_p1',
       state: {hull_types: hull_types}
     })
-    hull_types_reducer.dispatch(hull_types_reducer({type: 'hull_types/get'}))
+    // hull_types_reducer.dispatch(hull_types_reducer({type: 'hull_types/get'}))
     // console.log(hull_types_store.getState())
   }
   return (

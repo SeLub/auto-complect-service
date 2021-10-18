@@ -14,6 +14,7 @@ import Box from "@mui/material/Box";
 import Basic_Options from "../../components/basic_options/Basic_Options";
 import Details from "../../components/details/Details";
 import CarCostIncludingOptions from "../../components/car-cost-including-options/CarCostIncludingOptions";
+import SpecialDiscountedPrice from "../../components/special-discounted-price/SpecialDiscountedPrice";
 
 function RefitTabs(props) {
   const { children, value, index, ...other } = props;
@@ -162,6 +163,7 @@ export default function RequestExecutionTabs() {
           >
             <Details />
             <CarCostIncludingOptions />
+            <SpecialDiscountedPrice />
           </RefitTabs>
           <RefitTabs
             className="tab11"

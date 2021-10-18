@@ -1,10 +1,13 @@
 import * as React from "react";
 import { Typography, Container } from "@material-ui/core";
+import OutlinedInput from "@mui/material/OutlinedInput";
+import InputAdornment from "@mui/material/InputAdornment";
+import FormControl from "@mui/material/FormControl";
 
-const CarCostIncludingOptions = () => {
+const SpecialDiscountedPrice = () => {
   const css = `
   @import url("http://fonts.cdnfonts.com/css/ford-antenna");
-  .car_cost_including_options_wrapper{
+  .special_discounted_price_wrapper{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -16,7 +19,7 @@ const CarCostIncludingOptions = () => {
     text-align: left;
     overflow: hidden;
   }
-  .car_cost_including_options_h1{
+  .special_discounted_price_h1{
     width: 266px; 
     height: 50px;
     display: flex;
@@ -29,68 +32,56 @@ const CarCostIncludingOptions = () => {
     justify-content: flex-start;
     // align-self: center;
   }
-.car_cost_including_options_h3{
+.special_discounted_price_h3{
   width: 126px;
   margin-right: 0px;
   align-self: center;
   line-height: 25px;
   margin-bottom: 0px;
 }
-// .MuiContainer-root {
-//     padding-left: 0px;
-//     padding-right: 0px;
-// }
-.car_cost_including_options1{
+.special_discounted_price{
     width: 126px;
-    height: 25px;
+    height: 50px;
     font-family: Ford Antenna;
     margin: 0px 0px 0px 0px;
     font-size: 18px;
     line-height: 25px;
     text-align: right;
     letter-spacing: 0.1px;
-    color: #2D96CD;
+    color: #333333;
 }
-.car_cost_including_options2{
-    width: 108px;
-    height: 17px;
-    font-family: Ford Antenna;
-    margin: 0px 0px 0px 18px;
-    font-size: 14px;
-    line-height: 17px;
-    text-align: right;
-    letter-spacing: 0.1px;
-    color: #717171;
-}
-// .MuiTypography-paragraph {
-//     margin-bottom: 0px;
-// }
-// .MuiContainer-root {
-//     padding-right: 0px;
-// }
 `;
   return (
     <div>
       <style type="text/css">{css}</style>
-      <Container className="car_cost_including_options_wrapper">
+      <Container className="special_discounted_price_wrapper">
         <Typography
-          className="car_cost_including_options_h1"
+          className="special_discounted_price_h1"
           variant="h1"
           paragraph
         >
-          Стоимость автомобиля с учетом выбранных опций
+          Специальная цена со скидкой
         </Typography>
-        <Typography
-          className="car_cost_including_options_h3"
-          variant="h3"
-          paragraph
-        >
-          <p className="car_cost_including_options1">270 950 BYN</p>
-          <p className="car_cost_including_options2">7 950 865 RUB</p>
+        <Typography className="special_discounted_price_h3" variant="h3">
+          <FormControl
+            className="special_discounted_price"
+            sx={{ m: 1 }}
+            variant="outlined"
+          >
+            <OutlinedInput
+              className="special_discounted_price"
+              id="outlined-adornment-price"
+              endAdornment={<InputAdornment position="end">BYN</InputAdornment>}
+              aria-describedby="outlined-weight-helper-text"
+              inputProps={{
+                "aria-label": "price",
+              }}
+            />
+          </FormControl>
         </Typography>
       </Container>
     </div>
   );
 };
 
-export default CarCostIncludingOptions;
+export default SpecialDiscountedPrice;

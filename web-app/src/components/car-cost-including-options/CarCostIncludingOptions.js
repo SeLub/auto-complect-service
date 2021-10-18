@@ -20,7 +20,7 @@ const CarCostIncludingOptions = () => {
     width: 266px; 
     height: 50px;
     display: flex;
-    margin: 0px 50px 0px 0px;
+    margin: 0px 60px 0px 0px;
     font-family: "Ford Antenna";
     font-size: 18px;
     line-height: 25px;

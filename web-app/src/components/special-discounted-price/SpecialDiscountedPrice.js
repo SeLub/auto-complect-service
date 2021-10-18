@@ -23,7 +23,7 @@ const SpecialDiscountedPrice = () => {
     width: 266px; 
     height: 50px;
     display: flex;
-    margin: 0px 50px 0px 0px;
+    margin: 0px 28px 0px 0px;
     font-family: "Ford Antenna";
     font-size: 18px;
     line-height: 25px;
@@ -33,14 +33,14 @@ const SpecialDiscountedPrice = () => {
     // align-self: center;
   }
 .special_discounted_price_h3{
-  width: 126px;
+  width: 160px;
   margin-right: 0px;
   align-self: center;
   line-height: 25px;
   margin-bottom: 0px;
 }
 .special_discounted_price{
-    width: 126px;
+    width: 160px;
     height: 50px;
     font-family: Ford Antenna;
     margin: 0px 0px 0px 0px;

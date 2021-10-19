@@ -4,7 +4,7 @@ import React from "react";
 import { useHistory } from "react-router";
 
 
-export default function Tmp_p3(){
+export default function TmpP3(){
     const history = useHistory();
     function handleClick(hull_types){
       history.push({

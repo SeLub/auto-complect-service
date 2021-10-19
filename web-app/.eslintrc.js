@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 module.exports = {
   env: {
     browser: true,
@@ -25,17 +24,10 @@ module.exports = {
     "react/jsx-filename-extension": [1, { extensions: [".js", ".jsx"] }],
     "react/prop-types": "off",
     "prettier/prettier": ["error", { endOfLine: "auto" }],
-    "import/no-extraneous-dependencies": ["error", { devDependencies: true }],
   },
   settings: {
     react: {
       version: "latest", // instead of 'detect'
-    },
-    "import/resolver": {
-      node: {
-        extensions: [".js", ".jsx", ".ts", ".tsx"],
-        moduleDirectory: ["node_modules", "src/"],
-      },
     },
   },
 };

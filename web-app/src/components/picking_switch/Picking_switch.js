@@ -1,4 +1,4 @@
-/* eslint-disable */
+/* eslint-disable import/no-useless-path-segments */
 /* eslint-disable react/no-this-in-sfc */
 /* eslint-disable camelcase */
 /* eslint-disable jsx-a11y/anchor-is-valid */
@@ -12,9 +12,9 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import Basic_Options from "../../components/basic_options/Basic_Options";
-import Optional_equipment from "../../components/optional_equipment/Optional_equipment";
-import Tmp_p3 from "../../components/tmp_components/tmp_p3";
+import BasicOptions from "../../components/basic_options/Basic_Options";
+import OptionalEquipment from "../../components/optional_equipment/Optional_equipment";
+import TmpP3 from "../../components/tmp_components/tmp_p3";
 
 function RefitTabs(props) {
   const { children, value, index, ...other } = props;
@@ -147,13 +147,13 @@ export default function FloatingActionButtonZoom() {
           onChangeIndex={handleChangeIndex}
         >
           <RefitTabs value={value} index={0} dir={theme.direction}>
-            <Basic_Options />
+            <BasicOptions />
           </RefitTabs>
           <RefitTabs value={value} index={1} dir={theme.direction}>
-            <Optional_equipment />
+            <OptionalEquipment />
           </RefitTabs>
           <RefitTabs value={value} index={2} dir={theme.direction}>
-            <Tmp_p3 />
+            <TmpP3 />
           </RefitTabs>
         </SwipeableViews>
       </Box>

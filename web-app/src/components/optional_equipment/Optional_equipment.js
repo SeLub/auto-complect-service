@@ -1,4 +1,4 @@
-/* eslint-disable */
+/* eslint-disable react/jsx-pascal-case */
 /* eslint-disable react/no-unknown-property */
 /* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable camelcase */
@@ -6,12 +6,12 @@
 import "./Optional_equipment.css";
 
 import React from "react";
-import TotalCarValue from "../../components/total-car-value/Total-car-value";
+import TotalCarValue from "../total-car-value/Total-car-value";
 import NextButton from "../generic/Next-btn";
 import Price_list_btn from "../generic/Price_list_btn";
 
 // eslint-disable-next-line camelcase
-function Optional_equipment() {
+function OptionalEquipment() {
   return (
     // <body className="">
     <div className="box_specifications">
@@ -108,4 +108,4 @@ function Optional_equipment() {
   );
 }
 
-export default Optional_equipment;
+export default OptionalEquipment;

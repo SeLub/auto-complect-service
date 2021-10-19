@@ -1,7 +1,7 @@
-/* eslint-disable */
+/* eslint-disable react/jsx-props-no-spreading */
+/* eslint-disable import/no-unresolved */
 /* eslint-disable camelcase */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-/* eslint-disable react/jsx-props-no-spreading */
 import * as React from "react";
 import PropTypes from "prop-types";
 import SwipeableViews from "react-swipeable-views";
@@ -11,11 +11,11 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import Basic_Options from "../../components/basic_options/Basic_Options";
-import Details from "../../components/details/Details";
-import CarCostIncludingOptions from "../../components/car-cost-including-options/CarCostIncludingOptions";
-import SpecialDiscountedPrice from "../../components/special-discounted-price/SpecialDiscountedPrice";
-import PrintCommercialOffer from "../../components/generic/PrintCommercialOffer";
+import BasicOptions from "../basic_options/Basic_Options";
+import Details from "../details/Details";
+import CarCostIncludingOptions from "../car-cost-including-options/CarCostIncludingOptions";
+import SpecialDiscountedPrice from "../special-discounted-price/SpecialDiscountedPrice";
+import PrintCommercialOffer from "../generic/PrintCommercialOffer";
 
 function RefitTabs(props) {
   const { children, value, index, ...other } = props;
@@ -173,7 +173,7 @@ export default function RequestExecutionTabs() {
             index={1}
             dir={theme.direction}
           >
-            <Basic_Options />
+            <BasicOptions />
             <CarCostIncludingOptions />
             <SpecialDiscountedPrice />
             <PrintCommercialOffer />

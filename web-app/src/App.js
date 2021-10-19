@@ -2,7 +2,6 @@
 /* eslint-disable import/order */
 /* eslint-disable react/jsx-pascal-case */
 /* eslint-disable camelcase */
-
 /* eslint-disable react/self-closing-comp */
 /* eslint-disable react/react-in-jsx-scope */
 import "./App.css";

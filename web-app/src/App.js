@@ -11,6 +11,8 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import configurator_p1 from "./pages/configurator_p1/configurator_p1";
 import configurator_p2 from "./pages/configurator_p2/configurator_p2";
 import Configurator_p3 from "./pages/configurator_p3/Configurator_p3";
+import { Provider } from 'react-redux';
+import store from "./store/store";
 // import Block_ford_cards from "./components/Block_ford_cards";
 // Это корневой компонент
 // Сохраняйте компоненты в папке components
@@ -19,7 +21,7 @@ import Configurator_p3 from "./pages/configurator_p3/Configurator_p3";
 
 function App() {
   return (
-    <div>
+    <Provider store={store}>
       <Router>
         <Route path="/" exact>
           <Starting_Page />
@@ -28,7 +30,7 @@ function App() {
         <Route path="/configurator_p2" component={configurator_p2}></Route>
         <Route path="/Configurator_p3" component={Configurator_p3}></Route>
       </Router>
-    </div>
+    </ Provider>
   );
 }
 

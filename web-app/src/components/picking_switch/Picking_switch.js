@@ -18,7 +18,6 @@ import Tmp_p3 from "../../components/tmp_components/tmp_p3";
 
 function RefitTabs(props) {
   const { children, value, index, ...other } = props;
-
   return (
     <Typography
       component="div"

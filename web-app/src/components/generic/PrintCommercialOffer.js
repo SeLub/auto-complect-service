@@ -1,6 +1,8 @@
+/* eslint-disable camelcase */
 import * as React from "react";
 import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
+import { useHistory } from "react-router-dom";
 
 const css = `
 @import url("http://fonts.cdnfonts.com/css/ford-antenna");
@@ -25,7 +27,15 @@ const css = `
     background-color: #2D96CD;
   }`;
 
-export default function PrintCommercialOffer() {
+export default function PrintCommercialOffer(props) {
+  const history = useHistory();
+  function handleClick(hull_types) {
+    history.push({
+      pathname: "/PdfPage",
+      state: { hull_types },
+    });
+    console.log(hull_types);
+  }
   return (
     <div className="car_cost_including_options_wrapper">
       <style type="text/css">{css}</style>
@@ -34,6 +44,7 @@ export default function PrintCommercialOffer() {
           className="print_commercial_offer_button"
           variant="contained"
           href="#contained-buttons"
+          onClick={() => handleClick(props.hull_types)}
         >
           Напечатать Коммерческое Предложение
         </Button>

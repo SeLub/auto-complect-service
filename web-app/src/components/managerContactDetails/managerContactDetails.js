@@ -33,7 +33,7 @@ export default function ManagerContactDetails() {
   };
 
   return (
-    <Box marginLeft={115} marginTop={-33} sx={{ width: "100%", maxWidth: 455 }}>
+    <Box marginLeft={93} marginTop={-33} sx={{ width: "100%", maxWidth: 455 }}>
       <Typography variant="h6" gutterBottom component="div">
         Контактные данные менеджера
       </Typography>

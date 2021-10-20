@@ -1,10 +1,10 @@
 import * as React from "react";
 import { Typography, Container } from "@material-ui/core";
 
-const TotalCarValue = () => {
+const CarCostIncludingOptions = () => {
   const css = `
   @import url("http://fonts.cdnfonts.com/css/ford-antenna");
-  .total-car-value_wrapper{
+  .car_cost_including_options_wrapper{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -16,11 +16,11 @@ const TotalCarValue = () => {
     text-align: left;
     overflow: hidden;
   }
-  .total-car-value_h1{
+  .car_cost_including_options_h1{
     width: 266px; 
     height: 50px;
     display: flex;
-    margin: 0px 50px 0px 0px;
+    margin: 0px 60px 0px 0px;
     font-family: "Ford Antenna";
     font-size: 18px;
     line-height: 25px;
@@ -29,7 +29,7 @@ const TotalCarValue = () => {
     justify-content: flex-start;
     // align-self: center;
   }
-.total-car-value_h3{
+.car_cost_including_options_h3{
   width: 126px;
   margin-right: 0px;
   align-self: center;
@@ -40,7 +40,7 @@ const TotalCarValue = () => {
 //     padding-left: 0px;
 //     padding-right: 0px;
 // }
-.total-car-value1{
+.car_cost_including_options1{
     width: 126px;
     height: 25px;
     font-family: Ford Antenna;
@@ -51,7 +51,7 @@ const TotalCarValue = () => {
     letter-spacing: 0.1px;
     color: #2D96CD;
 }
-.total-car-value2{
+.car_cost_including_options2{
     width: 108px;
     height: 17px;
     font-family: Ford Antenna;
@@ -72,17 +72,25 @@ const TotalCarValue = () => {
   return (
     <div>
       <style type="text/css">{css}</style>
-      <Container className="total-car-value_wrapper">
-        <Typography className="total-car-value_h1" variant="h1" paragraph>
-          Общая стоимость автомобиля
+      <Container className="car_cost_including_options_wrapper">
+        <Typography
+          className="car_cost_including_options_h1"
+          variant="h1"
+          paragraph
+        >
+          Стоимость автомобиля с учетом выбранных опций
         </Typography>
-        <Typography className="total-car-value_h3" variant="h3" paragraph>
-          <p className="total-car-value1">270 950 BYN</p>
-          <p className="total-car-value2">7 950 865 RUB</p>
+        <Typography
+          className="car_cost_including_options_h3"
+          variant="h3"
+          paragraph
+        >
+          <p className="car_cost_including_options1">270 950 BYN</p>
+          <p className="car_cost_including_options2">7 950 865 RUB</p>
         </Typography>
       </Container>
     </div>
   );
 };
 
-export default TotalCarValue;
+export default CarCostIncludingOptions;

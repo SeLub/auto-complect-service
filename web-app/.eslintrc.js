@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 module.exports = {
   env: {
     browser: true,
@@ -33,7 +34,8 @@ module.exports = {
     "import/resolver": {
       node: {
         extensions: [".js", ".jsx", ".ts", ".tsx"],
-        moduleDirectory: ["node_modules", "src/"],
+        // moduleDirectory: ["node_modules", "src/"],
+        paths: ["./src"],
       },
     },
   },

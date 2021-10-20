@@ -22,7 +22,7 @@ export default function Configurator_btn(props) {
   }
   return (
     <button
-      className="Configurator_btn"
+      className="configurator_btn"
       onClick={() => handleClick(props.hull_types)}
     >
       <p>Конфигуратор</p>

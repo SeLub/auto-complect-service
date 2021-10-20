@@ -550,12 +550,11 @@
   position: absolute;
   width: 269px;
   height: 43px;
-  left: 1335px;
+  left: 1135px;
   top: 1220px;
   border: 1px solid #2d96cd;
   text-align: center;
-  display: flex;
-  flex-direction: row;
+
   justify-content: center;
   align-items: center;
 }

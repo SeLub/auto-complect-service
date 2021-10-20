@@ -3,7 +3,6 @@
 
 import React from "react";
 import ReactDOM from "react-dom";
-// import ReactPDF from "@react-pdf/renderer";
 import {
   Page,
   Text,
@@ -14,13 +13,10 @@ import {
   Font,
 } from "@react-pdf/renderer";
 
-const PDF = () => (
-  <PDFViewer>
-    <PdfPage />
-  </PDFViewer>
-);
-
-ReactDOM.render(<PDF />, document.getElementById("root"));
+Font.register({
+  family: "Roboto",
+  src: "https://cdnjs.cloudflare.com/ajax/libs/ink/3.1.10/fonts/Roboto/roboto-medium-webfont.ttf",
+});
 
 export default function PdfPage() {
   const styles = StyleSheet.create({
@@ -35,25 +31,30 @@ export default function PdfPage() {
       margin: 30,
       padding: 10,
       flexGrow: 1,
-    },
-    text: {
-      fontFamily: "Ford Antenna",
+      fontFamily: "Roboto",
     },
   });
-  Font.register({
-    family: "Ford Antenna",
-    src: `@import url("http://fonts.cdnfonts.com/css/ford-antenna")`,
-  });
+
   return (
-    <Document style={styles.document}>
-      <Page size="A4" style={styles.page}>
-        <View style={styles.section}>
-          <Text style={styles.text}>Пример #1</Text>
-        </View>
-        <View style={styles.section}>
-          <Text style={styles.text}>Example #2</Text>
-        </View>
-      </Page>
-    </Document>
+    <PDFViewer>
+      <Document style={styles.document}>
+        <Page size="A4" style={styles.page}>
+          <View style={styles.section}>
+            <Text>Пример #1</Text>
+          </View>
+          <View style={styles.section}>
+            <Text>Example #2</Text>
+          </View>
+        </Page>
+      </Document>
+    </PDFViewer>
   );
 }
+
+// const PDF = () => (
+//   <PDFViewer>
+//     <PdfPage />
+//   </PDFViewer>
+// );
+
+ReactDOM.render(<PdfPage />, document.getElementById("root"));

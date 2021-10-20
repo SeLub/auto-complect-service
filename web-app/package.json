@@ -22,6 +22,7 @@
     "mui-rff": "^3.0.16",
     "mui-rte": "^2.0.1",
     "mui-styling": "^0.1.0",
+    "pdfkit": "^0.12.3",
     "prop-types": "^15.7.2",
     "react-data-grid": "^7.0.0-beta.7",
     "react-json-table": "^0.1.1",

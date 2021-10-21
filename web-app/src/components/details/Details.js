@@ -7,6 +7,7 @@ import TableCell from "@mui/material/TableCell";
 import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
+import CardMedia from "@mui/material/CardMedia";
 
 const css = `
 @import url("http://fonts.cdnfonts.com/css/ford-antenna");
@@ -165,10 +166,11 @@ export default function Details() {
           </TableBody>
         </Table>
       </TableContainer>
-      <img
-        src="/img/middle-line.jpg"
-        className="middle-line"
+      <CardMedia
+        component="img"
         alt="middle-line"
+        image="/img/middle-line.png"
+        className="middle-line"
       />
     </div>
   );

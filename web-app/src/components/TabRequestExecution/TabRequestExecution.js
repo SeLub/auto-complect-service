@@ -1,12 +1,14 @@
+/* eslint-disable no-undef */
 /* eslint-disable prettier/prettier */
 import * as React from "react";
 import { DataGrid } from "@mui/x-data-grid";
+import "./TabRequestExecution.css";
 
 const columns = [
   { field: "id", headerName: "ID", width: 70 },
   { field: "Позиция", headerName: "Позиция", width: 160 },
   { field: "Цена", headerName: "Цена", width: 160 },
-  // {
+
   //   field: "Цена",
   //   headerName: "Цена",
   //   description: "Цена",
@@ -18,6 +20,7 @@ const columns = [
   //     }`,
   // },
 ];
+
 
 const rows = [
   { id: 1, Позиция: "Позиция 1", Цена: "20 000 USD"},

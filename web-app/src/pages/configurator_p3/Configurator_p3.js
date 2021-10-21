@@ -3,8 +3,7 @@
 import React from "react";
 import AppHeader from "../../components/app-header";
 import BreadCrumbs from "../../components/breadcrumb/Breadcrumb";
-import Checkbox from "../../components/Checkbox";
-
+import TabRequestExecution1 from "../../components/TabRequestExecution/TabRequestExecution1";
 /* cюда добавляйте imports  своих компонентов */
 
 export default function Configurator_p3() {
@@ -12,7 +11,7 @@ export default function Configurator_p3() {
     <>
       <AppHeader />
       <BreadCrumbs />
-      <Checkbox />
+      <TabRequestExecution1 />
     </>
   );
 }

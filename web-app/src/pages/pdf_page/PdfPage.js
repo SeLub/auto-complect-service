@@ -57,10 +57,4 @@ export default function PdfPage() {
   );
 }
 
-// const PDF = () => (
-//   <PDFViewer>
-//     <PdfPage />
-//   </PDFViewer>
-// );
-
 ReactDOM.render(<PdfPage />, document.getElementById("root"));

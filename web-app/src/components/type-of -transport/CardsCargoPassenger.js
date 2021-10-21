@@ -6,7 +6,9 @@ import {
   CardMedia,
   CardHeader,
   Typography,
+  Box,
 } from "@mui/material";
+import TotalCarValue from "../total-car-value/Total-car-value";
 
 export default function CardsCargoPassenger() {
   return (
@@ -20,6 +22,9 @@ export default function CardsCargoPassenger() {
       <Typography variant="body2" color="InfoText">
         Выбор схемы комплектации:
       </Typography>
+      <Box>
+        <TotalCarValue />
+      </Box>
     </CardContent>
   );
 }

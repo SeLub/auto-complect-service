@@ -1,6 +1,3 @@
-/* eslint-disable react/jsx-fragments */
-/* eslint-disable new-cap */
-
 import React from "react";
 import ReactDOM from "react-dom";
 import {

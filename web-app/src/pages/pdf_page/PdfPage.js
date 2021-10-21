@@ -21,22 +21,28 @@ Font.register({
 export default function PdfPage() {
   const styles = StyleSheet.create({
     document: {
-      width: 1128,
+      width: "100%",
+      height: "100%",
     },
     page: {
       flexDirection: "row",
       backgroundColor: "#E4E4E4",
     },
     section: {
+      fontFamily: "Roboto",
       margin: 30,
+      textAlign: "center",
       padding: 10,
       flexGrow: 1,
-      fontFamily: "Roboto",
+    },
+    pdfviewer: {
+      width: "1250px",
+      height: "1200px",
     },
   });
 
   return (
-    <PDFViewer>
+    <PDFViewer style={styles.pdfviewer}>
       <Document style={styles.document}>
         <Page size="A4" style={styles.page}>
           <View style={styles.section}>

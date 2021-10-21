@@ -1,7 +1,9 @@
-/* eslint-disable */
-import { applyMiddleware, compose, combineReducers, createStore } from 'redux';
-import reducers from '../reducers/reducers';
+import { applyMiddleware, compose, combineReducers, createStore } from "redux";
+// import throttle from "lodash/throttle";
+import reducers from "../reducers/reducers";
+import { loadState, saveState } from "./localStorage";
 
+const persistedState = loadState();
 
 const middlewares = [];
 
@@ -9,12 +11,7 @@ function getInitialState() {
   return {};
 }
 
-// export default configureStore({
-//   reducer: {
-//     hull_types: hull_types_reducer
-//   }
-// })
-
+/* eslint-disable */
 const createReduxStore = () => {
   let composeFunction;
   if (
@@ -25,16 +22,21 @@ const createReduxStore = () => {
   } else {
     composeFunction = compose;
   }
-
+  /* eslint-enable */
   return createStore(
     combineReducers(reducers),
     getInitialState(),
-    composeFunction(applyMiddleware(...middlewares))
+    composeFunction(applyMiddleware(...middlewares)),
+    persistedState
   );
 };
 
 const store = createReduxStore();
 const { dispatch, getState } = store;
+
+store.subscribe(() => {
+  saveState(store.getState());
+});
 
 export default store;
 export { dispatch, getState };

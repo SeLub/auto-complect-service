@@ -1,10 +1,10 @@
 /* eslint-disable */
 import hullTypes from './hull_types_reducer'
-import couter from './conter'
+import counter from './conter'
 
 const reducers = {
     hullTypes,
-    couter
+    counter
 
 }
 

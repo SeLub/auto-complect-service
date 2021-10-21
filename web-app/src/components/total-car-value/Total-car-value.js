@@ -13,21 +13,20 @@ const TotalCarValue = () => {
     margin: 24px 0px 26px 0px;
     padding-left: 0px;
     padding-right: 0px;
-    text-align: left;
+    text-align: right;
     overflow: hidden;
   }
   .total-car-value_h1{
-    width: 266px; 
+    width: 192px; 
     height: 50px;
     display: flex;
-    margin: 0px 50px 0px 0px;
+    margin: 0px 60px 0px 0px;
     font-family: "Ford Antenna";
     font-size: 18px;
     line-height: 25px;
     letter-spacing: 0.1px;
     color: #2D96CD;
-    justify-content: flex-start;
-    // align-self: center;
+    justify-content: flex-end;
   }
 .total-car-value_h3{
   width: 126px;

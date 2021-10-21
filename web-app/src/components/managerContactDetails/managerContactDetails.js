@@ -17,6 +17,22 @@ import managerContactDetails from "./baseManagers.json";
     сфокусированный, ошибка,необходимый для ввода формы В FormControl можно
     использовать только одну InputBase */
 
+const css = `
+// .css-rezjit {
+//   margin-left: 20px;
+//   margin-top: 0px;
+//   width: 100%;
+//   max-width: 455px;
+//   height: 377px;
+// }
+.manager-contact-details {
+  margin-left: 20px;
+  margin-top: 0px;
+  width: 100%;
+  max-width: 455px;
+  height: 377px;
+}`;
+
 export default function ManagerContactDetails() {
   const [managerName, setManagerName] = React.useState(" ");
   const [valueAddress, setValueAddress] = React.useState("");
@@ -33,7 +49,8 @@ export default function ManagerContactDetails() {
   };
 
   return (
-    <Box marginLeft={93} marginTop={-33} sx={{ width: "100%", maxWidth: 455 }}>
+    <Box className="manager-contact-details">
+      <style type="text/css">{css}</style>
       <Typography variant="h6" gutterBottom component="div">
         Контактные данные менеджера
       </Typography>

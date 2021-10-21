@@ -7,3 +7,16 @@ import {
   CardHeader,
   Typography,
 } from "@mui/material";
+
+export default function CardsCargoPassenger() {
+  return (
+    <CardContent>
+      <Typography gutterBottom variant="h5" component="div">
+        Грузопассажирский
+      </Typography>
+      <Typography variant="body2" color="text.secondary">
+        Грузопассажирский автомобиль 5+1 на базе L2H2
+      </Typography>
+    </CardContent>
+  );
+}

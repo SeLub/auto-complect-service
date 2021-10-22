@@ -2,6 +2,7 @@ import * as React from "react";
 import { Card, CardContent, Typography, Box } from "@mui/material";
 import TotalCarValue from "../total-car-value/Total-car-value";
 import RetoolBtn from "../generic/RetoolBtn";
+import ToggleButtonCargo from "./ToggleButtonCargo";
 
 export default function CardsCargoPassenger() {
   return (
@@ -16,6 +17,7 @@ export default function CardsCargoPassenger() {
         <Typography variant="body2" color="InfoText">
           Выбор схемы комплектации:
         </Typography>
+        <ToggleButtonCargo />
         <Box>
           <TotalCarValue />
           <RetoolBtn />

@@ -6,7 +6,7 @@ import RetoolBtn from "../generic/RetoolBtn";
 export default function CardsAutomobile() {
   return (
     <Card sx={{ maxWidth: 360 }}>
-      <CardContent>
+      <CardContent align="left">
         <Typography gutterBottom variant="h5" component="div">
           Легковой
         </Typography>

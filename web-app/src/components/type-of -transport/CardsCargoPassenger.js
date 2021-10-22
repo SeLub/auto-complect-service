@@ -5,7 +5,7 @@ import RetoolBtn from "../generic/RetoolBtn";
 
 export default function CardsCargoPassenger() {
   return (
-    <Card sx={{ minWidth: 360 }}>
+    <Card sx={{ maxWidth: 360 }}>
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
           Грузопассажирский

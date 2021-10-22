@@ -1,13 +1,5 @@
 import * as React from "react";
-import {
-  Card,
-  CardActions,
-  CardContent,
-  CardMedia,
-  CardHeader,
-  Typography,
-  Box,
-} from "@mui/material";
+import { Card, CardContent, Typography, Box } from "@mui/material";
 import TotalCarValue from "../total-car-value/Total-car-value";
 
 export default function CardsCargoPassenger() {

@@ -33,7 +33,7 @@ module.exports = {
     },
     "import/resolver": {
       node: {
-        extensions: [".js", ".jsx", ".ts", ".tsx"],
+        extensions: [".js", ".jsx", ".ts", ".tsx", ".native.js"],
         moduleDirectory: ["node_modules"],
         paths: ["./src"],
       },

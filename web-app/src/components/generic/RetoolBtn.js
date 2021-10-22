@@ -9,17 +9,19 @@ const RetoolBtn = () => {
     history.push({
       pathname: "/configurator_p2",
     });
+  }
+  return (
     <Stack direction="row">
       <Button
         variant="outlined"
         size="medium"
         fullWidth="true"
-        onClick={this.handleClick}
+        onClick={() => handleClick()}
       >
         Переоборудовать
       </Button>
-    </Stack>;
-  }
+    </Stack>
+  );
 };
 
 export default RetoolBtn;

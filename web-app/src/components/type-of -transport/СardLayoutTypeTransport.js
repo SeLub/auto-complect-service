@@ -2,6 +2,7 @@ import * as React from "react";
 import { Grid } from "@mui/material";
 import CardsCargoPassenger from "./CardsCargoPassenger";
 import CardsAutomobile from "./CardsAutomobile";
+import CardsBus from "./CardsBus";
 
 export default function СardLayoutTypeTransport() {
   return (
@@ -23,7 +24,7 @@ export default function СardLayoutTypeTransport() {
       <Grid item xs={4}>
         <Grid container justifyContent="center">
           <Grid>
-            <CardsCargoPassenger />
+            <CardsBus />
           </Grid>
         </Grid>
       </Grid>

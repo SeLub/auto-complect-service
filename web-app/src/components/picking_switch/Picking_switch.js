@@ -15,6 +15,8 @@ import Box from "@mui/material/Box";
 import Basic_Options from "../../components/basic_options/Basic_Options";
 import Optional_equipment from "../../components/optional_equipment/Optional_equipment";
 import СardLayoutTypeTransport from "../type-of -transport/СardLayoutTypeTransport";
+import TotalCarValue from "../total-car-value/Total-car-value";
+import GotoCommercialProposalBtn from "../generic/GotoCommercialProposal_btn";
 
 function RefitTabs(props) {
   const { children, value, index, ...other } = props;
@@ -155,6 +157,8 @@ export default function FloatingActionButtonZoom() {
           </RefitTabs>
           <RefitTabs value={value} index={2} dir={theme.direction}>
             <СardLayoutTypeTransport />
+            <TotalCarValue />
+            <GotoCommercialProposalBtn />
           </RefitTabs>
         </SwipeableViews>
       </Box>

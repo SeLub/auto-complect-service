@@ -16,9 +16,9 @@ export default function ToggleButtonCargo() {
       exclusive
       onChange={handleChange}
     >
-      <ToggleButton value="5/6+1">Web</ToggleButton>
-      <ToggleButton value="5/6+1">Android</ToggleButton>
-      <ToggleButton value="5/6/8+1">iOS</ToggleButton>
+      <ToggleButton value="5/6+1">5/6+1</ToggleButton>
+      <ToggleButton value="5/6+1">5/6+1</ToggleButton>
+      <ToggleButton value="5/6/8+1">5/6/8+1</ToggleButton>
     </ToggleButtonGroup>
   );
 }

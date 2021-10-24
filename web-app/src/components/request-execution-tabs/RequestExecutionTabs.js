@@ -16,6 +16,8 @@ import Details from "../../components/details/Details";
 import CarCostIncludingOptions from "../../components/car-cost-including-options/CarCostIncludingOptions";
 import SpecialDiscountedPrice from "../../components/special-discounted-price/SpecialDiscountedPrice";
 import PrintCommercialOffer from "../../components/generic/PrintCommercialOffer";
+import Optional_equipment_tab_requipment from "../tab-optional-equipment/Optional_equipment_tab_request_decoration";
+import Optional_equipment_tab_vehicle_type from "../tab-optional-equipment/Optional_equipment_tab_vehicle_type";
 
 function RefitTabs(props) {
   const { children, value, index, ...other } = props;
@@ -184,7 +186,7 @@ export default function RequestExecutionTabs() {
             index={2}
             dir={theme.direction}
           >
-            опциональное оборудование(текст)
+            <Optional_equipment_tab_requipment />
             <CarCostIncludingOptions />
             <SpecialDiscountedPrice />
             <PrintCommercialOffer />
@@ -195,7 +197,7 @@ export default function RequestExecutionTabs() {
             index={3}
             dir={theme.direction}
           >
-            тип транспортного средства(текст)
+            <Optional_equipment_tab_vehicle_type />
             <CarCostIncludingOptions />
             <SpecialDiscountedPrice />
             <PrintCommercialOffer />

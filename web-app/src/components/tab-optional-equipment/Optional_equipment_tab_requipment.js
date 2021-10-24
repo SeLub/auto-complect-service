@@ -6,8 +6,8 @@ import { DataGrid } from "@mui/x-data-grid";
 
 const columns = [
   { field: "id", headerName: "ID", width: 70 },
-  { field: "Позиция", headerName: "Позиция", width: 160 },
-  { field: "Цена", headerName: "Цена", width: 160 },
+  { field: "Позиция", headerName: "Позиция", width: 846 },
+  { field: "Цена", headerName: "Цена", width: 120 },
 ];
 
 

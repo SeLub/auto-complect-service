@@ -4,7 +4,7 @@ function ReEquipment() {
   return (
     <div className="App">
       <div className="breadcrumb">
-        <div className="label-breadcrumb">Переоборудование</div>
+        <div className="label-breadcrumb">Переоборудование </div>
       </div>
     </div>
   );

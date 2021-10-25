@@ -1,10 +1,13 @@
+/* eslint-disable react/destructuring-assignment */
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable import/no-named-as-default-member */
 import React from "react";
-import store from "../../store/store";
+import { connect } from "react-redux";
+// import store from "../../store/store";
 import "./basic_options.css";
+import { mapStateToProps } from "../selectors/basicOptionsSelector";
 
-export default function BasicOptions() {
+function BasicOptions(props) {
   // const baseOptions = store.getState().hullTypes.base_options;
   return (
     <div className="basic_options_wrapper">
@@ -12,7 +15,7 @@ export default function BasicOptions() {
         <img src="/img/vector.jpg" className="info_icon" />
         <p>Данное оборудование является стандартным в вашей конфигурации</p>
       </div>
-      {store.getState().hullTypes.base_options.map((baseOption) => {
+      {props.base_options.map((baseOption) => {
         return (
           <div className="basic_option">
             <div className="basic_option_content">
@@ -25,3 +28,5 @@ export default function BasicOptions() {
     </div>
   );
 }
+
+export default connect(mapStateToProps)(BasicOptions);

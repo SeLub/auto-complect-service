@@ -1,18 +1,15 @@
-// const mapStateToProps = (state) => {
-//   return {
-//     hullTypes: getVisibleTodos(state.todos, state.visibilityFilter),
-//   };
-// };
+/* eslint-disable import/prefer-default-export */
+// import hullTypes from "../../reducers/hull_types_reducer";
 
-const mapDispatchToProps = (dispatch) => {
+const mapStateToProps = (state) => {
   return {
-    onTodoClick: (id) => {
-      dispatch({
-        type: "TOGGLE_TODO",
-        id,
-      });
-    },
+    base_options: state.hullTypes.base_options,
   };
 };
 
-export default mapDispatchToProps;
+// const mapDispatchToProps = (dispatch) => {
+//   return {
+//   };
+// };
+
+export { mapStateToProps };

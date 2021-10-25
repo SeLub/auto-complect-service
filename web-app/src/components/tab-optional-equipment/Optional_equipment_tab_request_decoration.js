@@ -2,6 +2,7 @@
 /* eslint-disable prettier/prettier */
 import * as React from "react";
 import { DataGrid } from "@mui/x-data-grid";
+import "./Tab_Optional_Equipment.css";
 
 
 const columns = [

@@ -2,12 +2,13 @@
 /* eslint-disable prettier/prettier */
 import * as React from "react";
 import { DataGrid } from "@mui/x-data-grid";
+import "./Tab_Optional_Equipment.css";
 
 
 const columns = [
-  { field: "id", headerName: "ID", width: 30 },
+  { field: "id", headerName: "ID", width: 20 },
   { field: "Позиция", headerName: "Позиция", width: 886 },
-  { field: "Цена", headerName: "Цена", width: 150 },
+  { field: "Цена", headerName: "Цена", width: 140 },
 ];
 
 

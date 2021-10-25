@@ -1,0 +1,7 @@
+.MuiDataGrid-root{
+    border: 0px !important;
+}
+.MuiDataGrid-iconSeparator{
+    color: white;
+    height: 0px !important;
+}

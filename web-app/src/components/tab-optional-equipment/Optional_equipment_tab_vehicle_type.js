@@ -23,12 +23,12 @@ const rows = [
 
 export default function DataTable() {
   return (
-    <div style={{ height: 400, width: 736 }}>
+    <div style={{ height: 420, width: 736 }}>
       <DataGrid
         rows={rows}
         columns={columns}
-        pageSize={5}
-        rowsPerPageOptions={[5]}
+        pageSize={6}
+        rowsPerPageOptions={[6]}
     
       />
     </div>

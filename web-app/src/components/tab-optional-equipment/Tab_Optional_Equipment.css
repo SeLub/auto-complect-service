@@ -14,3 +14,7 @@
 .MuiDataGrid-selectedRowCount{
     color: white;
 }
+
+.css-zylse7-MuiButtonBase-root-MuiIconButton-root.Mui-disabled{
+    color:white !important;
+}

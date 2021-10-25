@@ -5,3 +5,12 @@
     color: white;
     height: 0px !important;
 }
+
+.css-levciy-MuiTablePagination-displayedRows{
+    color: white;
+   
+}
+
+.MuiDataGrid-selectedRowCount{
+    color: white;
+}

@@ -18,3 +18,40 @@
 .css-zylse7-MuiButtonBase-root-MuiIconButton-root.Mui-disabled{
     color:white !important;
 }
+.Tab_Optional_Equipment{
+    position: relative;
+    font-family: Ford Antenna;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0.10000000149011612px;
+    text-align: center;
+
+}
+.BoxTab_Optional_Equipment{
+    padding-left: 462px;
+}
+
+.Tab_Optional_Equipment_com{
+    color: #1976d2;
+    font-family: Ford Antenna;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-left: 35px;
+    padding-bottom: 20px;
+  
+}
+.info_iconTab_Optional_Equipment{
+    position: relative;
+    right: 546px;
+    top: 25px;
+    
+}
+.BoxTab_Optional_Equipment_Co{
+    height: 800px;
+}

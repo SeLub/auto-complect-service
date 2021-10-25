@@ -23,7 +23,9 @@ const rows = [
 
 export default function DataTable() {
   return (
+    <div className="BoxTab_Optional_Equipment">
     <div style={{ height: 420, width: 736 }}>
+      <div className="Tab_Optional_Equipment">Опции переоборудования</div>
       <DataGrid
         rows={rows}
         columns={columns}
@@ -31,6 +33,7 @@ export default function DataTable() {
         rowsPerPageOptions={[6]}
     
       />
+    </div>
     </div>
   );
 }

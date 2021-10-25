@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable no-undef */
 /* eslint-disable prettier/prettier */
 import * as React from "react";
@@ -25,14 +26,18 @@ const rows = [
 
 export default function DataTable() {
   return (
-    <div style={{ height: 600, width: "100%" }}>
+    <div className="BoxTab_Optional_Equipment_Co">
+    <div style={{ height: 750, width: "100%" }}>
+      <img src="/img/Vector.jpg" className="info_iconTab_Optional_Equipment"/>
+      <div className="Tab_Optional_Equipment_com">При добавлении опционального оборудования, цена автомобиля изменится</div>
       <DataGrid
         rows={rows}
         columns={columns}
-        pageSize={8}
-        rowsPerPageOptions={[8]}
+        pageSize={9}
+        rowsPerPageOptions={[9]}
         checkboxSelection
       />
+    </div>
     </div>
   );
 }

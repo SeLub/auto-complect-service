@@ -54,18 +54,47 @@
 }
 .BoxTab_Optional_Equipment_Co{
     height: 800px;
+    font-family: Ford Antenna;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 0em;
+
+
 }
+ .MuiDataGrid-columnHeaderTitle {
+ color: #717171;
+ font-size: 18px !important;
+ font-style: normal;
+ line-height: 22px!important;
+ letter-spacing: 0.10000000149011612px;
 
-
-/* .MuiDataGrid-root .MuiDataGrid-columnHeaderTitle {
-    position: relative;
-    right: -47px;
+}
+/* 
 }
 .MuiDataGrid-sortIcon{
     opacity: 0.0;
 }
+ */
+.MuiDataGrid-root {
+    font-family: Ford Antenna !important;
+    font-size: 14px !important;
+    font-style: normal;
+    font-weight: 400 !important;
+    line-height: 24px !important;
+    letter-spacing: 0em !important;
+    color: #333333 !important;
+    
+}
 
 .BoxTab_Optional_Equipment{
-    width: 736;
-} */
-
+    width: 736px;
+}
+.BoxTab_Optional_EquipmenT{
+    width: 1230px;
+}
+.MuiDataGrid-root .MuiDataGrid-columnHeaderTitleContainer {
+ 
+    padding: 0 4px;
+}

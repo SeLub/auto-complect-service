@@ -7,8 +7,8 @@ import "./Tab_Optional_Equipment.css";
 
 const columns = [
   { field: "id", headerName: "ID", width: 70 },
-  { field: "Позиция", headerName: "Позиция", width: 846 },
-  { field: "Цена", headerName: "Цена", width: 120 },
+  { field: "Позиция", headerName: "Позиция", width: 875 },
+  { field: "Цена", headerName: "Цена", width: 145 },
 ];
 
 
@@ -29,6 +29,7 @@ const rows = [
 
 export default function DataTable() {
   return (
+  <div className="BoxTab_Optional_EquipmenT">
     <div style={{ height: 750, width: "100%" }}>
       <DataGrid
         rows={rows}
@@ -37,6 +38,6 @@ export default function DataTable() {
         rowsPerPageOptions={[12]}
         checkboxSelection
       />
-    </div>
+    </div> </div>
   );
 }

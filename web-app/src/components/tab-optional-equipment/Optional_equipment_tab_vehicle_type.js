@@ -8,7 +8,7 @@ import "./Tab_Optional_Equipment.css";
 const columns = [
   { field: "id", headerName: "ID", width: 70 },
   { field: "Позиция", headerName: "Позиция", width: 466 },
-  { field: "Цена", headerName: "Цена", width: 190 },
+  { field: "Цена", headerName: "Цена", width: 140 },
 ];
 
 

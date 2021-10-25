@@ -7,7 +7,7 @@ import { DataGrid } from "@mui/x-data-grid";
 const columns = [
   { field: "id", headerName: "ID", width: 70 },
   { field: "Позиция", headerName: "Позиция", width: 466 },
-  { field: "Цена", headerName: "Цена", width: 120 },
+  { field: "Цена", headerName: "Цена", width: 190 },
 ];
 
 
@@ -28,7 +28,7 @@ export default function DataTable() {
         columns={columns}
         pageSize={5}
         rowsPerPageOptions={[5]}
-        checkboxSelection
+    
       />
     </div>
   );

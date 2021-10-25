@@ -1,23 +1,16 @@
+/* eslint-disable no-undef */
 /* eslint-disable prettier/prettier */
 import * as React from "react";
 import { DataGrid } from "@mui/x-data-grid";
+import "./Tab_Optional_Equipment.css";
+
 
 const columns = [
   { field: "id", headerName: "ID", width: 70 },
-  { field: "Позиция", headerName: "Позиция", width: 160 },
-  { field: "Цена", headerName: "Цена", width: 160 },
-  // {
-  //   field: "Цена",
-  //   headerName: "Цена",
-  //   description: "Цена",
-  //   sortable: false,
-  //   width: 160,
-  //   valueGetter: (params) =>
-  //     `${params.getValue(params.id, "Позиция") || ""} ${
-  //       params.getValue(params.id, "lastName") || ""
-  //     }`,
-  // },
+  { field: "Позиция", headerName: "Позиция", width: 875 },
+  { field: "Цена", headerName: "Цена", width: 145 },
 ];
+
 
 const rows = [
   { id: 1, Позиция: "Позиция 1", Цена: "20 000 USD"},
@@ -36,14 +29,15 @@ const rows = [
 
 export default function DataTable() {
   return (
-    <div style={{ height: 400, width: "100%" }}>
+  <div className="BoxTab_Optional_EquipmenT">
+    <div style={{ height: 750, width: "100%" }}>
       <DataGrid
         rows={rows}
         columns={columns}
-        pageSize={5}
-        rowsPerPageOptions={[5]}
+        pageSize={12}
+        rowsPerPageOptions={[12]}
         checkboxSelection
       />
-    </div>
+    </div> </div>
   );
 }

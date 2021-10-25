@@ -1,3 +1,5 @@
+/* eslint-disable camelcase */
+/* eslint-disable react/jsx-pascal-case */
 /* eslint-disable react/jsx-props-no-spreading */
 import * as React from "react";
 import PropTypes from "prop-types";
@@ -11,7 +13,7 @@ import Box from "@mui/material/Box";
 import BasicOptionsReEquipment from "../basic_options/BasicOptionsReEquipment";
 import TotalCarValue from "../total-car-value/Total-car-value";
 import GotoCommercialProposalBtn from "../generic/GotoCommercialProposal_btn";
-import Checkbox from "../Checkbox";
+import Optional_equipment_tab_requipment from "../tab-optional-equipment/Optional_equipment_tab_requipment";
 
 function RefitTabs(props) {
   const { children, value, index, ...other } = props;
@@ -126,7 +128,7 @@ export default function FloatingActionButtonZoom() {
             <BasicOptionsReEquipment />
           </RefitTabs>
           <RefitTabs value={value} index={1} dir={theme.direction}>
-            <Checkbox />
+            <Optional_equipment_tab_requipment />
             <TotalCarValue />
             <GotoCommercialProposalBtn />
           </RefitTabs>

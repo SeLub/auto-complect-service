@@ -13,7 +13,7 @@ import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Basic_Options from "../../components/basic_options/Basic_Options";
-import Optional_equipment from "../../components/optional_equipment/Optional_equipment";
+import Optional_equipment_tab_configurator from "../tab-optional-equipment/Optional_equipment_tab_configurator";
 import СardLayoutTypeTransport from "../type-of -transport/СardLayoutTypeTransport";
 import TotalCarValue from "../total-car-value/Total-car-value";
 import GotoCommercialProposalBtn from "../generic/GotoCommercialProposal_btn";
@@ -153,7 +153,7 @@ export default function FloatingActionButtonZoom() {
             <Basic_Options />
           </RefitTabs>
           <RefitTabs value={value} index={1} dir={theme.direction}>
-            <Optional_equipment />
+            <Optional_equipment_tab_configurator />
           </RefitTabs>
           <RefitTabs value={value} index={2} dir={theme.direction}>
             <СardLayoutTypeTransport />

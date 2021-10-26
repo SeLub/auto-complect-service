@@ -3,7 +3,7 @@ import { Typography, Container } from "@material-ui/core";
 
 const Text = () => {
   const css = `
-  @import url("http://fonts.cdnfonts.com/css/ford-antenna");
+  @import url("https://fonts.cdnfonts.com/css/ford-antenna");
   .text_wrapper {
     width: 550px;
     position: "relative";

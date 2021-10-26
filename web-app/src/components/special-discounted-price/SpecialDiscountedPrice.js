@@ -6,7 +6,7 @@ import FormControl from "@mui/material/FormControl";
 
 const SpecialDiscountedPrice = () => {
   const css = `
-  @import url("http://fonts.cdnfonts.com/css/ford-antenna");
+  @import url("https://fonts.cdnfonts.com/css/ford-antenna");
   .special_discounted_price_wrapper{
     display: flex;
     flex-direction: row;

@@ -81,11 +81,8 @@
   color: #333333 !important;
 }
 
-.BoxTab_Optional_Equipment {
-  width: 736px;
-}
 .BoxTab_Optional_EquipmenT {
-  width: 1230px;
+  width: 100%;
 }
 .MuiDataGrid-root .MuiDataGrid-columnHeaderTitleContainer {
   padding: 0 4px;

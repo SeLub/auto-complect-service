@@ -1,4 +1,3 @@
-/* eslint-disable */
 /* eslint-disable prettier/prettier */
 /* eslint-disable import/order */
 /* eslint-disable react/jsx-pascal-case */

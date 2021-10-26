@@ -6,7 +6,6 @@
     "@emotion/react": "^11.4.1",
     "@emotion/styled": "^11.3.0",
     "@material-ui/core": "^5.0.0-beta.5",
-<<<<<<< HEAD
     "@material-ui/data-grid": "^4.0.0-alpha.37",
     "@material-ui/icons": "^4.11.2",
     "@material-ui/styled-engine-sc": "^5.0.0-beta.5",
@@ -32,16 +31,6 @@
     "react-scripts": "4.0.3",
     "react-swipeable-views": "^0.14.0",
     "react-table-vertical-heading": "^0.1.4",
-=======
-    "@material-ui/icons": "^4.11.2",
-    "@material-ui/styled-engine-sc": "^5.0.0-beta.5",
-    "@mui/material": "^5.0.1",
-    "prop-types": "^15.7.2",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "react-swipeable-views": "^0.14.0",
->>>>>>> origin/main
     "styled-components": "^5.3.1"
   },
   "scripts": {

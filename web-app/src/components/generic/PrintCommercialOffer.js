@@ -34,7 +34,6 @@ export default function PrintCommercialOffer(props) {
       pathname: "/PdfPage",
       state: { hull_types },
     });
-    console.log(hull_types);
   }
   return (
     <div className="car_cost_including_options_wrapper">

@@ -1,8 +1,3 @@
-/* eslint-disable linebreak-style */
-/* eslint-disable react/jsx-filename-extension */
-/* eslint-disable linebreak-style */
-/* eslint-disable import/no-extraneous-dependencies */
-/* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 
 function Logo() {
@@ -12,17 +7,21 @@ function Logo() {
         <div className="logo">
           <ul className="logo_img">
             <a href="https://www.borovaya.by/">
-              <img src="/logo-atlant.png" className="logo_atlant" />
+              <img src="/logo-atlant.png" className="logo_atlant" alt="" />
             </a>
-            <img src="/logo-line.png" className="logo_line" />
+            <img src="/logo-line.png" className="logo_line" alt="" />
             <a href="https://www.borovaya.by/">
-              <img src="/logo-ford.png" className="logo_ford" />
+              <img src="/logo-ford.png" className="logo_ford" alt="" />
             </a>
           </ul>
           <LogoLink />
         </div>
       </div>
-      <img className="underline_the_logo" src="/img/underline_the_logo.png" />
+      <img
+        className="underline_the_logo"
+        src="/img/underline_the_logo.png"
+        alt=""
+      />
     </logo>
   );
 }

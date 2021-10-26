@@ -1,15 +1,10 @@
 /* eslint-disable */
-/* eslint-disable react/no-array-index-key */
-/* eslint-disable no-shadow */
-/* eslint-disable import/no-duplicates */
-/* eslint-disable react/jsx-pascal-case */
-/* eslint-disable camelcase */
 import React from "react";
-import Price_list_btn from "./generic/Price_list_btn";
+import PriceListBtn from "./generic/PriceListBtn";
 
 // hull_types - массив из объектов с характеристиками кузова
 import hull_types from "./hull_static/hull_types_specs.json";
-import Configurator_btn from "./generic/Configurator_btn";
+import ConfiguratorBtn from "./generic/ConfiguratorBtn";
 import Hull_spec_prices from "./Hull_spec_prices";
 import Block_ford_cards from "./Block_ford_cards";
 
@@ -111,10 +106,10 @@ export default function Hull_specs_display() {
 
                   <div className="hull_specs_display_buttons">
                     {/* кнопка для прайс-листа. Пока бесполезна */}
-                    <Price_list_btn />
+                    <PriceListBtn />
                     {/* передает текущий объект в кнопку для конфигуратора (при нажатии на кнопку
                         в консоль выведет текущий объект) */}
-                    <Configurator_btn hull_types={hull_types} />
+                    <ConfiguratorBtn hull_types={hull_types} />
                   </div>
                 </div>
               </div>

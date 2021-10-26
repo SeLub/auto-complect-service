@@ -1,9 +1,6 @@
-/* eslint-disable */
-/* eslint-disable import/no-useless-path-segments */
-/* eslint-disable react/no-this-in-sfc */
-/* eslint-disable camelcase */
-/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable react/jsx-pascal-case */
 /* eslint-disable react/jsx-props-no-spreading */
+/* eslint-disable camelcase */
 import * as React from "react";
 import PropTypes from "prop-types";
 import SwipeableViews from "react-swipeable-views";
@@ -17,9 +14,7 @@ import Optional_equipment_tab_configurator from "../tab-optional-equipment/Optio
 import СardLayoutTypeTransport from "../type-of -transport/СardLayoutTypeTransport";
 import TotalCarValue from "../total-car-value/Total-car-value";
 import GotoCommercialProposalBtn from "../generic/GotoCommercialProposal_btn";
-import BasicOptions from "../../components/basic_options/Basic_Options";
-import OptionalEquipment from "../../components/optional_equipment/Optional_equipment";
-import TmpP3 from "../../components/tmp_components/tmp_p3";
+import BasicOptions from "../basic_options/BasicOptions";
 
 function RefitTabs(props) {
   const { children, value, index, ...other } = props;

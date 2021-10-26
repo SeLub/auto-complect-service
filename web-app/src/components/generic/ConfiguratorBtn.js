@@ -1,6 +1,3 @@
-/* eslint-disable no-console */
-/* eslint-disable camelcase */
-/* eslint-disable react/button-has-type */
 import React from "react";
 import { useHistory } from "react-router-dom";
 import { dispatch } from "../../store/store";
@@ -10,13 +7,13 @@ import { dispatch } from "../../store/store";
 // на 14.09.2021 в объекте хранятся только самые базовые характеристики кузова
 // потенциально можно в него можно включить базовые и доп. опции для оснащения
 
-export default function Configurator_btn(props) {
+export default function ConfiguratorBtn(props) {
   const history = useHistory();
   // const dispatch = useDispatch()
-  function handleClick(hull_types) {
+  function handleClick(hullTypes) {
     history.push({
       pathname: "/configurator_p1",
-      state: { hull_types },
+      state: { hullTypes },
     });
     dispatch({
       type: "hull_types/set",
@@ -44,6 +41,7 @@ export default function Configurator_btn(props) {
     <button
       className="configurator_btn"
       onClick={() => handleClick(props.hull_types)}
+      type="button"
     >
       <p>Конфигуратор</p>
     </button>

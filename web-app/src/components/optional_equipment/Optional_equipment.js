@@ -1,20 +1,11 @@
-/* eslint-disable linebreak-style */
-/* eslint-disable react/jsx-filename-extension */
-/* eslint-disable linebreak-style */
-/* eslint-disable import/no-unresolved */
-/* eslint-disable import/no-extraneous-dependencies */
-/* eslint-disable react/jsx-pascal-case */
-/* eslint-disable react/no-unknown-property */
 /* eslint-disable jsx-a11y/label-has-associated-control */
-/* eslint-disable camelcase */
 // import "./Optional_equipment.css";
-
+// generic/PriceListBtn
 import React from "react";
 import TotalCarValue from "../total-car-value/Total-car-value";
 import NextButton from "../generic/Next-btn";
-import Price_list_btn from "../generic/Price_list_btn";
+import PriceListBtn from "../generic/PriceListBtn";
 
-// eslint-disable-next-line camelcase
 function OptionalEquipment() {
   return (
     // <body className="">
@@ -30,7 +21,7 @@ function OptionalEquipment() {
           <label className="container">
             Кондиционер с ручным управлением
             <input type="checkbox" />
-            <span class="checkmark" />
+            <span className="checkmark" />
           </label>
         </dd>
         <dd>
@@ -39,14 +30,14 @@ function OptionalEquipment() {
             подогреватель топливного фильтра; резиновые коврики в кабину;
             антигравийная пленка - угловая вкладка двери R,L, к-т 2 шт;
             <input type="checkbox" />
-            <span class="checkmark" />
+            <span className="checkmark" />
           </label>
         </dd>
         <dd>
           <label className="container">
             Комплект пневмоусиления подвески с компрессором
             <input type="checkbox" />
-            <span class="checkmark" />
+            <span className="checkmark" />
           </label>
         </dd>
         <dd>
@@ -54,7 +45,7 @@ function OptionalEquipment() {
             Программируемый предпусковой отопитель с пультом дистанционного
             управления
             <input type="checkbox" />
-            <span class="checkmark" />
+            <span className="checkmark" />
           </label>
         </dd>
         <dd>
@@ -62,21 +53,21 @@ function OptionalEquipment() {
             Пакет улучшения обзорности (электрообогрев лобового стекла, датчик
             уровня омывающей жидкости
             <input type="checkbox" />
-            <span class="checkmark" />
+            <span className="checkmark" />
           </label>
         </dd>
         <dd>
           <label className="container">
             Магнитола с громкой связью и кнопками управления на руле
             <input type="checkbox" />
-            <span class="checkmark" />
+            <span className="checkmark" />
           </label>
         </dd>
         <dd>
           <label className="container">
             Круиз-контроль и кожаный руль
             <input type="checkbox" />
-            <span class="checkmark" />
+            <span className="checkmark" />
           </label>
         </dd>
       </ul>
@@ -103,7 +94,7 @@ function OptionalEquipment() {
       <div className="width w8" />
       <TotalCarValue />
       <div className="priceBtnTotal">
-        <Price_list_btn />
+        <PriceListBtn />
       </div>
       <div className="NextBtnTotal">
         <NextButton />

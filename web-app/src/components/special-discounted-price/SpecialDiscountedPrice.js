@@ -1,4 +1,3 @@
-/* eslint-disable */
 import * as React from "react";
 import { Typography, Container } from "@material-ui/core";
 import OutlinedInput from "@mui/material/OutlinedInput";

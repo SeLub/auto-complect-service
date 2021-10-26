@@ -1,11 +1,9 @@
-/* eslint-disable */
-import hullTypes from './hull_types_reducer'
-import counter from './conter'
+import hullTypes from "./hull_types_reducer";
+import counter from "./conter";
 
 const reducers = {
-    hullTypes,
-    counter
-
-}
+  hullTypes,
+  counter,
+};
 
 export default reducers;

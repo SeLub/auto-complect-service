@@ -13,7 +13,7 @@ function BasicOptions(props) {
         <p>Данное оборудование является стандартным в вашей конфигурации</p>
       </div>
       {/* eslint-disable-next-line react/destructuring-assignment */}
-      {props.base_options.map(({ baseOption }) => (
+      {props.base_options.map((baseOption) => (
         <div className="basic_option">
           <div className="basic_option_content">
             <p>{baseOption}</p>

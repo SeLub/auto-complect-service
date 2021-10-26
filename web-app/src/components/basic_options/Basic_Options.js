@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable react/destructuring-assignment */
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable import/no-named-as-default-member */

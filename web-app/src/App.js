@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable prettier/prettier */
 /* eslint-disable import/order */
 /* eslint-disable react/jsx-pascal-case */

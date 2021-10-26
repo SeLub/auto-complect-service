@@ -18,7 +18,7 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import BasicOptions from "../basic_options/Basic_Options";
+import BasicOptions from "../basic_options/BasicOptions";
 import Details from "../details/Details";
 import CarCostIncludingOptions from "../car-cost-including-options/CarCostIncludingOptions";
 import SpecialDiscountedPrice from "../special-discounted-price/SpecialDiscountedPrice";

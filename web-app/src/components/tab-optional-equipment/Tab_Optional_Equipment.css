@@ -1,75 +1,69 @@
-.MuiDataGrid-root{
-    border: 0px !important;
+@import url("https://fonts.cdnfonts.com/css/ford-antenna");
+.MuiDataGrid-root {
+  border: 0px !important;
 }
-.MuiDataGrid-iconSeparator{
-    color: white;
-    height: 0px !important;
-}
-
-.css-levciy-MuiTablePagination-displayedRows{
-    color: white;
-   
+.MuiDataGrid-iconSeparator {
+  color: white;
+  height: 0px !important;
 }
 
-.MuiDataGrid-selectedRowCount{
-    color: white;
+.css-levciy-MuiTablePagination-displayedRows {
+  color: white;
 }
 
-.css-zylse7-MuiButtonBase-root-MuiIconButton-root.Mui-disabled{
-    color:white !important;
-}
-.Tab_Optional_Equipment{
-    position: relative;
-    font-family: Ford Antenna;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 25px;
-    letter-spacing: 0.10000000149011612px;
-    text-align: center;
-
-}
-.BoxTab_Optional_Equipment{
-    padding-left: 462px;
+.MuiDataGrid-selectedRowCount {
+  color: white;
 }
 
-.Tab_Optional_Equipment_com{
-    color: #1976d2;
-    font-family: Ford Antenna;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 20px;
-    letter-spacing: 0em;
-    text-align: left;
-    padding-left: 35px;
-    padding-bottom: 20px;
-  
+.css-zylse7-MuiButtonBase-root-MuiIconButton-root.Mui-disabled {
+  color: white !important;
 }
-.info_iconTab_Optional_Equipment{
-    position: relative;
-    right: 546px;
-    top: 25px;
-    
+.Tab_Optional_Equipment {
+  position: relative;
+  font-family: "Ford Antenna";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: center;
 }
-.BoxTab_Optional_Equipment_Co{
-    height: 800px;
-    font-family: Ford Antenna;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 20px;
-    letter-spacing: 0em;
-
-
+.BoxTab_Optional_Equipment {
+  padding-left: 462px;
 }
- .MuiDataGrid-columnHeaderTitle {
- color: #717171;
- font-size: 18px !important;
- font-style: normal;
- line-height: 22px!important;
- letter-spacing: 0.10000000149011612px;
 
+.Tab_Optional_Equipment_com {
+  color: #1976d2;
+  font-family: "Ford Antenna";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-left: 35px;
+  padding-bottom: 20px;
+}
+.info_iconTab_Optional_Equipment {
+  position: relative;
+  right: 546px;
+  top: 25px;
+}
+.BoxTab_Optional_Equipment_Co {
+  height: 800px;
+  font-family: "Ford Antenna";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0em;
+}
+.MuiDataGrid-columnHeaderTitle {
+  color: #717171;
+  font-size: 18px !important;
+  font-style: normal;
+  line-height: 22px !important;
+  letter-spacing: 0.10000000149011612px;
 }
 /* 
 }
@@ -78,23 +72,21 @@
 }
  */
 .MuiDataGrid-root {
-    font-family: Ford Antenna !important;
-    font-size: 14px !important;
-    font-style: normal;
-    font-weight: 400 !important;
-    line-height: 24px !important;
-    letter-spacing: 0em !important;
-    color: #333333 !important;
-    
+  font-family: "Ford Antenna" !important;
+  font-size: 14px !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: 24px !important;
+  letter-spacing: 0em !important;
+  color: #333333 !important;
 }
 
-.BoxTab_Optional_Equipment{
-    width: 736px;
+.BoxTab_Optional_Equipment {
+  width: 736px;
 }
-.BoxTab_Optional_EquipmenT{
-    width: 1230px;
+.BoxTab_Optional_EquipmenT {
+  width: 1230px;
 }
 .MuiDataGrid-root .MuiDataGrid-columnHeaderTitleContainer {
- 
-    padding: 0 4px;
+  padding: 0 4px;
 }

@@ -1,0 +1,12 @@
+@import url("http://fonts.cdnfonts.com/css/ford-antenna");
+.tab {
+  font-size: 18px;
+  line-height: 22px;
+  font-family: "Ford Antenna";
+}
+.tabs {
+  color: #2d96cd;
+}
+.box {
+  background-color: white;
+}

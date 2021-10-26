@@ -1,3 +1,4 @@
+/* eslint-disable */
 /* eslint-disable prettier/prettier */
 /* eslint-disable import/order */
 /* eslint-disable react/jsx-pascal-case */
@@ -20,6 +21,13 @@ import PdfPage from "./pages/pdf_page/PdfPage";
 // Если создаёте универсальный компонет (например кнопка) сохраняйте в папку components/generic
 // Для своих корневых компонентов можно создавать свои подпапки. Например components/products для компонета автомобиля
 
+// ReactDOM.render(
+//   <StyledEngineProvider injectFirst>
+//     <Picking_switch />
+//   </StyledEngineProvider>,
+//   document.querySelector("#root")
+// );
+
 function App() {
   return (
     <div>
@@ -35,5 +43,4 @@ function App() {
     </div>
   );
 }
-
 export default App;

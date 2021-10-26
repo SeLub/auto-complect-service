@@ -1,49 +1,37 @@
-/* eslint-disable */
-
+/* eslint-disable linebreak-style */
+/* eslint-disable react/prop-types */
+/* eslint-disable linebreak-style */
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable linebreak-style */
+/* eslint-disable import/no-unresolved */
+/* eslint-disable import/no-extraneous-dependencies */
+/* eslint-disable react/destructuring-assignment */
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable import/no-named-as-default-member */
 import React from "react";
+import { connect } from "react-redux";
+// import store from "../../store/store";
 import "./basic_options.css";
+import { mapStateToProps } from "../selectors/basicOptionsSelector";
 
-export default function Basic_Options(props) {
-  const base_options = [
-    "Передние и задние брызговики",
-    "Широкие боковые пластиковые молдинги по всей длине кузова",
-    "Зеркала заднего вида с электрорегилировками, подогревом и сигналом поворота",
-    "Передние электростеклоподъемники с функйией открвания/закрывания одним нажатием с водительской стороны",
-    "Програмируемый предпусковой отопитель (без пульта дистанционного управления)",
-    "Аудиоподготовка: 2 динамика, проводка, антенна",
-    "Маршрутный копьютер",
-    "Антиблокировочная система (ABS)",
-    "Система курсовой устойчивости (ESP)",
-    "Система помощи при трогании в гору(HLA)",
-    "Система помощи при экстренном торможении (EBA)",
-    "Функция автозапирания дверей при старте, отпирания при ДТП",
-    "Сиденье водителя с подлокотником, с механическими регулировками сиденья, текстильная обивка",
-    "Сдвоенное пассажирское сиденье, откидной столик в спинке пассажирского сиденья, текстильная обивка",
-    "Полноразмерное запасное колесо",
-    "Подушка безопасности водителя",
-    "Пластиковый бампер черного цвета",
-    "Система “ЭРА Гловасс”",
-    "Высокая крыша",
-    "Сдвоенные задние колёса",
-    "Петли для фиксирования груза",
-    "Защитное покрытие пола грузового отсека",
-  ];
+function BasicOptions(props) {
+  // const baseOptions = store.getState().hullTypes.base_options;
   return (
     <div className="basic_options_wrapper">
       <div className="basic_options_note">
-        <img src="/img/Vector.jpg" className="info_icon"></img>
+        <img src="/img/vector.jpg" className="info_icon" />
         <p>Данное оборудование является стандартным в вашей конфигурации</p>
       </div>
-      {base_options.map((base_options, index) => {
-        return (
-          <div className="basic_option">
-            <div className="basic_option_content">
-              <p>{base_options}</p>
-            </div>
-            <div className="basic_option_separator"></div>
+      {props.base_options.map((baseOption) => (
+        <div className="basic_option">
+          <div className="basic_option_content">
+            <p>{baseOption}</p>
           </div>
-        );
-      })}
+          <div className="basic_option_separator" />
+        </div>
+      ))}
     </div>
   );
 }
+
+export default connect(mapStateToProps)(BasicOptions);

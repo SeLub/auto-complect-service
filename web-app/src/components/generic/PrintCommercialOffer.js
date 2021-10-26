@@ -1,4 +1,6 @@
+/* eslint-disable linebreak-style */
 /* eslint-disable camelcase */
+/* eslint-disable */
 import * as React from "react";
 import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";

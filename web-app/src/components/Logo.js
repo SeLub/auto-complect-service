@@ -1,3 +1,7 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable linebreak-style */
+/* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 

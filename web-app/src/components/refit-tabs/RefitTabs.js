@@ -1,5 +1,7 @@
+/* eslint-disable linebreak-style */
 /* eslint-disable camelcase */
 /* eslint-disable react/jsx-pascal-case */
+/* eslint-disable */
 /* eslint-disable react/jsx-props-no-spreading */
 import * as React from "react";
 import PropTypes from "prop-types";

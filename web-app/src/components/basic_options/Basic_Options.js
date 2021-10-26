@@ -1,5 +1,7 @@
-/* eslint-disable */
-
+/* eslint-disable no-shadow */
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable no-unused-vars */
+/* eslint-disable camelcase */
 import React from "react";
 import "./basic_options.css";
 
@@ -31,7 +33,7 @@ export default function Basic_Options(props) {
   return (
     <div className="basic_options_wrapper">
       <div className="basic_options_note">
-        <img src="/img/Vector.jpg" className="info_icon"></img>
+        <img src="/img/Vector.jpg" className="info_icon" />
         <p>Данное оборудование является стандартным в вашей конфигурации</p>
       </div>
       {base_options.map((base_options, index) => {
@@ -40,7 +42,7 @@ export default function Basic_Options(props) {
             <div className="basic_option_content">
               <p>{base_options}</p>
             </div>
-            <div className="basic_option_separator"></div>
+            <div className="basic_option_separator" />
           </div>
         );
       })}

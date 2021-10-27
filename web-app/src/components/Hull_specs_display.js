@@ -11,8 +11,7 @@ import Price_list_btn from "./generic/Price_list_btn";
 import hull_types from "./hull_static/hull_types_specs.json";
 import Configurator_btn from "./generic/Configurator_btn";
 import Hull_spec_prices from "./Hull_spec_prices";
-// import Block_ford_cards from "./Block_ford_cards";
-import BlockFordCards from "./BlockFordCards";
+import Block_ford_cards from "./Block_ford_cards";
 
 // Пояснения к свойствам hull_types:
 //
@@ -53,7 +52,7 @@ export default function Hull_specs_display() {
                 <p className="hull_type">Цельнометаллический фургон</p>
               </div>
               <div className="cars_display">
-                <BlockFordCards hull_types />
+                <Block_ford_cards hull_types />
                 <div className="hull_wrapper">
                   <div className="hull_specs_display_details_wrapper">
                     <div>

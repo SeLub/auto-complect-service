@@ -15,22 +15,22 @@ const css = `
     padding: 0px;
     height: 260px;
   }
-  .main_ford_pic{
+  .ford_pic{
     display: grid;
     max-height: 100%;
     max-width: 100%;
   }
-  .main_ford_pic101{
+  .ford_pic101{
     display: grid;
     height: 100%;
     width: 100%;
   }
-  .main_ford_pic102{
+  .ford_pic102{
     display: grid;
     height: 100%;
     width: 100%;
   }
-  .main_ford_pic103{
+  .ford_pic103{
     display: grid;
     height: 100%;
     width: 100%;   
@@ -65,7 +65,7 @@ export default function BlockFordCards() {
       <style type="text/css">{css}</style>
       <Grid container spacing={0}>
         <Grid className="img_grid" item sm={9} md={9}>
-          <img src="/img/main_pic1.jpg" className="main_ford_pic" alt="" />
+          <img src="/img/main_pic1.jpg" className="ford_pic" alt="" />
         </Grid>
         <Grid
           item
@@ -84,11 +84,7 @@ export default function BlockFordCards() {
             onClick={handleNext}
             disabled={activeStep === 2}
           >
-            <img
-              src="/img/main_pic101.jpg"
-              className="main_ford_pic101"
-              alt=""
-            />
+            <img src="/img/main_pic101.jpg" className="ford_pic101" alt="" />
           </Grid>
           <Grid
             item
@@ -97,11 +93,7 @@ export default function BlockFordCards() {
             onClick={handleNext}
             disabled={activeStep === 1}
           >
-            <img
-              src="/img/main_pic102.jpg"
-              className="main_ford_pic102"
-              alt=""
-            />
+            <img src="/img/main_pic102.jpg" className="ford_pic102" alt="" />
           </Grid>
           <Grid
             item
@@ -110,11 +102,7 @@ export default function BlockFordCards() {
             onClick={handleBack}
             disabled={activeStep === 0}
           >
-            <img
-              src="/img/main_pic103.jpg"
-              className="main_ford_pic103"
-              alt=""
-            />
+            <img src="/img/main_pic103.jpg" className="ford_pic103" alt="" />
           </Grid>
           <Grid item xs={1} maxWidth="100%">
             <MobileStepper

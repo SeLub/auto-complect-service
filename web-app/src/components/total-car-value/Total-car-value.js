@@ -35,10 +35,6 @@ const TotalCarValue = () => {
   line-height: 25px;
   margin-bottom: 0px;
 }
-// .MuiContainer-root {
-//     padding-left: 0px;
-//     padding-right: 0px;
-// }
 .total-car-value1{
     width: 126px;
     height: 25px;
@@ -61,12 +57,6 @@ const TotalCarValue = () => {
     letter-spacing: 0.1px;
     color: #717171;
 }
-// .MuiTypography-paragraph {
-//     margin-bottom: 0px;
-// }
-// .MuiContainer-root {
-//     padding-right: 0px;
-// }
 `;
   return (
     <div>

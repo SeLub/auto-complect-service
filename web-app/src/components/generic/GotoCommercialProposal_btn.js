@@ -6,8 +6,10 @@ import { useHistory } from "react-router-dom";
 const css = `
 @import url("https://fonts.cdnfonts.com/css/ford-antenna");
   .goto_commercial-proposal_btn_wrapper {
+   width: 100%;
    margin-right: 0px;
-   margin-left : 15px
+   margin-left : 47px;
+  
     
   }
   .gotoCom {

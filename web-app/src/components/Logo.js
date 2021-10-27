@@ -1,8 +1,9 @@
+import { Container } from "@mui/material";
 import React from "react";
 
 function Logo() {
   return (
-    <logo>
+    <Container>
       <div className="App">
         <div className="logo">
           <ul className="logo_img">
@@ -22,7 +23,7 @@ function Logo() {
         src="/img/underline_the_logo.png"
         alt=""
       />
-    </logo>
+    </Container>
   );
 }
 

@@ -310,52 +310,6 @@
   color: #717171;
 }
 
-.price_list_btn {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-
-  padding: 0px;
-  background-color: white;
-  padding: 12px 16px;
-
-  /* position: absolute; */
-  width: 213px;
-  height: 43px;
-  /* left: 748px;
-  top: 588px; */
-
-  border: 1px solid #2d96cd;
-  box-sizing: border-box;
-
-  background-color: white;
-}
-
-.price_list_btn p {
-  position: static;
-  left: 26.53%;
-  right: 26.53%;
-  top: 26.09%;
-  bottom: 26.09%;
-
-  font-family: "Ford Antenna";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 22px;
-  letter-spacing: 0.1px;
-
-  color: #2d96cd;
-
-  /* Inside Auto Layout */
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 0px 10px;
-}
-
 .configurator_btn {
   /* position: absolute; */
   width: 213px;

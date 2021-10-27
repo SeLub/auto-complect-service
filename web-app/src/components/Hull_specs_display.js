@@ -52,7 +52,7 @@ export default function Hull_specs_display() {
                 <p className="hull_type">Цельнометаллический фургон</p>
               </div>
               <div className="cars_display">
-                <Block_ford_cards hull_types />
+                <Block_ford_cards hull_types={hull_types} />
                 <div className="hull_wrapper">
                   <div className="hull_specs_display_details_wrapper">
                     <div>
@@ -114,7 +114,7 @@ export default function Hull_specs_display() {
                     <Price_list_btn />
                     {/* передает текущий объект в кнопку для конфигуратора (при нажатии на кнопку
                         в консоль выведет текущий объект) */}
-                    <Configurator_btn hull_types />
+                    <Configurator_btn hull_types={hull_types} />
                   </div>
                 </div>
               </div>

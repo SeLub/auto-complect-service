@@ -310,52 +310,6 @@
   color: #717171;
 }
 
-.configurator_btn {
-  /* position: absolute; */
-  width: 213px;
-  height: 43px;
-  /* left: 991px;
-  top: 588px; */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 12px 16px;
-  border: none;
-
-  /* position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%; */
-
-  background: #2d96cd;
-}
-
-.configurator_btn p {
-  position: static;
-  left: 20.19%;
-  right: 20.19%;
-  top: 27.91%;
-  bottom: 27.91%;
-
-  font-family: "Ford Antenna";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 0.1px;
-
-  color: #ffffff;
-
-  /* Inside Auto Layout */
-
-  flex: none;
-  order: 0;
-  flex-grow: 1;
-  margin: 0px 10px;
-}
-
 .hull_specs_display_wrapper {
   max-width: 600px;
   max-height: 456px;

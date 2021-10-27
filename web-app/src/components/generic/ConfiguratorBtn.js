@@ -1,4 +1,6 @@
-import React from "react";
+import * as React from "react";
+import Button from "@mui/material/Button";
+import Stack from "@mui/material/Stack";
 import { useHistory } from "react-router-dom";
 import { dispatch } from "../../store/store";
 
@@ -6,6 +8,22 @@ import { dispatch } from "../../store/store";
 // Через пропсы в компонент передаётся объект hull_types, который хранит в себе данные о кузове
 // на 14.09.2021 в объекте хранятся только самые базовые характеристики кузова
 // потенциально можно в него можно включить базовые и доп. опции для оснащения
+
+const css = `
+@import url("https://fonts.cdnfonts.com/css/ford-antenna");
+  .configurator_btn{
+    width: 213px;
+    height: 43px;
+    border-radius: 0px;
+    border: 1px solid #2d96cd;
+    box-sizing: border-box;
+    background-color: #2D96CD ;
+    color: white;
+    font-family: "Ford Antenna";
+    text-transform: unset;
+    font-size: 16px;
+    line-height: 22px;
+  }`;
 
 export default function ConfiguratorBtn(props) {
   const history = useHistory();
@@ -38,12 +56,15 @@ export default function ConfiguratorBtn(props) {
     // console.log(hull_types_store.getState())
   }
   return (
-    <button
-      className="configurator_btn"
-      onClick={() => handleClick(props.hull_types)}
-      type="button"
-    >
-      <p>Конфигуратор</p>
-    </button>
+    <Stack direction="row" spacing={2}>
+      <style type="text/css">{css}</style>
+      <Button
+        className="configurator_btn"
+        variant="contained"
+        onClick={() => handleClick(props.hull_types)}
+      >
+        Конфигуратор
+      </Button>
+    </Stack>
   );
 }

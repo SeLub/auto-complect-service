@@ -48,7 +48,7 @@ function a11yProps(index) {
   };
 }
 const css = `
-@import url("http://fonts.cdnfonts.com/css/ford-antenna");
+@import url("https://fonts.cdnfonts.com/css/ford-antenna");
   .box {
     background: white;
     width: 1128px;

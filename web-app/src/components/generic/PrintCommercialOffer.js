@@ -4,7 +4,7 @@ import Stack from "@mui/material/Stack";
 import { useHistory } from "react-router-dom";
 
 const css = `
-@import url("http://fonts.cdnfonts.com/css/ford-antenna");
+@import url("https://fonts.cdnfonts.com/css/ford-antenna");
   .print_commercial_offer_stack {
     
   }

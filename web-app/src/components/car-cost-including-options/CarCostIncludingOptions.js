@@ -3,7 +3,7 @@ import { Typography, Container } from "@material-ui/core";
 
 const CarCostIncludingOptions = () => {
   const css = `
-  @import url("http://fonts.cdnfonts.com/css/ford-antenna");
+  @import url("https://fonts.cdnfonts.com/css/ford-antenna");
   .car_cost_including_options_wrapper{
     display: flex;
     flex-direction: row;

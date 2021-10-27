@@ -1,3 +1,7 @@
+/* eslint-disable */
+/* eslint-disable react/no-this-in-sfc */
+/* eslint-disable camelcase */
+/* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable react/jsx-props-no-spreading */
 import * as React from "react";
 import PropTypes from "prop-types";
@@ -8,9 +12,13 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import "./Picking_switch.css";
+import Basic_Options from "../../components/basic_options/Basic_Options";
+import Optional_equipment_tab_configurator from "../tab-optional-equipment/Optional_equipment_tab_configurator";
+import СardLayoutTypeTransport from "../type-of -transport/СardLayoutTypeTransport";
+import TotalCarValue from "../total-car-value/Total-car-value";
+import GotoCommercialProposalBtn from "../generic/GotoCommercialProposal_btn";
 
-function TabPanel(props) {
+function RefitTabs(props) {
   const { children, value, index, ...other } = props;
 
   return (
@@ -27,12 +35,12 @@ function TabPanel(props) {
   );
 }
 
-TabPanel.propTypes = {
+RefitTabs.propTypes = {
   children: PropTypes.node,
   index: PropTypes.number.isRequired,
   value: PropTypes.number.isRequired,
 };
-TabPanel.defaultProps = {
+RefitTabs.defaultProps = {
   children: "",
 };
 
@@ -42,6 +50,59 @@ function a11yProps(index) {
     "aria-controls": `action-tabpanel-${index}`,
   };
 }
+const css = `
+@import url("http://fonts.cdnfonts.com/css/ford-antenna");
+  .box {
+    background: white;
+    width: 1128px;
+    position: "relative";
+    min-height: 200px;
+    margin: 20px 0px 0px 0px;
+    border-color: transparent;
+  }
+  .appbar{
+    background: white;
+      color: white;
+  }
+  .MuiTabs-indicator{
+    color: #2D96CD; 
+  }
+  .tab1{
+    font-family: "Ford Antenna";
+    color: #717171;
+    padding: 0px;
+    margin: 12px 200px 12px 0px;
+  }
+  .tab2{
+    font-family: "Ford Antenna";
+    color: #717171;
+    padding: 0px;
+    margin: 12px 200px 12px 0px;
+  }
+  .tab3{
+    font-family: "Ford Antenna";
+    color: #717171;
+    padding: 0px;
+    margin: 12px 0px 12px 0px;
+  }
+  .swipeableviews{
+    overflow: hidden
+  }
+  .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+    color: #2D96CD;
+  }
+  .css-1aquho2-MuiTabs-indicator {
+      background-color: #2D96CD;
+}
+.css-hip9hq-MuiPaper-root-MuiAppBar-root {
+  box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 0%), 0px 4px 5px 0px rgb(0 0 0 / 0%), 0px 1px 10px 0px rgb(0 0 0 / 0%);
+}
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root{
+    align-items: start;
+} 
+.css-19kzrtu {
+  padding: 24px 0px;
+}`;
 
 export default function FloatingActionButtonZoom() {
   const theme = useTheme();
@@ -56,56 +117,49 @@ export default function FloatingActionButtonZoom() {
   };
   return (
     <div className="App">
-      <Box
-        className="box"
-        sx={{
-          bgcolor: "background.paper",
-          width: 1128,
-          position: "relative",
-          minHeight: 200,
-        }}
-      >
-        <AppBar position="static" color="default">
+      <style type="text/css">{css}</style>
+      <Box className="box">
+        <AppBar className="appbar" position="static">
           <Tabs
-            className="tabs"
             value={value}
             onChange={handleChange}
-            indicatorColor="primary"
-            textColor="primary"
-            variant="fullWidth"
+            variant="standard"
             aria-label="action tabs example"
           >
             <Tab
-              className="tab"
+              className="tab1"
               label="Базовая комплектация"
               {...a11yProps(0)}
             />
             <Tab
-              className="tab"
+              className="tab2"
               label="Опциональное оборудование"
               {...a11yProps(1)}
             />
             <Tab
-              className="tab"
+              className="tab3"
               label="Тип транспортного средства"
               {...a11yProps(2)}
             />
           </Tabs>
         </AppBar>
         <SwipeableViews
+          className="swipeableviews"
           axis={theme.direction === "rtl" ? "x-reverse" : "x"}
           index={value}
           onChangeIndex={handleChangeIndex}
         >
-          <TabPanel value={value} index={0} dir={theme.direction}>
-            Базовая комплектация(текст)
-          </TabPanel>
-          <TabPanel value={value} index={1} dir={theme.direction}>
-            Опциональное оборудование(текст)
-          </TabPanel>
-          <TabPanel value={value} index={2} dir={theme.direction}>
-            Тип транспортного средства
-          </TabPanel>
+          <RefitTabs value={value} index={0} dir={theme.direction}>
+            <Basic_Options />
+          </RefitTabs>
+          <RefitTabs value={value} index={1} dir={theme.direction}>
+            <Optional_equipment_tab_configurator />
+          </RefitTabs>
+          <RefitTabs value={value} index={2} dir={theme.direction}>
+            <СardLayoutTypeTransport />
+            <TotalCarValue />
+            <GotoCommercialProposalBtn />
+          </RefitTabs>
         </SwipeableViews>
       </Box>
     </div>

@@ -28,7 +28,6 @@ export default class BreadCrumbs extends React.Component {
               </ul>
             </nav>
           </div>
-          <div className="label-breadcrumb">Модификация кузова</div>
         </div>
       </div>
     );

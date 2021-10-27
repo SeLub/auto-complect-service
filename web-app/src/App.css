@@ -148,7 +148,7 @@
 .logo_list {
   display: flex;
   flex-direction: row;
-  justify-content: end;
+  justify-content: flex-end;
   padding: 0px;
   margin: 42px 0px 42px 0px;
   box-sizing: border-box;
@@ -318,12 +318,11 @@
 
   padding: 0px;
   background-color: white;
-  height: 100px;
   padding: 12px 16px;
 
   /* position: absolute; */
   width: 213px;
-  height: 46px;
+  height: 43px;
   /* left: 748px;
   top: 588px; */
 
@@ -425,6 +424,8 @@
 
 .specs_display_list ul {
   padding-inline-start: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .hull_spec_type {
@@ -516,4 +517,22 @@
   letter-spacing: 0.1px;
 
   color: #2d96cd;
+}
+
+.nextBtn button {
+  font-family: Ford Antenna;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.1px;
+  color: #ffffff;
+  display: flex;
+  padding: 12px 44.5px 12px 44.5px;
+  background: #2d96cd;
+  height: 43px;
+  width: 160px;
+  left: 0px;
+  top: 0px;
+  border: 1px solid #2d96cd;
 }

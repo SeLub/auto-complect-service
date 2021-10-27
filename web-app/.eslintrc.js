@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 module.exports = {
   env: {
     browser: true,
@@ -16,7 +17,7 @@ module.exports = {
     ecmaFeatures: {
       jsx: true,
     },
-    ecmaVersion: 2018,
+    ecmaVersion: 2020,
     sourceType: "module",
   },
   plugins: ["react"],
@@ -24,10 +25,18 @@ module.exports = {
     "react/jsx-filename-extension": [1, { extensions: [".js", ".jsx"] }],
     "react/prop-types": "off",
     "prettier/prettier": ["error", { endOfLine: "auto" }],
+    "import/no-extraneous-dependencies": ["error", { devDependencies: true }],
   },
   settings: {
     react: {
       version: "latest", // instead of 'detect'
+    },
+    "import/resolver": {
+      node: {
+        extensions: [".js", ".jsx", ".ts", ".tsx", ".native.js"],
+        moduleDirectory: ["node_modules"],
+        paths: ["./src"],
+      },
     },
   },
 };

@@ -1,17 +1,19 @@
+/* eslint-disable prettier/prettier */
+/* eslint-disable import/order */
 /* eslint-disable react/jsx-pascal-case */
 /* eslint-disable camelcase */
 
 /* eslint-disable react/self-closing-comp */
 /* eslint-disable react/react-in-jsx-scope */
-import * as React from "react";
-// import ReactDOM from "react-dom";
-// import { StyledEngineProvider } from "@mui/material/styles";
-import AppHeader from "./components/app-header";
-import BreadCrumbs from "./components/breadcrumb";
+
 import "./App.css";
-import Logo from "./components/Logo";
-import Hull_specs_display from "./components/Hull_specs_display";
-import Picking_switch from "./components/picking_switch/Picking_switch";
+import Starting_Page from "./pages/starting_page/starting_page";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import configurator_p1 from "./pages/configurator_p1/configurator_p1";
+import configurator_p2 from "./pages/configurator_p2/configurator_p2";
+import Configurator_p3 from "./pages/configurator_p3/Configurator_p3";
+import PdfPage from "./pages/pdf_page/PdfPage";
+
 // import Block_ford_cards from "./components/Block_ford_cards";
 // Это корневой компонент
 // Сохраняйте компоненты в папке components
@@ -27,19 +29,16 @@ import Picking_switch from "./components/picking_switch/Picking_switch";
 
 function App() {
   return (
-    <div className="">
-      <Picking_switch />
-
-      <div>
-        <AppHeader />
-      </div>
-      <Logo />
-      <div>
-        <BreadCrumbs />
-      </div>
-      <div>
-        <Hull_specs_display />
-      </div>
+    <div>
+      <Router>
+        <Route path="/" exact>
+          <Starting_Page />
+        </Route>
+        <Route path="/configurator_p1" component={configurator_p1}></Route>
+        <Route path="/configurator_p2" component={configurator_p2}></Route>
+        <Route path="/Configurator_p3" component={Configurator_p3}></Route>
+        <Route path="/PdfPage" component={PdfPage}></Route>
+      </Router>
     </div>
   );
 }

@@ -1,0 +1,57 @@
+.basic_options_note {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+}
+
+.basic_options_note p {
+    text-align: left;
+    font-family: Ford Antenna;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+    color: #2D96CD;
+    margin-top: 2px;
+}
+
+.basic_option_content {
+    text-align: left;
+}
+
+.basic_option_content p {
+    font-family: Ford Antenna;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    color: #333333;
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 4px;
+    margin-bottom: 12px;
+    margin-top: 12px;
+}
+
+
+
+.basic_option_separator {
+    left: 0%;
+    right: 0%;
+    /* top: 100%;
+    bottom: -100%; */
+    width: 100%;
+    height: 2px;
+    background: rgba(51, 51, 51, 0.12);
+    /* transform: matrix(1, 0, 0, -1, 0, 0); */
+}
+
+.info_icon {
+    height: 20px;
+    width: 20px;
+    padding-right: 9px;
+}

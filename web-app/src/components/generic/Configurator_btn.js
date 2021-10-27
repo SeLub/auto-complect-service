@@ -2,6 +2,7 @@
 /* eslint-disable camelcase */
 /* eslint-disable react/button-has-type */
 import React from "react";
+import { useHistory } from "react-router-dom";
 
 // компонент для перехода на следующую страницу для оформления КП
 // Через пропсы в компонент передаётся объект hull_types, который хранит в себе данные о кузове
@@ -9,11 +10,18 @@ import React from "react";
 // потенциально можно в него можно включить базовые и доп. опции для оснащения
 
 export default function Configurator_btn(props) {
+  const history = useHistory();
+  function handleClick(hull_types) {
+    history.push({
+      pathname: "/configurator_p1",
+      state: { hull_types },
+    });
+    console.log(hull_types);
+  }
   return (
-    // фукционала пока нет, при нажатии выводит данные по текщему кузову в консоль
     <button
       className="configurator_btn"
-      onClick={() => console.log(props.hull_types)}
+      onClick={() => handleClick(props.hull_types)}
     >
       <p>Конфигуратор</p>
     </button>

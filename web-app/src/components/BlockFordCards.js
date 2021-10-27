@@ -25,18 +25,22 @@ const css = `
     height: 100%;
     width: 100%;
   }
-  .main_ford_pic102 clarity{
+  .main_ford_pic102{
     display: grid;
-    max-height: 100%;
-    max-width: 100%; 
+    height: 100%;
+    width: 100%;
   }
-  .main_ford_pic103 clarity{
+  .main_ford_pic103{
     display: grid;
-    max-height: 100%;
-    max-width: 100%;   
+    height: 100%;
+    width: 100%;   
   }
   .css-139aahe-MuiGrid-root>.MuiGrid-item {
     max-width: 100%;
+}
+.css-usqwzk-MuiGrid-root {
+    flex-basis: 20%;
+    max-width: 21%;
 }`;
 
 export default function BlockFordCards() {
@@ -70,32 +74,51 @@ export default function BlockFordCards() {
           className="img_grid"
           container
           direction="column"
-          justifyContent="space-between"
+          justifyContent="flex-start"
           alignItems="stretch"
         >
-          <Grid item xs={1} maxWidth="100%">
+          <Grid
+            item
+            xs={1}
+            maxWidth="100%"
+            onClick={handleNext}
+            disabled={activeStep === 2}
+          >
             <img
               src="/img/main_pic101.jpg"
               className="main_ford_pic101"
               alt=""
             />
           </Grid>
-          <Grid item xs={1} maxWidth="100%">
+          <Grid
+            item
+            xs={1}
+            maxWidth="100%"
+            onClick={handleNext}
+            disabled={activeStep === 1}
+          >
             <img
               src="/img/main_pic102.jpg"
-              className="main_ford_pic102 clarity"
+              className="main_ford_pic102"
               alt=""
             />
           </Grid>
-          <Grid item xs={1} maxWidth="100%">
+          <Grid
+            item
+            xs={1}
+            maxWidth="100%"
+            onClick={handleBack}
+            disabled={activeStep === 0}
+          >
             <img
               src="/img/main_pic103.jpg"
-              className="main_ford_pic103 clarity"
+              className="main_ford_pic103"
               alt=""
             />
           </Grid>
           <Grid item xs={1} maxWidth="100%">
             <MobileStepper
+              height="100%"
               variant="dots"
               steps={3}
               position="static"
@@ -126,47 +149,3 @@ export default function BlockFordCards() {
     </Box>
   );
 }
-
-// function DotsMobileStepper() {
-//   const theme = useTheme();
-//   const [activeStep, setActiveStep] = React.useState(0);
-
-//   const handleNext = () => {
-//     setActiveStep((prevActiveStep) => prevActiveStep + 1);
-//   };
-
-//   const handleBack = () => {
-//     setActiveStep((prevActiveStep) => prevActiveStep - 1);
-//   };
-
-//   return (
-//     <MobileStepper
-//       variant="dots"
-//       steps={6}
-//       position="static"
-//       activeStep={activeStep}
-//       sx={{ maxWidth: 400, flexGrow: 1 }}
-//       nextButton={
-//         <Button size="small" onClick={handleNext} disabled={activeStep === 5}>
-//           Next
-//           {theme.direction === 'rtl' ? (
-//             <KeyboardArrowLeft />
-//           ) : (
-//             <KeyboardArrowRight />
-//           )}
-//         </Button>
-//       }
-//       backButton={
-//         <Button size="small" onClick={handleBack} disabled={activeStep === 0}>
-//           {theme.direction === 'rtl' ? (
-//             <KeyboardArrowRight />
-//           ) : (
-//             <KeyboardArrowLeft />
-//           )}
-//           Back
-//         </Button>
-//       }
-//     />
-//   );
-// }
-// export default DotsMobileStepper;

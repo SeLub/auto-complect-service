@@ -1,8 +1,6 @@
-/* eslint-disable */
-/* eslint-disable react/no-this-in-sfc */
-/* eslint-disable camelcase */
-/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable react/jsx-pascal-case */
 /* eslint-disable react/jsx-props-no-spreading */
+/* eslint-disable camelcase */
 import * as React from "react";
 import PropTypes from "prop-types";
 import SwipeableViews from "react-swipeable-views";
@@ -12,15 +10,14 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import Basic_Options from "../../components/basic_options/Basic_Options";
 import Optional_equipment_tab_configurator from "../tab-optional-equipment/Optional_equipment_tab_configurator";
 import СardLayoutTypeTransport from "../type-of -transport/СardLayoutTypeTransport";
 import TotalCarValue from "../total-car-value/Total-car-value";
 import GotoCommercialProposalBtn from "../generic/GotoCommercialProposal_btn";
+import BasicOptions from "../basic_options/BasicOptions";
 
 function RefitTabs(props) {
   const { children, value, index, ...other } = props;
-
   return (
     <Typography
       component="div"
@@ -150,7 +147,7 @@ export default function FloatingActionButtonZoom() {
           onChangeIndex={handleChangeIndex}
         >
           <RefitTabs value={value} index={0} dir={theme.direction}>
-            <Basic_Options />
+            <BasicOptions />
           </RefitTabs>
           <RefitTabs value={value} index={1} dir={theme.direction}>
             <Optional_equipment_tab_configurator />

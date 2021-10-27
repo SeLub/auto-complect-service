@@ -1,8 +1,9 @@
+/* eslint-disable */
+/* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable prettier/prettier */
 /* eslint-disable import/order */
 /* eslint-disable react/jsx-pascal-case */
 /* eslint-disable camelcase */
-
 /* eslint-disable react/self-closing-comp */
 /* eslint-disable react/react-in-jsx-scope */
 
@@ -13,7 +14,8 @@ import configurator_p1 from "./pages/configurator_p1/configurator_p1";
 import configurator_p2 from "./pages/configurator_p2/configurator_p2";
 import Configurator_p3 from "./pages/configurator_p3/Configurator_p3";
 import PdfPage from "./pages/pdf_page/PdfPage";
-
+import { Provider } from 'react-redux';
+import store from "./store/store";
 // import Block_ford_cards from "./components/Block_ford_cards";
 // Это корневой компонент
 // Сохраняйте компоненты в папке components
@@ -29,7 +31,7 @@ import PdfPage from "./pages/pdf_page/PdfPage";
 
 function App() {
   return (
-    <div>
+    <Provider store={store}>
       <Router>
         <Route path="/" exact>
           <Starting_Page />
@@ -39,7 +41,7 @@ function App() {
         <Route path="/Configurator_p3" component={Configurator_p3}></Route>
         <Route path="/PdfPage" component={PdfPage}></Route>
       </Router>
-    </div>
+    </ Provider>
   );
 }
 export default App;

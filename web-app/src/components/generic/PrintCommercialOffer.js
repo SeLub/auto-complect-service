@@ -1,4 +1,3 @@
-/* eslint-disable camelcase */
 import * as React from "react";
 import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
@@ -29,10 +28,10 @@ const css = `
 
 export default function PrintCommercialOffer(props) {
   const history = useHistory();
-  function handleClick(hull_types) {
+  function handleClick(hullTypes) {
     history.push({
       pathname: "/PdfPage",
-      state: { hull_types },
+      state: { hullTypes },
     });
   }
   return (

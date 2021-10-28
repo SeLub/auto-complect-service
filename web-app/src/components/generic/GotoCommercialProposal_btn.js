@@ -1,16 +1,20 @@
-/* eslint-disable camelcase */
-/* eslint-disable no-unused-vars */
 import * as React from "react";
 import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
 import { useHistory } from "react-router-dom";
 
 const css = `
-@import url("http://fonts.cdnfonts.com/css/ford-antenna");
-  .print_commercial_offer_stack {
+@import url("https://fonts.cdnfonts.com/css/ford-antenna");
+  .goto_commercial-proposal_btn_wrapper {
+   width: 100%;
+   margin-right: 0px;
+   margin-left : 47px;
+  
     
   }
   .gotoCom {
+    display: flex;
+    justify-content: center;
     height: 46px;
     width: 300px;
     left: 780px;
@@ -35,17 +39,19 @@ const GotoCommercialProposalBtn = () => {
     history.push("/Configurator_p3");
   }
   return (
-    <Stack direction="row">
+    <div className="">
       <style type="text/css">{css}</style>
-      <Button
-        fullWidth="true"
-        className="gotoCom"
-        variant="contained"
-        onClick={() => handleClick()}
-      >
-        Перейти к оформлению КП
-      </Button>
-    </Stack>
+      <Stack className="goto_commercial-proposal_btn_wrapper" direction="row">
+        <Button
+          className="gotoCom"
+          fullWidth
+          variant="contained"
+          onClick={() => handleClick()}
+        >
+          Перейти к оформлению КП
+        </Button>
+      </Stack>
+    </div>
   );
 };
 

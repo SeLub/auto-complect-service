@@ -1,6 +1,6 @@
-/* eslint-disable camelcase */
 /* eslint-disable react/jsx-pascal-case */
 /* eslint-disable react/jsx-props-no-spreading */
+/* eslint-disable camelcase */
 import * as React from "react";
 import PropTypes from "prop-types";
 import SwipeableViews from "react-swipeable-views";
@@ -48,7 +48,7 @@ function a11yProps(index) {
   };
 }
 const css = `
-@import url("http://fonts.cdnfonts.com/css/ford-antenna");
+@import url("https://fonts.cdnfonts.com/css/ford-antenna");
   .box {
     background: white;
     width: 1128px;

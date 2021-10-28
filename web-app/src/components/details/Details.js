@@ -1,5 +1,3 @@
-/* eslint-disable camelcase */
-
 import * as React from "react";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
@@ -10,7 +8,7 @@ import TableRow from "@mui/material/TableRow";
 import CardMedia from "@mui/material/CardMedia";
 
 const css = `
-@import url("http://fonts.cdnfonts.com/css/ford-antenna");
+@import url("https://fonts.cdnfonts.com/css/ford-antenna");
   .table-container-details {
     background: white;
     border-color: white;

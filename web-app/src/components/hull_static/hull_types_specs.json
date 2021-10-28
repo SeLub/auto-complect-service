@@ -1,4 +1,3 @@
-
 [
     {
         "name": "FORD TRANSIT L2H2 310/350",
@@ -11,7 +10,10 @@
         "base_price": 100950,
         "base_price_currency": "BYN",
         "pictures": [
-
+            {
+                "color": "red",
+                "source": "/img/L2H2/main_pic.png"
+            }
         ],
         "base_options": [
             "Передние и задние брызговики",
@@ -45,13 +47,71 @@
                 "option_cost_currency": "USD" 
             }
         ],
-        "pic1": "/img/main_pic1.jpg",
+        "refitOptions": [
+            {
+                "id": 1,
+                "title": "Настил пола (фанера и автолин), установка алюминиевых  профилей салона и порогов",
+                "price": 450,
+                "currency": "USD",
+                "VAT": true
+            },
+            {
+                "id": 2,
+                "title": "Установка поручней, таблички, огнетушителей, аптечки, информационных наклеек",
+                "price": 150,
+                "currency": "USD",
+                "VAT": true
+            },
+            {
+                "id": 3,
+                "title": "Оклейка колесных арок",
+                "price": 40,
+                "currency": "USD",
+                "VAT": true
+            },
+            {
+                "id": 4,
+                "title": "Изготовление, оклейка, монтаж боковых панелей",
+                "price": 450,
+                "currency": "USD",
+                "VAT": true
+            },
+            {
+                "id": 5,
+                "title": "Подключение светильников в потолке, подсветки проходов и подсветки подножек",
+                "price": 300,
+                "currency": "USD",
+                "VAT": true
+            },
+            {
+                "id": 6,
+                "title": "Установка аварийного люка 53х82",
+                "price": 260,
+                "currency": "USD",
+                "VAT": true
+            },
+            {
+                "id": 7,
+                "title": "Изготовление декоративных накладок на средние стойки",
+                "price": 100,
+                "currency": "USD",
+                "VAT": true
+            },
+            {
+                "id": 8,
+                "title": "Изготовление, оклейка, монтаж обивок потолка",
+                "price": 500,
+                "currency": "USD",
+                "VAT": true
+            }
+        ],
+        "pic1": "/img/L2H2/main_pic.png",
         "pic2": "/img/main_pic101.jpg",
         "pic3": "/img/main_pic102.jpg",
         "pic4": "/img/main_pic103.jpg"
     },
     {
-        "name": "FORD TRANSIT L2H2 310/350",
+        "name": "FORD TRANSIT L3H2 350",
         "engine": "2,2 TDCI",
         "fuel_type": "Дизель",
         "transmission": "M6",
@@ -95,13 +155,13 @@
                 "option_cost_currency": "USD" 
             }
         ],
-        "pic1": "/img/main_pic2.jpg",
+        "pic1": "/img/L3H2/main_pic.png",
         "pic2": "/img/main_pic201.jpg",
         "pic3": "/img/main_pic202.jpg",
         "pic4": "/img/main_pic203.jpg"
     },
     {
-        "name": "FORD TRANSIT L2H2 310/350",
+        "name": "FORD TRANSIT L3H3 350",
         "engine": "2,2 TDCI",
         "fuel_type": "Дизель",
         "transmission": "M6",
@@ -145,13 +205,13 @@
                 "option_cost_currency": "USD" 
             }
         ],
-        "pic1": "/img/main_pic3.jpg",
+        "pic1": "/img/L3H2/main_pic.png",
         "pic2": "/img/main_pic301.jpg",
         "pic3": "/img/main_pic302.jpg",
         "pic4": "/img/main_pic303.jpg"
     },
     {
-        "name": "FORD TRANSIT L2H2 310/350",
+        "name": "FORD TRANSIT L4H3 350",
         "engine": "2,2 TDCI",
         "fuel_type": "Дизель",
         "transmission": "M6",
@@ -195,22 +255,25 @@
                 "option_cost_currency": "USD" 
             }
         ],
-        "pic1": "/img/main_pic4.jpg",
+        "pic1": "/img/L4H3/main_pic.png",
         "pic2": "/img/main_pic401.jpg",
         "pic3": "/img/main_pic402.jpg",
         "pic4": "/img/main_pic403.jpg"
     },
     {
-        "name": "FORD TRANSIT L2H2 310/350",
+        "name": "FORD TRANSIT L4H3 460",
         "engine": "2,2 TDCI",
         "fuel_type": "Дизель",
         "transmission": "M6",
         "interior": "2+1",
         "drive_type": "RWD",
-        "engine_power": "92 кВт/125л.с.",
+        "engine_power": "100 кВт/136л.с.",
         "base_price": 100950,
         "base_price_currency": "BYN",
         "pictures": [
+
+        ],
+        "base_options": [
             "Передние и задние брызговики",
             "Широкие боковые пластиковые молдинги по всей длине кузова",
             "Зеркала заднего вида с электрорегилировками, подогревом и сигналом поворота",
@@ -234,9 +297,6 @@
             "Петли для фиксирования груза",
             "Защитное покрытие пола грузового отсека"
         ],
-        "base_options": [
-
-        ],
         "additional_options": [
             {
                 "option_index": 1,
@@ -245,12 +305,16 @@
                 "option_cost_currency": "USD" 
             }
         ],
-        "pic1": "/img/main_pic5.jpg",
+        "pic1": "/img/L4H3460/main_pic.png",
         "pic2": "/img/main_pic501.jpg",
         "pic3": "/img/main_pic502.jpg",
         "pic4": "/img/main_pic503.jpg"
     }
 ]
+    
+
+
+
     
 
 

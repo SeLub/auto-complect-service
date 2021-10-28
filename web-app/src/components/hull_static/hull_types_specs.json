@@ -41,69 +41,20 @@
         ],
         "additional_options": [
             {
-                "option_index": 1,
-                "option_name": "Опция 1",
+                "option_name": "Кондиционер с ручным управлением",
+                "option_cost": 20000,
+                "option_cost_currency": "USD" 
+            },
+            {
+                "option_name": "Кондиционер с ручным управлением",
                 "option_cost": 20000,
                 "option_cost_currency": "USD" 
             }
         ],
-        "refitOptions": [
-            {
-                "id": 1,
-                "title": "Настил пола (фанера и автолин), установка алюминиевых  профилей салона и порогов",
-                "price": 450,
-                "currency": "USD",
-                "VAT": true
-            },
-            {
-                "id": 2,
-                "title": "Установка поручней, таблички, огнетушителей, аптечки, информационных наклеек",
-                "price": 150,
-                "currency": "USD",
-                "VAT": true
-            },
-            {
-                "id": 3,
-                "title": "Оклейка колесных арок",
-                "price": 40,
-                "currency": "USD",
-                "VAT": true
-            },
-            {
-                "id": 4,
-                "title": "Изготовление, оклейка, монтаж боковых панелей",
-                "price": 450,
-                "currency": "USD",
-                "VAT": true
-            },
-            {
-                "id": 5,
-                "title": "Подключение светильников в потолке, подсветки проходов и подсветки подножек",
-                "price": 300,
-                "currency": "USD",
-                "VAT": true
-            },
-            {
-                "id": 6,
-                "title": "Установка аварийного люка 53х82",
-                "price": 260,
-                "currency": "USD",
-                "VAT": true
-            },
-            {
-                "id": 7,
-                "title": "Изготовление декоративных накладок на средние стойки",
-                "price": 100,
-                "currency": "USD",
-                "VAT": true
-            },
-            {
-                "id": 8,
-                "title": "Изготовление, оклейка, монтаж обивок потолка",
-                "price": 500,
-                "currency": "USD",
-                "VAT": true
-            }
+        "reequipment": [
+            "bus",
+            "cargo",
+            "light"
         ],
         "pic1": "/img/L2H2/main_pic.png",
         "pic2": "/img/main_pic101.jpg",
@@ -149,11 +100,20 @@
         ],
         "additional_options": [
             {
-                "option_index": 1,
-                "option_name": "Опция 1",
+                "option_name": "Кондиционер с ручным управлением",
+                "option_cost": 20000,
+                "option_cost_currency": "USD" 
+            },
+            {
+                "option_name": "Кондиционер с ручным управлением",
                 "option_cost": 20000,
                 "option_cost_currency": "USD" 
             }
+        ],
+        "reequipment": [
+            "bus",
+            "cargo",
+            "light"
         ],
         "pic1": "/img/L3H2/main_pic.png",
         "pic2": "/img/main_pic201.jpg",
@@ -171,7 +131,10 @@
         "base_price": 100950,
         "base_price_currency": "BYN",
         "pictures": [
-
+            {
+                "color": "red",
+                "source": "/img/L2H2/main_pic.png"
+            }
         ],
         "base_options": [
             "Передние и задние брызговики",
@@ -199,11 +162,20 @@
         ],
         "additional_options": [
             {
-                "option_index": 1,
-                "option_name": "Опция 1",
+                "option_name": "Кондиционер с ручным управлением",
+                "option_cost": 20000,
+                "option_cost_currency": "USD" 
+            },
+            {
+                "option_name": "Кондиционер с ручным управлением",
                 "option_cost": 20000,
                 "option_cost_currency": "USD" 
             }
+        ],
+        "reequipment": [
+            "bus",
+            "cargo",
+            "light"
         ],
         "pic1": "/img/L3H2/main_pic.png",
         "pic2": "/img/main_pic301.jpg",
@@ -221,7 +193,10 @@
         "base_price": 100950,
         "base_price_currency": "BYN",
         "pictures": [
-
+            {
+                "color": "red",
+                "source": "/img/L2H2/main_pic.png"
+            }
         ],
         "base_options": [
             "Передние и задние брызговики",
@@ -249,11 +224,20 @@
         ],
         "additional_options": [
             {
-                "option_index": 1,
-                "option_name": "Опция 1",
+                "option_name": "Кондиционер с ручным управлением",
+                "option_cost": 20000,
+                "option_cost_currency": "USD" 
+            },
+            {
+                "option_name": "Кондиционер с ручным управлением",
                 "option_cost": 20000,
                 "option_cost_currency": "USD" 
             }
+        ],
+        "reequipment": [
+            "bus",
+            "cargo",
+            "light"
         ],
         "pic1": "/img/L4H3/main_pic.png",
         "pic2": "/img/main_pic401.jpg",
@@ -271,7 +255,10 @@
         "base_price": 100950,
         "base_price_currency": "BYN",
         "pictures": [
-
+            {
+                "color": "red",
+                "source": "/img/L2H2/main_pic.png"
+            }
         ],
         "base_options": [
             "Передние и задние брызговики",
@@ -299,11 +286,20 @@
         ],
         "additional_options": [
             {
-                "option_index": 1,
-                "option_name": "Опция 1",
+                "option_name": "Кондиционер с ручным управлением",
+                "option_cost": 20000,
+                "option_cost_currency": "USD" 
+            },
+            {
+                "option_name": "Кондиционер с ручным управлением",
                 "option_cost": 20000,
                 "option_cost_currency": "USD" 
             }
+        ],
+        "reequipment": [
+            "bus",
+            "cargo",
+            "light"
         ],
         "pic1": "/img/L4H3460/main_pic.png",
         "pic2": "/img/main_pic501.jpg",

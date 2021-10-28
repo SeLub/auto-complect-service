@@ -1,0 +1,188 @@
+[
+    {
+        "name": "cargo",
+        "displayName": "Грузопассажирский",
+        "schemaOptions": [
+            {
+                "sitsNum": "5+1",
+                "pic": "placeholder",
+                "reequipBasicOptions": [
+                    "option1"
+                ],
+                "reequipOptions": [
+                    {
+                        "content": "Опция 1",
+                        "reequipOptionPrice": 1000,
+                        "priceCurrency": "USD"
+                    }
+                ]
+            },
+            {
+                "sitsNum": "6+1",
+                "pic": "placeholder",
+                "reequipBasicOptions": [
+                    "option1"
+                ],
+                "reequipOptions": [
+                    {
+                        "content": "Опция 1",
+                        "reequipOptionPrice": 1000,
+                        "priceCurrency": "USD"
+                    }
+                ]
+            },
+            {
+                "sitsNum": "8+1",
+                "pic": "placeholder",
+                "reequipBasicOptions": [
+                    "option1"
+                ],
+                "reequipOptions": [
+                    {
+                        "content": "Опция 1",
+                        "reequipOptionPrice": 1000,
+                        "priceCurrency": "USD"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "bus",
+        "displayName": "Автобус",
+        "schemaOptions": [
+            {
+                "sitsNum": "10+1",
+                "pic": "placeholder",
+                "reequipBasicOptions": [
+                    "option1"
+                ],
+                "reequipOptions": [
+                    {
+                        "content": "Опция 1",
+                        "reequipOptionPrice": 1000,
+                        "priceCurrency": "USD"
+                    }
+                ]
+            },
+            {
+                "sitsNum": "14+1",
+                "pic": "placeholder",
+                "reequipBasicOptions": [
+                    "option1"
+                ],
+                "reequipOptions": [
+                    {
+                        "content": "Опция 1",
+                        "reequipOptionPrice": 1000,
+                        "priceCurrency": "USD"
+                    }
+                ]
+            },
+            {
+                "sitsNum": "17+1",
+                "pic": "placeholder",
+                "reequipBasicOptions": [
+                    "option1"
+                ],
+                "reequipOptions": [
+                    {
+                        "content": "Опция 1",
+                        "reequipOptionPrice": 1000,
+                        "priceCurrency": "USD"
+                    }
+                ]
+            },
+            {
+                "sitsNum": "17+1",
+                "pic": "placeholder",
+                "reequipBasicOptions": [
+                    "option1"
+                ],
+                "reequipOptions": [
+                    {
+                        "content": "Опция 1",
+                        "reequipOptionPrice": 1000,
+                        "priceCurrency": "USD"
+                    }
+                ]
+            },
+            {
+                "sitsNum": "20+1",
+                "pic": "placeholder",
+                "reequipBasicOptions": [
+                    "option1"
+                ],
+                "reequipOptions": [
+                    {
+                        "content": "Опция 1",
+                        "reequipOptionPrice": 1000,
+                        "priceCurrency": "USD"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "light",
+        "displayName": "Легковой",
+        "schemaOptions": [
+            {
+                "sitsNum": "8+1",
+                "pic": "placeholder",
+                "reequipBasicOptions": [
+                    "option1"
+                ],
+                "reequipOptions": [
+                    {
+                        "content": "Опция 1",
+                        "reequipOptionPrice": 1000,
+                        "priceCurrency": "USD"
+                    }
+                ]
+            },
+            {
+                "sitsNum": "8+1",
+                "pic": "placeholder",
+                "reequipBasicOptions": [
+                    "option1"
+                ],
+                "reequipOptions": [
+                    {
+                        "content": "Опция 1",
+                        "reequipOptionPrice": 1000,
+                        "priceCurrency": "USD"
+                    }
+                ]
+            },
+            {
+                "sitsNum": "8+1",
+                "pic": "placeholder",
+                "reequipBasicOptions": [
+                    "option1"
+                ],
+                "reequipOptions": [
+                    {
+                        "content": "Опция 1",
+                        "reequipOptionPrice": 1000,
+                        "priceCurrency": "USD"
+                    }
+                ]
+            },
+            {
+                "sitsNum": "8+1",
+                "pic": "placeholder",
+                "reequipBasicOptions": [
+                    "option1"
+                ],
+                "reequipOptions": [
+                    {
+                        "content": "Опция 1",
+                        "reequipOptionPrice": 1000,
+                        "priceCurrency": "USD"
+                    }
+                ]
+            }
+        ]
+    }
+]

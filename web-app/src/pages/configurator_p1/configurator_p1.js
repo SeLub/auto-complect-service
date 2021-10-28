@@ -5,7 +5,7 @@
 /* eslint-disable import/no-cycle */
 // import { useHistory } from "react-router-dom";
 import React from "react";
-import AppHeader from "../../components/app-header";
+import AppHeader from "../../components/app-header/AppHeader";
 import BreadCrumbs from "../../components/breadcrumb/Breadcrumb";
 import Configurator from "../../components/Configurator";
 // import Basic_Options from "../../components/Basic_Options";
@@ -15,7 +15,7 @@ import store from "../../store/store";
 // import hull_types from "../../components/hull_static/hull_types_specs.json";
 
 export default function configurator_p1() {
-  const hull_types = store.getState()
+  const hull_types = store.getState();
   return (
     <>
       <AppHeader />

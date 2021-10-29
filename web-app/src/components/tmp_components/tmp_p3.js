@@ -1,5 +1,3 @@
-/* eslint-disable react/jsx-fragments */
-/* eslint-disable import/no-extraneous-dependencies */
 import React from "react";
 import { useHistory } from "react-router";
 

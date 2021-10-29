@@ -1,8 +1,5 @@
-/* eslint-disable react/jsx-fragments */
-/* eslint-disable camelcase */
-/* eslint-disable react/jsx-pascal-case */
 import React from "react";
-import AppHeader from "../../components/app-header";
+import AppHeader from "../../components/app-header/AppHeader";
 import BreadCrumbs from "../../components/breadcrumb/Breadcrumb";
 import RequestExecutionTabs from "../../components/request-execution-tabs/RequestExecutionTabs";
 import PooledСomponent from "../../components/managerContactDetails/BlockFordCardsAndManagerContactDetails";
@@ -16,9 +13,9 @@ const css = `
     
   }`;
 
-export default function Configurator_p3() {
+export default function ConfiguratorP3() {
   return (
-    <>
+    <div>
       <style type="text/css">{css}</style>
 
       <AppHeader />
@@ -27,6 +24,6 @@ export default function Configurator_p3() {
       <PooledСomponent />
 
       <RequestExecutionTabs />
-    </>
+    </div>
   );
 }

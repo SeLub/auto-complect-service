@@ -1,7 +1,3 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable no-console */
-/* eslint-disable no-alert */
-/* eslint-disable func-names */
 /* 
 TODOs 
 1. Функция которая формирует итоговое url в зависимости от

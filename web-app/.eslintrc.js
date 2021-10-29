@@ -19,6 +19,9 @@ module.exports = {
     ecmaVersion: 2020,
     sourceType: "module",
   },
+  required: {
+    some: ["nesting", "id"],
+  },
   plugins: ["react"],
   rules: {
     "react/jsx-filename-extension": [1, { extensions: [".js", ".jsx"] }],

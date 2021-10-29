@@ -1,11 +1,6 @@
-/* eslint-disable react/jsx-fragments */
-/* eslint-disable camelcase */
-/* eslint-disable react/jsx-pascal-case */
 import React from "react";
-import Block_ford_cards from "../Block_ford_cards";
+import BlockFordCards from "../BlockFordCards";
 import ManagerContactDetails from "./ManagerContactDetails";
-
-/* cюда добавляйте imports  своих компонентов */
 
 const css = `
   .flex {
@@ -26,7 +21,7 @@ export default function PooledСomponent() {
     <div className="App">
       <div className="flex">
         <style type="text/css">{css}</style>
-        <Block_ford_cards hull_types={picturers} />
+        <BlockFordCards hull_types={picturers} />
         <ManagerContactDetails />
       </div>
     </div>

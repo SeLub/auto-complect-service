@@ -1,14 +1,3 @@
-/* eslint-disable linebreak-style */
-/* eslint-disable react/jsx-filename-extension */
-/* eslint-disable linebreak-style */
-/* eslint-disable react/jsx-pascal-case */
-/* eslint-disable import/no-named-as-default */
-/* eslint-disable import/no-named-as-default-member */
-/* eslint-disable import/no-extraneous-dependencies */
-/* eslint-disable react/jsx-props-no-spreading */
-/* eslint-disable import/no-unresolved */
-/* eslint-disable camelcase */
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import * as React from "react";
 import PropTypes from "prop-types";
 import SwipeableViews from "react-swipeable-views";
@@ -23,8 +12,8 @@ import Details from "../details/Details";
 import CarCostIncludingOptions from "../car-cost-including-options/CarCostIncludingOptions";
 import SpecialDiscountedPrice from "../special-discounted-price/SpecialDiscountedPrice";
 import PrintCommercialOffer from "../generic/PrintCommercialOffer";
-import Optional_equipment_tab_requipment from "../tab-optional-equipment/Optional_equipment_tab_request_decoration";
-import Optional_equipment_tab_vehicle_type from "../tab-optional-equipment/Optional_equipment_tab_vehicle_type";
+import OptionalEquipmentTabRequestDecoration from "../tab-optional-equipment/OptionalEquipmentTabRequestDecoration";
+import OptionalEquipmentTabVehicleType from "../tab-optional-equipment/OptionalEquipmentTabVehicleType";
 
 function RefitTabs(props) {
   const { children, value, index, ...other } = props;
@@ -36,7 +25,7 @@ function RefitTabs(props) {
       hidden={value !== index}
       id={`action-tabpanel-${index}`}
       aria-labelledby={`action-tab-${index}`}
-      {...other}
+      other={other}
     >
       {value === index && <Box sx={{ p: 4 }}>{children}</Box>}
     </Typography>
@@ -141,21 +130,21 @@ export default function RequestExecutionTabs() {
             variant="standard"
             aria-label="action tabs example"
           >
-            <Tab className="tab1" label="Детали" {...a11yProps(0)} />
+            <Tab className="tab1" label="Детали" a11yProps={a11yProps(0)} />
             <Tab
               className="tab2"
               label="Базовая комплектация"
-              {...a11yProps(1)}
+              a11yProps={a11yProps(1)}
             />
             <Tab
               className="tab3"
               label="Опциональное оборудование"
-              {...a11yProps(2)}
+              a11yProps={a11yProps(2)}
             />
             <Tab
               className="tab4"
               label="Тип транспортного средства"
-              {...a11yProps(3)}
+              a11yProps={a11yProps(3)}
             />
           </Tabs>
         </AppBar>
@@ -193,7 +182,7 @@ export default function RequestExecutionTabs() {
             index={2}
             dir={theme.direction}
           >
-            <Optional_equipment_tab_requipment />
+            <OptionalEquipmentTabRequestDecoration />
             <CarCostIncludingOptions />
             <SpecialDiscountedPrice />
             <PrintCommercialOffer />
@@ -204,7 +193,7 @@ export default function RequestExecutionTabs() {
             index={3}
             dir={theme.direction}
           >
-            <Optional_equipment_tab_vehicle_type />
+            <OptionalEquipmentTabVehicleType />
             <CarCostIncludingOptions />
             <SpecialDiscountedPrice />
             <PrintCommercialOffer />

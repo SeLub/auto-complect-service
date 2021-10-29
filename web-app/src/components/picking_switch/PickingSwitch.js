@@ -1,6 +1,3 @@
-/* eslint-disable react/jsx-pascal-case */
-/* eslint-disable react/jsx-props-no-spreading */
-/* eslint-disable camelcase */
 import * as React from "react";
 import PropTypes from "prop-types";
 import SwipeableViews from "react-swipeable-views";
@@ -10,7 +7,7 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import Optional_equipment_tab_configurator from "../tab-optional-equipment/Optional_equipment_tab_configurator";
+import OptionalEquipmentTabConfigurator from "../tab-optional-equipment/OptionalEquipmentTabConfigurator";
 import СardLayoutTypeTransport from "../type-of -transport/СardLayoutTypeTransport";
 import TotalCarValue from "../total-car-value/Total-car-value";
 import GotoCommercialProposalBtn from "../generic/GotoCommercialProposal_btn";
@@ -25,7 +22,7 @@ function RefitTabs(props) {
       hidden={value !== index}
       id={`action-tabpanel-${index}`}
       aria-labelledby={`action-tab-${index}`}
-      {...other}
+      other={other}
     >
       {value === index && <Box sx={{ p: 3 }}>{children}</Box>}
     </Typography>
@@ -126,17 +123,17 @@ export default function FloatingActionButtonZoom() {
             <Tab
               className="tab1"
               label="Базовая комплектация"
-              {...a11yProps(0)}
+              a11yProps={a11yProps(0)}
             />
             <Tab
               className="tab2"
               label="Опциональное оборудование"
-              {...a11yProps(1)}
+              a11yProps={a11yProps(1)}
             />
             <Tab
               className="tab3"
               label="Тип транспортного средства"
-              {...a11yProps(2)}
+              a11yProps={a11yProps(2)}
             />
           </Tabs>
         </AppBar>
@@ -150,7 +147,7 @@ export default function FloatingActionButtonZoom() {
             <BasicOptions />
           </RefitTabs>
           <RefitTabs value={value} index={1} dir={theme.direction}>
-            <Optional_equipment_tab_configurator />
+            <OptionalEquipmentTabConfigurator />
           </RefitTabs>
           <RefitTabs value={value} index={2} dir={theme.direction}>
             <СardLayoutTypeTransport />

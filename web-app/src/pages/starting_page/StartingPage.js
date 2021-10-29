@@ -1,14 +1,12 @@
-/* eslint-disable */
-
 import React from "react";
 import AppHeader from "../../components/app-header/AppHeader";
-import BreadCrumbs from "../../components/breadcrumb";
+import BreadCrumbs from "../../components/breadcrumb/Breadcrumb";
 import BodyModification from "../../components/BodyModification";
 import "../../App.css";
 import Logo from "../../components/Logo";
-import Hull_specs_display from "../../components/Hull_specs_display";
+import HullSpecsDisplay from "../../components/HullSpecsDisplay";
 
-export default function starting_page() {
+export default function StartingPage() {
   return (
     <div className="">
       <div>
@@ -22,7 +20,7 @@ export default function starting_page() {
         <BodyModification />
       </div>
       <div>
-        <Hull_specs_display />
+        <HullSpecsDisplay />
       </div>
     </div>
   );

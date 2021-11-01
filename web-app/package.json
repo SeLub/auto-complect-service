@@ -50,7 +50,6 @@
   "lint-staged": {
     "*.js": [
       "eslint . --fix --cache",
-      "npx stylelint",
       "git add"
     ]
   },

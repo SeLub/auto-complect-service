@@ -1,6 +1,3 @@
-/* eslint-disable jsx-a11y/alt-text */
-/* eslint-disable no-undef */
-/* eslint-disable prettier/prettier */
 import * as React from "react";
 import { DataGrid } from "@mui/x-data-grid";
 import "./Tab_Optional_Equipment.css";
@@ -57,6 +54,7 @@ export default function DataTable() {
     <div className="BoxTab_Optional_Equipment_Co">
       <div style={{ height: 750, width: "100%" }}>
         <img
+          alt="info_iconTab_Optional_Equipment"
           src="/img/Vector.jpg"
           className="info_iconTab_Optional_Equipment"
         />

@@ -1,7 +1,3 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable no-console */
-/* eslint-disable no-alert */
-/* eslint-disable func-names */
 /* 
 TODOs 
 1. Функция которая формирует итоговое url в зависимости от
@@ -24,12 +20,12 @@ async function getExRate() {
   const urlFinal = `https://www.nbrb.by/api/exrates/rates/643?ondate=${year}-${month}-${day}&parammode=1`;
   await fetch(urlFinal)
     .then((resp) => resp.json())
-    .then(function (data) {
+    .then(function fetch(data) {
       const officialExRate = data.Cur_OfficialRate;
       return officialExRate;
     })
-    .catch(function (error) {
-      console.error();
+    .catch(function fetch() {
+      console.error('"error"');
     });
 }
 export default getExRate;

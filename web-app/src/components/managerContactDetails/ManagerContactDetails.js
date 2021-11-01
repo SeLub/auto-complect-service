@@ -1,5 +1,3 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable no-console */
 import * as React from "react";
 import Box from "@mui/material/Box";
 import InputLabel from "@mui/material/InputLabel";
@@ -46,6 +44,9 @@ export default function ManagerContactDetails() {
 
     event.preventDefault();
     setManagerName(event.target.value);
+    setValueAddress(event.target.value);
+    setValueEmail(event.target.value);
+    setValuePhone(event.target.value);
   };
 
   return (

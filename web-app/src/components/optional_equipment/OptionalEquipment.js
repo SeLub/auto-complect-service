@@ -1,9 +1,6 @@
-/* eslint-disable jsx-a11y/label-has-associated-control */
-// import "./Optional_equipment.css";
-// generic/PriceListBtn
 import React from "react";
 import TotalCarValue from "../total-car-value/Total-car-value";
-import NextButton from "../generic/Next-btn";
+import NextButton from "../generic/NextBtn";
 import PriceListBtn from "../generic/PriceListBtn";
 
 function OptionalEquipment() {
@@ -18,9 +15,9 @@ function OptionalEquipment() {
       </div>
       <ul>
         <dd>
-          <label className="container">
+          <label for="checkbox" className="container">
             Кондиционер с ручным управлением
-            <input type="checkbox" />
+            <input id="checkbox" />
             <span className="checkmark" />
           </label>
         </dd>

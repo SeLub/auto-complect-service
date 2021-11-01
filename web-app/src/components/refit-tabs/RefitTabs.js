@@ -1,6 +1,3 @@
-/* eslint-disable react/jsx-pascal-case */
-/* eslint-disable react/jsx-props-no-spreading */
-/* eslint-disable camelcase */
 import * as React from "react";
 import PropTypes from "prop-types";
 import SwipeableViews from "react-swipeable-views";
@@ -13,7 +10,7 @@ import Box from "@mui/material/Box";
 import BasicOptionsReEquipment from "../basic_options/BasicOptionsReEquipment";
 import TotalCarValue from "../total-car-value/Total-car-value";
 import GotoCommercialProposalBtn from "../generic/GotoCommercialProposal_btn";
-import Optional_equipment_tab_requipment from "../tab-optional-equipment/Optional_equipment_tab_requipment";
+import OptionalEquipmentTabRequipment from "../tab-optional-equipment/OptionalEquipmentTabRequipment";
 
 function RefitTabs(props) {
   const { children, value, index, ...other } = props;
@@ -25,7 +22,7 @@ function RefitTabs(props) {
       hidden={value !== index}
       id={`action-tabpanel-${index}`}
       aria-labelledby={`action-tab-${index}`}
-      {...other}
+      other={other}
     >
       {value === index && <Box sx={{ p: 2 }}>{children}</Box>}
     </Typography>
@@ -110,12 +107,12 @@ export default function FloatingActionButtonZoom() {
             <Tab
               className="tab1"
               label="Базовая комплектация"
-              {...a11yProps(0)}
+              a11yProps={a11yProps(0)}
             />
             <Tab
               className="tab2"
               label="Опции переоборудования"
-              {...a11yProps(1)}
+              a11yProps={a11yProps(1)}
             />
           </Tabs>
         </AppBar>
@@ -128,7 +125,7 @@ export default function FloatingActionButtonZoom() {
             <BasicOptionsReEquipment />
           </RefitTabs>
           <RefitTabs value={value} index={1} dir={theme.direction}>
-            <Optional_equipment_tab_requipment />
+            <OptionalEquipmentTabRequipment />
             <TotalCarValue />
             <GotoCommercialProposalBtn />
           </RefitTabs>

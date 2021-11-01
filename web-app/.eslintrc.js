@@ -25,6 +25,7 @@ module.exports = {
     "react/prop-types": "off",
     "prettier/prettier": ["error", { endOfLine: "auto" }],
     "import/no-extraneous-dependencies": ["error", { devDependencies: true }],
+    "no-console": "off",
   },
   settings: {
     react: {

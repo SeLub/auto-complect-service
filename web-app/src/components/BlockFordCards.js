@@ -1,6 +1,6 @@
+/* eslint-disable react/destructuring-assignment */
+import React from "react";
 import "./BlockFordCards.css";
-
-import React, { Component } from "react";
 
 export default function BlockFordCards(props) {
   return (

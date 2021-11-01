@@ -15,55 +15,55 @@ function OptionalEquipment() {
       </div>
       <ul>
         <dd>
-          <label for="checkbox" className="container">
+          <label htmlFor="checkbox" className="container">
             Кондиционер с ручным управлением
-            <input id="checkbox" />
+            <input type="checkbox" id="checkbox" />
             <span className="checkmark" />
           </label>
         </dd>
         <dd>
-          <label className="container">
+          <label htmlFor="checkbox" className="container">
             Пакет “Подготовка к эксплуатации”; пластиковые подкрылки (к-т 2 шт);
             подогреватель топливного фильтра; резиновые коврики в кабину;
             антигравийная пленка - угловая вкладка двери R,L, к-т 2 шт;
-            <input type="checkbox" />
+            <input type="checkbox" id="checkbox" />
             <span className="checkmark" />
           </label>
         </dd>
         <dd>
-          <label className="container">
+          <label htmlFor="checkbox" className="container">
             Комплект пневмоусиления подвески с компрессором
-            <input type="checkbox" />
+            <input type="checkbox" id="checkbox" />
             <span className="checkmark" />
           </label>
         </dd>
         <dd>
-          <label className="container">
+          <label htmlFor="checkbox" className="container">
             Программируемый предпусковой отопитель с пультом дистанционного
             управления
-            <input type="checkbox" />
+            <input type="checkbox" id="checkbox" />
             <span className="checkmark" />
           </label>
         </dd>
         <dd>
-          <label className="container">
+          <label htmlFor="checkbox" className="container">
             Пакет улучшения обзорности (электрообогрев лобового стекла, датчик
             уровня омывающей жидкости
-            <input type="checkbox" />
+            <input type="checkbox" id="checkbox" />
             <span className="checkmark" />
           </label>
         </dd>
         <dd>
-          <label className="container">
+          <label htmlFor="checkbox" className="container">
             Магнитола с громкой связью и кнопками управления на руле
-            <input type="checkbox" />
+            <input type="checkbox" id="checkbox" />
             <span className="checkmark" />
           </label>
         </dd>
         <dd>
-          <label className="container">
+          <label htmlFor="checkbox" className="container">
             Круиз-контроль и кожаный руль
-            <input type="checkbox" />
+            <input type="checkbox" id="checkbox" />
             <span className="checkmark" />
           </label>
         </dd>

@@ -7,21 +7,13 @@ import TableCell from "@mui/material/TableCell";
 import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
-import CardMedia from "@mui/material/CardMedia";
 
 const css = `
 @import url("http://fonts.cdnfonts.com/css/ford-antenna");
-  .table-container-details {
+  .table-container {
     background: white;
     border-color: white;
     width: 1128px;
-  }
-  .names-table-row {
-    display: flex;
-    flex-wrap: nowrap;
-    width: 1128px;
-    flex-direction: row;
-    justify-content: space-between;
   }
   .css-rorn0c-MuiTableContainer-root {
     overflow-x: hidden;
@@ -29,11 +21,11 @@ const css = `
   .css-ahj2mt-MuiTypography-root {
    margin: 0px; 
   }
-  .names-table-cell{
+  .css-1ygcj2i-MuiTableCell-root {
     text-align:start;
     width: 300px;
     display: table-cell;
-    border-bottom: 1px solid rgba(255,255,255);
+    border-bottom: 0px solid rgba(255,255,255);
     padding: 0px 0px 4px 0px;
     font-family: Ford Antenna;
     font-style: normal;
@@ -42,11 +34,11 @@ const css = `
     line-height: 17px;
     color: #717171;
   }
-  .data-table-cell {
+  .css-1ex1afd-MuiTableCell-root {
     text-align:start;
-    width: 300px;
+    width: 300px !important;
     display: table-cell;
-    border-bottom: 1px solid rgba(255,255,255);
+    border-bottom: 0px solid rgba(255,255,255);
     padding: 0px 0px 48px 0px;
     font-family: Ford Antenna;
     font-style: normal;
@@ -84,93 +76,62 @@ export default function Details() {
   return (
     <div>
       <style type="text/css">{css}</style>
-      <TableContainer className="table-container-details">
+      <TableContainer className="table-container">
         <Table sx={{ p: 5, minWidth: "100%" }}>
           <TableHead>
-            <TableRow className="names-table-row">
-              <TableCell className="names-table-cell" sx={{ Width: "300" }}>
-                Двигатель
-              </TableCell>
-              <TableCell className="names-table-cell">Тип топлива</TableCell>
-              <TableCell className="names-table-cell">Транс-миссия</TableCell>
-              <TableCell className="names-table-cell">Цвет</TableCell>
-              <TableCell className="names-table-cell">Срок поставки</TableCell>
+            <TableRow>
+              <TableCell index={0}>Двигатель</TableCell>
+              <TableCell index={1}>Тип топлива</TableCell>
+              <TableCell index={2}>Транс-миссия</TableCell>
+              <TableCell index={3}>Цвет</TableCell>
+              <TableCell index={4}>Срок поставки</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
             {rows1.map((row1) => (
-              <TableRow className="names-table-row" key={row1.engine}>
-                <TableCell
-                  className="data-table-cell"
-                  component="th"
-                  scope="row"
-                >
+              <TableRow key={row1.engine}>
+                <TableCell index={0} component="th" scope="row">
                   {row1.engine}
                 </TableCell>
-                <TableCell className="data-table-cell">
-                  {row1.fueltype}
-                </TableCell>
-                <TableCell className="data-table-cell">
-                  {row1.transmission}
-                </TableCell>
-                <TableCell className="data-table-cell">{row1.colour}</TableCell>
-                <TableCell className="data-table-cell">
-                  {row1.deliverytime}
-                </TableCell>
+                <TableCell index={1}>{row1.fueltype}</TableCell>
+                <TableCell index={2}>{row1.transmission}</TableCell>
+                <TableCell index={3}>{row1.colour}</TableCell>
+                <TableCell index={4}>{row1.deliverytime}</TableCell>
               </TableRow>
             ))}
           </TableBody>
         </Table>
       </TableContainer>
-      <TableContainer className="table-container-details">
+      <TableContainer className="table-container">
         <Table>
           <TableHead>
-            <TableRow className="names-table-row">
-              <TableCell className="names-table-cell">Cалон</TableCell>
-              <TableCell className="names-table-cell">Тип привода</TableCell>
-              <TableCell className="names-table-cell" sx={{ Width: "300" }}>
-                Мощность двигателя
-              </TableCell>
-              <TableCell className="names-table-cell">
-                Коробка передач
-              </TableCell>
-              <TableCell className="names-table-cell">{}</TableCell>
+            <TableRow>
+              <TableCell>Cалон</TableCell>
+              <TableCell>Тип привода</TableCell>
+              <TableCell>Мощность двигателя</TableCell>
+              <TableCell>Коробка передач</TableCell>
+              <TableCell>{}</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
             {rows2.map((row2) => (
-              <TableRow
-                className="names-table-row"
-                key={row2.salon}
-                sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
-              >
-                <TableCell
-                  className="data-table-cell"
-                  component="th"
-                  scope="row"
-                >
+              <TableRow key={row2.salon}>
+                <TableCell component="th" scope="row">
                   {row2.salon}
                 </TableCell>
-                <TableCell className="data-table-cell">
-                  {row2.typeofdrive}
-                </TableCell>
-                <TableCell className="data-table-cell">
-                  {row2.enginepower}
-                </TableCell>
-                <TableCell className="data-table-cell">
-                  {row2.gearbox}
-                </TableCell>
-                <TableCell className="data-table-cell">{}</TableCell>
+                <TableCell>{row2.typeofdrive}</TableCell>
+                <TableCell>{row2.enginepower}</TableCell>
+                <TableCell>{row2.gearbox}</TableCell>
+                <TableCell>{}</TableCell>
               </TableRow>
             ))}
           </TableBody>
         </Table>
       </TableContainer>
-      <CardMedia
-        component="img"
-        alt="middle-line"
-        image="/img/middle-line.png"
+      <img
+        src="/img/middle-line.jpg"
         className="middle-line"
+        alt="middle-line"
       />
     </div>
   );

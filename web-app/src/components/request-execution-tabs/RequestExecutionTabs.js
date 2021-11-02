@@ -13,9 +13,7 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Basic_Options from "../../components/basic_options/Basic_Options";
 import Details from "../../components/details/Details";
-import CarCostIncludingOptions from "../../components/car-cost-including-options/CarCostIncludingOptions";
-import SpecialDiscountedPrice from "../../components/special-discounted-price/SpecialDiscountedPrice";
-import PrintCommercialOffer from "../../components/generic/PrintCommercialOffer";
+import TotalCarValue from "../../components/total-car-value/Total-car-value";
 
 function RefitTabs(props) {
   const { children, value, index, ...other } = props;
@@ -62,10 +60,6 @@ const css = `
   .appbar{
     background: white;
       color: white;
-  }
-  .tab11{
-    width: 1128px; 
-    overflow: hidden;
   }
   .MuiTabs-indicator{
     color: #2D96CD; 
@@ -151,54 +145,22 @@ export default function RequestExecutionTabs() {
           </Tabs>
         </AppBar>
         <SwipeableViews
-          className="tabs"
           axis={theme.direction === "rtl" ? "x-reverse" : "x"}
           index={value}
           onChangeIndex={handleChangeIndex}
         >
-          <RefitTabs
-            className="tab11"
-            value={value}
-            index={0}
-            dir={theme.direction}
-          >
+          <RefitTabs value={value} index={0} dir={theme.direction}>
             <Details />
-            <CarCostIncludingOptions />
-            <SpecialDiscountedPrice />
-            <PrintCommercialOffer />
+            <TotalCarValue />
           </RefitTabs>
-          <RefitTabs
-            className="tab11"
-            value={value}
-            index={1}
-            dir={theme.direction}
-          >
+          <RefitTabs value={value} index={1} dir={theme.direction}>
             <Basic_Options />
-            <CarCostIncludingOptions />
-            <SpecialDiscountedPrice />
-            <PrintCommercialOffer />
           </RefitTabs>
-          <RefitTabs
-            className="tab11"
-            value={value}
-            index={2}
-            dir={theme.direction}
-          >
+          <RefitTabs value={value} index={2} dir={theme.direction}>
             опциональное оборудование(текст)
-            <CarCostIncludingOptions />
-            <SpecialDiscountedPrice />
-            <PrintCommercialOffer />
           </RefitTabs>
-          <RefitTabs
-            className="tab11"
-            value={value}
-            index={3}
-            dir={theme.direction}
-          >
+          <RefitTabs value={value} index={3} dir={theme.direction}>
             тип транспортного средства(текст)
-            <CarCostIncludingOptions />
-            <SpecialDiscountedPrice />
-            <PrintCommercialOffer />
           </RefitTabs>
         </SwipeableViews>
       </Box>

@@ -1,4 +1,4 @@
-@import url("http://fonts.cdnfonts.com/css/ford-antenna");
+@import url("https://fonts.cdnfonts.com/css/ford-antenna");
 .App {
   text-align: center;
   width: 1128px;
@@ -310,6 +310,7 @@
   color: #717171;
 }
 
+<<<<<<< HEAD
 .price_list_btn {
   display: flex;
   flex-direction: row;
@@ -403,6 +404,8 @@
   margin: 0px 10px;
 }
 
+=======
+>>>>>>> origin/dev
 .hull_specs_display_wrapper {
   max-width: 600px;
   max-height: 456px;

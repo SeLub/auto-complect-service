@@ -1,5 +1,3 @@
-/* eslint-disable camelcase */
-
 import * as React from "react";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
@@ -9,8 +7,13 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 
 const css = `
+<<<<<<< HEAD
 @import url("http://fonts.cdnfonts.com/css/ford-antenna");
   .table-container {
+=======
+@import url("https://fonts.cdnfonts.com/css/ford-antenna");
+  .table-container-details {
+>>>>>>> origin/dev
     background: white;
     border-color: white;
     width: 1128px;

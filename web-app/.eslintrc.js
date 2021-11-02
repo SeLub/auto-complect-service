@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 module.exports = {
   env: {
     browser: true,
@@ -17,7 +16,7 @@ module.exports = {
     ecmaFeatures: {
       jsx: true,
     },
-    ecmaVersion: 2018,
+    ecmaVersion: 2020,
     sourceType: "module",
   },
   plugins: ["react"],
@@ -26,6 +25,7 @@ module.exports = {
     "react/prop-types": "off",
     "prettier/prettier": ["error", { endOfLine: "auto" }],
     "import/no-extraneous-dependencies": ["error", { devDependencies: true }],
+    "no-console": "off",
   },
   settings: {
     react: {

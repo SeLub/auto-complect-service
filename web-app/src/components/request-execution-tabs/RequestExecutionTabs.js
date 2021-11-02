@@ -1,7 +1,3 @@
-/* eslint-disable */
-/* eslint-disable camelcase */
-/* eslint-disable jsx-a11y/anchor-is-valid */
-/* eslint-disable react/jsx-props-no-spreading */
 import * as React from "react";
 import PropTypes from "prop-types";
 import SwipeableViews from "react-swipeable-views";
@@ -11,9 +7,19 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
+<<<<<<< HEAD
 import Basic_Options from "../../components/basic_options/Basic_Options";
 import Details from "../../components/details/Details";
 import TotalCarValue from "../../components/total-car-value/Total-car-value";
+=======
+import BasicOptions from "../basic_options/BasicOptions";
+import Details from "../details/Details";
+import CarCostIncludingOptions from "../car-cost-including-options/CarCostIncludingOptions";
+import SpecialDiscountedPrice from "../special-discounted-price/SpecialDiscountedPrice";
+import PrintCommercialOffer from "../generic/PrintCommercialOffer";
+import OptionalEquipmentTabRequestDecoration from "../tab-optional-equipment/OptionalEquipmentTabRequestDecoration";
+import OptionalEquipmentTabVehicleType from "../tab-optional-equipment/OptionalEquipmentTabVehicleType";
+>>>>>>> origin/dev
 
 function RefitTabs(props) {
   const { children, value, index, ...other } = props;
@@ -25,7 +31,7 @@ function RefitTabs(props) {
       hidden={value !== index}
       id={`action-tabpanel-${index}`}
       aria-labelledby={`action-tab-${index}`}
-      {...other}
+      other={other}
     >
       {value === index && <Box sx={{ p: 4 }}>{children}</Box>}
     </Typography>
@@ -48,7 +54,7 @@ function a11yProps(index) {
   };
 }
 const css = `
-@import url("http://fonts.cdnfonts.com/css/ford-antenna");
+@import url("https://fonts.cdnfonts.com/css/ford-antenna");
   .box {
     background: white;
     width: 1128px;
@@ -126,21 +132,21 @@ export default function RequestExecutionTabs() {
             variant="standard"
             aria-label="action tabs example"
           >
-            <Tab className="tab1" label="Детали" {...a11yProps(0)} />
+            <Tab className="tab1" label="Детали" a11yProps={a11yProps(0)} />
             <Tab
               className="tab2"
               label="Базовая комплектация"
-              {...a11yProps(1)}
+              a11yProps={a11yProps(1)}
             />
             <Tab
               className="tab3"
               label="Опциональное оборудование"
-              {...a11yProps(2)}
+              a11yProps={a11yProps(2)}
             />
             <Tab
               className="tab4"
               label="Тип транспортного средства"
-              {...a11yProps(3)}
+              a11yProps={a11yProps(3)}
             />
           </Tabs>
         </AppBar>
@@ -153,6 +159,7 @@ export default function RequestExecutionTabs() {
             <Details />
             <TotalCarValue />
           </RefitTabs>
+<<<<<<< HEAD
           <RefitTabs value={value} index={1} dir={theme.direction}>
             <Basic_Options />
           </RefitTabs>
@@ -161,6 +168,40 @@ export default function RequestExecutionTabs() {
           </RefitTabs>
           <RefitTabs value={value} index={3} dir={theme.direction}>
             тип транспортного средства(текст)
+=======
+          <RefitTabs
+            className="tab11"
+            value={value}
+            index={1}
+            dir={theme.direction}
+          >
+            <BasicOptions />
+            <CarCostIncludingOptions />
+            <SpecialDiscountedPrice />
+            <PrintCommercialOffer />
+          </RefitTabs>
+          <RefitTabs
+            className="tab11"
+            value={value}
+            index={2}
+            dir={theme.direction}
+          >
+            <OptionalEquipmentTabRequestDecoration />
+            <CarCostIncludingOptions />
+            <SpecialDiscountedPrice />
+            <PrintCommercialOffer />
+          </RefitTabs>
+          <RefitTabs
+            className="tab11"
+            value={value}
+            index={3}
+            dir={theme.direction}
+          >
+            <OptionalEquipmentTabVehicleType />
+            <CarCostIncludingOptions />
+            <SpecialDiscountedPrice />
+            <PrintCommercialOffer />
+>>>>>>> origin/dev
           </RefitTabs>
         </SwipeableViews>
       </Box>

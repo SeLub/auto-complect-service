@@ -35,7 +35,7 @@ const rows = [
 ];
 
 const css = `
-@import url("http://fonts.cdnfonts.com/css/ford-antenna");
+@import url("https://fonts.cdnfonts.com/css/ford-antenna");
 .css-19midj6 {
     padding: 16px 0px 0px 0px;
 }

@@ -17,6 +17,7 @@
     "@react-pdf/renderer": "^2.0.20",
     "jspdf": "^2.4.0",
     "label": "^0.2.2",
+    "lodash": "^4.17.21",
     "mui-datatables": "^3.7.8",
     "mui-rff": "^3.0.16",
     "mui-rte": "^2.0.1",
@@ -28,17 +29,32 @@
     "react-dom": "^17.0.2",
     "react-json-table": "^0.1.1",
     "react-native-checkbox-selection": "^1.1.0",
+<<<<<<< HEAD
     "react-redux": "^7.2.6",
+=======
+    "react-router": "^5.2.1",
+>>>>>>> origin/dev
     "react-router-dom": "^5.3.0",
     "react-scripts": "4.0.3",
     "react-swipeable-views": "^0.14.0",
     "react-table-vertical-heading": "^0.1.4",
+<<<<<<< HEAD
     "redux": "^4.1.2",
+=======
+    "redux": "^4.1.1",
+>>>>>>> origin/dev
     "styled-components": "^5.3.1"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build"
+    "build": "react-scripts build",
+    "lint": "eslint . --cache",
+    "lint:fix": "eslint . --fix --cache"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "browserslist": {
     "production": [
@@ -57,8 +73,19 @@
     "eslint": "^7.32.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-prettier": "^4.0.0",
+<<<<<<< HEAD
     "eslint-plugin-react": "^7.26.0",
     "prettier": "^2.4.1"
+=======
+    "eslint-plugin-react": "^7.26.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "^2.4.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.6"
+>>>>>>> origin/dev
   }
 }

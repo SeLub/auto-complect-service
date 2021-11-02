@@ -1,11 +1,8 @@
-/* eslint-disable */
-/* eslint-disable camelcase */
-/* eslint-disable react/prefer-stateless-function */
-import "./Block_ford_cards.css";
+/* eslint-disable react/destructuring-assignment */
+import React from "react";
+import "./BlockFordCards.css";
 
-import React, { Component } from "react";
-
-export default function Block_ford_cards(props) {
+export default function BlockFordCards(props) {
   return (
     <body className="main-page-body">
       <div className="block_ford_cards">

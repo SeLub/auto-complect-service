@@ -1,8 +1,3 @@
-/* eslint-disable */
-/* eslint-disable react/no-this-in-sfc */
-/* eslint-disable camelcase */
-/* eslint-disable jsx-a11y/anchor-is-valid */
-/* eslint-disable react/jsx-props-no-spreading */
 import * as React from "react";
 import PropTypes from "prop-types";
 import SwipeableViews from "react-swipeable-views";
@@ -12,13 +7,20 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
+<<<<<<< HEAD:web-app/src/components/picking_switch/Picking_switch.js
 import TabRequestExecution1 from "../Tab-request-execution/TabRequestExecution1";
 import Tmp_p3 from "../../components/tmp_components/tmp_p3";
 import Basic_Options from "../basic_options/Basic_Options";
+=======
+import OptionalEquipmentTabConfigurator from "../tab-optional-equipment/OptionalEquipmentTabConfigurator";
+import СardLayoutTypeTransport from "../type-of -transport/СardLayoutTypeTransport";
+import TotalCarValue from "../total-car-value/Total-car-value";
+import GotoCommercialProposalBtn from "../generic/GotoCommercialProposal_btn";
+import BasicOptions from "../basic_options/BasicOptions";
+>>>>>>> origin/dev:web-app/src/components/picking_switch/PickingSwitch.js
 
 function RefitTabs(props) {
   const { children, value, index, ...other } = props;
-
   return (
     <Typography
       component="div"
@@ -26,7 +28,7 @@ function RefitTabs(props) {
       hidden={value !== index}
       id={`action-tabpanel-${index}`}
       aria-labelledby={`action-tab-${index}`}
-      {...other}
+      other={other}
     >
       {value === index && <Box sx={{ p: 3 }}>{children}</Box>}
     </Typography>
@@ -49,7 +51,7 @@ function a11yProps(index) {
   };
 }
 const css = `
-@import url("http://fonts.cdnfonts.com/css/ford-antenna");
+@import url("https://fonts.cdnfonts.com/css/ford-antenna");
   .box {
     background: white;
     width: 1128px;
@@ -127,17 +129,17 @@ export default function FloatingActionButtonZoom() {
             <Tab
               className="tab1"
               label="Базовая комплектация"
-              {...a11yProps(0)}
+              a11yProps={a11yProps(0)}
             />
             <Tab
               className="tab2"
               label="Опциональное оборудование"
-              {...a11yProps(1)}
+              a11yProps={a11yProps(1)}
             />
             <Tab
               className="tab3"
               label="Тип транспортного средства"
-              {...a11yProps(2)}
+              a11yProps={a11yProps(2)}
             />
           </Tabs>
         </AppBar>
@@ -148,10 +150,14 @@ export default function FloatingActionButtonZoom() {
           onChangeIndex={handleChangeIndex}
         >
           <RefitTabs value={value} index={0} dir={theme.direction}>
-            <Basic_Options />
+            <BasicOptions />
           </RefitTabs>
           <RefitTabs value={value} index={1} dir={theme.direction}>
+<<<<<<< HEAD:web-app/src/components/picking_switch/Picking_switch.js
             <TabRequestExecution1 />
+=======
+            <OptionalEquipmentTabConfigurator />
+>>>>>>> origin/dev:web-app/src/components/picking_switch/PickingSwitch.js
           </RefitTabs>
           <RefitTabs value={value} index={2} dir={theme.direction}>
             <Tmp_p3 />

@@ -1,17 +1,12 @@
 /* eslint-disable */
-/* eslint-disable react/no-array-index-key */
-/* eslint-disable no-shadow */
-/* eslint-disable import/no-duplicates */
-/* eslint-disable react/jsx-pascal-case */
-/* eslint-disable camelcase */
 import React from "react";
-import Price_list_btn from "./generic/Price_list_btn";
+import PriceListBtn from "./generic/PriceListBtn";
 
 // hull_types - массив из объектов с характеристиками кузова
 import hull_types from "./hull_static/hull_types_specs.json";
-import Configurator_btn from "./generic/Configurator_btn";
-import Hull_spec_prices from "./Hull_spec_prices";
-import Block_ford_cards from "./Block_ford_cards";
+import ConfiguratorBtn from "./generic/ConfiguratorBtn";
+import HullSpecPrices from "./HullSpecPrices";
+import BlockFordCards from "./BlockFordCards";
 
 // Пояснения к свойствам hull_types:
 //
@@ -38,7 +33,7 @@ import Block_ford_cards from "./Block_ford_cards";
 
 // todo: получше продумать наименования классов
 
-export default function Hull_specs_display() {
+export default function HullSpecsDisplay() {
   return (
     <div className="App">
       <div className="hull_specs_display_wrapper">
@@ -52,7 +47,7 @@ export default function Hull_specs_display() {
                 <p className="hull_type">Цельнометаллический фургон</p>
               </div>
               <div className="cars_display">
-                <Block_ford_cards hull_types={hull_types} />
+                <BlockFordCards hull_types={hull_types} />
                 <div className="hull_wrapper">
                   <div className="hull_specs_display_details_wrapper">
                     <div>
@@ -60,7 +55,7 @@ export default function Hull_specs_display() {
                     </div>
 
                     {/* передает переменные из свойств hull_types для расчета цены */}
-                    <Hull_spec_prices
+                    <HullSpecPrices
                       base_price={hull_types.base_price}
                       base_price_currency={hull_types.base_price_currency}
                     />
@@ -111,10 +106,10 @@ export default function Hull_specs_display() {
 
                   <div className="hull_specs_display_buttons">
                     {/* кнопка для прайс-листа. Пока бесполезна */}
-                    <Price_list_btn />
+                    <PriceListBtn />
                     {/* передает текущий объект в кнопку для конфигуратора (при нажатии на кнопку
                         в консоль выведет текущий объект) */}
-                    <Configurator_btn hull_types={hull_types} />
+                    <ConfiguratorBtn hull_types={hull_types} />
                   </div>
                 </div>
               </div>

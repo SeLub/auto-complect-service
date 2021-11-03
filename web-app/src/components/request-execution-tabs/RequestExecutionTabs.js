@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import * as React from "react";
 import PropTypes from "prop-types";
 import SwipeableViews from "react-swipeable-views";
@@ -60,6 +61,10 @@ const css = `
   .appbar{
     background: white;
       color: white;
+  }
+  .tab11{
+    width: 1128px; 
+    overflow: hidden;
   }
   .MuiTabs-indicator{
     color: #2D96CD; 
@@ -145,13 +150,21 @@ export default function RequestExecutionTabs() {
           </Tabs>
         </AppBar>
         <SwipeableViews
+          className="tabs"
           axis={theme.direction === "rtl" ? "x-reverse" : "x"}
           index={value}
           onChangeIndex={handleChangeIndex}
         >
-          <RefitTabs value={value} index={0} dir={theme.direction}>
+          <RefitTabs
+            className="tab11"
+            value={value}
+            index={0}
+            dir={theme.direction}
+          >
             <Details />
-            <TotalCarValue />
+            <CarCostIncludingOptions />
+            <SpecialDiscountedPrice />
+            <PrintCommercialOffer />
           </RefitTabs>
           <RefitTabs
             className="tab11"

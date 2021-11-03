@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import * as React from "react";
 import PropTypes from "prop-types";
 import SwipeableViews from "react-swipeable-views";
@@ -10,8 +11,9 @@ import Box from "@mui/material/Box";
 import OptionalEquipmentTabConfigurator from "../tab-optional-equipment/OptionalEquipmentTabConfigurator";
 import СardLayoutTypeTransport from "../type-of -transport/СardLayoutTypeTransport";
 import TotalCarValue from "../total-car-value/Total-car-value";
-import GotoCommercialProposalBtn from "../generic/GotoCommercialProposal_btn";
+import GotoCommercialProposalBtn from "../generic/GotoCommercialProposalBtn";
 import BasicOptions from "../basic_options/BasicOptions";
+
 function RefitTabs(props) {
   const { children, value, index, ...other } = props;
   return (
@@ -149,7 +151,9 @@ export default function FloatingActionButtonZoom() {
             <OptionalEquipmentTabConfigurator />
           </RefitTabs>
           <RefitTabs value={value} index={2} dir={theme.direction}>
-            <Tmp_p3 />
+            <СardLayoutTypeTransport />
+            <TotalCarValue />
+            <GotoCommercialProposalBtn />
           </RefitTabs>
         </SwipeableViews>
       </Box>

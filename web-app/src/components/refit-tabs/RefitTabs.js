@@ -9,7 +9,7 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import BasicOptionsReEquipment from "../basic_options/BasicOptionsReEquipment";
 import TotalCarValue from "../total-car-value/Total-car-value";
-import GotoCommercialProposalBtn from "../generic/GotoCommercialProposal_btn";
+import GotoCommercialProposalBtn from "../generic/GotoCommercialProposalBtn";
 import OptionalEquipmentTabRequipment from "../tab-optional-equipment/OptionalEquipmentTabRequipment";
 
 function RefitTabs(props) {

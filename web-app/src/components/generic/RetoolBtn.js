@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React from "react";
 import { Button, Stack } from "@mui/material";
 import { useHistory } from "react-router-dom";

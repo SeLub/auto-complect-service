@@ -1,37 +1,13 @@
-<<<<<<< HEAD:web-app/src/components/Tab-request-execution/TabRequestExecution2.js
-/* eslint-disable no-undef */
-/* eslint-disable prettier/prettier */
 import * as React from "react";
 import { DataGrid } from "@mui/x-data-grid";
 import "./TabRequestExecution.css";
-
-const columns = [
-  { field: "id", headerName: "ID", width: 70 },
-  { field: "Позиция", headerName: "Позиция", width: 160 },
-  { field: "Цена", headerName: "Цена", width: 160 },
-
-  //   field: "Цена",
-  //   headerName: "Цена",
-  //   description: "Цена",
-  //   sortable: false,
-  //   width: 160,
-  //   valueGetter: (params) =>
-  //     `${params.getValue(params.id, "Позиция") || ""} ${
-  //       params.getValue(params.id, "lastName") || ""
-  //     }`,
-  // },
-=======
-import * as React from "react";
-import { DataGrid } from "@mui/x-data-grid";
 import "./Tab_Optional_Equipment.css";
 
 const columns = [
   { field: "id", headerName: "ID", width: 70 },
   { field: "Позиция", headerName: "Позиция", width: 875 },
   { field: "Цена", headerName: "Цена", width: 145 },
->>>>>>> origin/dev:web-app/src/components/tab-optional-equipment/OptionalEquipmentTabRequipment.js
 ];
-
 
 const rows = [
   { id: 1, Позиция: "Позиция 1", Цена: "20 000 USD" },

@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-fragments */
 import React from "react";
 import { useHistory } from "react-router";
 

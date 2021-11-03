@@ -3,6 +3,7 @@
 import * as React from "react";
 import { DataGrid } from "@mui/x-data-grid";
 import "./TabRequestExecution.css";
+import "./Tab_Optional_Equipment.css";
 
 const columns = [
   { field: "id", headerName: "ID", width: 30 },

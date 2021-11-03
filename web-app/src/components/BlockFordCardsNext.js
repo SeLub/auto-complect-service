@@ -1,155 +1,26 @@
 /* eslint-disable react/destructuring-assignment */
-// import * as React from "react";
-// import Box from "@mui/material/Box";
-// import Grid from "@mui/material/Grid";
-// import MobileStepper from "@mui/material/MobileStepper";
-// import Button from "@mui/material/Button";
-
-// const css = `
-// @import url("https://fonts.cdnfonts.com/css/ford-antenna");
-//   .img_grid {
-//     border-radius: 0px;
-//     box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
-//     padding: 0px;
-//     height: 260px;
-//   }
-//   .ford_pic{
-//     display: grid;
-//     max-height: 100%;
-//     max-width: 100%;
-//   }
-//   .ford_pic101{
-//     display: grid;
-//     height: 100%;
-//     width: 100%;
-//   }
-//   .ford_pic102{
-//     display: grid;
-//     height: 100%;
-//     width: 100%;
-//   }
-//   .ford_pic103{
-//     display: grid;
-//     height: 100%;
-//     width: 100%;
-//   }
-//   .css-139aahe-MuiGrid-root>.MuiGrid-item {
-//     max-width: 100%;
-// }
-// .css-usqwzk-MuiGrid-root {
-//     flex-basis: 20%;
-//     max-width: 21%;
-// }`;
-
-// export default function BlockFordCards() {
-//   const [activeStep, setActiveStep] = React.useState(0);
-
-//   const handleNext = () => {
-//     setActiveStep((prevActiveStep) => prevActiveStep + 1);
-//   };
-
-//   const handleBack = () => {
-//     setActiveStep((prevActiveStep) => prevActiveStep - 1);
-//   };
-//   return (
-//     <Box
-//       sx={{
-//         width: 616,
-//         height: 260,
-//         marginRight: 5,
-//         flexGrow: 1,
-//       }}
-//     >
-//       <style type="text/css">{css}</style>
-//       <Grid container spacing={0}>
-//         <Grid className="img_grid" item sm={9} md={9}>
-//           <img src="/img/main_pic1.jpg" className="ford_pic" alt="" />
-//         </Grid>
-//         <Grid
-//           item
-//           sm={3}
-//           md={3}
-//           className="img_grid"
-//           container
-//           direction="column"
-//           justifyContent="flex-start"
-//           alignItems="stretch"
-//         >
-//           <Grid
-//             item
-//             xs={1}
-//             maxWidth="100%"
-//             onClick={handleNext}
-//             disabled={activeStep === 2}
-//           >
-//             <img src="/img/main_pic101.jpg" className="ford_pic101" alt="" />
-//           </Grid>
-//           <Grid
-//             item
-//             xs={1}
-//             maxWidth="100%"
-//             onClick={handleNext}
-//             disabled={activeStep === 1}
-//           >
-//             <img src="/img/main_pic102.jpg" className="ford_pic102" alt="" />
-//           </Grid>
-//           <Grid
-//             item
-//             xs={1}
-//             maxWidth="100%"
-//             onClick={handleBack}
-//             disabled={activeStep === 0}
-//           >
-//             <img src="/img/main_pic103.jpg" className="ford_pic103" alt="" />
-//           </Grid>
-//           <Grid item xs={1} maxWidth="100%">
-//             <MobileStepper
-//               height="100%"
-//               variant="dots"
-//               steps={3}
-//               position="static"
-//               activeStep={activeStep}
-//               sx={{ maxWidth: "100%", flexGrow: 1 }}
-//               nextButton={
-//                 <Button
-//                   size="small"
-//                   onClick={handleNext}
-//                   disabled={activeStep === 2}
-//                 >
-//                   Next
-//                 </Button>
-//               }
-//               backButton={
-//                 <Button
-//                   size="small"
-//                   onClick={handleBack}
-//                   disabled={activeStep === 0}
-//                 >
-//                   Back
-//                 </Button>
-//               }
-//             />
-//           </Grid>
-//         </Grid>
-//       </Grid>
-//     </Box>
-//   );
-// }
-
 import * as React from "react";
 import PropTypes from "prop-types";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
 
 const css = `
   .ford_pic {
-    max-height: 260px;
+    max-height: 100%;
     max-width: 100%;
     position: relative;
     padding: 0px;
+    border-right: 0px; 
   }
-
+  .button_img{
+    height: 100%;
+    width: 100%;
+  }
+  .css-10d9dml-MuiTabs-indicator {
+    background-color: white;
+  }
 `;
 
 function TabPanel(props) {
@@ -169,8 +40,12 @@ function TabPanel(props) {
 }
 
 TabPanel.propTypes = {
+  children: PropTypes.node,
   index: PropTypes.number.isRequired,
   value: PropTypes.number.isRequired,
+};
+TabPanel.defaultProps = {
+  children: "",
 };
 
 function a11yProps(index) {
@@ -180,7 +55,7 @@ function a11yProps(index) {
   };
 }
 
-export default function BlockFordCardsNext() {
+export default function BlockFordCardsNext(props) {
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
@@ -188,39 +63,29 @@ export default function BlockFordCardsNext() {
   };
 
   return (
-    <Box
-      sx={{
-        flexGrow: 1,
-        bgcolor: "background.paper",
-        display: "flex",
-        width: 616,
-        height: 260,
-        marginRight: 5,
-        padding: 0,
-      }}
-    >
+    <Box sx={props.sx}>
       <style type="text/css">{css}</style>
       <Box sx={{ width: "100%", padding: 0 }}>
         <TabPanel value={value} index={0}>
-          <img src="/img/L2H2/main_pic.png" className="ford_pic" alt="" />
+          <img src={props.hull_types.pic1} className="ford_pic" alt="" />
         </TabPanel>
         <TabPanel value={value} index={1}>
           <img src="/img/L3H2/main_pic.png" className="ford_pic" alt="" />
         </TabPanel>
         <TabPanel value={value} index={2}>
-          <img src="/img/L2H2/main_pic.png" className="ford_pic" alt="" />
+          <img src={props.hull_types.pic1} className="ford_pic" alt="" />
         </TabPanel>
         <TabPanel value={value} index={3}>
-          <img src="/img/L2H2/main_pic.png" className="ford_pic" alt="" />
+          <img src={props.hull_types.pic1} className="ford_pic" alt="" />
         </TabPanel>
         <TabPanel value={value} index={4}>
-          <img src="/img/L2H2/main_pic.png" className="ford_pic" alt="" />
+          <img src={props.hull_types.pic1} className="ford_pic" alt="" />
         </TabPanel>
         <TabPanel value={value} index={5}>
-          <img src="/img/L2H2/main_pic.png" className="ford_pic" alt="" />
+          <img src={props.hull_types.pic1} className="ford_pic" alt="" />
         </TabPanel>
         <TabPanel value={value} index={6}>
-          <img src="/img/L2H2/main_pic.png" className="ford_pic" alt="" />
+          <img src={props.hull_types.pic1} className="ford_pic" alt="" />
         </TabPanel>
       </Box>
       <Tabs
@@ -230,32 +95,98 @@ export default function BlockFordCardsNext() {
         value={value}
         onChange={handleChange}
         aria-label="Vertical tabs example"
-        sx={{ borderRight: 1, borderColor: "divider" }}
+        sx={{ borderRight: 0, width: 136 }}
       >
-        <Tab a11yProps={a11yProps(0)} sx={{ width: "100%" }}>
-          <img src="/img/main_pic201.jpg" className="" alt="" />
-        </Tab>
-        <Tab label="Item Two" a11yProps={a11yProps(1)} sx={{ width: "100%" }} />
         <Tab
-          label="Item Three"
+          sx={{ width: "100%" }}
+          a11yProps={a11yProps(0)}
+          value={value}
+          component={() => (
+            <Button
+              sx={{ width: "100%", padding: 0 }}
+              onClick={() => setValue(0)}
+            >
+              <img src={props.hull_types.pic2} className="button_img" alt="" />
+            </Button>
+          )}
+        />
+        <Tab
+          sx={{ width: "100%" }}
+          a11yProps={a11yProps(1)}
+          value={value}
+          component={() => (
+            <Button
+              sx={{ width: "100%", padding: 0 }}
+              onClick={() => setValue(1)}
+            >
+              <img src={props.hull_types.pic3} className="button_img" alt="" />
+            </Button>
+          )}
+        />
+        <Tab
+          sx={{ width: "100%" }}
           a11yProps={a11yProps(2)}
-          sx={{ width: "100%" }}
+          value={value}
+          component={() => (
+            <Button
+              sx={{ width: "100%", padding: 0 }}
+              onClick={() => setValue(2)}
+            >
+              <img src={props.hull_types.pic3} className="button_img" alt="" />
+            </Button>
+          )}
         />
         <Tab
-          label="Item Four"
+          sx={{ width: "100%" }}
           a11yProps={a11yProps(3)}
-          sx={{ width: "100%" }}
+          value={value}
+          component={() => (
+            <Button
+              sx={{ width: "100%", padding: 0 }}
+              onClick={() => setValue(3)}
+            >
+              <img src={props.hull_types.pic3} className="button_img" alt="" />
+            </Button>
+          )}
         />
         <Tab
-          label="Item Five"
+          sx={{ width: "100%" }}
           a11yProps={a11yProps(4)}
-          sx={{ width: "100%" }}
+          value={value}
+          component={() => (
+            <Button
+              sx={{ width: "100%", padding: 0 }}
+              onClick={() => setValue(4)}
+            >
+              <img src={props.hull_types.pic3} className="button_img" alt="" />
+            </Button>
+          )}
         />
-        <Tab label="Item Six" a11yProps={a11yProps(5)} sx={{ width: "100%" }} />
         <Tab
-          label="Item Seven"
-          a11yProps={a11yProps(6)}
           sx={{ width: "100%" }}
+          a11yProps={a11yProps(5)}
+          value={value}
+          component={() => (
+            <Button
+              sx={{ width: "100%", padding: 0 }}
+              onClick={() => setValue(5)}
+            >
+              <img src={props.hull_types.pic3} className="button_img" alt="" />
+            </Button>
+          )}
+        />
+        <Tab
+          sx={{ width: "100%" }}
+          a11yProps={a11yProps(6)}
+          value={value}
+          component={() => (
+            <Button
+              sx={{ width: "100%", padding: 0 }}
+              onClick={() => setValue(6)}
+            >
+              <img src={props.hull_types.pic3} className="button_img" alt="" />
+            </Button>
+          )}
         />
       </Tabs>
     </Box>

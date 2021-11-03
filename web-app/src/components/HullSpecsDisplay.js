@@ -35,6 +35,15 @@ import BlockFordCardsNext from "./BlockFordCardsNext";
 // todo: получше продумать наименования классов
 
 export default function HullSpecsDisplay() {
+  const box = {
+    flexGrow: 1,
+    bgcolor: "background.paper",
+    display: "flex",
+    width: 616,
+    height: 260,
+    marginRight: 5,
+    padding: 0,
+  };
   return (
     <div className="App">
       <div className="hull_specs_display_wrapper">
@@ -48,7 +57,7 @@ export default function HullSpecsDisplay() {
                 <p className="hull_type">Цельнометаллический фургон</p>
               </div>
               <div className="cars_display">
-                <BlockFordCardsNext hull_types={hull_types} />
+                <BlockFordCardsNext sx={box} hull_types={hull_types} />
                 <div className="hull_wrapper">
                   <div className="hull_specs_display_details_wrapper">
                     <div>

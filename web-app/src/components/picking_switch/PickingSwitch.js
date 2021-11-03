@@ -7,18 +7,11 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-<<<<<<< HEAD:web-app/src/components/picking_switch/Picking_switch.js
-import TabRequestExecution1 from "../Tab-request-execution/TabRequestExecution1";
-import Tmp_p3 from "../../components/tmp_components/tmp_p3";
-import Basic_Options from "../basic_options/Basic_Options";
-=======
 import OptionalEquipmentTabConfigurator from "../tab-optional-equipment/OptionalEquipmentTabConfigurator";
 import СardLayoutTypeTransport from "../type-of -transport/СardLayoutTypeTransport";
 import TotalCarValue from "../total-car-value/Total-car-value";
 import GotoCommercialProposalBtn from "../generic/GotoCommercialProposal_btn";
 import BasicOptions from "../basic_options/BasicOptions";
->>>>>>> origin/dev:web-app/src/components/picking_switch/PickingSwitch.js
-
 function RefitTabs(props) {
   const { children, value, index, ...other } = props;
   return (
@@ -153,11 +146,7 @@ export default function FloatingActionButtonZoom() {
             <BasicOptions />
           </RefitTabs>
           <RefitTabs value={value} index={1} dir={theme.direction}>
-<<<<<<< HEAD:web-app/src/components/picking_switch/Picking_switch.js
-            <TabRequestExecution1 />
-=======
             <OptionalEquipmentTabConfigurator />
->>>>>>> origin/dev:web-app/src/components/picking_switch/PickingSwitch.js
           </RefitTabs>
           <RefitTabs value={value} index={2} dir={theme.direction}>
             <Tmp_p3 />

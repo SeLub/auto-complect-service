@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-/* eslint-disable camelcase */
-/* eslint-disable no-unused-vars */
-import React from "react";
-import { useHistory } from "react-router-dom";
-
-=======
 import * as React from "react";
 import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
@@ -39,7 +32,6 @@ const css = `
     background-color: #2D96CD;
   }`;
 
->>>>>>> origin/dev
 const GotoCommercialProposalBtn = () => {
   const history = useHistory();
 
@@ -47,12 +39,6 @@ const GotoCommercialProposalBtn = () => {
     history.push("/Configurator_p3");
   }
   return (
-<<<<<<< HEAD
-    <div className="gotoCom">
-      <button type="button" onClick={handleClick}>
-        Перейти к оформлению КП
-      </button>
-=======
     <div className="">
       <style type="text/css">{css}</style>
       <Stack className="goto_commercial-proposal_btn_wrapper" direction="row">
@@ -65,7 +51,6 @@ const GotoCommercialProposalBtn = () => {
           Перейти к оформлению КП
         </Button>
       </Stack>
->>>>>>> origin/dev
     </div>
   );
 };

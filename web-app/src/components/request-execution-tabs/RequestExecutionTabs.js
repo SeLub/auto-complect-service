@@ -7,11 +7,6 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-<<<<<<< HEAD
-import Basic_Options from "../../components/basic_options/Basic_Options";
-import Details from "../../components/details/Details";
-import TotalCarValue from "../../components/total-car-value/Total-car-value";
-=======
 import BasicOptions from "../basic_options/BasicOptions";
 import Details from "../details/Details";
 import CarCostIncludingOptions from "../car-cost-including-options/CarCostIncludingOptions";
@@ -19,7 +14,6 @@ import SpecialDiscountedPrice from "../special-discounted-price/SpecialDiscounte
 import PrintCommercialOffer from "../generic/PrintCommercialOffer";
 import OptionalEquipmentTabRequestDecoration from "../tab-optional-equipment/OptionalEquipmentTabRequestDecoration";
 import OptionalEquipmentTabVehicleType from "../tab-optional-equipment/OptionalEquipmentTabVehicleType";
->>>>>>> origin/dev
 
 function RefitTabs(props) {
   const { children, value, index, ...other } = props;
@@ -159,16 +153,6 @@ export default function RequestExecutionTabs() {
             <Details />
             <TotalCarValue />
           </RefitTabs>
-<<<<<<< HEAD
-          <RefitTabs value={value} index={1} dir={theme.direction}>
-            <Basic_Options />
-          </RefitTabs>
-          <RefitTabs value={value} index={2} dir={theme.direction}>
-            опциональное оборудование(текст)
-          </RefitTabs>
-          <RefitTabs value={value} index={3} dir={theme.direction}>
-            тип транспортного средства(текст)
-=======
           <RefitTabs
             className="tab11"
             value={value}
@@ -201,7 +185,6 @@ export default function RequestExecutionTabs() {
             <CarCostIncludingOptions />
             <SpecialDiscountedPrice />
             <PrintCommercialOffer />
->>>>>>> origin/dev
           </RefitTabs>
         </SwipeableViews>
       </Box>

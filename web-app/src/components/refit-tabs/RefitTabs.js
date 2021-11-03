@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-/* eslint-disable prettier/prettier */
-/* eslint-disable react/jsx-props-no-spreading */
-=======
->>>>>>> origin/dev
 import * as React from "react";
 import PropTypes from "prop-types";
 import SwipeableViews from "react-swipeable-views";
@@ -15,11 +10,7 @@ import Box from "@mui/material/Box";
 import BasicOptionsReEquipment from "../basic_options/BasicOptionsReEquipment";
 import TotalCarValue from "../total-car-value/Total-car-value";
 import GotoCommercialProposalBtn from "../generic/GotoCommercialProposal_btn";
-<<<<<<< HEAD
-import TabRequestExecution2 from "../Tab-request-execution/TabRequestExecution2";
-=======
 import OptionalEquipmentTabRequipment from "../tab-optional-equipment/OptionalEquipmentTabRequipment";
->>>>>>> origin/dev
 
 function RefitTabs(props) {
   const { children, value, index, ...other } = props;
@@ -134,13 +125,9 @@ export default function FloatingActionButtonZoom() {
             <BasicOptionsReEquipment />
           </RefitTabs>
           <RefitTabs value={value} index={1} dir={theme.direction}>
-<<<<<<< HEAD
-          <TabRequestExecution2 />
-=======
             <OptionalEquipmentTabRequipment />
             <TotalCarValue />
             <GotoCommercialProposalBtn />
->>>>>>> origin/dev
           </RefitTabs>
         </SwipeableViews>
         <TotalCarValue />

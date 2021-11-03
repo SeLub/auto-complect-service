@@ -13,6 +13,7 @@
     "@mui/icons-material": "^5.0.4",
     "@mui/material": "^5.0.4",
     "@mui/styled-engine-sc": "^5.0.3",
+    "@mui/styles": "^5.0.1",
     "@mui/x-data-grid": "^4.0.1",
     "@react-pdf/renderer": "^2.0.20",
     "jspdf": "^2.4.0",
@@ -24,18 +25,14 @@
     "mui-styling": "^0.1.0",
     "pdfkit": "^0.12.3",
     "prop-types": "^15.7.2",
-    "react": "^17.0.2",
     "react-data-grid": "^7.0.0-beta.7",
-    "react-dom": "^17.0.2",
     "react-json-table": "^0.1.1",
     "react-native-checkbox-selection": "^1.1.0",
-
     "react-router": "^5.2.1",
     "react-router-dom": "^5.3.0",
     "react-scripts": "4.0.3",
     "react-swipeable-views": "^0.14.0",
     "react-table-vertical-heading": "^0.1.4",
-
     "redux": "^4.1.1",
     "styled-components": "^5.3.1"
   },
@@ -49,6 +46,12 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint . --fix --cache",
+      "git add"
+    ]
   },
   "browserslist": {
     "production": [
@@ -72,10 +75,11 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.26.1",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^11.2.6",
     "prettier": "^2.4.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-redux": "^7.2.6"
-
   }
 }

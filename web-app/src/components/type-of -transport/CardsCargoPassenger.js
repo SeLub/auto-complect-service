@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import * as React from "react";
 import { Card, CardContent, Typography, Box, CardMedia } from "@mui/material";
 import TotalCarValue from "../total-car-value/Total-car-value";

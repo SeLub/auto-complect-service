@@ -7,7 +7,7 @@ import hull_types from "./hull_static/hull_types_specs.json";
 import ConfiguratorBtn from "./generic/ConfiguratorBtn";
 import HullSpecPrices from "./HullSpecPrices";
 // import BlockFordCards from "./BlockFordCards";
-import BlockFordCardsNext from "./BlockFordCardsNext";
+import BlockFordCards from "./BlockFordCards";
 
 // Пояснения к свойствам hull_types:
 //
@@ -57,7 +57,7 @@ export default function HullSpecsDisplay() {
                 <p className="hull_type">Цельнометаллический фургон</p>
               </div>
               <div className="cars_display">
-                <BlockFordCardsNext sx={box} hull_types={hull_types} />
+                <BlockFordCards sx={box} hull_types={hull_types} />
                 <div className="hull_wrapper">
                   <div className="hull_specs_display_details_wrapper">
                     <div>

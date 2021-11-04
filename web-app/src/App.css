@@ -288,6 +288,7 @@
   letter-spacing: 0.1px;
 
   color: #2d96cd;
+  margin: 0px 0px 4px 0px;
 }
 
 .hull_spec_prices_rub {
@@ -308,6 +309,7 @@
   letter-spacing: 0.1px;
 
   color: #717171;
+  margin: 0px 0px 4px 0px;
 }
 
 .hull_specs_display_wrapper {
@@ -397,7 +399,7 @@
 
 .hull_desc p {
   margin-bottom: 5px;
-  margin-top: 40px;
+  padding: 1px;
   margin-left: 0px;
   width: fit-content;
 }
@@ -408,6 +410,7 @@
   font-weight: bold;
   font-size: 24px;
   line-height: 22px;
+  margin-top: 40px;
 
   /* identical to box height, or 92% */
 
@@ -420,6 +423,7 @@
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
+  margin-top: 4px;
   /* identical to box height */
 
   letter-spacing: 0.1px;

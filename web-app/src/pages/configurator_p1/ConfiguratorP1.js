@@ -7,6 +7,7 @@ import Configurator from "../../components/Configurator";
 import BlockFordCardsNext from "../../components/BlockFordCardsNext";
 import PickingSwitch from "../../components/picking_switch/PickingSwitch";
 import store from "../../store/store";
+import CarDescription from "../../components/car-description/CarDescription";
 
 export default function ConfiguratorP1() {
   const box = {
@@ -25,6 +26,7 @@ export default function ConfiguratorP1() {
       <BreadCrumbs />
       <Configurator />
       <div className="App">
+        <CarDescription />
         <BlockFordCardsNext sx={box} hull_types={hull_types.hullTypes} />
       </div>
       <PickingSwitch />

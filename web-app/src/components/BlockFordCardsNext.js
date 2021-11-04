@@ -95,7 +95,7 @@ export default function BlockFordCardsNext(props) {
         value={value}
         onChange={handleChange}
         aria-label="Vertical tabs example"
-        sx={{ borderRight: 0, width: 136 }}
+        sx={{ borderRight: 0, width: "22%" }}
       >
         <Tab
           sx={{ width: "100%" }}

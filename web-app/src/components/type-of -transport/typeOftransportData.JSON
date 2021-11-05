@@ -1,0 +1,56 @@
+[
+  {
+    "index": "1",
+    "type": "Грузопассажирский",
+    "data": [
+      {
+        "pickingDiagram": "5+1",
+        "source": "/img/typeOftransport/CargoPassenger_scheme_5+1.jpg"
+      },
+      {
+        "pickingDiagram": "6+1",
+        "source": "/img/typeOftransport/CargoPassenger_scheme_6+1.jpg"
+      },
+      {
+        "pickingDiagram": "8+1",
+        "source": "/typeOftransport/CargoPassenger_scheme_8+1 .jpg"
+      }
+    ]
+  },
+  {
+    "index": "2",
+    "type": "Легковой",
+    "data": [
+      {
+        "pickingDiagram": "8+1",
+        "source": "/img/typeOftransport/Automobile_scheme_8+1.jpg"
+      }
+    ]
+  },
+  {
+    "index": "3",
+    "type": "Автобус",
+    "data": [
+      {
+        "pickingDiagram": "10+1",
+        "source": "/img/typeOftransport/Bus_scheme_10+1.jpg"
+      },
+      {
+        "pickingDiagram": "14+1",
+        "source": "/img/typeOftransport/Bus_scheme_14+1"
+      },
+      {
+        "pickingDiagram": "17+1",
+        "source": "/img/typeOftransport/Bus_scheme_17+1.png"
+      },
+      {
+        "pickingDiagram": "19+1",
+        "source": "/img/typeOftransport/Bus_scheme_19+1.png"
+      },
+      {
+        "pickingDiagram": "20+1",
+        "source": "/img/typeOftransport/Bus_scheme_20+1.png"
+      }
+    ]
+  }
+]

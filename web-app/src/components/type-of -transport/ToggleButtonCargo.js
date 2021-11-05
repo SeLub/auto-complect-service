@@ -4,7 +4,7 @@ import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 import { styled } from "@mui/material/styles";
 
 export default function ToggleButtonCargo() {
-  const [alignment, setAlignment] = React.useState("5/6+1");
+  const [alignment, setAlignment] = React.useState("5+1");
 
   const handleChange = (event, newAlignment) => {
     setAlignment(newAlignment);

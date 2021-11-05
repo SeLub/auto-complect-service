@@ -48,7 +48,7 @@ TabPanel.defaultProps = {
   children: "",
 };
 
-function a11yProps(index) {
+function a11yprops(index) {
   return {
     id: `vertical-tab-${index}`,
     "aria-controls": `vertical-tabpanel-${index}`,
@@ -99,7 +99,7 @@ export default function BlockFordCardsNext(props) {
       >
         <Tab
           sx={{ width: "100%" }}
-          a11yProps={a11yProps(0)}
+          a11yprops={a11yprops(0)}
           value={value}
           component={() => (
             <Button
@@ -112,7 +112,7 @@ export default function BlockFordCardsNext(props) {
         />
         <Tab
           sx={{ width: "100%" }}
-          a11yProps={a11yProps(1)}
+          a11yprops={a11yprops(1)}
           value={value}
           component={() => (
             <Button
@@ -125,7 +125,7 @@ export default function BlockFordCardsNext(props) {
         />
         <Tab
           sx={{ width: "100%" }}
-          a11yProps={a11yProps(2)}
+          a11yprops={a11yprops(2)}
           value={value}
           component={() => (
             <Button
@@ -138,7 +138,7 @@ export default function BlockFordCardsNext(props) {
         />
         <Tab
           sx={{ width: "100%" }}
-          a11yProps={a11yProps(3)}
+          a11yprops={a11yprops(3)}
           value={value}
           component={() => (
             <Button
@@ -151,7 +151,7 @@ export default function BlockFordCardsNext(props) {
         />
         <Tab
           sx={{ width: "100%" }}
-          a11yProps={a11yProps(4)}
+          a11yprops={a11yprops(4)}
           value={value}
           component={() => (
             <Button
@@ -164,7 +164,7 @@ export default function BlockFordCardsNext(props) {
         />
         <Tab
           sx={{ width: "100%" }}
-          a11yProps={a11yProps(5)}
+          a11yprops={a11yprops(5)}
           value={value}
           component={() => (
             <Button
@@ -177,7 +177,7 @@ export default function BlockFordCardsNext(props) {
         />
         <Tab
           sx={{ width: "100%" }}
-          a11yProps={a11yProps(6)}
+          a11yprops={a11yprops(6)}
           value={value}
           component={() => (
             <Button

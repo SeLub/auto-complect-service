@@ -52,14 +52,16 @@ export default function DataTable() {
   });
   return (
     <div className="BoxTab_Optional_Equipment_Co">
-      <div style={{ height: 750, width: "100%" }}>
-        <img
-          alt="info_iconTab_Optional_Equipment"
-          src="/img/Vector.jpg"
-          className="info_iconTab_Optional_Equipment"
-        />
-        <div className="Tab_Optional_Equipment_com">
-          При добавлении опционального оборудования, цена автомобиля изменится
+      <div style={{ height: 750, width: "100%", overflow: "hidden" }}>
+        <div className="test">
+          <img
+            alt="info_iconTab_Optional_Equipment"
+            src="/img/Vector.jpg"
+            className="info_iconTab_Optional_Equipment"
+          />
+          <div className="Tab_Optional_Equipment_com">
+            При добавлении опционального оборудования, цена автомобиля изменится
+          </div>
         </div>
         <DataGrid
           style={styles.gridcolum}

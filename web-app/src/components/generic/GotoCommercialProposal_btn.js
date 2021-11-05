@@ -9,6 +9,7 @@ const css = `
    width: 100%;
    margin-right: 0px;
    margin-left : 47px;
+   overflow: hidden;
   
     
   }

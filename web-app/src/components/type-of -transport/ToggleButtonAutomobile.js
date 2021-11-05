@@ -25,8 +25,6 @@ export default function ToggleButtonBus() {
       onChange={handleChange}
     >
       <ToggleButton value="8+1">8+1</ToggleButton>
-      <ToggleButton value="8+1">8+1</ToggleButton>
-      <ToggleButton value="8+1">8+1</ToggleButton>
     </StyledToggleButtonGroup>
   );
 }

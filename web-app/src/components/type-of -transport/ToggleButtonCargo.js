@@ -23,9 +23,9 @@ export default function ToggleButtonCargo() {
       exclusive
       onChange={handleChange}
     >
-      <ToggleButton value="5/6+1">5/6+1</ToggleButton>
-      <ToggleButton value="5/6+1">5/6+1</ToggleButton>
-      <ToggleButton value="5/6/8+1">5/6/8+1</ToggleButton>
+      <ToggleButton value="5+1">5+1</ToggleButton>
+      <ToggleButton value="6+1">6+1</ToggleButton>
+      <ToggleButton value="8+1">8+1</ToggleButton>
     </StyledToggleButtonGroup>
   );
 }

@@ -8,7 +8,7 @@ import Button from "@mui/material/Button";
 
 const css = `
   .ford_pic {
-    max-height: 100%;
+    max-height: 404px;
     max-width: 100%;
     position: relative;
     padding: 0px;
@@ -57,7 +57,6 @@ function a11yprops(index) {
 
 export default function BlockFordCardsNext(props) {
   const [value, setValue] = React.useState(0);
-
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
@@ -66,7 +65,14 @@ export default function BlockFordCardsNext(props) {
     <Box sx={props.sx}>
       <style type="text/css">{css}</style>
       <Box sx={{ width: "100%", padding: 0 }}>
-        <TabPanel value={value} index={0}>
+        {props.hull_types.pictures.map((picture, index) => {
+          return (
+            <TabPanel value={value} index={index}>
+              <img src={picture.source} className="ford_pic" alt="" />
+            </TabPanel>
+          );
+        })}
+        {/* <TabPanel value={value} index={0}>
           <img src={props.hull_types.pic1} className="ford_pic" alt="" />
         </TabPanel>
         <TabPanel value={value} index={1}>
@@ -86,7 +92,7 @@ export default function BlockFordCardsNext(props) {
         </TabPanel>
         <TabPanel value={value} index={6}>
           <img src={props.hull_types.pic1} className="ford_pic" alt="" />
-        </TabPanel>
+        </TabPanel> */}
       </Box>
       <Tabs
         className="img_grid"
@@ -97,7 +103,24 @@ export default function BlockFordCardsNext(props) {
         aria-label="Vertical tabs example"
         sx={{ borderRight: 0, width: "22%" }}
       >
-        <Tab
+        {props.hull_types.pictures.map((picture, index) => {
+          return (
+            <Tab
+              sx={{ width: "100%" }}
+              a11yprops={a11yprops(index)}
+              value={value}
+              component={() => (
+                <Button
+                  sx={{ width: "100%", padding: 0 }}
+                  onClick={() => setValue(index)}
+                >
+                  <img src={picture.source} className="button_img" alt="" />
+                </Button>
+              )}
+            />
+          );
+        })}
+        {/* <Tab
           sx={{ width: "100%" }}
           a11yprops={a11yprops(0)}
           value={value}
@@ -187,7 +210,7 @@ export default function BlockFordCardsNext(props) {
               <img src={props.hull_types.pic3} className="button_img" alt="" />
             </Button>
           )}
-        />
+        /> */}
       </Tabs>
     </Box>
   );

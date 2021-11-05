@@ -6,7 +6,7 @@ import CardsBus from "./CardsBus";
 
 export default function СardLayoutTypeTransport() {
   return (
-    <Grid sx={{ flexGrow: 1 }} container spacing={1}>
+    <Grid sx={{ flexGrow: 1, overflow: "hidden" }} container spacing={1}>
       <Grid item xs={4}>
         <Grid container justifyContent="center">
           <Grid>

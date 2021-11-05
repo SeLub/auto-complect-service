@@ -779,7 +779,8 @@
                 ]
             },
             {
-                "sitsNum": "14+1L3H2",
+                "sitsNum": "14+1",
+                "parentHull": "L3H2",
                 "pic": "placeholder",
                 "reequipBasicOptions": [
                     "Настил пола (фанера и автолин), установка алюминиевых профилей салона и порогов",
@@ -947,7 +948,8 @@
                 ]
             },
             {
-                "sitsNum": "14+1L4H3",
+                "sitsNum": "14+1",
+                "parentHull": "L4H3",
                 "pic": "placeholder",
                 "reequipBasicOptions": [
                     "Настил пола (фанера и автолин), установка алюминиевых профилей салона и порогов",

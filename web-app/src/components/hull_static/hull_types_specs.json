@@ -1,6 +1,6 @@
 [
     {
-        "name": "FORD TRANSIT L2H2 310/350",
+        "name": "FORD TRANSIT L2H2 310",
         "engine": "2,2 TDCI",
         "fuel_type": "Дизель",
         "transmission": "M6",
@@ -11,9 +11,254 @@
         "base_price_currency": "RUB",
         "pictures": [
             {
+                "color": "blue",
+                "source": "/img/L2H2/blue.png"
+            },
+            {
+                "color": "dblue",
+                "source": "/img/L2H2/dblue.png"
+            },
+            {
+                "color": "grey",
+                "source": "/img/L2H2/grey.png"
+            },
+            {
                 "color": "red",
-                "source": "/img/L2H2/main_pic.png"
+                "source": "/img/L2H2/red.png"
+            },
+            {
+                "color": "silver",
+                "source": "/img/L2H2/silver.png"
+            },
+            {
+                "color": "white",
+                "source": "/img/L2H2/white.png"
             }
+
+        ],
+        "base_options": [
+            "Передние и задние брызговики",
+            "Широкие боковые пластиковые молдинги по всей длине кузова",
+            "Зеркала заднего вида с электрорегилировками, подогревом и сигналом поворота",
+            "Передние электростеклоподъемники с функйией открвания/закрывания одним нажатием с водительской стороны",
+            "Програмируемый предпусковой отопитель (без пульта дистанционного управления)",
+            "Аудиоподготовка: 2 динамика, проводка, антенна",
+            "Маршрутный копьютер",
+            "Антиблокировочная система (ABS)",
+            "Система курсовой устойчивости (ESP)",
+            "Система помощи при трогании в гору(HLA)",
+            "Система помощи при экстренном торможении (EBA)",
+            "Функция автозапирания дверей при старте, отпирания при ДТП",
+            "Сиденье водителя с подлокотником, с механическими регулировками сиденья, текстильная обивка",
+            "Сдвоенное пассажирское сиденье, откидной столик в спинке пассажирского сиденья, текстильная обивка",
+            "Полноразмерное запасное колесо",
+            "Подушка безопасности водителя",
+            "Пластиковый бампер черного цвета",
+            "Система “ЭРА Гловасс”",
+            "Высокая крыша",
+            "Сдвоенные задние колёса",
+            "Петли для фиксирования груза",
+            "Защитное покрытие пола грузового отсека",
+            "Металлическая перегородка со смотровым окошком "
+        ],
+        "additional_options": [
+            {
+                "option_name": "Кондиционер с ручным управлением",
+                "option_cost": 62000,
+                "option_cost_currency": "RUB" 
+            },
+            {
+                "option_name": "Пакет курильщика: Прикуриватель + пепельница",
+                "option_cost": 2500,
+                "option_cost_currency": "RUB" 
+            },
+            {
+                "option_name": "Усиленная передняя подвеска",
+                "option_cost": 12500,
+                "option_cost_currency": "RUB" 
+            },
+            {
+                "option_name": "Передняя подушка безопасности пассажира с возможностью отключения",
+                "option_cost": 20500,
+                "option_cost_currency": "RUB" 
+            },
+            {
+                "option_name": "Пакет передние и задние парктроники, противотуманные фары",
+                "option_cost": 20500,
+                "option_cost_currency": "RUB" 
+            },
+            {
+                "option_name": "Передние противотуманные фары",
+                "option_cost": 10500,
+                "option_cost_currency": "RUB" 
+            },
+            {
+                "option_name": "Электророзетка 230 В",
+                "option_cost": 8500,
+                "option_cost_currency": "RUB" 
+            },
+            {
+                "option_name": "Программируемый предпусковой отопитель с пультом дистанционного управления",
+                "option_cost": 7000,
+                "option_cost_currency": "RUB" 
+            },
+            {
+                "option_name": "Отказ от программируемого предпускового отопителя с пультом дистанционного управления",
+                "option_cost": -19500,
+                "option_cost_currency": "RUB" 
+            },
+            {
+                "option_name": "Отказ от перегородки",
+                "option_cost": -4000,
+                "option_cost_currency": "RUB" 
+            },
+            {
+                "option_name": "Освещение грузового отсека светодиодными лампами",
+                "option_cost": 3500,
+                "option_cost_currency": "RUB" 
+            },
+            {
+                "option_name": "Обшивка кузова грузового отсека во всю высоту",
+                "option_cost": 26500,
+                "option_cost_currency": "RUB" 
+            },
+            {
+                "option_name": "Усиленный генератор (220 А) (для автомобилей с передним приводом доступен к заказу только с Кондиционером)",
+                "option_cost": 21500,
+                "option_cost_currency": "RUB" 
+            },
+            {
+                "option_name": "Задняя розетка на 12 B",
+                "option_cost": 3500,
+                "option_cost_currency": "RUB" 
+            },
+            {
+                "option_name": "Окраска металлик",
+                "option_cost": 37500,
+                "option_cost_currency": "RUB" 
+            },
+            {
+                "option_name": "Окраска в специальный цвет",
+                "option_cost": 50500,
+                "option_cost_currency": "RUB" 
+            },
+            {
+                "option_name": "Сигнализация периметра (при отказе от предпускового отопителя)",
+                "option_cost": 13500,
+                "option_cost_currency": "RUB" 
+            },
+            {
+                "option_name": "Сигнализация периметра (при наличии предпускового отопителя)",
+                "option_cost": 14500,
+                "option_cost_currency": "RUB" 
+            },
+            {
+                "option_name": "Глухая перегородка без смотрового окошечка вместо стандартной с окошечком",
+                "option_cost": -500,
+                "option_cost_currency": "RUB" 
+            },
+            {
+                "option_name": "Аудиопакет 2: Магнитола AM/FM, USB, Bluetooth с кнопками управления на руле",
+                "option_cost": 25000,
+                "option_cost_currency": "RUB" 
+            },
+            {
+                "option_name": "Держатель огнетушителя",
+                "option_cost": 2000,
+                "option_cost_currency": "RUB" 
+            },
+            {
+                "option_name": "Отказ от защитного покрытия пола грузового отсека",
+                "option_cost": -6000,
+                "option_cost_currency": "RUB" 
+            },
+            {
+                "option_name": "Круиз-контроль + кожаный руль (доступен к заказу только с Аудиопакетом 2)",
+                "option_cost": 28000,
+                "option_cost_currency": "RUB" 
+            },
+            {
+                "option_name": "Пакет сидений 9: Подогрев водительского и правого пассажирского сиденья, регулировка поясничной опоры на водительском сиденье",
+                "option_cost": 15500,
+                "option_cost_currency": "RUB" 
+            },
+            {
+                "option_name": "Пакет улучшения обзорности: электрообогрев лобового стекла, датчик уровня омывающей жидкости",
+                "option_cost": 31000,
+                "option_cost_currency": "RUB" 
+            },
+            {
+                "option_name": "Дополнительный патрубок топливного бака (для подключения независимого отопителя салона SVO)",
+                "option_cost": 2000,
+                "option_cost_currency": "RUB" 
+            },
+            {
+                "option_name": "Пакет 'Подготовка к эксплуатации': Пластиковые подкрылки задние, к-т 2 шт., Подогреватель топливного фильтра, Резиновые коврики в кабину, Антигравийная плёнка - угловая накладка двери R,L, к-т 2 шт. ",
+                "option_cost": 37179,
+                "option_cost_currency": "RUB" 
+            },
+            {
+                "option_name": "Защита колесных арок  (комплект 4 шт.)",
+                "option_cost": 17540,
+                "option_cost_currency": "RUB" 
+            },
+            {
+                "option_name": "Защита ДВС стальная",
+                "option_cost": 6580,
+                "option_cost_currency": "RUB" 
+            },
+            {
+                "option_name": "Коврики салона передние резиновые",
+                "option_cost": 2000,
+                "option_cost_currency": "RUB" 
+            }
+        ],
+        "reequipment": [
+            "bus",
+            "cargo",
+            "light"
+        ],
+        "pic1": "/img/L2H2/main_pic.png",
+        "pic2": "/img/main_pic101.jpg",
+        "pic3": "/img/main_pic102.jpg",
+        "pic4": "/img/main_pic103.jpg"
+    },
+    {
+        "name": "FORD TRANSIT L2H2 350",
+        "engine": "2,2 TDCI",
+        "fuel_type": "Дизель",
+        "transmission": "M6",
+        "interior": "2+1",
+        "drive_type": "FWD",
+        "engine_power": "92 кВт/125л.с.",
+        "base_price": 2426000  ,
+        "base_price_currency": "RUB",
+        "pictures": [
+            {
+                "color": "blue",
+                "source": "/img/L2H2/blue.png"
+            },
+            {
+                "color": "dblue",
+                "source": "/img/L2H2/dblue.png"
+            },
+            {
+                "color": "grey",
+                "source": "/img/L2H2/grey.png"
+            },
+            {
+                "color": "red",
+                "source": "/img/L2H2/red.png"
+            },
+            {
+                "color": "silver",
+                "source": "/img/L2H2/silver.png"
+            },
+            {
+                "color": "white",
+                "source": "/img/L2H2/white.png"
+            }
+
         ],
         "base_options": [
             "Передние и задние брызговики",
@@ -213,6 +458,30 @@
         "base_price": 2461000,
         "base_price_currency": "RUB",
         "pictures": [
+            {
+                "color": "blue",
+                "source": "/img/L3H2/blue.png"
+            },
+            {
+                "color": "dblue",
+                "source": "/img/L3H2/dblue.png"
+            },
+            {
+                "color": "grey",
+                "source": "/img/L3H2/grey.png"
+            },
+            {
+                "color": "red",
+                "source": "/img/L3H2/red.png"
+            },
+            {
+                "color": "silver",
+                "source": "/img/L3H2/silver.png"
+            },
+            {
+                "color": "white",
+                "source": "/img/L3H2/white.png"
+            }
 
         ],
         "base_options": [
@@ -405,9 +674,30 @@
         "base_price_currency": "RUB",
         "pictures": [
             {
+                "color": "blue",
+                "source": "/img/L3H3/blue.png"
+            },
+            {
+                "color": "dblue",
+                "source": "/img/L3H3/dblue.png"
+            },
+            {
+                "color": "grey",
+                "source": "/img/L3H3/grey.png"
+            },
+            {
                 "color": "red",
-                "source": "/img/L2H2/main_pic.png"
+                "source": "/img/L3H3/red.png"
+            },
+            {
+                "color": "silver",
+                "source": "/img/L3H3/silver.png"
+            },
+            {
+                "color": "white",
+                "source": "/img/L3H3/white.png"
             }
+
         ],
         "base_options": [
             "Передние и задние брызговики",
@@ -599,9 +889,30 @@
         "base_price_currency": "RUB",
         "pictures": [
             {
+                "color": "blue",
+                "source": "/img/L4H3/blue.png"
+            },
+            {
+                "color": "dblue",
+                "source": "/img/L4H3/dblue.png"
+            },
+            {
+                "color": "grey",
+                "source": "/img/L4H3/grey.png"
+            },
+            {
                 "color": "red",
-                "source": "/img/L2H2/main_pic.png"
+                "source": "/img/L4H3/red.png"
+            },
+            {
+                "color": "silver",
+                "source": "/img/L4H3/silver.png"
+            },
+            {
+                "color": "white",
+                "source": "/img/L4H3/white.png"
             }
+
         ],
         "base_options": [
             "Передние и задние брызговики",
@@ -787,9 +1098,30 @@
         "base_price_currency": "RUB",
         "pictures": [
             {
+                "color": "blue",
+                "source": "/img/L4H3/blue.png"
+            },
+            {
+                "color": "dblue",
+                "source": "/img/L4H3/dblue.png"
+            },
+            {
+                "color": "grey",
+                "source": "/img/L4H3/grey.png"
+            },
+            {
                 "color": "red",
-                "source": "/img/L2H2/main_pic.png"
+                "source": "/img/L4H3/red.png"
+            },
+            {
+                "color": "silver",
+                "source": "/img/L4H3/silver.png"
+            },
+            {
+                "color": "white",
+                "source": "/img/L4H3/white.png"
             }
+
         ],
         "base_options": [
             "Передние и задние брызговики",

@@ -81,7 +81,7 @@ const css = `
     margin: 12px 0px 12px 0px;
   }
   .swipeableviews{
-    overflow: hidden
+    overflow: hidden;
   }
   .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
     color: #2D96CD;
@@ -97,6 +97,7 @@ const css = `
 } 
 .css-19kzrtu {
   padding: 24px 0px;
+  overflow: hidden;
 }`;
 
 export default function FloatingActionButtonZoom() {

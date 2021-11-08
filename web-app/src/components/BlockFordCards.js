@@ -5,6 +5,7 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
+import { dispatch } from "../store/store";
 
 const css = `
   .ford_pic {
@@ -60,6 +61,13 @@ export default function BlockFordCardsNext(props) {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
+  const colorSelect = (index, pictureColor) => {
+    setValue(index);
+    dispatch({
+      type: "color/set",
+      color: pictureColor,
+    });
+  };
 
   return (
     <Box sx={props.sx}>
@@ -112,7 +120,7 @@ export default function BlockFordCardsNext(props) {
               component={() => (
                 <Button
                   sx={{ width: "100%", padding: 0 }}
-                  onClick={() => setValue(index)}
+                  onClick={colorSelect(index, picture.color)}
                 >
                   <img src={picture.source} className="button_img" alt="" />
                 </Button>

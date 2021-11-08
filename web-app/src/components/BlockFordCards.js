@@ -61,8 +61,7 @@ export default function BlockFordCardsNext(props) {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-  const colorSelect = (index, pictureColor) => {
-    setValue(index);
+  const colorSelect = (pictureColor) => {
     dispatch({
       type: "color/set",
       color: pictureColor,
@@ -120,7 +119,9 @@ export default function BlockFordCardsNext(props) {
               component={() => (
                 <Button
                   sx={{ width: "100%", padding: 0 }}
-                  onClick={colorSelect(index, picture.color)}
+                  onClick={colorSelect(picture.color)}
+                  // eslint-disable-next-line react/jsx-no-duplicate-props
+                  onClick={() => setValue(index)}
                 >
                   <img src={picture.source} className="button_img" alt="" />
                 </Button>

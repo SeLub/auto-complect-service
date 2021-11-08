@@ -5,6 +5,7 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
+import { dispatch } from "../store/store";
 
 const css = `
   .ford_pic {
@@ -60,6 +61,13 @@ export default function BlockFordCardsNext(props) {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
+  const colorSelect = (picture) => {
+    dispatch({
+      type: "color/set",
+      color: picture.color,
+      source: picture.source,
+    });
+  };
 
   return (
     <Box sx={props.sx}>
@@ -112,6 +120,8 @@ export default function BlockFordCardsNext(props) {
               component={() => (
                 <Button
                   sx={{ width: "100%", padding: 0 }}
+                  onClick={colorSelect(picture)}
+                  // eslint-disable-next-line react/jsx-no-duplicate-props
                   onClick={() => setValue(index)}
                 >
                   <img src={picture.source} className="button_img" alt="" />

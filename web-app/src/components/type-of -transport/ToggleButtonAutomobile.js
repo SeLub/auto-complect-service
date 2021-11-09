@@ -3,7 +3,7 @@ import ToggleButton from "@mui/material/ToggleButton";
 import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 import { styled } from "@mui/material/styles";
 
-export default function ToggleButtonBus() {
+export default function ToggleButtonAutomobile() {
   const [alignment, setAlignment] = React.useState("8+1");
 
   const handleChange = (event, newAlignment) => {

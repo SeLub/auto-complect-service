@@ -1,11 +1,16 @@
 import * as React from "react";
 import { Card, CardContent, Typography, Box, CardMedia } from "@mui/material";
+import { useSelector } from "react-redux";
 import TotalCarValue from "../total-car-value/Total-car-value";
 import RetoolBtn from "../generic/RetoolBtn";
 import ToggleButtonAutomobile from "./ToggleButtonAutomobile";
 import shemeCar from "./19.jpg";
 
 export default function CardsAutomobile() {
+  const hullTypesName = useSelector((state) => state.hullTypes.name);
+  const configurationScheme = useSelector(
+    (state) => state.toggleBtnAutomobile.alignment
+  );
   return (
     <Card sx={{ maxWidth: 360 }}>
       <CardContent align="left">
@@ -13,7 +18,8 @@ export default function CardsAutomobile() {
           Легковой
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          Полное название с описанием комплектации и базы
+          {`Грузопассажирский автомобиль ${configurationScheme} на базе ${hullTypesName}`}
+          ;
         </Typography>
         <Typography variant="body2" color="InfoText">
           Выбор схемы комплектации:

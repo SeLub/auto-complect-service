@@ -8,8 +8,8 @@ export default function ToggleButtonAutomobile() {
   const dispatch = useDispatch();
   const alignment = useSelector((state) => state.toggleBtnAutomobile.alignment);
 
-  const handleChange = () => {
-    dispatch({ type: "8+1", payload: "8+1" });
+  const handleChange = (event, newAlignment) => {
+    dispatch({ type: newAlignment, payload: newAlignment });
   };
 
   const StyledToggleButtonGroup = styled(ToggleButtonGroup)(({ theme }) => ({

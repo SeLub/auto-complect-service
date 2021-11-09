@@ -1,6 +1,7 @@
 [
     {
         "name": "FORD TRANSIT L2H2 310",
+        "shortName": "L2H2",
         "engine": "2,2 TDCI",
         "fuel_type": "Дизель",
         "transmission": "M6",
@@ -9,6 +10,7 @@
         "engine_power": "92 кВт/125л.с.",
         "base_price": 2401000 ,
         "base_price_currency": "RUB",
+        "mass": 310,
         "pictures": [
             {
                 "color": "blue",
@@ -217,14 +219,11 @@
             "bus",
             "cargo",
             "light"
-        ],
-        "pic1": "/img/L2H2/main_pic.png",
-        "pic2": "/img/main_pic101.jpg",
-        "pic3": "/img/main_pic102.jpg",
-        "pic4": "/img/main_pic103.jpg"
+        ]
     },
     {
         "name": "FORD TRANSIT L2H2 350",
+        "shortName": "L2H2",
         "engine": "2,2 TDCI",
         "fuel_type": "Дизель",
         "transmission": "M6",
@@ -233,6 +232,7 @@
         "engine_power": "92 кВт/125л.с.",
         "base_price": 2426000  ,
         "base_price_currency": "RUB",
+        "mass": 350,
         "pictures": [
             {
                 "color": "blue",
@@ -441,14 +441,11 @@
             "bus",
             "cargo",
             "light"
-        ],
-        "pic1": "/img/L2H2/main_pic.png",
-        "pic2": "/img/main_pic101.jpg",
-        "pic3": "/img/main_pic102.jpg",
-        "pic4": "/img/main_pic103.jpg"
+        ]
     },
     {
         "name": "FORD TRANSIT L3H2 350",
+        "shortName": "L3H2",
         "engine": "2,2 TDCI",
         "fuel_type": "Дизель",
         "transmission": "M6",
@@ -457,6 +454,7 @@
         "engine_power": "92 кВт/125л.с.",
         "base_price": 2461000,
         "base_price_currency": "RUB",
+        "mass": 350,
         "pictures": [
             {
                 "color": "blue",
@@ -656,14 +654,11 @@
             "bus",
             "cargo",
             "light"
-        ],
-        "pic1": "/img/L3H2/main_pic.png",
-        "pic2": "/img/main_pic201.jpg",
-        "pic3": "/img/main_pic202.jpg",
-        "pic4": "/img/main_pic203.jpg"
+        ]
     },
     {
         "name": "FORD TRANSIT L3H3 350",
+        "shortName": "L3H3",
         "engine": "2,2 TDCI",
         "fuel_type": "Дизель",
         "transmission": "M6",
@@ -672,6 +667,7 @@
         "engine_power": "92 кВт/125л.с.",
         "base_price": 2486000,
         "base_price_currency": "RUB",
+        "mass": 350,
         "pictures": [
             {
                 "color": "blue",
@@ -871,22 +867,20 @@
             "bus",
             "cargo",
             "light"
-        ],
-        "pic1": "/img/L3H2/main_pic.png",
-        "pic2": "/img/main_pic301.jpg",
-        "pic3": "/img/main_pic302.jpg",
-        "pic4": "/img/main_pic303.jpg"
+        ]
     },
     {
         "name": "FORD TRANSIT L4H3 350",
+        "shortName": "L4H3",
         "engine": "2,2 TDCI",
         "fuel_type": "Дизель",
         "transmission": "M6",
         "interior": "2+1",
         "drive_type": "RWD",
         "engine_power": "92 кВт/125л.с.",
-        "base_price": 100950,
+        "base_price": 2661000,
         "base_price_currency": "RUB",
+        "mass": 350,
         "pictures": [
             {
                 "color": "blue",
@@ -1080,22 +1074,20 @@
             "bus",
             "cargo",
             "light"
-        ],
-        "pic1": "/img/L4H3/main_pic.png",
-        "pic2": "/img/main_pic401.jpg",
-        "pic3": "/img/main_pic402.jpg",
-        "pic4": "/img/main_pic403.jpg"
+        ]
     },
     {
         "name": "FORD TRANSIT L4H3 460",
+        "shortName": "L4H3",
         "engine": "2,2 TDCI",
         "fuel_type": "Дизель",
         "transmission": "M6",
         "interior": "2+1",
         "drive_type": "RWD",
         "engine_power": "100 кВт/136л.с.",
-        "base_price": 100950,
+        "base_price": 2716000,
         "base_price_currency": "RUB",
+        "mass": 460,
         "pictures": [
             {
                 "color": "blue",
@@ -1295,11 +1287,7 @@
             "bus",
             "cargo",
             "light"
-        ],
-        "pic1": "/img/L4H3460/main_pic.png",
-        "pic2": "/img/main_pic501.jpg",
-        "pic3": "/img/main_pic502.jpg",
-        "pic4": "/img/main_pic503.jpg"
+        ]
     }
 ]
     

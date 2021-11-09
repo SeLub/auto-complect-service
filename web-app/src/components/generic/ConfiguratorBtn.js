@@ -54,7 +54,7 @@ export default function ConfiguratorBtn(props) {
     });
     dispatch({
       type: "priceTracker/init",
-      price: props.base_price,
+      price: props.hull_types.base_price,
     });
     // hull_types_reducer.dispatch(hull_types_reducer({type: 'hull_types/get'}))
     // console.log(hull_types_store.getState())

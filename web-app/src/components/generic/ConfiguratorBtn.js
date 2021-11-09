@@ -52,6 +52,10 @@ export default function ConfiguratorBtn(props) {
       pic3: props.hull_types.pic3,
       pic4: props.hull_types.pic4,
     });
+    dispatch({
+      type: "priceTracker/init",
+      price: props.base_price,
+    });
     // hull_types_reducer.dispatch(hull_types_reducer({type: 'hull_types/get'}))
     // console.log(hull_types_store.getState())
   }

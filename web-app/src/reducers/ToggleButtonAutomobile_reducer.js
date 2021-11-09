@@ -1,5 +1,5 @@
 const defaultState = {
-  alignment: 0,
+  alignment: " ",
 };
 
 export default function toggleBtnAutomobile(
@@ -10,7 +10,7 @@ export default function toggleBtnAutomobile(
     case "8+1":
       return {
         ...stateToggleAuto,
-        alignment: stateToggleAuto.alignment + action.payload,
+        alignment: action.payload,
       };
 
     default:

@@ -13,10 +13,10 @@ export default function hullTypes(hull_types = {}, action) {
         engine_power: action.engine_power,
         base_price: action.base_price,
         base_price_currency: action.base_price_currency,
+        mass: action.mass,
         pictures: action.pictures,
         base_options: action.base_options,
         additional_options: action.additional_options,
-        mass: action.mass,
       };
     default:
       return hull_types;

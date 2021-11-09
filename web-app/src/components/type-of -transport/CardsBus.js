@@ -4,13 +4,13 @@ import { useSelector } from "react-redux";
 import TotalCarValue from "../total-car-value/Total-car-value";
 import RetoolBtn from "../generic/RetoolBtn";
 import ToggleButtonBus from "./ToggleButtonBus";
-import shemeCar from "./19.jpg";
 
 export default function CardsBus() {
   const hullTypesName = useSelector((state) => state.hullTypes.name);
   const configurationScheme = useSelector(
     (state) => state.toggleBtnBus.alignment
   );
+
   return (
     <Card sx={{ maxWidth: 360 }}>
       <CardContent align="left">
@@ -29,7 +29,7 @@ export default function CardsBus() {
           height="117px"
           weight="310px"
           component="img"
-          image={shemeCar}
+          image={pickingDiagram(hullTypesName, "Автобус")}
           alt="схема"
         />
         <Box>

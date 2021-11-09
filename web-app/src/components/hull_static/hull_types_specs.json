@@ -1,6 +1,7 @@
 [
     {
         "name": "FORD TRANSIT L2H2 310",
+        "shortName": "L2H2",
         "engine": "2,2 TDCI",
         "fuel_type": "Дизель",
         "transmission": "M6",
@@ -9,6 +10,7 @@
         "engine_power": "92 кВт/125л.с.",
         "base_price": 2401000 ,
         "base_price_currency": "RUB",
+        "mass": 310,
         "pictures": [
             {
                 "color": "blue",
@@ -221,6 +223,7 @@
     },
     {
         "name": "FORD TRANSIT L2H2 350",
+        "shortName": "L2H2",
         "engine": "2,2 TDCI",
         "fuel_type": "Дизель",
         "transmission": "M6",
@@ -229,6 +232,7 @@
         "engine_power": "92 кВт/125л.с.",
         "base_price": 2426000  ,
         "base_price_currency": "RUB",
+        "mass": 350,
         "pictures": [
             {
                 "color": "blue",
@@ -441,6 +445,7 @@
     },
     {
         "name": "FORD TRANSIT L3H2 350",
+        "shortName": "L3H2",
         "engine": "2,2 TDCI",
         "fuel_type": "Дизель",
         "transmission": "M6",
@@ -449,6 +454,7 @@
         "engine_power": "92 кВт/125л.с.",
         "base_price": 2461000,
         "base_price_currency": "RUB",
+        "mass": 350,
         "pictures": [
             {
                 "color": "blue",
@@ -652,6 +658,7 @@
     },
     {
         "name": "FORD TRANSIT L3H3 350",
+        "shortName": "L3H3",
         "engine": "2,2 TDCI",
         "fuel_type": "Дизель",
         "transmission": "M6",
@@ -660,6 +667,7 @@
         "engine_power": "92 кВт/125л.с.",
         "base_price": 2486000,
         "base_price_currency": "RUB",
+        "mass": 350,
         "pictures": [
             {
                 "color": "blue",
@@ -863,6 +871,7 @@
     },
     {
         "name": "FORD TRANSIT L4H3 350",
+        "shortName": "L4H3",
         "engine": "2,2 TDCI",
         "fuel_type": "Дизель",
         "transmission": "M6",
@@ -871,6 +880,7 @@
         "engine_power": "92 кВт/125л.с.",
         "base_price": 100950,
         "base_price_currency": "RUB",
+        "mass": 350,
         "pictures": [
             {
                 "color": "blue",
@@ -1068,6 +1078,7 @@
     },
     {
         "name": "FORD TRANSIT L4H3 460",
+        "shortName": "L4H3",
         "engine": "2,2 TDCI",
         "fuel_type": "Дизель",
         "transmission": "M6",
@@ -1076,6 +1087,7 @@
         "engine_power": "100 кВт/136л.с.",
         "base_price": 100950,
         "base_price_currency": "RUB",
+        "mass": 460,
         "pictures": [
             {
                 "color": "blue",

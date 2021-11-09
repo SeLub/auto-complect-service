@@ -1,11 +1,19 @@
-export default function toggleBtnAutomobile(currentTogglBtn = {}, action) {
+const defaultState = {
+  alignment: 0,
+};
+
+export default function toggleBtnAutomobile(
+  stateToggleAuto = defaultState,
+  action
+) {
   switch (action.type) {
     case "8+1":
       return {
-        currentSource: action.source,
+        ...stateToggleAuto,
+        alignment: stateToggleAuto.alignment + action.payload,
       };
 
     default:
-      return currentTogglBtn;
+      return stateToggleAuto;
   }
 }

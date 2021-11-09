@@ -120,9 +120,7 @@ export default function BlockFordCardsNext(props) {
               component={() => (
                 <Button
                   sx={{ width: "100%", padding: 0 }}
-                  onClick={colorSelect(picture)}
-                  // eslint-disable-next-line react/jsx-no-duplicate-props
-                  onClick={() => setValue(index)}
+                  onClick={() => [setValue(index), colorSelect(picture)]}
                 >
                   <img src={picture.source} className="button_img" alt="" />
                 </Button>

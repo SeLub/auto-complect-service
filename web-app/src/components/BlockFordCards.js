@@ -68,10 +68,11 @@ export default function BlockFordCardsNext(props) {
     });
   };
   function component(picture, index) {
-    <Button sx={{ width: "100%", padding: 0 }} onClick={() => setValue(index)}>
-      <button onClick={() => colorSelect(picture)} type="button">
-        <img src={picture.source} className="button_img" alt="" />
-      </button>
+    <Button
+      sx={{ width: "100%", padding: 0 }}
+      onClick={() => [setValue(index), colorSelect(picture)]}
+    >
+      <img src={picture.source} className="button_img" alt="" />
     </Button>;
   }
   return (

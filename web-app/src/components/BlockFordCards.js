@@ -23,6 +23,7 @@ const css = `
     background-color: white;
   }
 `;
+
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -55,7 +56,7 @@ function a11yprops(index) {
   };
 }
 
-export default function BlockFordCardsNext(props) {
+export default function BlockFordCards(props) {
   const [value, setValue] = React.useState(0);
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -67,14 +68,7 @@ export default function BlockFordCardsNext(props) {
       source: picture.source,
     });
   };
-  function component(picture, index) {
-    <Button
-      sx={{ width: "100%", padding: 0 }}
-      onClick={() => [setValue(index), colorSelect(picture)]}
-    >
-      <img src={picture.source} className="button_img" alt="" />
-    </Button>;
-  }
+
   return (
     <Box sx={props.sx}>
       <style type="text/css">{css}</style>
@@ -102,7 +96,14 @@ export default function BlockFordCardsNext(props) {
               sx={{ width: "100%" }}
               a11yprops={a11yprops(index)}
               value={value}
-              component={component(picture, index)}
+              component={() => (
+                <Button
+                  sx={{ width: "100%", padding: 0 }}
+                  onClick={() => [setValue(index), colorSelect(picture)]}
+                >
+                  <img src={picture.source} className="button_img" alt="" />
+                </Button>
+              )}
             />
           );
         })}

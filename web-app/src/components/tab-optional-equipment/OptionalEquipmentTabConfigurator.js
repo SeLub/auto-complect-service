@@ -1,47 +1,10 @@
+/* eslint-disable camelcase */
+/* eslint-disable import/no-named-as-default-member */
 import * as React from "react";
 import { DataGrid } from "@mui/x-data-grid";
 import "./Tab_Optional_Equipment.css";
 import { StyleSheet } from "@react-pdf/renderer";
-
-const columns = [
-  { field: "id", headerName: "ID", width: 20 },
-  { field: "Позиция", headerName: "Позиция", width: 920 },
-  { field: "Цена", headerName: "Цена", width: 140 },
-];
-
-const rows = [
-  { id: 1, Позиция: "Кондиционер с ручным управлением", Цена: "62 317 RUB" },
-  { id: 2, Позиция: "Кондиционер с ручным управлением", Цена: "62 317 RUB" },
-  {
-    id: 3,
-    Позиция:
-      "Пакет “Подготовка к эксплуатации”; пластиковые подкрылки (к-т 2 шт); подогреватель топливного фильтра; резиновые коврики в кабину; антигравийная пленка - угловая вкладка двери R,L, к-т 2 шт;",
-    Цена: "20 000 RUB",
-  },
-  {
-    id: 4,
-    Позиция: "Комплект пневмоусиления подвески с компрессором",
-    Цена: "45 100 RUB",
-  },
-  {
-    id: 5,
-    Позиция:
-      "Программируемый предпусковой отопитель с пультом дистанционного управления",
-    Цена: "150 000 RUB",
-  },
-  {
-    id: 6,
-    Позиция:
-      "Пакет улучшения обзорности (электрообогрев лобового стекла, датчик уровня омывающей жидкости",
-    Цена: "70 800 RUB",
-  },
-  {
-    id: 7,
-    Позиция: "Магнитола с громкой связью и кнопками управления на руле",
-    Цена: "6 400 RUB",
-  },
-  { id: 8, Позиция: "Круиз-контроль и кожаный руль", Цена: "200 00 RUB" },
-];
+import store from "../../store/store";
 
 export default function DataTable() {
   const styles = StyleSheet.create({
@@ -50,9 +13,25 @@ export default function DataTable() {
       height: "100%",
     },
   });
+  const columns = [
+    { field: "id", headerName: "ID", width: 20 },
+    { field: "option_name", headerName: "Позиция", width: 700 },
+    { field: "option_cost", headerName: "Цена", width: 140 },
+    {
+      field: "option_cost_currency",
+      headerName: " ",
+      width: 100,
+    },
+  ];
+
+  const rows = store
+    .getState()
+    .hullTypes.additional_options.map((additional_option) => {
+      return additional_option;
+    });
   return (
     <div className="BoxTab_Optional_Equipment_Co">
-      <div style={{ height: 750, width: "100%", overflow: "hidden" }}>
+      <div style={{ height: "100%", width: "100%", overflow: "hidden" }}>
         <div className="test">
           <img
             alt="info_iconTab_Optional_Equipment"
@@ -67,8 +46,8 @@ export default function DataTable() {
           style={styles.gridcolum}
           rows={rows}
           columns={columns}
-          pageSize={9}
-          rowsPerPageOptions={[9]}
+          pageSize={100}
+          rowsPerPageOptions={[100]}
           checkboxSelection
         />
       </div>

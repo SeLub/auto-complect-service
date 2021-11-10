@@ -43,6 +43,7 @@ export default function DataTable() {
           </div>
         </div>
         <DataGrid
+          rowHeight={26}
           style={styles.gridcolum}
           rows={rows}
           columns={columns}

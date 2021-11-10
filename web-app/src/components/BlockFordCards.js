@@ -23,7 +23,6 @@ const css = `
     background-color: white;
   }
 `;
-
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -68,7 +67,13 @@ export default function BlockFordCardsNext(props) {
       source: picture.source,
     });
   };
-
+  function component(picture, index) {
+    <Button sx={{ width: "100%", padding: 0 }} onClick={() => setValue(index)}>
+      <button onClick={() => colorSelect(picture)} type="button">
+        <img src={picture.source} className="button_img" alt="" />
+      </button>
+    </Button>;
+  }
   return (
     <Box sx={props.sx}>
       <style type="text/css">{css}</style>
@@ -96,16 +101,7 @@ export default function BlockFordCardsNext(props) {
               sx={{ width: "100%" }}
               a11yprops={a11yprops(index)}
               value={value}
-              component={() => (
-                <Button
-                  sx={{ width: "100%", padding: 0 }}
-                  onClick={colorSelect(picture)}
-                  // eslint-disable-next-line react/jsx-no-duplicate-props
-                  onClick={() => setValue(index)}
-                >
-                  <img src={picture.source} className="button_img" alt="" />
-                </Button>
-              )}
+              component={component(picture, index)}
             />
           );
         })}

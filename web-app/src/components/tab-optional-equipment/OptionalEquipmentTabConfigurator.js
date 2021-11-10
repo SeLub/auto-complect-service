@@ -15,7 +15,7 @@ export default function DataTable() {
   });
   const columns = [
     { field: "id", headerName: "ID", width: 20 },
-    { field: "option_name", headerName: "Позиция", width: 700 },
+    { field: "option_name", headerName: "Позиция", width: 840 },
     { field: "option_cost", headerName: "Цена", width: 140 },
     {
       field: "option_cost_currency",
@@ -46,8 +46,8 @@ export default function DataTable() {
           style={styles.gridcolum}
           rows={rows}
           columns={columns}
-          pageSize={100}
-          rowsPerPageOptions={[100]}
+          pageSize={50}
+          rowsPerPageOptions={[50]}
           checkboxSelection
         />
       </div>

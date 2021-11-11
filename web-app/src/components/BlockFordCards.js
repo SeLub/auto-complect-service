@@ -96,14 +96,14 @@ export default function BlockFordCards(props) {
               sx={{ width: "100%" }}
               a11yprops={a11yprops(index)}
               value={value}
-              component={() => (
+              component={React.forwardRef(() => (
                 <Button
                   sx={{ width: "100%", padding: 0 }}
                   onClick={() => [setValue(index), colorSelect(picture)]}
                 >
                   <img src={picture.source} className="button_img" alt="" />
                 </Button>
-              )}
+              ))}
             />
           );
         })}

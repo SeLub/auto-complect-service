@@ -9,7 +9,10 @@ export default function ToggleButtonAutomobile() {
   const alignment = useSelector((state) => state.toggleBtnAutomobile.alignment);
 
   const handleChange = (event, newAlignment) => {
-    dispatch({ type: newAlignment, payload: newAlignment });
+    dispatch({
+      type: newAlignment,
+      payload: newAlignment,
+    });
   };
 
   const StyledToggleButtonGroup = styled(ToggleButtonGroup)(({ theme }) => ({

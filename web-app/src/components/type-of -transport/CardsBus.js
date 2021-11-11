@@ -1,11 +1,12 @@
+/* eslint-disable react/destructuring-assignment */
 import * as React from "react";
 import { Card, CardContent, Typography, Box, CardMedia } from "@mui/material";
 import { useSelector } from "react-redux";
 import TotalCarValue from "../total-car-value/Total-car-value";
 import RetoolBtn from "../generic/RetoolBtn";
-import ToggleButtonBus from "./ToggleButtonBus";
+import SchemaToggleButton from "./SchemaToggleButton";
 
-export default function CardsBus() {
+export default function CardsBus(props) {
   const hullTypesName = useSelector((state) => state.hullTypes.name);
   const configurationScheme = useSelector(
     (state) => state.toggleBtnBus.alignment
@@ -24,7 +25,7 @@ export default function CardsBus() {
         <Typography variant="body2" color="InfoText">
           Выбор схемы комплектации:
         </Typography>
-        <ToggleButtonBus />
+        <SchemaToggleButton reequipmentOptions={props.reequipmentOptions} />
         <CardMedia
           height="117px"
           weight="310px"

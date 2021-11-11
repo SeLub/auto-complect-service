@@ -8,16 +8,19 @@ export default function toggleBtnCargo(stateToggCargo = defaultState, action) {
       return {
         ...stateToggCargo,
         alignment: action.payload,
+        sourcePic: action.source,
       };
     case "6+1":
       return {
         ...stateToggCargo,
         alignment: action.payload,
+        sourcePic: action.source,
       };
     case "8+1":
       return {
         ...stateToggCargo,
         alignment: action.payload,
+        sourcePic: action.source,
       };
 
     default:

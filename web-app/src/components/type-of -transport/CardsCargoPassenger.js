@@ -4,7 +4,6 @@ import { useSelector } from "react-redux";
 import TotalCarValue from "../total-car-value/Total-car-value";
 import RetoolBtn from "../generic/RetoolBtn";
 import ToggleButtonCargo from "./ToggleButtonCargo";
-import shemeCar from "./19.jpg";
 
 export default function CardsCargoPassenger() {
   const hullTypesName = useSelector((state) => state.hullTypes.name);
@@ -28,7 +27,7 @@ export default function CardsCargoPassenger() {
           height="117px"
           weight="310px"
           component="img"
-          image={shemeCar}
+          image=""
           alt="схема"
         />
         <Box>

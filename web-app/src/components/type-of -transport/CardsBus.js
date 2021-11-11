@@ -29,7 +29,7 @@ export default function CardsBus() {
           height="117px"
           weight="310px"
           component="img"
-          image={pickingDiagram(hullTypesName, "Автобус")}
+          image=""
           alt="схема"
         />
         <Box>

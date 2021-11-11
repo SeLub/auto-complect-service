@@ -15,8 +15,8 @@ export default function DataTable() {
   });
   const columns = [
     { field: "id", headerName: "ID", width: 20 },
-    { field: "option_name", headerName: "Позиция", width: 840 },
-    { field: "option_cost", headerName: "Цена", width: 140 },
+    { field: "option_name", headerName: " ", width: 850 },
+    { field: "option_cost", headerName: "Цена", width: 130 },
     {
       field: "option_cost_currency",
       headerName: " ",

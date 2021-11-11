@@ -12,6 +12,8 @@ import СardLayoutTypeTransport from "../type-of -transport/СardLayoutTypeTrans
 import TotalCarValue from "../total-car-value/Total-car-value";
 import GotoCommercialProposalBtn from "../generic/GotoCommercialProposal_btn";
 import BasicOptions from "../basic_options/BasicOptions";
+import PriceListBtn from "../generic/PriceListBtn";
+import NextBtn from "../generic/NextBtn";
 
 function RefitTabs(props) {
   const { children, value, index, ...other } = props;
@@ -82,6 +84,15 @@ const css = `
   .swipeableviews{
     overflow: hidden;
   }
+  .price_list_btn_plas_next_btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .price_list_btn_class{
+    margin-right: 30px;
+  }
   .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
     color: #2D96CD;
   }
@@ -149,6 +160,13 @@ export default function FloatingActionButtonZoom() {
           </RefitTabs>
           <RefitTabs value={value} index={1} dir={theme.direction}>
             <OptionalEquipmentTabConfigurator />
+            <TotalCarValue />
+            <div className="price_list_btn_plas_next_btn">
+              <div className="price_list_btn_class">
+                <PriceListBtn />
+              </div>
+              <NextBtn />
+            </div>
           </RefitTabs>
           <RefitTabs value={value} index={2} dir={theme.direction}>
             <СardLayoutTypeTransport />

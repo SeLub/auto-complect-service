@@ -15,10 +15,10 @@ export default function CardDisplay(props) {
     <Card sx={{ maxWidth: 360 }}>
       <CardContent align="left">
         <Typography gutterBottom variant="h5" component="div">
-          Грузопассажирский
+          {props.reequipmentOptions.displayName}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          {`Грузопассажирский автомобиль ${configurationScheme} на базе ${hullTypesName}`}
+          {`${props.reequipmentOptions.displayName} автомобиль ${configurationScheme} на базе ${hullTypesName}`}
         </Typography>
         <Typography variant="body2" color="InfoText">
           Выбор схемы комплектации:

@@ -28,9 +28,11 @@ export default function SchemaToggleButton(props) {
       onChange={handleChange}
     >
       {props.reequipment.schemaOptions.map((schemaOption) => {
-        <ToggleButton value={schemaOption.sitsNum}>
-          {schemaOption.sitsNum}
-        </ToggleButton>;
+        return (
+          <ToggleButton value={schemaOption.sitsNum}>
+            {schemaOption.sitsNum}
+          </ToggleButton>
+        );
       })}
       ;
     </StyledToggleButtonGroup>

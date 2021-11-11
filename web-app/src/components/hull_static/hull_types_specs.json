@@ -309,22 +309,19 @@
                 "option_name": "Пакет курильщика: Прикуриватель + пепельница",
                 "option_cost": 2500,
                 "option_cost_currency": "RUB" 
-            },
-            {
-                "option_name": "Усиленная передняя подвеска",
-                "option_cost": 12500,
-                "option_cost_currency": "RUB" 
-            },
-            {
-                "option_name": "Передняя подушка безопасности пассажира с возможностью отключения",
+            }, 
+            
+            { 
+              "option_name": "Передняя подушка безопасности пассажира с возможностью отключения",
                 "option_cost": 20500,
                 "option_cost_currency": "RUB" 
             },
             {
-                "option_name": "Пакет передние и задние парктроники, противотуманные фары",
+               "option_name": "Пакет передние и задние парктроники, противотуманные фары",
                 "option_cost": 20500,
                 "option_cost_currency": "RUB" 
             },
+      
             {
                 "option_name": "Передние противотуманные фары",
                 "option_cost": 10500,
@@ -386,15 +383,11 @@
                 "option_cost_currency": "RUB" 
             },
             {
-                "option_name": "Сигнализация периметра (при наличии предпускового отопителя)",
-                "option_cost": 14500,
-                "option_cost_currency": "RUB" 
-            },
-            {
                 "option_name": "Глухая перегородка без смотрового окошечка вместо стандартной с окошечком",
                 "option_cost": -500,
                 "option_cost_currency": "RUB" 
             },
+            
             {
                 "option_name": "Аудиопакет 2: Магнитола AM/FM, USB, Bluetooth с кнопками управления на руле",
                 "option_cost": 25000,
@@ -433,21 +426,6 @@
             {
                 "option_name": "Пакет 'Подготовка к эксплуатации': Пластиковые подкрылки задние, к-т 2 шт., Подогреватель топливного фильтра, Резиновые коврики в кабину, Антигравийная плёнка - угловая накладка двери R,L, к-т 2 шт. ",
                 "option_cost": 37179,
-                "option_cost_currency": "RUB" 
-            },
-            {
-                "option_name": "Защита колесных арок  (комплект 4 шт.)",
-                "option_cost": 17540,
-                "option_cost_currency": "RUB" 
-            },
-            {
-                "option_name": "Защита ДВС стальная",
-                "option_cost": 6580,
-                "option_cost_currency": "RUB" 
-            },
-            {
-                "option_name": "Коврики салона передние резиновые",
-                "option_cost": 2000,
                 "option_cost_currency": "RUB" 
             }
         ],
@@ -536,16 +514,7 @@
                 "option_cost": 2500,
                 "option_cost_currency": "RUB" 
             },
-            {
-                "option_name": "Усиленная передняя подвеска",
-                "option_cost": 12500,
-                "option_cost_currency": "RUB" 
-            },
-            {
-                "option_name": "Усиленная передняя подвеска",
-                "option_cost": 12500,
-                "option_cost_currency": "RUB" 
-            },
+         
             {
                 "option_name": "Передняя подушка безопасности пассажира с возможностью отключения",
                 "option_cost": 20500,
@@ -616,11 +585,7 @@
                 "option_cost": 13500,
                 "option_cost_currency": "RUB" 
             },
-            {
-                "option_name": "Сигнализация периметра (при наличии предпускового отопителя)",
-                "option_cost": 14500,
-                "option_cost_currency": "RUB" 
-            },
+        
             {
                 "option_name": "Глухая перегородка без смотрового окошечка вместо стандартной с окошечком",
                 "option_cost": -500,
@@ -834,11 +799,6 @@
                 "option_cost_currency": "RUB" 
             },
             {
-                "option_name": "Сигнализация периметра (при наличии предпускового отопителя)",
-                "option_cost": 14500,
-                "option_cost_currency": "RUB" 
-            },
-            {
                 "option_name": "Глухая перегородка без смотрового окошечка вместо стандартной с окошечком",
                 "option_cost": -500,
                 "option_cost_currency": "RUB" 
@@ -1015,6 +975,12 @@
                 "option_cost": 3500,
                 "option_cost_currency": "RUB" 
             },
+
+            {
+                "option_name": "Задние двери, открывающиеся на 270 градусов с магнитными фиксаторами ",
+                "option_cost": 16500,
+                "option_cost_currency": "RUB" 
+            },
             {
                 "option_name": "Обшивка кузова грузового отсека во всю высоту",
                 "option_cost": 26500,
@@ -1024,8 +990,8 @@
                 "option_name": "Усиленный генератор (220 А) (для автомобилей с передним приводом доступен к заказу только с Кондиционером)",
                 "option_cost": 21500,
                 "option_cost_currency": "RUB" 
-            },
-            {
+            }, 
+              {
                 "option_name": "Задняя розетка на 12 B",
                 "option_cost": 3500,
                 "option_cost_currency": "RUB" 
@@ -1043,11 +1009,6 @@
             {
                 "option_name": "Сигнализация периметра (при отказе от предпускового отопителя)",
                 "option_cost": 13500,
-                "option_cost_currency": "RUB" 
-            },
-            {
-                "option_name": "Сигнализация периметра (при наличии предпускового отопителя)",
-                "option_cost": 14500,
                 "option_cost_currency": "RUB" 
             },
             {
@@ -1227,6 +1188,11 @@
                 "option_cost_currency": "RUB" 
             },
             {
+                "option_name": "Задние двери, открывающиеся на 270 градусов с магнитными фиксаторами ",
+                "option_cost": 16500,
+                "option_cost_currency": "RUB" 
+            },
+            {
                 "option_name": "Обшивка кузова грузового отсека во всю высоту",
                 "option_cost": 26500,
                 "option_cost_currency": "RUB" 
@@ -1235,8 +1201,8 @@
                 "option_name": "Усиленный генератор (220 А) (для автомобилей с передним приводом доступен к заказу только с Кондиционером)",
                 "option_cost": 21500,
                 "option_cost_currency": "RUB" 
-            },
-            {
+            }, 
+              {
                 "option_name": "Задняя розетка на 12 B",
                 "option_cost": 3500,
                 "option_cost_currency": "RUB" 
@@ -1254,11 +1220,6 @@
             {
                 "option_name": "Сигнализация периметра (при отказе от предпускового отопителя)",
                 "option_cost": 13500,
-                "option_cost_currency": "RUB" 
-            },
-            {
-                "option_name": "Сигнализация периметра (при наличии предпускового отопителя)",
-                "option_cost": 14500,
                 "option_cost_currency": "RUB" 
             },
             {

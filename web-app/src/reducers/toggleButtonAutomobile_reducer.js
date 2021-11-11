@@ -11,7 +11,7 @@ export default function toggleBtnAutomobile(
     case "8+1":
       return {
         ...stateToggleAuto,
-        alignment: action.payload,
+        alignment: action.aligment,
         sourcePic: action.source,
       };
 

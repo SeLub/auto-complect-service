@@ -301,129 +301,150 @@
         ],
         "additional_options": [
             {
+                "id": 1,
                 "option_name": "Кондиционер с ручным управлением",
                 "option_cost": 62000,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 2,
                 "option_name": "Пакет курильщика: Прикуриватель + пепельница",
                 "option_cost": 2500,
                 "option_cost_currency": "RUB" 
             }, 
             
             { 
+                "id": 3,
               "option_name": "Передняя подушка безопасности пассажира с возможностью отключения",
                 "option_cost": 20500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 4,
                "option_name": "Пакет передние и задние парктроники, противотуманные фары",
                 "option_cost": 20500,
                 "option_cost_currency": "RUB" 
             },
       
             {
+                "id": 5,
                 "option_name": "Передние противотуманные фары",
                 "option_cost": 10500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 6,
                 "option_name": "Электророзетка 230 В",
                 "option_cost": 8500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 7,
                 "option_name": "Программируемый предпусковой отопитель с пультом дистанционного управления",
                 "option_cost": 7000,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 8,
                 "option_name": "Отказ от программируемого предпускового отопителя с пультом дистанционного управления",
                 "option_cost": -19500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 9,
                 "option_name": "Отказ от перегородки",
                 "option_cost": -4000,
                 "option_cost_currency": "RUB" 
             },
-            {
+            {  
+                "id": 10,
                 "option_name": "Освещение грузового отсека светодиодными лампами",
                 "option_cost": 3500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 11,
                 "option_name": "Обшивка кузова грузового отсека во всю высоту",
                 "option_cost": 26500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 12,
                 "option_name": "Усиленный генератор (220 А) (для автомобилей с передним приводом доступен к заказу только с Кондиционером)",
                 "option_cost": 21500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 13,
                 "option_name": "Задняя розетка на 12 B",
                 "option_cost": 3500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 14,
                 "option_name": "Окраска металлик",
                 "option_cost": 37500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 15,
                 "option_name": "Окраска в специальный цвет",
                 "option_cost": 50500,
                 "option_cost_currency": "RUB" 
             },
-            {
+            {   "id": 16,
                 "option_name": "Сигнализация периметра (при отказе от предпускового отопителя)",
                 "option_cost": 13500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 17,
                 "option_name": "Глухая перегородка без смотрового окошечка вместо стандартной с окошечком",
                 "option_cost": -500,
                 "option_cost_currency": "RUB" 
             },
             
-            {
+            {   "id": 18,
                 "option_name": "Аудиопакет 2: Магнитола AM/FM, USB, Bluetooth с кнопками управления на руле",
                 "option_cost": 25000,
                 "option_cost_currency": "RUB" 
             },
-            {
+            {   "id": 19,
                 "option_name": "Держатель огнетушителя",
                 "option_cost": 2000,
                 "option_cost_currency": "RUB" 
             },
-            {
+            {   "id": 20,
                 "option_name": "Отказ от защитного покрытия пола грузового отсека",
                 "option_cost": -6000,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 21,
                 "option_name": "Круиз-контроль + кожаный руль (доступен к заказу только с Аудиопакетом 2)",
                 "option_cost": 28000,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 22,
                 "option_name": "Пакет сидений 9: Подогрев водительского и правого пассажирского сиденья, регулировка поясничной опоры на водительском сиденье",
                 "option_cost": 15500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 23,
                 "option_name": "Пакет улучшения обзорности: электрообогрев лобового стекла, датчик уровня омывающей жидкости",
                 "option_cost": 31000,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 24,
                 "option_name": "Дополнительный патрубок топливного бака (для подключения независимого отопителя салона SVO)",
                 "option_cost": 2000,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 25,
                 "option_name": "Пакет 'Подготовка к эксплуатации': Пластиковые подкрылки задние, к-т 2 шт., Подогреватель топливного фильтра, Резиновые коврики в кабину, Антигравийная плёнка - угловая накладка двери R,L, к-т 2 шт. ",
                 "option_cost": 37179,
                 "option_cost_currency": "RUB" 
@@ -505,128 +526,153 @@
         ],
         "additional_options": [
             {
+                "id": 1,
                 "option_name": "Кондиционер с ручным управлением",
                 "option_cost": 62000,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 2,
                 "option_name": "Пакет курильщика: Прикуриватель + пепельница",
                 "option_cost": 2500,
                 "option_cost_currency": "RUB" 
             },
          
-            {
+            { 
+                "id": 3,
                 "option_name": "Передняя подушка безопасности пассажира с возможностью отключения",
                 "option_cost": 20500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 4,
                 "option_name": "Пакет передние и задние парктроники, противотуманные фары",
                 "option_cost": 20500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 5,
                 "option_name": "Передние противотуманные фары",
                 "option_cost": 10500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 6,
                 "option_name": "Электророзетка 230 В",
                 "option_cost": 8500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 7,
                 "option_name": "Программируемый предпусковой отопитель с пультом дистанционного управления",
                 "option_cost": 7000,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 8,
                 "option_name": "Отказ от программируемого предпускового отопителя с пультом дистанционного управления",
                 "option_cost": -19500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 9,
                 "option_name": "Отказ от перегородки",
                 "option_cost": -4000,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 10,
                 "option_name": "Освещение грузового отсека светодиодными лампами",
                 "option_cost": 3500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 11,
                 "option_name": "Обшивка кузова грузового отсека во всю высоту",
                 "option_cost": 26500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 12,
                 "option_name": "Усиленный генератор (220 А) (для автомобилей с передним приводом доступен к заказу только с Кондиционером)",
                 "option_cost": 21500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 13,
                 "option_name": "Задняя розетка на 12 B",
                 "option_cost": 3500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 14,
                 "option_name": "Окраска металлик",
                 "option_cost": 37500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 15,
                 "option_name": "Окраска в специальный цвет",
                 "option_cost": 50500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 16,
                 "option_name": "Сигнализация периметра (при отказе от предпускового отопителя)",
                 "option_cost": 13500,
                 "option_cost_currency": "RUB" 
             },
         
             {
+                "id": 17,
                 "option_name": "Глухая перегородка без смотрового окошечка вместо стандартной с окошечком",
                 "option_cost": -500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 18,
                 "option_name": "Аудиопакет 2: Магнитола AM/FM, USB, Bluetooth с кнопками управления на руле",
                 "option_cost": 25000,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 19,
                 "option_name": "Держатель огнетушителя",
                 "option_cost": 2000,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 20,
                 "option_name": "Отказ от защитного покрытия пола грузового отсека",
                 "option_cost": -6000,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 21,
                 "option_name": "Круиз-контроль + кожаный руль (доступен к заказу только с Аудиопакетом 2)",
                 "option_cost": 28000,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 22,
                 "option_name": "Пакет сидений 9: Подогрев водительского и правого пассажирского сиденья, регулировка поясничной опоры на водительском сиденье",
                 "option_cost": 15500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 23,
                 "option_name": "Пакет улучшения обзорности: электрообогрев лобового стекла, датчик уровня омывающей жидкости",
                 "option_cost": 31000,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 24,
                 "option_name": "Дополнительный патрубок топливного бака (для подключения независимого отопителя салона SVO)",
                 "option_cost": 2000,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 25,
                 "option_name": "Пакет 'Подготовка к эксплуатации': Пластиковые подкрылки задние, к-т 2 шт., Подогреватель топливного фильтра, Резиновые коврики в кабину, Антигравийная плёнка - угловая накладка двери R,L, к-т 2 шт. ",
                 "option_cost": 37179,
                 "option_cost_currency": "RUB" 
@@ -709,136 +755,163 @@
         ],
         "additional_options": [
             {
+                "id": 1,
                 "option_name": "Кондиционер с ручным управлением",
                 "option_cost": 62000,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 2,
                 "option_name": "Пакет курильщика: Прикуриватель + пепельница",
                 "option_cost": 2500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 3,
                 "option_name": "Усиленная передняя подвеска",
                 "option_cost": 12500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 4,
                 "option_name": "Передняя подушка безопасности пассажира с возможностью отключения",
                 "option_cost": 20500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 5,
                 "option_name": "Пакет передние и задние парктроники, противотуманные фары",
                 "option_cost": 20500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 6,
                 "option_name": "Передние противотуманные фары",
                 "option_cost": 10500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 7,
                 "option_name": "Электророзетка 230 В",
                 "option_cost": 8500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 8,
                 "option_name": "Программируемый предпусковой отопитель с пультом дистанционного управления",
                 "option_cost": 7000,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 9,
                 "option_name": "Отказ от программируемого предпускового отопителя с пультом дистанционного управления",
                 "option_cost": -19500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 10,
                 "option_name": "Отказ от перегородки",
                 "option_cost": -4000,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 11,
                 "option_name": "Освещение грузового отсека светодиодными лампами",
                 "option_cost": 3500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 12,
                 "option_name": "Задние двери, открывающиеся на 270 градусов с магнитными фиксаторами",
                 "option_cost": 16500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 13,
                 "option_name": "Обшивка кузова грузового отсека во всю высоту",
                 "option_cost": 26500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 14,
                 "option_name": "Усиленный генератор (220 А) (для автомобилей с передним приводом доступен к заказу только с Кондиционером)",
                 "option_cost": 21500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 15,
                 "option_name": "Задняя розетка на 12 B",
                 "option_cost": 3500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 16,
                 "option_name": "Окраска металлик",
                 "option_cost": 37500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 17,
                 "option_name": "Окраска в специальный цвет",
                 "option_cost": 50500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 18,
                 "option_name": "Сигнализация периметра (при отказе от предпускового отопителя)",
                 "option_cost": 13500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 19,
                 "option_name": "Глухая перегородка без смотрового окошечка вместо стандартной с окошечком",
                 "option_cost": -500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 20,
                 "option_name": "Аудиопакет 2: Магнитола AM/FM, USB, Bluetooth с кнопками управления на руле",
                 "option_cost": 25000,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 21,
                 "option_name": "Держатель огнетушителя",
                 "option_cost": 2000,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 22,
                 "option_name": "Отказ от защитного покрытия пола грузового отсека",
                 "option_cost": -6000,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 23,
                 "option_name": "Круиз-контроль + кожаный руль (доступен к заказу только с Аудиопакетом 2)",
                 "option_cost": 28000,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 24,
                 "option_name": "Пакет сидений 9: Подогрев водительского и правого пассажирского сиденья, регулировка поясничной опоры на водительском сиденье",
                 "option_cost": 15500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 25,
                 "option_name": "Пакет улучшения обзорности: электрообогрев лобового стекла, датчик уровня омывающей жидкости",
                 "option_cost": 31000,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 26,
                 "option_name": "Дополнительный патрубок топливного бака (для подключения независимого отопителя салона SVO)",
                 "option_cost": 2000,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 27,
                 "option_name": "Пакет 'Подготовка к эксплуатации': Пластиковые подкрылки задние, к-т 2 шт., Подогреватель топливного фильтра, Резиновые коврики в кабину, Антигравийная плёнка - угловая накладка двери R,L, к-т 2 шт. ",
                 "option_cost": 37179,
                 "option_cost_currency": "RUB" 
@@ -920,138 +993,166 @@
             "Металлическая перегородка со смотровым окошком "
         ],
         "additional_options": [
-            {
+            { 
+                "id": 1,
                 "option_name": "Кондиционер с ручным управлением",
                 "option_cost": 62000,
                 "option_cost_currency": "RUB" 
             },
             {
+
+                "id": 2,
                 "option_name": "Пакет курильщика: Прикуриватель + пепельница",
                 "option_cost": 2500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 3,
                 "option_name": "Усиленная передняя подвеска",
                 "option_cost": 12500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 4,
                 "option_name": "Передняя подушка безопасности пассажира с возможностью отключения",
                 "option_cost": 20500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 5,
                 "option_name": "Пакет передние и задние парктроники, противотуманные фары",
                 "option_cost": 20500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 6,
                 "option_name": "Передние противотуманные фары",
                 "option_cost": 10500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 7,
                 "option_name": "Электророзетка 230 В",
                 "option_cost": 8500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 8,
                 "option_name": "Программируемый предпусковой отопитель с пультом дистанционного управления",
                 "option_cost": 7000,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 9,
                 "option_name": "Отказ от программируемого предпускового отопителя с пультом дистанционного управления",
                 "option_cost": -19500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 10,
                 "option_name": "Отказ от перегородки",
                 "option_cost": -4000,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 11,
                 "option_name": "Освещение грузового отсека светодиодными лампами",
                 "option_cost": 3500,
                 "option_cost_currency": "RUB" 
             },
 
             {
+                "id": 12,
                 "option_name": "Задние двери, открывающиеся на 270 градусов с магнитными фиксаторами ",
                 "option_cost": 16500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 13,
                 "option_name": "Обшивка кузова грузового отсека во всю высоту",
                 "option_cost": 26500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 14,
                 "option_name": "Усиленный генератор (220 А) (для автомобилей с передним приводом доступен к заказу только с Кондиционером)",
                 "option_cost": 21500,
                 "option_cost_currency": "RUB" 
             }, 
               {
+                "id": 15,
                 "option_name": "Задняя розетка на 12 B",
                 "option_cost": 3500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 16,
                 "option_name": "Окраска металлик",
                 "option_cost": 37500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 17,
                 "option_name": "Окраска в специальный цвет",
                 "option_cost": 50500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 18,
                 "option_name": "Сигнализация периметра (при отказе от предпускового отопителя)",
                 "option_cost": 13500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 19,
                 "option_name": "Глухая перегородка без смотрового окошечка вместо стандартной с окошечком",
                 "option_cost": -500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 20,
                 "option_name": "Аудиопакет 2: Магнитола AM/FM, USB, Bluetooth с кнопками управления на руле",
                 "option_cost": 25000,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 21,
                 "option_name": "Держатель огнетушителя",
                 "option_cost": 2000,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 22,
                 "option_name": "Отказ от защитного покрытия пола грузового отсека",
                 "option_cost": -6000,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 23,
                 "option_name": "Круиз-контроль + кожаный руль (доступен к заказу только с Аудиопакетом 2)",
                 "option_cost": 28000,
                 "option_cost_currency": "RUB" 
             },
-            {
+            { 
+                "id": 24,
                 "option_name": "Пакет сидений 9: Подогрев водительского и правого пассажирского сиденья, регулировка поясничной опоры на водительском сиденье",
                 "option_cost": 15500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 25,
                 "option_name": "Пакет улучшения обзорности: электрообогрев лобового стекла, датчик уровня омывающей жидкости",
                 "option_cost": 31000,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 26,
                 "option_name": "Дополнительный патрубок топливного бака (для подключения независимого отопителя салона SVO)",
                 "option_cost": 2000,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 27,
                 "option_name": "Пакет 'Подготовка к эксплуатации': Пластиковые подкрылки задние, к-т 2 шт., Подогреватель топливного фильтра, Резиновые коврики в кабину, Антигравийная плёнка - угловая накладка двери R,L, к-т 2 шт. ",
                 "option_cost": 37179,
                 "option_cost_currency": "RUB" 
@@ -1133,141 +1234,169 @@
         ],
         "additional_options": [
             {
+                "id": 1,
                 "option_name": "Кондиционер с ручным управлением",
                 "option_cost": 62000,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 2,
                 "option_name": "Пакет курильщика: Прикуриватель + пепельница",
                 "option_cost": 2500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 3,
                 "option_name": "Усиленная передняя подвеска",
                 "option_cost": 12500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 4,
                 "option_name": "Передняя подушка безопасности пассажира с возможностью отключения",
                 "option_cost": 20500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 5,
                 "option_name": "Пакет передние и задние парктроники, противотуманные фары",
                 "option_cost": 20500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 6,
                 "option_name": "Передние противотуманные фары",
                 "option_cost": 10500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 7,
                 "option_name": "Электророзетка 230 В",
                 "option_cost": 8500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 8,
                 "option_name": "Программируемый предпусковой отопитель с пультом дистанционного управления",
                 "option_cost": 7000,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 9,
                 "option_name": "Отказ от программируемого предпускового отопителя с пультом дистанционного управления",
                 "option_cost": -19500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 10,
                 "option_name": "Отказ от перегородки",
                 "option_cost": -4000,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 11,
                 "option_name": "Освещение грузового отсека светодиодными лампами",
                 "option_cost": 3500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 12,
                 "option_name": "Задние двери, открывающиеся на 270 градусов с магнитными фиксаторами ",
                 "option_cost": 16500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 13,
                 "option_name": "Обшивка кузова грузового отсека во всю высоту",
                 "option_cost": 26500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 14,
                 "option_name": "Усиленный генератор (220 А) (для автомобилей с передним приводом доступен к заказу только с Кондиционером)",
                 "option_cost": 21500,
                 "option_cost_currency": "RUB" 
             }, 
               {
+                "id": 15,
                 "option_name": "Задняя розетка на 12 B",
                 "option_cost": 3500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 16,
                 "option_name": "Окраска металлик",
                 "option_cost": 37500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 17,
                 "option_name": "Окраска в специальный цвет",
                 "option_cost": 50500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 18,
                 "option_name": "Сигнализация периметра (при отказе от предпускового отопителя)",
                 "option_cost": 13500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 19,
                 "option_name": "Глухая перегородка без смотрового окошечка вместо стандартной с окошечком",
                 "option_cost": -500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 20,
                 "option_name": "Аудиопакет 2: Магнитола AM/FM, USB, Bluetooth с кнопками управления на руле",
                 "option_cost": 25000,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 21,
                 "option_name": "Держатель огнетушителя",
                 "option_cost": 2000,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 22,
                 "option_name": "Отказ от защитного покрытия пола грузового отсека",
                 "option_cost": -6000,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 23,
                 "option_name": "Круиз-контроль + кожаный руль (доступен к заказу только с Аудиопакетом 2)",
                 "option_cost": 28000,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 24,
                 "option_name": "Пакет сидений 9: Подогрев водительского и правого пассажирского сиденья, регулировка поясничной опоры на водительском сиденье",
                 "option_cost": 15500,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 25,
                 "option_name": "Пакет улучшения обзорности: электрообогрев лобового стекла, датчик уровня омывающей жидкости",
                 "option_cost": 31000,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 26,
                 "option_name": "Дополнительный патрубок топливного бака (для подключения независимого отопителя салона SVO)",
                 "option_cost": 2000,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 27,
                 "option_name": "Цифровой тахограф",
                 "option_cost": 56000,
                 "option_cost_currency": "RUB" 
             },
             {
+                "id": 28,
                 "option_name": "Пакет 'Подготовка к эксплуатации': Пластиковые подкрылки задние, к-т 2 шт., Подогреватель топливного фильтра, Резиновые коврики в кабину, Антигравийная плёнка - угловая накладка двери R,L, к-т 2 шт. ",
                 "option_cost": 37179,
                 "option_cost_currency": "RUB" 

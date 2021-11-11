@@ -13,10 +13,14 @@ export default function SchemaToggleButton(props) {
   const handleChange = (event, newAlignment) => {
     dispatch({ type: newAlignment, payload: newAlignment });
   };
+  const buttonWidth = Math.min(
+    300 / props.reequipment.schemaOptions.length,
+    100
+  );
   const StyledToggleButtonGroup = styled(ToggleButtonGroup)(({ theme }) => ({
     "& .MuiToggleButtonGroup-grouped": {
       margin: theme.spacing(0.9),
-      width: 100,
+      width: buttonWidth,
       height: 33,
     },
   }));

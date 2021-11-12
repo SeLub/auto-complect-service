@@ -24,7 +24,7 @@ function DataTable(props) {
   });
   const columns = [
     { field: "id", headerName: "ID", width: 20 },
-    { field: "option_name", headerName: "Позиция", width: 700 },
+    { field: "option_name", headerName: "Позиция", width: 840 },
     { field: "option_cost", headerName: "Цена", width: 140 },
     {
       field: "option_cost_currency",
@@ -69,6 +69,7 @@ function DataTable(props) {
           </div>
         </div>
         <DataGrid
+          rowHeight={26}
           style={styles.gridcolum}
           rows={rows}
           columns={columns}

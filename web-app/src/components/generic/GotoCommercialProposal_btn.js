@@ -37,7 +37,7 @@ const GotoCommercialProposalBtn = () => {
   const history = useHistory();
 
   function handleClick() {
-    history.push("/Configurator_p3");
+    history.push("/сonfigurator_p3");
   }
   return (
     <div className="">

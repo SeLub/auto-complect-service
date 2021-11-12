@@ -31,27 +31,36 @@ export default function SchemaToggleButton(props) {
     });
   }
   let currentImage = "";
-  switch (props.reequipment.name) {
-    case "cargo":
-      currentImage = getState().toggleBtnCargo.schemaPicture;
-      return currentImage;
-    case "bus":
-      currentImage = getState().toggleBtnBus.schemaPicture;
-      return currentImage;
-    case "light":
-      currentImage = getState().toggleBtnLight.schemaPicture;
-      return currentImage;
-    default:
-      break;
-  }
+  let alignment = "";
+  const cardSelector = () => {
+    switch (props.reequipment.name) {
+      case "cargo":
+        alignment = getState().toggleBtnCargo.selectedSitsNum;
+        currentImage = getState().toggleBtnCargo.schemaPicture;
+        return { currentImage, alignment };
+      case "bus":
+        alignment = getState().toggleBtnBus.selectedSitsNum;
+        currentImage = getState().toggleBtnBus.schemaPicture;
+        return { currentImage, alignment };
+      case "light":
+        alignment = getState().toggleBtnLight.selectedSitsNum;
+        currentImage = getState().toggleBtnLight.schemaPicture;
+        return { currentImage, alignment };
+      default:
+        break;
+    }
+    console.log(currentImage, alignment);
+    return { currentImage, alignment };
+  };
   return (
     <div>
       <StyledToggleButtonGroup
         color="primary"
-        value={getState().toggleBtnBus.sitsNum}
+        value={alignment}
+        onChange={() => cardSelector}
         exclusive
       >
-        {props.reequipment.schemaOptions.map((schemaOption) => {
+        {props.reequipSchemas.map((schemaOption) => {
           return (
             <ToggleButton
               value={schemaOption.sitsNum}
@@ -69,8 +78,7 @@ export default function SchemaToggleButton(props) {
         height="117px"
         weight="310px"
         component="img"
-        image=""
-        alt="схема"
+        img={currentImage}
       />
     </div>
   );

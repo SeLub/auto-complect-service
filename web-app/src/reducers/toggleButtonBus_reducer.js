@@ -1,9 +1,9 @@
 const defaultState = {
   selectedSitsNum: "5/6+1",
-  schemaPicture: "placeholder",
+  schemaPicture: "/img/typeOftransport/CargoPassenger_scheme_5+1.jpg",
 };
 
-export default function toggleBtnCargo(stateToggBus = defaultState, action) {
+export default function toggleBtnBus(stateToggBus = defaultState, action) {
   switch (action.type) {
     case "busReequip/set":
       return {

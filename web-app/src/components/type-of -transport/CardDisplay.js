@@ -1,16 +1,20 @@
 /* eslint-disable react/destructuring-assignment */
 import * as React from "react";
 import { Card, CardContent, Typography, Box } from "@mui/material";
-import { useSelector } from "react-redux";
+import { connect } from "react-redux";
 import TotalCarValue from "../total-car-value/Total-car-value";
 import RetoolBtn from "../generic/RetoolBtn";
 import SchemaToggleButton from "./SchemaToggleButton";
 
-export default function CardDisplay(props) {
-  const hullTypesName = useSelector((state) => state.hullTypes.name);
-  const configurationScheme = useSelector(
-    (state) => state.toggleBtnCargo.alignment
-  );
+const mapStateToProps = (state) => {
+  return {
+    toggleBtnBus: state.toggleBtnBus,
+    toggleBtnCargo: state.toggleBtnCargo,
+    toggleBtnLight: state.toggleBtnLight,
+  };
+};
+
+function CardDisplay(props) {
   return (
     <Card sx={{ maxWidth: 360 }}>
       <CardContent align="left">
@@ -18,7 +22,7 @@ export default function CardDisplay(props) {
           {props.reequipmentOptions.displayName}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          {`${props.reequipmentOptions.displayName} автомобиль ${configurationScheme} на базе ${hullTypesName}`}
+          {`${props.reequipmentOptions.displayName} автомобиль ${props.toggleBtnBus.selectedSitsNum} на базе ${props.hullTypes.name}`}
         </Typography>
         <Typography variant="body2" color="InfoText">
           Выбор схемы комплектации:
@@ -26,6 +30,7 @@ export default function CardDisplay(props) {
         <SchemaToggleButton
           reequipment={props.reequipmentOptions}
           reequipName={props.reequipmentOptions.name}
+          reequipSchemas={props.reequipmentOptions.schemaOptions}
         />
         <Box>
           <TotalCarValue />
@@ -35,3 +40,5 @@ export default function CardDisplay(props) {
     </Card>
   );
 }
+
+export default connect(mapStateToProps)(CardDisplay);

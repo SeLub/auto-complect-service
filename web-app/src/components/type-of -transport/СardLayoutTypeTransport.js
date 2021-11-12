@@ -11,6 +11,7 @@ import CardDisplay from "./CardDisplay";
 
 const mapStateToProps = (state) => {
   return {
+    hullTypes: state.hullTypes,
     reequipmentOptions: state.hullTypes.reequipmentOptions,
   };
 };
@@ -23,7 +24,10 @@ function СardLayoutTypeTransport(props) {
           <Grid item xs={4}>
             <Grid container justifyContent="center">
               <Grid>
-                <CardDisplay reequipmentOptions={reequipmentOption} />
+                <CardDisplay
+                  reequipmentOptions={reequipmentOption}
+                  hullTypes={props.hullTypes}
+                />
               </Grid>
             </Grid>
           </Grid>

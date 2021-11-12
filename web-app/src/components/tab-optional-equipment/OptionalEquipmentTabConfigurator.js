@@ -34,8 +34,9 @@ function DataTable(props) {
   ];
   const [select, setSelection] = React.useState([]);
   if (typeof props.initialOptions !== "undefined") {
-    setSelection(props.initialOptions.map((initialOption) => initialOption.id));
+    setSelection(props.initialOptions.map((id) => id));
   }
+  console.log(props.initialOptions?.map((initialOption) => initialOption.id));
   function handleClick(selectedRow) {
     // const selectedRowArray =
     setSelection(selectedRow);

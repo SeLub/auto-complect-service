@@ -2,12 +2,14 @@ import * as React from "react";
 import ToggleButton from "@mui/material/ToggleButton";
 import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 import { styled } from "@mui/material/styles";
+import { useDispatch, useSelector } from "react-redux";
 
 export default function ToggleButtonCargo() {
-  const [alignment, setAlignment] = React.useState("5/6+1");
+  const dispatch = useDispatch();
+  const alignment = useSelector((state) => state.toggleBtnCargo.alignment);
 
   const handleChange = (event, newAlignment) => {
-    setAlignment(newAlignment);
+    dispatch({ type: newAlignment, payload: newAlignment });
   };
   const StyledToggleButtonGroup = styled(ToggleButtonGroup)(({ theme }) => ({
     "& .MuiToggleButtonGroup-grouped": {
@@ -23,9 +25,9 @@ export default function ToggleButtonCargo() {
       exclusive
       onChange={handleChange}
     >
-      <ToggleButton value="5/6+1">5/6+1</ToggleButton>
-      <ToggleButton value="5/6+1">5/6+1</ToggleButton>
-      <ToggleButton value="5/6/8+1">5/6/8+1</ToggleButton>
+      <ToggleButton value="5+1">5+1</ToggleButton>
+      <ToggleButton value="6+1">6+1</ToggleButton>
+      <ToggleButton value="8+1">8+1</ToggleButton>
     </StyledToggleButtonGroup>
   );
 }

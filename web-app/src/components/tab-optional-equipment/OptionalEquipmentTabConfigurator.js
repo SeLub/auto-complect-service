@@ -12,6 +12,7 @@ import store, { dispatch } from "../../store/store";
 const mapStateToProps = (state) => {
   return {
     additional_options: state.hullTypes.additional_options,
+    initialOptions: state.additionalOptions,
   };
 };
 
@@ -33,18 +34,21 @@ function DataTable(props) {
     },
   ];
   const [select, setSelection] = React.useState([]);
+  if (typeof props.initialOptions !== "undefined") {
+    setSelection(props.initialOptions.map((initialOption) => initialOption.id));
+  }
   function handleClick(selectedRow) {
     // const selectedRowArray =
     setSelection(selectedRow);
     console.log(select.length);
     const selectedRowArray = [];
     // eslint-disable-next-line no-plusplus
-    for (let i = 0; i < select.length + 1; i++) {
+    for (let i = 1; i < select.length + 1; i++) {
       selectedRowArray.push(props.additional_options.at(select[i]));
     }
     dispatch({
       type: "additionalOptions/set",
-      additional_options: selectedRowArray,
+      additionalOptions: selectedRowArray,
     });
   }
   const rows = store

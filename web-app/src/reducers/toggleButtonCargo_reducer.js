@@ -1,6 +1,8 @@
 const defaultState = {
   selectedSitsNum: "5/6+1",
   schemaPicture: "placeholder",
+  reequipBasicOptions: [],
+  reequipOptions: [],
 };
 
 export default function toggleBtnCargo(stateToggCargo = defaultState, action) {

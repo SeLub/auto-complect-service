@@ -26,8 +26,8 @@ export default function SchemaToggleButton(props) {
       type: `${toggleButtonValue.name}Reequip/set`,
       selectedSitsNum: `${schemaOption.sitsNum}`,
       schemaPicture: `${schemaOption.pic}`,
-      reequipBasicOptions: `${schemaOption.reequipBasicOptions}`,
-      reequipOptions: `${schemaOption.reequipOptions}`,
+      reequipBasicOptions: schemaOption.reequipBasicOptions,
+      reequipOptions: schemaOption.reequipOptions,
     });
   }
   let currentImage = "";

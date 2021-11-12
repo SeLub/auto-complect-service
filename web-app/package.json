@@ -34,6 +34,7 @@
     "react-swipeable-views": "^0.14.0",
     "react-table-vertical-heading": "^0.1.4",
     "redux": "^4.1.1",
+    "semantic-ui-react": "^2.0.4",
     "styled-components": "^5.3.1"
   },
   "scripts": {

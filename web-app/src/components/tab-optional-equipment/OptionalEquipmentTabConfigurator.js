@@ -4,6 +4,8 @@ import * as React from "react";
 import { DataGrid } from "@mui/x-data-grid";
 import "./Tab_Optional_Equipment.css";
 import { StyleSheet } from "@react-pdf/renderer";
+import { Checkbox, Form } from "semantic-ui-react";
+
 import store from "../../store/store";
 
 const css = `
@@ -13,6 +15,18 @@ const css = `
   transition: opacity 0ms cubic-bezier(0, 0, 0, 0) 0ms;
 };
 `;
+
+const renderCheckBox = ({ input, label }) => {
+  return (
+    <Form.Field>
+      <Checkbox
+        label={label}
+        checked={!!input.value}
+        onChange={(e, { checked }) => input.onChange(checked)}
+      />
+    </Form.Field>
+  );
+};
 
 export default function DataTable() {
   const styles = StyleSheet.create({
@@ -62,6 +76,7 @@ export default function DataTable() {
           pageSize={50}
           rowsPerPageOptions={[50]}
           checkboxSelection
+          component={renderCheckBox}
         />
       </div>
     </div>

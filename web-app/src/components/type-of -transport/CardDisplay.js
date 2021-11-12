@@ -34,7 +34,7 @@ function CardDisplay(props) {
         />
         <Box>
           <TotalCarValue />
-          <RetoolBtn />
+          <RetoolBtn currentHull={props.reequipmentOptions.name} />
         </Box>
       </CardContent>
     </Card>

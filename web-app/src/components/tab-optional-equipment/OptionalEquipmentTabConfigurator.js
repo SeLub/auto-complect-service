@@ -1,5 +1,4 @@
 /* eslint-disable react/destructuring-assignment */
-/* eslint-disable no-unused-vars */
 /* eslint-disable camelcase */
 /* eslint-disable import/no-named-as-default-member */
 import * as React from "react";
@@ -42,8 +41,7 @@ function DataTable(props) {
     setSelection(selectedRow);
     console.log(select.length);
     const selectedRowArray = [];
-    // eslint-disable-next-line no-plusplus
-    for (let i = 1; i < select.length + 1; i++) {
+    for (let i = 0; i < select.length + 1; i += 1) {
       selectedRowArray.push(props.additional_options.at(select[i]));
     }
     dispatch({

@@ -1,12 +1,21 @@
+/* eslint-disable react/destructuring-assignment */
+/* eslint-disable no-unused-vars */
 /* eslint-disable camelcase */
 /* eslint-disable import/no-named-as-default-member */
 import * as React from "react";
 import { DataGrid } from "@mui/x-data-grid";
 import "./Tab_Optional_Equipment.css";
 import { StyleSheet } from "@react-pdf/renderer";
-import store from "../../store/store";
+import { connect } from "react-redux";
+import store, { dispatch } from "../../store/store";
 
-export default function DataTable() {
+const mapStateToProps = (state) => {
+  return {
+    additional_options: state.hullTypes.additional_options,
+  };
+};
+
+function DataTable(props) {
   const styles = StyleSheet.create({
     gridcolum: {
       width: "100%",
@@ -23,7 +32,21 @@ export default function DataTable() {
       width: 100,
     },
   ];
-
+  const [select, setSelection] = React.useState([]);
+  function handleClick(selectedRow) {
+    // const selectedRowArray =
+    setSelection(selectedRow);
+    console.log(select.length);
+    const selectedRowArray = [];
+    // eslint-disable-next-line no-plusplus
+    for (let i = 0; i < select.length + 1; i++) {
+      selectedRowArray.push(props.additional_options.at(select[i]));
+    }
+    dispatch({
+      type: "additionalOptions/set",
+      additional_options: selectedRowArray,
+    });
+  }
   const rows = store
     .getState()
     .hullTypes.additional_options.map((additional_option) => {
@@ -49,8 +72,15 @@ export default function DataTable() {
           pageSize={100}
           rowsPerPageOptions={[100]}
           checkboxSelection
+          disableSelectionOnClick
+          selectionModel={select}
+          onSelectionModelChange={(newSelect) => {
+            handleClick(newSelect);
+          }}
         />
       </div>
     </div>
   );
 }
+
+export default connect(mapStateToProps)(DataTable);

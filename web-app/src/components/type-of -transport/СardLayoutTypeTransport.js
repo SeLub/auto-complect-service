@@ -1,6 +1,4 @@
-<<<<<<< HEAD
 /* eslint-disable prettier/prettier */
-=======
 /* eslint-disable array-callback-return */
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/destructuring-assignment */
@@ -39,10 +37,6 @@ function СardLayoutTypeTransport(props) {
       })}
     </Grid>
   );
-<<<<<<< HEAD
-}
-=======
 }
 
 export default connect(mapStateToProps)(СardLayoutTypeTransport);
->>>>>>> origin/dev

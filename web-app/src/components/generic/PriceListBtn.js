@@ -23,7 +23,7 @@ export default function OutlinedButtons(props) {
   const history = useHistory();
   function handleClick(hullTypes) {
     history.push({
-      pathname: "/PdfPage",
+      pathname: "/сonfigurator_p3",
       state: { hullTypes },
     });
   }

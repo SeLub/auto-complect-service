@@ -49,6 +49,7 @@ export default function ConfiguratorBtn(props) {
       pictures: props.hull_types.pictures,
       base_options: props.hull_types.base_options,
       additional_options: props.hull_types.additional_options,
+      reequipmentOptions: props.hull_types.reequipment,
     });
     dispatch({
       type: "priceTracker/init",

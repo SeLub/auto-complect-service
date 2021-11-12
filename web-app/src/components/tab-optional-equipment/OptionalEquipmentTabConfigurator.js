@@ -1,5 +1,4 @@
 /* eslint-disable react/destructuring-assignment */
-/* eslint-disable no-unused-vars */
 /* eslint-disable camelcase */
 /* eslint-disable import/no-named-as-default-member */
 import * as React from "react";
@@ -25,7 +24,7 @@ function DataTable(props) {
   });
   const columns = [
     { field: "id", headerName: "ID", width: 20 },
-    { field: "option_name", headerName: "Позиция", width: 700 },
+    { field: "option_name", headerName: "Позиция", width: 840 },
     { field: "option_cost", headerName: "Цена", width: 140 },
     {
       field: "option_cost_currency",
@@ -43,8 +42,7 @@ function DataTable(props) {
     setSelection(selectedRow);
     console.log(select.length);
     const selectedRowArray = [];
-    // eslint-disable-next-line no-plusplus
-    for (let i = 0; i < select.length + 1; i++) {
+    for (let i = 0; i < select.length + 1; i += 1) {
       selectedRowArray.push(props.additional_options.at(select[i]));
     }
     dispatch({
@@ -71,6 +69,7 @@ function DataTable(props) {
           </div>
         </div>
         <DataGrid
+          rowHeight={26}
           style={styles.gridcolum}
           rows={rows}
           columns={columns}

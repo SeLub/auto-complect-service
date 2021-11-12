@@ -1,40 +1,17 @@
 const defaultState = {
-  alignment: "10+1",
+  selectedSitsNum: "5/6+1",
+  schemaPicture: "placeholder",
 };
 
-export default function toggleBtnBus(stateToggBus = defaultState, action) {
+export default function toggleBtnCargo(stateToggBus = defaultState, action) {
   switch (action.type) {
-    case "10+1":
+    case "busReequip/set":
       return {
-        ...stateToggBus,
-        alignment: action.payload,
-        sourcePic: action.source,
+        selectedSitsNum: action.selectedSitsNum,
+        schemaPicture: action.schemaPicture,
+        reequipBasicOptions: action.reequipBasicOptions,
+        reequipOptions: action.reequipOptions,
       };
-    case "14+1":
-      return {
-        ...stateToggBus,
-        alignment: action.payload,
-        sourcePic: action.source,
-      };
-    case "17+1":
-      return {
-        ...stateToggBus,
-        alignment: action.payload,
-        sourcePic: action.source,
-      };
-    case "19+1":
-      return {
-        ...stateToggBus,
-        alignment: action.payload,
-        sourcePic: action.source,
-      };
-    case "20+1":
-      return {
-        ...stateToggBus,
-        alignment: action.payload,
-        sourcePic: action.source,
-      };
-
     default:
       return stateToggBus;
   }

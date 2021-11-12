@@ -1,6 +1,6 @@
 import hullTypes from "./hull_types_reducer";
 import colorSetter from "./colorSetter";
-import toggleBtnAutomobile from "./toggleButtonAutomobile_reducer";
+import toggleBtnLight from "./toggleButtonLight_reducer";
 import priceTracker from "./priceTracker";
 import toggleBtnBus from "./toggleButtonBus_reducer";
 import toggleBtnCargo from "./toggleButtonCargo_reducer";
@@ -11,7 +11,7 @@ const reducers = {
   priceTracker,
   toggleBtnBus,
   toggleBtnCargo,
-  toggleBtnAutomobile,
+  toggleBtnLight,
 };
 
 export default reducers;

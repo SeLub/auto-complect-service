@@ -1,4 +1,5 @@
 /* eslint-disable react/destructuring-assignment */
+/* eslint-disable */
 import React from "react";
 import "./BlockFordCards.css";
 

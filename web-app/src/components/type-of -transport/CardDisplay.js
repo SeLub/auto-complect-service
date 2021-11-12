@@ -1,6 +1,6 @@
 /* eslint-disable react/destructuring-assignment */
 import * as React from "react";
-import { Card, CardContent, Typography, Box, CardMedia } from "@mui/material";
+import { Card, CardContent, Typography, Box } from "@mui/material";
 import { useSelector } from "react-redux";
 import TotalCarValue from "../total-car-value/Total-car-value";
 import RetoolBtn from "../generic/RetoolBtn";
@@ -23,13 +23,9 @@ export default function CardDisplay(props) {
         <Typography variant="body2" color="InfoText">
           Выбор схемы комплектации:
         </Typography>
-        <SchemaToggleButton reequipment={props.reequipmentOptions} />
-        <CardMedia
-          height="117px"
-          weight="310px"
-          component="img"
-          image=""
-          alt="схема"
+        <SchemaToggleButton
+          reequipment={props.reequipmentOptions}
+          reequipName={props.reequipmentOptions.name}
         />
         <Box>
           <TotalCarValue />

@@ -5,6 +5,7 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
+import { dispatch } from "../store/store";
 
 const css = `
   .ford_pic {
@@ -55,10 +56,17 @@ function a11yprops(index) {
   };
 }
 
-export default function BlockFordCardsNext(props) {
+export default function BlockFordCards(props) {
   const [value, setValue] = React.useState(0);
   const handleChange = (event, newValue) => {
     setValue(newValue);
+  };
+  const colorSelect = (picture) => {
+    dispatch({
+      type: "color/set",
+      color: picture.color,
+      source: picture.source,
+    });
   };
 
   return (
@@ -72,27 +80,6 @@ export default function BlockFordCardsNext(props) {
             </TabPanel>
           );
         })}
-        {/* <TabPanel value={value} index={0}>
-          <img src={props.hull_types.pic1} className="ford_pic" alt="" />
-        </TabPanel>
-        <TabPanel value={value} index={1}>
-          <img src="/img/L3H2/main_pic.png" className="ford_pic" alt="" />
-        </TabPanel>
-        <TabPanel value={value} index={2}>
-          <img src={props.hull_types.pic1} className="ford_pic" alt="" />
-        </TabPanel>
-        <TabPanel value={value} index={3}>
-          <img src={props.hull_types.pic1} className="ford_pic" alt="" />
-        </TabPanel>
-        <TabPanel value={value} index={4}>
-          <img src={props.hull_types.pic1} className="ford_pic" alt="" />
-        </TabPanel>
-        <TabPanel value={value} index={5}>
-          <img src={props.hull_types.pic1} className="ford_pic" alt="" />
-        </TabPanel>
-        <TabPanel value={value} index={6}>
-          <img src={props.hull_types.pic1} className="ford_pic" alt="" />
-        </TabPanel> */}
       </Box>
       <Tabs
         className="img_grid"
@@ -109,108 +96,17 @@ export default function BlockFordCardsNext(props) {
               sx={{ width: "100%" }}
               a11yprops={a11yprops(index)}
               value={value}
-              component={() => (
+              component={React.forwardRef(() => (
                 <Button
                   sx={{ width: "100%", padding: 0 }}
-                  onClick={() => setValue(index)}
+                  onClick={() => [setValue(index), colorSelect(picture)]}
                 >
                   <img src={picture.source} className="button_img" alt="" />
                 </Button>
-              )}
+              ))}
             />
           );
         })}
-        {/* <Tab
-          sx={{ width: "100%" }}
-          a11yprops={a11yprops(0)}
-          value={value}
-          component={() => (
-            <Button
-              sx={{ width: "100%", padding: 0 }}
-              onClick={() => setValue(0)}
-            >
-              <img src={props.hull_types.pic2} className="button_img" alt="" />
-            </Button>
-          )}
-        />
-        <Tab
-          sx={{ width: "100%" }}
-          a11yprops={a11yprops(1)}
-          value={value}
-          component={() => (
-            <Button
-              sx={{ width: "100%", padding: 0 }}
-              onClick={() => setValue(1)}
-            >
-              <img src={props.hull_types.pic3} className="button_img" alt="" />
-            </Button>
-          )}
-        />
-        <Tab
-          sx={{ width: "100%" }}
-          a11yprops={a11yprops(2)}
-          value={value}
-          component={() => (
-            <Button
-              sx={{ width: "100%", padding: 0 }}
-              onClick={() => setValue(2)}
-            >
-              <img src={props.hull_types.pic3} className="button_img" alt="" />
-            </Button>
-          )}
-        />
-        <Tab
-          sx={{ width: "100%" }}
-          a11yprops={a11yprops(3)}
-          value={value}
-          component={() => (
-            <Button
-              sx={{ width: "100%", padding: 0 }}
-              onClick={() => setValue(3)}
-            >
-              <img src={props.hull_types.pic3} className="button_img" alt="" />
-            </Button>
-          )}
-        />
-        <Tab
-          sx={{ width: "100%" }}
-          a11yprops={a11yprops(4)}
-          value={value}
-          component={() => (
-            <Button
-              sx={{ width: "100%", padding: 0 }}
-              onClick={() => setValue(4)}
-            >
-              <img src={props.hull_types.pic3} className="button_img" alt="" />
-            </Button>
-          )}
-        />
-        <Tab
-          sx={{ width: "100%" }}
-          a11yprops={a11yprops(5)}
-          value={value}
-          component={() => (
-            <Button
-              sx={{ width: "100%", padding: 0 }}
-              onClick={() => setValue(5)}
-            >
-              <img src={props.hull_types.pic3} className="button_img" alt="" />
-            </Button>
-          )}
-        />
-        <Tab
-          sx={{ width: "100%" }}
-          a11yprops={a11yprops(6)}
-          value={value}
-          component={() => (
-            <Button
-              sx={{ width: "100%", padding: 0 }}
-              onClick={() => setValue(6)}
-            >
-              <img src={props.hull_types.pic3} className="button_img" alt="" />
-            </Button>
-          )}
-        /> */}
       </Tabs>
     </Box>
   );

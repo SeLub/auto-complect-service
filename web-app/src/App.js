@@ -38,7 +38,7 @@ function App() {
         </Route>
         <Route path="/configurator_p1" component={configuratorP1} />
         <Route path="/configurator_p2" component={configuratorP2} />
-        <Route path="/configurator_p3" component={configuratorP3} />
+        <Route path="/сonfigurator_p3" component={configuratorP3} />
         <Route path="/PdfPage" component={PdfPage} />
       </Router>
     </Provider>

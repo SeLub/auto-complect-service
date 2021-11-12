@@ -1,12 +1,24 @@
+<<<<<<< HEAD
 /* eslint-disable prettier/prettier */
+=======
+/* eslint-disable react/destructuring-assignment */
+>>>>>>> origin/dev
 import * as React from "react";
 import { Card, CardContent, Typography, Box, CardMedia } from "@mui/material";
+import { connect } from "react-redux";
 import TotalCarValue from "../total-car-value/Total-car-value";
 import RetoolBtn from "../generic/RetoolBtn";
 import ToggleButtonAutomobile from "./ToggleButtonAutomobile";
-import shemeCar from "./19.jpg";
 
-export default function CardsAutomobile() {
+const mapStateToProps = (state) => {
+  return {
+    name: state.hullTypes.name,
+    alignment: state.toggleBtnAutomobile.alignment,
+    schema: state.toggleBtnAutomobile.sourcePic,
+  };
+};
+
+function CardsAutomobile(props) {
   return (
     <Card sx={{ maxWidth: 360 }}>
       <CardContent align="left">
@@ -14,17 +26,20 @@ export default function CardsAutomobile() {
           Легковой
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          Полное название с описанием комплектации и базы
+          {`Грузопассажирский автомобиль ${props.configurationScheme} на базе ${props.hullTypesName}`}
+          ;
         </Typography>
         <Typography variant="body2" color="InfoText">
           Выбор схемы комплектации:
         </Typography>
-        <ToggleButtonAutomobile />
+        <ToggleButtonAutomobile
+          configurationScheme={props.configurationScheme}
+        />
         <CardMedia
           height="117px"
           weight="310px"
           component="img"
-          image={shemeCar}
+          image={props.schema}
           alt="схема"
         />
         <Box>
@@ -34,4 +49,10 @@ export default function CardsAutomobile() {
       </CardContent>
     </Card>
   );
+<<<<<<< HEAD
 }
+=======
+}
+
+export default connect(mapStateToProps)(CardsAutomobile);
+>>>>>>> origin/dev

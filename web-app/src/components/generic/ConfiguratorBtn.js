@@ -36,6 +36,7 @@ export default function ConfiguratorBtn(props) {
     dispatch({
       type: "hull_types/set",
       name: props.hull_types.name,
+      shortName: props.hull_types.shortName,
       engine: props.hull_types.engine,
       fuel_type: props.hull_types.fuel_type,
       transmission: props.hull_types.transmission,
@@ -44,13 +45,15 @@ export default function ConfiguratorBtn(props) {
       engine_power: props.hull_types.engine_power,
       base_price: props.hull_types.base_price,
       base_price_currency: props.hull_types.base_price_currency,
+      mass: props.hull_types.mass,
       pictures: props.hull_types.pictures,
       base_options: props.hull_types.base_options,
       additional_options: props.hull_types.additional_options,
-      pic1: props.hull_types.pic1,
-      pic2: props.hull_types.pic2,
-      pic3: props.hull_types.pic3,
-      pic4: props.hull_types.pic4,
+      reequipmentOptions: props.hull_types.reequipment,
+    });
+    dispatch({
+      type: "priceTracker/init",
+      price: props.hull_types.base_price,
     });
     // hull_types_reducer.dispatch(hull_types_reducer({type: 'hull_types/get'}))
     // console.log(hull_types_store.getState())

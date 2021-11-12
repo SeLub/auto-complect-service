@@ -5,6 +5,7 @@ export default function hullTypes(hull_types = {}, action) {
       return {
         ...hull_types,
         name: action.name,
+        shortName: action.shortName,
         engine: action.engine,
         fuel_type: action.fuel_type,
         transmission: action.transmission,
@@ -12,13 +13,11 @@ export default function hullTypes(hull_types = {}, action) {
         engine_power: action.engine_power,
         base_price: action.base_price,
         base_price_currency: action.base_price_currency,
+        mass: action.mass,
         pictures: action.pictures,
         base_options: action.base_options,
         additional_options: action.additional_options,
-        pic1: action.pic1,
-        pic2: action.pic2,
-        pic3: action.pic3,
-        pic4: action.pic4,
+        reequipmentOptions: action.reequipmentOptions,
       };
     default:
       return hull_types;

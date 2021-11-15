@@ -8,6 +8,15 @@ import { StyleSheet } from "@react-pdf/renderer";
 import { connect } from "react-redux";
 import store, { dispatch } from "../../store/store";
 
+const css = `
+.MuiDataGrid-root .MuiDataGrid-columnHeader:not(.MuiDataGrid-columnHeader--sorted) .MuiDataGrid-sortIcon {
+  opacity: 0;
+  font-size: 0;
+  transition: opacity 0ms cubic-bezier(0, 0, 0, 0) 0ms;
+};
+
+`;
+
 const mapStateToProps = (state) => {
   return {
     additional_options: state.hullTypes.additional_options,
@@ -38,7 +47,6 @@ function DataTable(props) {
   }
   console.log(props.initialOptions?.map((initialOption) => initialOption.id));
   function handleClick(selectedRow) {
-    // const selectedRowArray =
     setSelection(selectedRow);
     console.log(select.length);
     const selectedRowArray = [];
@@ -57,6 +65,7 @@ function DataTable(props) {
     });
   return (
     <div className="BoxTab_Optional_Equipment_Co">
+      <style type="text/css">{css}</style>
       <div style={{ height: "100%", width: "100%", overflow: "hidden" }}>
         <div className="test">
           <img

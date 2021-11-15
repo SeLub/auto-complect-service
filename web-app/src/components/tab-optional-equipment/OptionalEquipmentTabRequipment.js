@@ -4,8 +4,8 @@ import "./Tab_Optional_Equipment.css";
 
 const columns = [
   { field: "id", headerName: "ID", width: 70 },
-  { field: "Позиция", headerName: "Позиция", width: 875 },
-  { field: "Цена", headerName: "Цена", width: 145 },
+  { field: "Позиция", headerName: "Позиция", width: 845 },
+  { field: "Цена", headerName: "Цена", width: 125 },
 ];
 
 const rows = [

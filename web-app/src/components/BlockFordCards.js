@@ -22,6 +22,9 @@ const css = `
   .css-10d9dml-MuiTabs-indicator {
     background-color: white;
   }
+  .css-7ozjwe {
+    background-color: rgb(210 25 25 / 0%);
+}
 `;
 
 function TabPanel(props) {

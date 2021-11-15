@@ -17,6 +17,7 @@ export default function hullTypes(hull_types = {}, action) {
         pictures: action.pictures,
         base_options: action.base_options,
         additional_options: action.additional_options,
+        reequipmentOptions: action.reequipmentOptions,
       };
     default:
       return hull_types;
